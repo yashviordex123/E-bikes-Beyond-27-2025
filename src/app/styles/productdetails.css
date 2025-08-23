@@ -122,7 +122,7 @@
 .info-cards {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .info-header {
-  font-size: 1.9rem;
+  /* font-size: 1.9rem; */
   font-weight: 600;
   margin-bottom: 15px;
   color: rgb(247, 147, 30);

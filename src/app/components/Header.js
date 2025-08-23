@@ -169,11 +169,129 @@
 //   );
 // }
 
+// "use client";
+// import Link from 'next/link';
+// import '../styles/header.css';
+// import { useState } from 'react';
+// import { useRouter, usePathname } from 'next/navigation';
+
+// export default function Header() {
+//   const [menuOpen, setMenuOpen] = useState(false);
+//   const [loading, setLoading] = useState(false); // Loader state
+//   const router = useRouter();
+//   const pathname = usePathname();
+
+//   const navLinks = [
+//     ['/', 'Home'],
+//     ['/products', 'Products'],
+//     ['/rental', 'Rental'],
+//     ['/contact', 'Contact'],
+//     ['/about', 'About Us'],
+//     ['/basicknowledge', 'Privacy Policy'],
+//   ];
+
+//   const handleNavClick = (href) => {
+//     if (pathname !== href) {
+//       setLoading(true);
+//       setTimeout(() => {
+//         router.push(href);
+//       }, 1000); // 5 seconds
+//     }
+//   };
+
+//   return (
+//     <>
+//       {/* Loader Overlay */}
+//       {loading && (
+//         <div
+//           style={{
+//             position: "fixed",
+//             top: 0, left: 0, right: 0, bottom: 0,
+//             backgroundColor: "rgba(255, 255, 255, 0.8)",
+//             zIndex: 9999,
+//             display: "flex",
+//             justifyContent: "center",
+//             alignItems: "center"
+//           }}
+//         >
+//           <div
+//             className="spinner-border text-warning"
+//             style={{ width: "4rem", height: "4rem" }}
+//             role="status"
+//           >
+//             <span className="visually-hidden">Loading...</span>
+//           </div>
+//         </div>
+//       )}
+
+//       <header
+//         className="main-header w-100 sticky-top text-dark"
+//         style={{
+//           backgroundColor: '#f7931e',
+//           boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
+//           zIndex: 1000,
+//         }}
+//       >
+//         <div className="container position-relative py-sm-3 py-1 d-flex justify-content-between align-items-center">
+//           <img
+//             src="/images/Latest-beyond-logo-12-08.png"
+//             alt="logo"
+//             className="set-logo-height"
+//             onClick={() => {
+//     if (pathname !== '/') {
+//       setLoading(true);
+//       setTimeout(() => {
+//         router.push('/');
+//       }, 1000); 
+//     }
+//   }}
+//           />
+
+//           <button
+//             className="btn d-md-none menu-position"
+//             onClick={() => setMenuOpen(!menuOpen)}
+//           >
+//             <img
+//               src="/images/HemburgMenu.svg"
+//               height="35px"
+//               width="35px"
+//               alt="menu-bar"
+//             />
+//           </button>
+
+//           <nav className="d-md-flex flex-grow-1 justify-content-end">
+//             <ul
+//               className={`nav flex-column flex-md-row text-center custom-nav set-bg-header ${menuOpen ? 'open' : ''
+//                 }`}
+//             >
+//               {navLinks.map(([href, label], i) => (
+//                 <li className="nav-item" key={i}>
+//                   <a
+//                     role="button"
+//                     onClick={() => handleNavClick(href)}
+//                     className={`nav-link set-header-text ${pathname === href
+//                       ? 'text-success fw-bold'
+//                       : 'text-light'
+//                       }`}
+//                   >
+//                     {label}
+//                   </a>
+//                 </li>
+//               ))}
+//             </ul>
+//           </nav>
+//         </div>
+//       </header>
+//     </>
+//   );
+// }
+
 "use client";
 import Link from 'next/link';
 import '../styles/header.css';
 import { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import Head from 'next/head';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -195,12 +313,31 @@ export default function Header() {
       setLoading(true);
       setTimeout(() => {
         router.push(href);
-      }, 1000); // 5 seconds
+      }, 1000);
     }
+  };
+
+  // JSON-LD for Navigation (SEO)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "name": navLinks.map(([_, label]) => label),
+    "url": navLinks.map(([href]) => `https://www.beyondbikes.com.au${href}`),
   };
 
   return (
     <>
+      <Head>
+        {/* Structured Data for Navigation */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </Head>
+
+      {/* ✅ Hidden H1 for SEO */}
+      <h1 className="visually-hidden"><strong>Beyond Bikes</strong></h1>
+
       {/* Loader Overlay */}
       {loading && (
         <div
@@ -235,21 +372,22 @@ export default function Header() {
         <div className="container position-relative py-sm-3 py-1 d-flex justify-content-between align-items-center">
           <img
             src="/images/Latest-beyond-logo-12-08.png"
-            alt="logo"
+            alt="Beyond Bikes Logo"
             className="set-logo-height"
             onClick={() => {
-    if (pathname !== '/') {
-      setLoading(true);
-      setTimeout(() => {
-        router.push('/');
-      }, 1000); 
-    }
-  }}
+              if (pathname !== '/') {
+                setLoading(true);
+                setTimeout(() => {
+                  router.push('/');
+                }, 1000);
+              }
+            }}
           />
 
           <button
             className="btn d-md-none menu-position"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation menu"
           >
             <img
               src="/images/HemburgMenu.svg"

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/yashv/Downloads/Next-E-bike-AU%20%282%29/Next-E-bike-AU/my-seo-bootstrap-app/src/app/styles/productdetails.css"],"sourcesContent":[".text-orange {\r\n  color: #f7931e;\r\n}\r\n\r\n.color-swatch {\r\n  width: 24px;\r\n  height: 24px;\r\n  border-radius: 50%;\r\n  border: 2px solid #ccc;\r\n  cursor: pointer;\r\n  transition: 0.3s ease;\r\n}\r\n\r\n.color-swatch.active {\r\n  border: 2px solid #000;\r\n}\r\n\r\n.thumb {\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n  transition: transform 0.2s ease;\r\n}\r\n\r\n.thumb:hover {\r\n  transform: scale(1.05);\r\n}\r\n\r\n.accordion-button {\r\n  font-weight: 600;\r\n  background-color: #f8f9fa;\r\n}\r\n.accordion-button:focus {\r\n  box-shadow: none;\r\n}\r\n.accordion-item ul li {\r\n  margin-bottom: 0.5rem;\r\n  line-height: 1.5;\r\n}\r\n\r\n.table th {\r\n  width: 30%;\r\n  background-color: #f8f9fa;\r\n  font-weight: 600;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;;;;AASA;;;;AAIA;;;;;;AAMA;;;;AAIA;;;;;AAIA;;;;AAGA;;;;;AAKA","debugId":null}}]
-}

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/yashv/Downloads/Next-E-bike-AU%20%282%29/Next-E-bike-AU/my-seo-bootstrap-app/src/app/styles/Contact.css"],"sourcesContent":[".set-location-padding{\r\n    padding-left: 100px;\r\n    padding-top: 80px;\r\n}\r\n\r\n@media (max-width: 576px) {\r\n    .set-location-padding{\r\n    padding-left: 20px;\r\n    padding-top: 6px;\r\n}\r\n}\r\n\r\n.contact-form input,\r\n.contact-form textarea {\r\n  background-color: #f8f9fa;\r\n  border: none;\r\n  border-radius: 0.4rem;\r\n}\r\n\r\n.contact-form input:focus,\r\n.contact-form textarea:focus {\r\n  box-shadow: none;\r\n  outline: none;\r\n  border-color: #0d6efd;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;AAKA;EACI;;;;;;AAMJ;;;;;;AAOA","debugId":null}}]
-}

@@ -1,42 +1,6 @@
-// // components/OpeningHours.js
-// "use client";
-// import React from 'react';
-// import Image from 'next/image';
-// import openingImage from '../../../public/images/multiple-e-bikes.jpg'; 
-// import '../styles/OpeningHours.css';
-
-// export default function Promotion() {
-//   return (
-//     <section
-//       className="position-relative text-white"
-//       aria-labelledby="opening-hours-heading"
-//       itemScope
-//       itemType="https://schema.org/OpeningHoursSpecification"
-//     >
-//       <Image
-//         src={openingImage}
-//         alt="Bikes in store"
-//         className="img-fluid w-100 position-relative"
-//         style={{ objectFit: 'cover', height: '80vh' }}
-//         priority
-//       />
-      
-//       <div className="position-absolute set-start-50 translate-middle text-center bg-white text-dark px-5 py-5 rounded shadow-lg opening-box animate-opening">
-//         <h1 id="opening-hours-heading" className="fw-bold fs-3 mb-3" itemProp="name">
-//           OPENING HOURS
-//         </h1>
-//         <h5 className="mb-3" itemProp="opens">Mon - Sat: <time dateTime="10:00">10am</time> - <time dateTime="18:00">6pm</time></h5>
-//         <h5 className="mb-0 text-danger fw-semibold" itemProp="closes">Sunday: Closed</h5>
-//       </div>
-//     </section>
-//   );
-// }
-
 // "use client";
 // import React, { useEffect, useState, useRef } from 'react';
-// import Image from 'next/image';
 // import { motion } from 'framer-motion';
-// import openingImage from '../../../public/images/multiple-e-bikes.jpg';
 // import '../styles/OpeningHours.css';
 
 // export default function Promotion() {
@@ -52,46 +16,50 @@
 //         setIsVisible(true);
 //       }
 //     };
-
 //     window.addEventListener("scroll", handleScroll);
-//     handleScroll(); // check on mount
+//     handleScroll();
 //     return () => window.removeEventListener("scroll", handleScroll);
 //   }, []);
 
 //   return (
 //     <motion.section
 //       ref={sectionRef}
-//       className="position-relative text-white"
+//       className="promotion-section text-white position-relative"
 //       aria-labelledby="opening-hours-heading"
-//       itemScope
-//       itemType="https://schema.org/OpeningHoursSpecification"
 //       initial={{ opacity: 0, y: 60 }}
 //       animate={isVisible ? { opacity: 1, y: 0 } : {}}
 //       transition={{ duration: 0.7, ease: "easeOut" }}
 //     >
-//       <Image
-//         src={openingImage}
-//         alt="Bikes in store"
-//         className="img-fluid w-100 position-relative"
-//         style={{ objectFit: 'cover', height: '80vh' }}
-//         priority
-//       />
-
-//       <div className="position-absolute set-start-50 translate-middle text-center bg-white text-dark px-5 py-4 rounded shadow-lg opening-box animate-opening">
-//         <h1 id="opening-hours-heading" className="fw-bold fs-3 mb-3" itemProp="name">
-//           OPENING HOURS
-//         </h1>
-//         <h4 className="mb-3" itemProp="opens">
-//           Mon - Sun: <time dateTime="10:00">9am</time> - <time dateTime="18:00">7pm</time>
-//         </h4>
-//         {/* <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes avaliable at anytime</h4> */}
+//       <div className="position-absolute w-100 mt-sm-5 mt-0 h-100 d-flex align-items-center justify-content-center justify-content-md-end pe-md-5">
+//         <div
+//           className="text-center bg-white text-dark px-5 py-4 rounded shadow-lg opening-box animate-opening"
+//           itemScope
+//           itemType="https://schema.org/LocalBusiness"
+//         >
+//           <h2 id="opening-hours-heading" className="fw-bold mb-3" itemProp="name">
+//             OPENING HOURS
+//           </h2>
+//           <h3 className="mb-3" itemProp="openingHours">
+//             <time dateTime="Mo-Su 09:00-19:00">
+//               Monday - Saturday : 9am – 7pm
+//             </time>
+//             <time dateTime="Mo-Su 09:00-19:00">
+//               Sunday : 11am – 4pm
+//             </time>
+//           </h3>
+//           <p className="mb-0 text-muted">
+//             Visit our Melbourne location anytime during our opening hours.
+//           </p>
+//         </div>
 //       </div>
 //     </motion.section>
 //   );
 // }
 
+
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
+import Head from 'next/head';
 import { motion } from 'framer-motion';
 import '../styles/OpeningHours.css';
 
@@ -108,35 +76,81 @@ export default function Promotion() {
         setIsVisible(true);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // check on mount
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Your Business Name",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Your Street Address",
+      "addressLocality": "Melbourne",
+      "addressRegion": "VIC",
+      "postalCode": "3000",
+      "addressCountry": "Australia"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "11:00",
+        "closes": "16:00"
+      }
+    ]
+  };
+
   return (
-    <motion.section
-      ref={sectionRef}
-      className="promotion-section text-white position-relative"
-      aria-labelledby="opening-hours-heading"
-      itemScope
-      itemType="https://schema.org/OpeningHoursSpecification"
-      initial={{ opacity: 0, y: 60 }}
-      animate={isVisible ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-    >
-      {/* Overlay Box with Responsive Alignment */}
-      <div className="position-absolute w-100 mt-sm-5 mt-0 h-100 d-flex align-items-center justify-content-center justify-content-md-end pe-md-5">
-        <div className="text-center bg-white text-dark px-5 py-4 rounded shadow-lg opening-box animate-opening">
-          <h1 id="opening-hours-heading" className="fw-bold fs-3 mb-3" itemProp="name">
-            OPENING HOURS
-          </h1>
-          <h4 className="mb-3" itemProp="opens">
-            Mon - Sun: <time dateTime="10:00">9am</time> - <time dateTime="18:00">7pm</time>
-          </h4>
-          {/* <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes available at anytime</h4> */}
+    <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </Head>
+
+      <motion.section
+        ref={sectionRef}
+        className="promotion-section text-white position-relative"
+        aria-labelledby="opening-hours-heading"
+        role="region"
+        initial={{ opacity: 0, y: 60 }}
+        animate={isVisible ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <div className="position-absolute w-100 mt-sm-5 mt-0 h-100 d-flex align-items-center justify-content-center justify-content-md-end pe-md-5">
+          <div className="text-center bg-white text-dark px-sm-5 px-3 py-4 rounded shadow-lg opening-box animate-opening">
+            <h2 id="opening-hours-heading" className="fw-bold mb-3">
+              OPENING HOURS
+            </h2>
+            <h3 className="mb-3 fs-5">
+              Monday - Saturday : 9am - 7pm
+            </h3>
+            <h3 className="mb-3 fs-5">
+              Sunday : 11am - 4pm
+            </h3>
+            <p className="mb-0 text-muted">
+              Visit our Melbourne location anytime during our opening hours.
+            </p>
+          </div>
         </div>
-      </div>
-    </motion.section>
+      </motion.section>
+    </>
   );
 }

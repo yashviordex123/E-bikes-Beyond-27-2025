@@ -75,6 +75,8 @@ nav ul.nav li.nav-item a {
   height: 60px;
   width: 80px;
   cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
   .menu-position {
     position: absolute;
@@ -83,7 +85,7 @@ nav ul.nav li.nav-item a {
 
   .custom-nav {
     position: absolute;
-    top: 78px;
+    top: 70px;
     left: 0;
     width: 100%;
     margin: 0;

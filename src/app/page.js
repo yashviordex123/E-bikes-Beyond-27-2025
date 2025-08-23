@@ -28,9 +28,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ride | Electric Road Bikes</title>
-        <meta name="description" content="Explore premium electric road bikes. More mileage, more fun." />
-        <meta name="keywords" content="electric bikes, road bikes, e-bikes, shop, cycling, affordable e-bikes, buy electric bikes" />
+        <title>Ride | Beyond Bikes</title>
+        <meta name="description" content="Beyond Bikes is ride for electric purpose use." />
+        <meta name="keywords" content="beyond bikes" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Ride | Electric Road Bikes" />

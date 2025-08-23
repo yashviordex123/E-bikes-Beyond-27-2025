@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/about/page": "/about",
+  "/E-bike-10-12h/page": "/E-bike-10-12h",
+  "/basicknowledge/page": "/basicknowledge",
+  "/E-bike-8-10h/page": "/E-bike-8-10h",
+  "/cart/page": "/cart",
+  "/E-bike-6-8h/page": "/E-bike-6-8h",
+  "/products/page": "/products",
+  "/page": "/",
+  "/amazingoffers/page": "/amazingoffers",
+  "/contact/page": "/contact",
+  "/repairs/page": "/repairs",
+  "/rental/page": "/rental",
+  "/review/page": "/review",
+  "/warranty/page": "/warranty"
+}

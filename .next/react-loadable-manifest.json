@@ -1,0 +1,32 @@
+{
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": 472,
+    "files": [
+      "static/chunks/472.a3826d29d6854395.js"
+    ]
+  },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 9341,
+    "files": [
+      "static/chunks/9341.83b5745c64f76701.js"
+    ]
+  },
+  "app\\E-bike-10-12h\\page.js -> bootstrap/dist/js/bootstrap.bundle.min.js": {
+    "id": 5737,
+    "files": [
+      "static/chunks/5737.e59b0615b0f37b52.js"
+    ]
+  },
+  "app\\E-bike-6-8h\\page.js -> bootstrap/dist/js/bootstrap.bundle.min.js": {
+    "id": 5737,
+    "files": [
+      "static/chunks/5737.e59b0615b0f37b52.js"
+    ]
+  },
+  "app\\E-bike-8-10h\\page.js -> bootstrap/dist/js/bootstrap.bundle.min.js": {
+    "id": 5737,
+    "files": [
+      "static/chunks/5737.e59b0615b0f37b52.js"
+    ]
+  }
+}
