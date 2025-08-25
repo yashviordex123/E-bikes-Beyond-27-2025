@@ -789,7 +789,7 @@ function Hero() {
                                 telephone: "+61422032961",
                                 address: {
                                     "@type": "PostalAddress",
-                                    streetAddress: "667 Glen Huntly Rd Caulfield South",
+                                    streetAddress: "576 North Rd, Ormond VIC 3204, Australia",
                                     addressLocality: "Melbourne",
                                     addressRegion: "VIC",
                                     postalCode: "3162",
@@ -3055,10 +3055,10 @@ function ContactPage() {
                                 "telephone": "+61 422 032 961",
                                 "address": {
                                     "@type": "PostalAddress",
-                                    "streetAddress": "667 Glen Huntly Rd",
-                                    "addressLocality": "Caulfield South",
+                                    "streetAddress": "576 North Rd",
+                                    "addressLocality": "Ormond",
                                     "addressRegion": "VIC",
-                                    "postalCode": "3162",
+                                    "postalCode": "3204",
                                     "addressCountry": "AU"
                                 },
                                 "geo": {
@@ -3104,12 +3104,12 @@ function ContactPage() {
                                 children: "Contact Beyond Bikes in Melbourne"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/ContactPage.js",
-                                lineNumber: 137,
+                                lineNumber: 138,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/ContactPage.js",
-                            lineNumber: 136,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3130,14 +3130,14 @@ function ContactPage() {
                                                     children: "Address:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/ContactPage.js",
-                                                    lineNumber: 150,
+                                                    lineNumber: 151,
                                                     columnNumber: 17
                                                 }, this),
-                                                " 667 Glen Huntly Rd Caulfield South, Caulfield VIC 3162, Australia"
+                                                " 576 North Rd, Ormond VIC 3204, Australia"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 149,
+                                            lineNumber: 150,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3150,14 +3150,14 @@ function ContactPage() {
                                                     children: "Email:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/ContactPage.js",
-                                                    lineNumber: 153,
+                                                    lineNumber: 154,
                                                     columnNumber: 17
                                                 }, this),
                                                 " info.beyondbikes@gmail.com"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 152,
+                                            lineNumber: 153,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3170,27 +3170,27 @@ function ContactPage() {
                                                     children: "Phone:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/ContactPage.js",
-                                                    lineNumber: 156,
+                                                    lineNumber: 157,
                                                     columnNumber: 17
                                                 }, this),
                                                 " +61 422 032 961"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 155,
+                                            lineNumber: 156,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/ContactPage.js",
-                                    lineNumber: 148,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "col-md-6 d-flex justify-content-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                                            src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.892981477474!2d145.01450907569838!3d-37.88618537195743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xad2bb1333866ab51%3A0xa4b86ef9fc66b952!2sBeyond%20Bikes!5e0!3m2!1sen!2sin!4v1752858283636!5m2!1sen!2sin",
+                                            src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.120442377545!2d145.0406816!3d-37.904247399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad669652d799b25%3A0xab28d496d1fa88c7!2s576%20North%20Rd%2C%20Ormond%20VIC%203204%2C%20Australia!5e0!3m2!1sen!2sin!4v1756139787406!5m2!1sen!2sin",
                                             allowFullScreen: true,
                                             loading: "lazy",
                                             title: "Beyond Bikes Location Map",
@@ -3199,7 +3199,7 @@ function ContactPage() {
                                             className: "responsive-map"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 161,
+                                            lineNumber: 162,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("noscript", {
@@ -3213,36 +3213,36 @@ function ContactPage() {
                                                     children: "Google Maps"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/ContactPage.js",
-                                                    lineNumber: 172,
+                                                    lineNumber: 173,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 170,
+                                            lineNumber: 171,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/ContactPage.js",
-                                    lineNumber: 160,
+                                    lineNumber: 161,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/ContactPage.js",
-                            lineNumber: 143,
+                            lineNumber: 144,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/ContactPage.js",
-                    lineNumber: 132,
+                    lineNumber: 133,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/ContactPage.js",
-                lineNumber: 131,
+                lineNumber: 132,
                 columnNumber: 7
             }, this)
         ]
@@ -3536,7 +3536,7 @@ function About() {
         description: "Reliable and affordable e-bike rentals in Melbourne for commuters and delivery riders.",
         address: {
             "@type": "PostalAddress",
-            streetAddress: "667 Glen Huntly Rd, Caulfield South",
+            streetAddress: "576 North Rd, Ormond VIC 3204, Australia",
             addressLocality: "Melbourne",
             addressRegion: "VIC",
             postalCode: "3162",
@@ -5818,8 +5818,8 @@ function Contact() {
                                 },
                                 "address": {
                                     "@type": "PostalAddress",
-                                    "streetAddress": "667 Glen Huntly Rd Caulfield South",
-                                    "addressLocality": "Caulfield VIC 3162",
+                                    "streetAddress": "576 North Rd, Ormond VIC 3204, Australia",
+                                    "addressLocality": "Ormond VIC 3204",
                                     "addressCountry": "Australia"
                                 },
                                 "sameAs": [
@@ -6144,29 +6144,11 @@ function Contact() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "mb-0",
-                                                        itemProp: "streetAddress",
-                                                        children: "667 Glen Huntly Rd Caulfield South"
+                                                        itemProp: "addressCountry",
+                                                        children: "576 North Rd, Ormond VIC 3204, Australia"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
                                                         lineNumber: 484,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "mb-0",
-                                                        itemProp: "addressLocality",
-                                                        children: "Caulfield VIC 3162"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 485,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "mb-0",
-                                                        itemProp: "addressCountry",
-                                                        children: "Australia"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 486,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]

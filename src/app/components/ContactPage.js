@@ -104,13 +104,14 @@ export default function ContactPage() {
               "url": "https://www.beyondbikes.com.au",
               "telephone": "+61 422 032 961",
               "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "667 Glen Huntly Rd",
-                "addressLocality": "Caulfield South",
-                "addressRegion": "VIC",
-                "postalCode": "3162",
-                "addressCountry": "AU"
-              },
+  "@type": "PostalAddress",
+  "streetAddress": "576 North Rd",
+  "addressLocality": "Ormond",
+  "addressRegion": "VIC",
+  "postalCode": "3204",
+  "addressCountry": "AU"
+},
+
               "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": -37.8861853,
@@ -147,7 +148,7 @@ export default function ContactPage() {
           >
             <div className="col-md-6 set-location-padding">
               <p itemProp="address" style={{ color: '#ff6b00' }}>
-                <strong>Address:</strong> 667 Glen Huntly Rd Caulfield South, Caulfield VIC 3162, Australia
+                <strong>Address:</strong> 576 North Rd, Ormond VIC 3204, Australia
               </p>
               <p itemProp="email" style={{ color: '#ff6b00' }}>
                 <strong>Email:</strong> info.beyondbikes@gmail.com
@@ -159,7 +160,7 @@ export default function ContactPage() {
 
             <div className="col-md-6 d-flex justify-content-center">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.892981477474!2d145.01450907569838!3d-37.88618537195743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xad2bb1333866ab51%3A0xa4b86ef9fc66b952!2sBeyond%20Bikes!5e0!3m2!1sen!2sin!4v1752858283636!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.120442377545!2d145.0406816!3d-37.904247399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad669652d799b25%3A0xab28d496d1fa88c7!2s576%20North%20Rd%2C%20Ormond%20VIC%203204%2C%20Australia!5e0!3m2!1sen!2sin!4v1756139787406!5m2!1sen!2sin"
                 allowFullScreen={true}
                 loading="lazy"
                 title="Beyond Bikes Location Map"

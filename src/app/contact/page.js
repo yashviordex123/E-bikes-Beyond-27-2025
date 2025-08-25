@@ -373,8 +373,8 @@ export default function Contact() {
           },
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "667 Glen Huntly Rd Caulfield South",
-            "addressLocality": "Caulfield VIC 3162",
+            "streetAddress": "576 North Rd, Ormond VIC 3204, Australia",
+            "addressLocality": "Ormond VIC 3204",
             "addressCountry": "Australia"
           },
           "sameAs": [
@@ -481,9 +481,9 @@ export default function Contact() {
               <address className="bg-light rounded p-4" itemScope itemType="https://schema.org/PostalAddress">
                 <div className="mb-4">
                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Address</h3>
-                  <p className="mb-0" itemProp="streetAddress">667 Glen Huntly Rd Caulfield South</p>
-                  <p className="mb-0" itemProp="addressLocality">Caulfield VIC 3162</p>
-                  <p className="mb-0" itemProp="addressCountry">Australia</p>
+                  <p className="mb-0" itemProp="addressCountry">576 North Rd, Ormond VIC 3204, Australia</p>
+                  {/* <p className="mb-0" itemProp="addressLocality">Ormond VIC 3204</p>
+                  <p className="mb-0" itemProp="addressCountry">Australia</p> */}
                 </div>
                 <hr />
                 <div className="mb-4">

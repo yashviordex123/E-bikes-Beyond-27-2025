@@ -242,7 +242,7 @@ export default function About() {
     description: "Reliable and affordable e-bike rentals in Melbourne for commuters and delivery riders.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "667 Glen Huntly Rd, Caulfield South",
+      streetAddress: "576 North Rd, Ormond VIC 3204, Australia",
       addressLocality: "Melbourne",
       addressRegion: "VIC",
       postalCode: "3162",
