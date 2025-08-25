@@ -1,0 +1,15 @@
+/* [project]/src/app/styles/warranty.css [app-client] (css) */
+.warranty-page {
+  color: #333;
+  max-width: 1400px;
+  margin: auto;
+  font-size: 1.05rem;
+}
+
+.highlight {
+  background-color: #fff2cc;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+/*# sourceMappingURL=src_app_styles_warranty_css_f9ee138c._.single.css.map*/

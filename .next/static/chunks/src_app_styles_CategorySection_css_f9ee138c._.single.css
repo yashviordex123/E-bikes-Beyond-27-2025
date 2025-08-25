@@ -1,0 +1,51 @@
+/* [project]/src/app/styles/CategorySection.css [app-client] (css) */
+.category-circle-wrapper .circle {
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 120px;
+  transition: border .3s, box-shadow .3s;
+  display: flex;
+  position: relative;
+}
+
+.category-circle-wrapper .circle img {
+  max-width: 160%;
+  height: auto;
+}
+
+.category-circle-wrapper:hover .circle {
+  border: 5px solid orange;
+  padding: 10px 30px;
+  box-shadow: 0 0 0 6px #ffa5004d;
+}
+
+.category-scroll {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-scroll .category-circle-wrapper {
+  scroll-snap-align: start;
+}
+
+.set-accesories-color {
+  color: #ff6b00;
+}
+
+.category-scroll {
+  scroll-behavior: smooth;
+}
+
+.dot {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=src_app_styles_CategorySection_css_f9ee138c._.single.css.map*/

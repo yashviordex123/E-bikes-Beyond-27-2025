@@ -1,0 +1,52 @@
+/* [project]/src/app/styles/OpeningHours.css [app-client] (css) */
+.opening-box {
+  z-index: 2;
+  max-width: 350px;
+}
+
+.set-start-50 {
+  top: 50%;
+  right: -8%;
+}
+
+@media (width <= 576px) {
+  .opening-box {
+    max-width: 90%;
+    padding: 1rem 1.5rem;
+    font-size: .95rem;
+  }
+
+  .set-start-50 {
+    top: 50%;
+    right: -35%;
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-opening h1 {
+  opacity: 0;
+  animation: .6s ease-out .3s forwards fadeSlideIn;
+}
+
+.animate-opening h5:first-of-type {
+  opacity: 0;
+  animation: .6s ease-out .6s forwards fadeSlideIn;
+}
+
+.animate-opening h5:nth-of-type(2) {
+  opacity: 0;
+  animation: .6s ease-out .9s forwards fadeSlideIn;
+}
+
+/*# sourceMappingURL=src_app_styles_OpeningHours_css_f9ee138c._.single.css.map*/

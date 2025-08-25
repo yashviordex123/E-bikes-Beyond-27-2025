@@ -1,0 +1,17 @@
+/* [project]/src/app/styles/About.css [app-client] (css) */
+.aboutSection {
+  color: #000;
+}
+
+.ovalImage {
+  width: 100%;
+  max-width: 500px;
+}
+
+.orangeHeading {
+  color: #f7931e;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=src_app_styles_About_css_f9ee138c._.single.css.map*/

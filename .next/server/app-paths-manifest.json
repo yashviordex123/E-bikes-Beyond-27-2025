@@ -1,18 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/about/page": "app/about/page.js",
-  "/E-bike-10-12h/page": "app/E-bike-10-12h/page.js",
-  "/basicknowledge/page": "app/basicknowledge/page.js",
-  "/E-bike-8-10h/page": "app/E-bike-8-10h/page.js",
-  "/cart/page": "app/cart/page.js",
-  "/E-bike-6-8h/page": "app/E-bike-6-8h/page.js",
-  "/products/page": "app/products/page.js",
-  "/page": "app/page.js",
-  "/amazingoffers/page": "app/amazingoffers/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/repairs/page": "app/repairs/page.js",
-  "/rental/page": "app/rental/page.js",
-  "/review/page": "app/review/page.js",
-  "/warranty/page": "app/warranty/page.js"
+  "/page": "app/page.js"
 }

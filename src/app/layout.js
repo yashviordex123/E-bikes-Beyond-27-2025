@@ -73,6 +73,11 @@ export const metadata = {
       "Affordable and reliable electric bike rentals in Melbourne. Flexible hire for commuters & delivery riders.",
     images: ["/og-image.jpg"], // Replace with your OG image path
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

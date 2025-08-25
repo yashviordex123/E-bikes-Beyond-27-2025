@@ -1,0 +1,73 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+@media (width <= 767px) {
+  .set-image-services {
+    width: 350px;
+  }
+}
+
+.responsive-image-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.responsive-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  transition: background-image .5s ease-in-out;
+}
+
+@media (width <= 768px) {
+  .responsive-bg {
+    background-position: top;
+    height: 75vh;
+  }
+}
+
+.product-image {
+  height: 180px;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (width <= 991.98px) {
+  .product-image {
+    max-width: 160px;
+    height: 160px;
+  }
+}
+
+@media (width <= 767.98px) {
+  .product-image {
+    max-width: 140px;
+    height: 140px;
+  }
+}
+
+@media (width <= 575.98px) {
+  .product-card {
+    padding: 1rem .5rem;
+  }
+
+  .product-image {
+    max-width: 350px;
+    height: 200px;
+  }
+}
+
+.visually-hidden {
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  overflow: hidden !important;
+}
+
+/*# sourceMappingURL=src_app_globals_css_f9ee138c._.single.css.map*/

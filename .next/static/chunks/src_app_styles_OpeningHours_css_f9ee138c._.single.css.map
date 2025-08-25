@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/styles/OpeningHours.css"],"sourcesContent":[".opening-box {\r\n  max-width: 350px;\r\n  z-index: 2;\r\n}\r\n.set-start-50{\r\n    right: -8%;\r\n    top: 50%;\r\n}\r\n\r\n@media (max-width: 576px) {\r\n  .opening-box {\r\n    max-width: 90%;\r\n    font-size: 0.95rem;\r\n    padding: 1rem 1.5rem;\r\n  }\r\n  .set-start-50 {\r\n    top: 50%;\r\n    right: -35%;\r\n}\r\n}\r\n\r\n@keyframes fadeSlideIn {\r\n  0% {\r\n    opacity: 0;\r\n    transform: translateY(30px);\r\n  }\r\n  100% {\r\n    opacity: 1;\r\n    transform: translateY(0);\r\n  }\r\n}\r\n\r\n.animate-opening h1 {\r\n  animation: fadeSlideIn 0.6s ease-out forwards;\r\n  animation-delay: 0.3s;\r\n  opacity: 0;\r\n}\r\n\r\n.animate-opening h5:nth-of-type(1) {\r\n  animation: fadeSlideIn 0.6s ease-out forwards;\r\n  animation-delay: 0.6s;\r\n  opacity: 0;\r\n}\r\n\r\n.animate-opening h5:nth-of-type(2) {\r\n  animation: fadeSlideIn 0.6s ease-out forwards;\r\n  animation-delay: 0.9s;\r\n  opacity: 0;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;AAIA;;;;;AAKA;EACE;;;;;;EAKA;;;;;;AAMF;;;;;;;;;;;;AAWA;;;;;AAMA;;;;;AAMA"}}]
+}

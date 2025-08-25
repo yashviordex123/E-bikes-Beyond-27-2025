@@ -1,0 +1,154 @@
+/* [project]/src/app/styles/header.css [app-client] (css) */
+nav ul.nav li.nav-item a {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.main-header {
+  box-shadow: 0 10px 20px #00000080;
+}
+
+.set-logo-height {
+  cursor: pointer;
+  width: 100px;
+  height: 80px;
+}
+
+.set-bg-header {
+  background-color: #f7931e !important;
+}
+
+.menu-position {
+  background: none;
+  border: 1px solid #0000;
+  padding: .5rem;
+}
+
+.menu-position:active, .menu-position:focus {
+  outline: none;
+  border: 1px solid #f7931e !important;
+}
+
+.menu-position:hover {
+  border: 1px solid #f7931e !important;
+}
+
+@media (width >= 768px) {
+  .custom-nav {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    max-height: none !important;
+    box-shadow: none !important;
+    background-color: #0000 !important;
+    display: flex !important;
+    position: static !important;
+    transform: none !important;
+  }
+
+  .custom-nav li.nav-item {
+    padding: 0;
+  }
+
+  .custom-nav li.nav-item a {
+    padding: .5rem 1rem;
+    display: inline-block;
+  }
+}
+
+@media (width <= 767px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .set-logo-height {
+    cursor: pointer;
+    width: 80px;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .menu-position {
+    position: absolute;
+    right: 0;
+  }
+
+  .custom-nav {
+    z-index: 999;
+    opacity: 0;
+    transform-origin: top;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: #f7931e;
+    width: 100%;
+    max-height: 0;
+    margin: 0;
+    transition: max-height .6s, opacity .4s, transform .4s, visibility .6s, pointer-events .6s, background-color .4s;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    overflow: hidden;
+    transform: scaleY(.95);
+    box-shadow: 0 4px 10px #0000001a;
+  }
+
+  .custom-nav.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    max-height: 1000px;
+    transform: scaleY(1);
+  }
+
+  .custom-nav li.nav-item {
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .custom-nav li.nav-item a {
+    width: 100%;
+    padding: 12px 16px;
+    display: block;
+  }
+
+  h1.fw-bold {
+    margin: 0;
+  }
+}
+
+.spinner-border {
+  vertical-align: -.125em;
+  border: .25em solid;
+  border-right-color: #0000;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  animation: .75s linear infinite spinner-border;
+  display: inline-block;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.visually-hidden {
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  overflow: hidden !important;
+}
+
+/*# sourceMappingURL=src_app_styles_header_css_f9ee138c._.single.css.map*/

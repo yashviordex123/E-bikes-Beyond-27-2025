@@ -1,0 +1,114 @@
+/* [project]/src/app/styles/amazingoffers.css [app-client] (css) */
+.hero-section {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(#0009, #0009), url("/images/amazingbackground.jpg") center / cover no-repeat;
+  height: 80vh;
+  padding: 60px 20px;
+}
+
+@media (width <= 768px) {
+  .hero-section {
+    height: auto;
+  }
+}
+
+.hero-title {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #facc15;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  color: #e0f2fe;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.food-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.food-item {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 240px;
+  padding: 20px 10px;
+  transition: transform .3s, box-shadow .3s;
+  box-shadow: 0 10px 30px #00000026;
+}
+
+.image-wrapper {
+  border: 4px solid #facc15;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform .3s;
+}
+
+.food-label {
+  color: #fff;
+  background: #ff6b00;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.offer-box {
+  color: #111827;
+  background: none;
+  border-radius: 12px;
+  margin-top: 50px;
+  padding: 30px 20px;
+  display: inline-block;
+  box-shadow: 0 8px 20px #0000001a;
+}
+
+.offer-text {
+  color: #dc2626;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.offer-off {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.offer-note {
+  color: #fff;
+  background: #dc2626;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.small-note {
+  color: #f3f4f6;
+  margin-top: 10px;
+  font-size: .85rem;
+  display: block;
+}
+
+/*# sourceMappingURL=src_app_styles_amazingoffers_css_f9ee138c._.single.css.map*/
