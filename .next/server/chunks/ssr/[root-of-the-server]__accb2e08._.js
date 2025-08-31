@@ -993,7 +993,7 @@ function Footer() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Experience the future of urban mobility with our premium electric bike rental service. Sustainable, convenient, and fun transportation for modern city dwellers."
+                                        children: "At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 453,
@@ -1003,73 +1003,57 @@ function Footer() {
                                         className: "d-flex gap-3 mt-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "https://www.facebook.com",
+                                                href: "https://g.co/kgs/66Atysa",
                                                 "aria-label": "Facebook",
                                                 className: "text-white fs-4",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-facebook"
+                                                    className: "bi bi-google"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 460,
+                                                    lineNumber: 458,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 459,
+                                                lineNumber: 457,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D",
+                                                href: "https://www.instagram.com/beyondbikes_vic/",
                                                 "aria-label": "Instagram",
                                                 className: "text-white fs-4",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                     className: "bi bi-instagram"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 463,
+                                                    lineNumber: 461,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 462,
+                                                lineNumber: 460,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "https://twitter.com",
-                                                "aria-label": "Twitter",
-                                                className: "text-white fs-4",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-twitter"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 466,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 465,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "https://www.youtube.com",
+                                                href: "https://maps.app.goo.gl/wYuVboHaKcQvRjXv8",
                                                 "aria-label": "YouTube",
                                                 className: "text-white fs-4",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-youtube"
+                                                    className: "bi bi-geo-alt"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 469,
+                                                    lineNumber: 467,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 468,
+                                                lineNumber: 466,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 458,
+                                        lineNumber: 456,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1086,7 +1070,7 @@ function Footer() {
                                         children: "Quick Links"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 476,
+                                        lineNumber: 474,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1102,7 +1086,7 @@ function Footer() {
                                             ],
                                             [
                                                 '/products',
-                                                'product'
+                                                'Product'
                                             ],
                                             [
                                                 'https://maps.app.goo.gl/wYuVboHaKcQvRjXv8',
@@ -1115,23 +1099,23 @@ function Footer() {
                                                     children: label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 485,
+                                                    lineNumber: 483,
                                                     columnNumber: 21
                                                 }, this)
                                             }, href, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 484,
+                                                lineNumber: 482,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 477,
+                                        lineNumber: 475,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 475,
+                                lineNumber: 473,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1142,7 +1126,7 @@ function Footer() {
                                         children: "Support"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 500,
+                                        lineNumber: 498,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1171,23 +1155,23 @@ function Footer() {
                                                     children: label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 509,
+                                                    lineNumber: 507,
                                                     columnNumber: 21
                                                 }, this)
                                             }, href, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 508,
+                                                lineNumber: 506,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 501,
+                                        lineNumber: 499,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 499,
+                                lineNumber: 497,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1195,10 +1179,10 @@ function Footer() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
                                         className: "fw-bold",
-                                        children: "Contact"
+                                        children: "Contact Us"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 524,
+                                        lineNumber: 522,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("address", {
@@ -1210,14 +1194,14 @@ function Footer() {
                                                         className: "bi bi-geo-alt me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 526,
+                                                        lineNumber: 524,
                                                         columnNumber: 20
                                                     }, this),
-                                                    " 123 Green Street, Eco City, EC 12345"
+                                                    " 576 North Rd, Ormond VIC 3204, Australia"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 526,
+                                                lineNumber: 524,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1226,22 +1210,22 @@ function Footer() {
                                                         className: "bi bi-telephone me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 527,
+                                                        lineNumber: 525,
                                                         columnNumber: 20
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "tel:+15551234567",
+                                                        href: "tel:+61 422 032 961",
                                                         className: "text-white text-decoration-none",
-                                                        children: "+1 (555) 123-4567"
+                                                        children: "+61 422 032 961"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 528,
+                                                        lineNumber: 526,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 527,
+                                                lineNumber: 525,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1250,22 +1234,22 @@ function Footer() {
                                                         className: "bi bi-envelope me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 532,
+                                                        lineNumber: 530,
                                                         columnNumber: 20
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "mailto:info@beyondbikes.com",
+                                                        href: "mailto:info.beyondbikes@gmail.com",
                                                         className: "text-white text-decoration-none",
-                                                        children: "info@beyondbikes.com"
+                                                        children: "info.beyondbikes@gmail.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 533,
+                                                        lineNumber: 531,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 532,
+                                                lineNumber: 530,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1274,32 +1258,43 @@ function Footer() {
                                                         className: "bi bi-clock me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 537,
+                                                        lineNumber: 535,
                                                         columnNumber: 20
                                                     }, this),
-                                                    " Mon-Fri: 8am - 8pm ",
+                                                    " Mon-Sat: 9 am - 7 pm ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 537,
-                                                        columnNumber: 76
+                                                        lineNumber: 535,
+                                                        columnNumber: 78
                                                     }, this),
-                                                    "  Sat-Sun: 9am - 6pm"
+                                                    " ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            marginLeft: '28px'
+                                                        },
+                                                        children: " Sun: 11 am - 4 pm "
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/Footer.js",
+                                                        lineNumber: 535,
+                                                        columnNumber: 85
+                                                    }, this),
+                                                    " "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 537,
+                                                lineNumber: 535,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 525,
+                                        lineNumber: 523,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 523,
+                                lineNumber: 521,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -1325,12 +1320,12 @@ function Footer() {
                         children: "Freedom to Explore, Power to Move"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 546,
+                        lineNumber: 544,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 547,
+                        lineNumber: 545,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -1338,13 +1333,13 @@ function Footer() {
                         children: "© BEYOND BIKES PRIVATE LIMITED | ALL RIGHTS RESERVED"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 548,
+                        lineNumber: 546,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Footer.js",
-                lineNumber: 545,
+                lineNumber: 543,
                 columnNumber: 7
             }, this)
         ]
@@ -1953,6 +1948,149 @@ function About() {
                         fileName: "[project]/src/app/about/page.js",
                         lineNumber: 590,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "robots",
+                        content: "index, follow",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 591,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "viewport",
+                        content: "width=device-width, initial-scale=1",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 592,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "keywords",
+                        content: "Beyond Bikes, electric bike rentals Melbourne, rent e-bikes, e-bike hire Melbourne, food delivery e-bikes",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 593,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        property: "og:type",
+                        content: "website",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 594,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        property: "og:site_name",
+                        content: "Beyond Bikes",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 595,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        property: "og:title",
+                        content: "About Us | Beyond Bikes – Melbourne e-Bike Rentals",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 596,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        property: "og:description",
+                        content: "Learn more about Beyond Bikes – our mission, store background, and why we’re Melbourne’s trusted choice for e-bike rentals.",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 597,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        property: "og:url",
+                        content: "https://www.beyondbikes.com.au/about",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 598,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        property: "og:image",
+                        content: "https://www.beyondbikes.com.au/images/EbikesDeliveryAbout-latest.jpg",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 599,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "twitter:card",
+                        content: "summary_large_image",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 600,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "twitter:title",
+                        content: "About Us | Beyond Bikes – Melbourne e-Bike Rentals",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 601,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "twitter:description",
+                        content: "Learn more about Beyond Bikes – our mission, store background, and why we’re Melbourne’s trusted choice for e-bike rentals.",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 602,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "twitter:image",
+                        content: "https://www.beyondbikes.com.au/images/EbikesDeliveryAbout-latest.jpg",
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 603,
+                        columnNumber: 1
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                        type: "application/ld+json",
+                        dangerouslySetInnerHTML: {
+                            __html: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "AboutPage",
+                                "mainEntityOfPage": "https://www.beyondbikes.com.au/about",
+                                "headline": "About Beyond Bikes – Melbourne e-Bike Rentals",
+                                "description": "Beyond Bikes offers reliable and affordable electric bike rentals designed for everyday riders and food delivery professionals in Melbourne.",
+                                "publisher": {
+                                    "@type": "Organization",
+                                    "name": "Beyond Bikes",
+                                    "url": "https://www.beyondbikes.com.au",
+                                    "logo": {
+                                        "@type": "ImageObject",
+                                        "url": "https://www.beyondbikes.com.au/images/logo.png"
+                                    }
+                                }
+                            })
+                        },
+                        className: "jsx-b2595b0ad831bf8b"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 604,
+                        columnNumber: 1
                     }, this)
                 ]
             }, void 0, true, {
@@ -1962,7 +2100,7 @@ function About() {
             }, this),
             pathname !== "/" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 593,
+                lineNumber: 628,
                 columnNumber: 28
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1984,7 +2122,7 @@ function About() {
                         className: "jsx-b2595b0ad831bf8b" + " " + "position-absolute top-0 start-0 w-100 h-100"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 607,
+                        lineNumber: 642,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1997,18 +2135,18 @@ function About() {
                             children: "About Us"
                         }, void 0, false, {
                             fileName: "[project]/src/app/about/page.js",
-                            lineNumber: 615,
+                            lineNumber: 650,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 614,
+                        lineNumber: 649,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 596,
+                lineNumber: 631,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2027,24 +2165,24 @@ function About() {
                                         alt: currentContent.title,
                                         width: 500,
                                         height: 500,
-                                        className: "rounded shadow set-image-size-about-latest-ui",
+                                        className: "rounded img-fluid shadow set-image-size-about-latest-ui",
                                         style: {
                                             objectFit: "cover"
                                         },
                                         priority: true
                                     }, currentContent.image, false, {
                                         fileName: "[project]/src/app/about/page.js",
-                                        lineNumber: 626,
+                                        lineNumber: 661,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/about/page.js",
-                                    lineNumber: 625,
+                                    lineNumber: 660,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.js",
-                                lineNumber: 624,
+                                lineNumber: 659,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2061,7 +2199,7 @@ function About() {
                                             children: currentContent.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 642,
+                                            lineNumber: 677,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2069,7 +2207,7 @@ function About() {
                                             children: currentContent.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 645,
+                                            lineNumber: 680,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2086,7 +2224,7 @@ function About() {
                                                     children: currentContent.linkText
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/about/page.js",
-                                                    lineNumber: 651,
+                                                    lineNumber: 686,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -2104,45 +2242,45 @@ function About() {
                                                         className: "jsx-b2595b0ad831bf8b"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.js",
-                                                        lineNumber: 663,
+                                                        lineNumber: 698,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/about/page.js",
-                                                    lineNumber: 652,
+                                                    lineNumber: 687,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 646,
+                                            lineNumber: 681,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/about/page.js",
-                                    lineNumber: 641,
+                                    lineNumber: 676,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.js",
-                                lineNumber: 640,
+                                lineNumber: 675,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 622,
+                        lineNumber: 657,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/about/page.js",
-                    lineNumber: 621,
+                    lineNumber: 656,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 620,
+                lineNumber: 655,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2151,7 +2289,7 @@ function About() {
             }, void 0, false, void 0, this),
             pathname === "/about" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 689,
+                lineNumber: 724,
                 columnNumber: 33
             }, this)
         ]

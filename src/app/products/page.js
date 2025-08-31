@@ -506,9 +506,9 @@ export default function ProductTabs() {
       >
         {/* Dynamic Page Title */}
         {pathname === "/" ? (
-          <h2 className="mt-3 mb-5 text-center" style={{ color: "#1A3B19",fontFamily:'system-ui' }}>Bikes for Rent</h2>
+          <h2 className="mt-3 mb-5 text-center" style={{ color: "#1A3B19" }}>Bikes for Rent</h2>
         ) : (
-          <h1 className="mt-3 mb-5 text-center" style={{ color: "#1A3B19",fontFamily:'system-ui' }}>Our E-Bikes for Rent</h1>
+          <h1 className="mt-3 mb-5 text-center" style={{ color: "#1A3B19" }}>Our E-Bikes for Rent</h1>
         )}
 
         
@@ -551,11 +551,11 @@ export default function ProductTabs() {
 
         {/* Product Title */}
         {pathname === "/" ? (
-          <h3 className="fs-sm-4 fs-3 fw-bold" style={{color:'#1A3B19',fontFamily:'system-ui'}} itemProp="name">
+          <h3 className="fs-sm-4 fs-3 fw-bold" style={{color:'#1A3B19'}} itemProp="name">
             {product.name}
           </h3>
         ) : (
-          <h2 className="fs-sm-4 fs-3 fw-bold" style={{color:'#1A3B19',fontFamily:'system-ui'}} itemProp="name">
+          <h2 className="fs-sm-4 fs-3 fw-bold" style={{color:'#1A3B19'}} itemProp="name">
             {product.name}
           </h2>
         )}
@@ -568,7 +568,7 @@ export default function ProductTabs() {
           itemScope
           itemType="https://schema.org/Offer"
         >
-          <span itemProp="price" style={{color:'#1A3B19',fontFamily:'system-ui'}}>{product.price}</span>
+          <span itemProp="price" style={{color:'#1A3B19'}}>{product.price}</span>
           <meta itemProp="priceCurrency" content="AUD" />
           {product.oldPrice && (
             <span className="text-decoration-line-through ms-2 fw-600" style={{color:'#ccc'}}>

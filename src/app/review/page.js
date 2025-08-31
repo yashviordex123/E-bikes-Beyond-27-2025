@@ -448,7 +448,7 @@ useEffect(() => {
       </Head>
 
       <main className="container px-3 py-3">
-        <h2 className="text-center pt-3 pb-5" style={{ color: '#1A3B19',fontFamily:'system-ui' }}>
+        <h2 className="text-center pt-3 pb-5" style={{ color: '#1A3B19' }}>
           Customer Reviews
         </h2>
         

@@ -993,7 +993,7 @@ function Footer() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Experience the future of urban mobility with our premium electric bike rental service. Sustainable, convenient, and fun transportation for modern city dwellers."
+                                        children: "At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 453,
@@ -1010,12 +1010,12 @@ function Footer() {
                                                     className: "bi bi-google"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 460,
+                                                    lineNumber: 458,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 459,
+                                                lineNumber: 457,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1026,12 +1026,12 @@ function Footer() {
                                                     className: "bi bi-instagram"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 463,
+                                                    lineNumber: 461,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 462,
+                                                lineNumber: 460,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1042,18 +1042,18 @@ function Footer() {
                                                     className: "bi bi-geo-alt"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 469,
+                                                    lineNumber: 467,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 468,
+                                                lineNumber: 466,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 458,
+                                        lineNumber: 456,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1070,7 +1070,7 @@ function Footer() {
                                         children: "Quick Links"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 476,
+                                        lineNumber: 474,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1086,7 +1086,7 @@ function Footer() {
                                             ],
                                             [
                                                 '/products',
-                                                'product'
+                                                'Product'
                                             ],
                                             [
                                                 'https://maps.app.goo.gl/wYuVboHaKcQvRjXv8',
@@ -1099,23 +1099,23 @@ function Footer() {
                                                     children: label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 485,
+                                                    lineNumber: 483,
                                                     columnNumber: 21
                                                 }, this)
                                             }, href, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 484,
+                                                lineNumber: 482,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 477,
+                                        lineNumber: 475,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 475,
+                                lineNumber: 473,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1126,7 +1126,7 @@ function Footer() {
                                         children: "Support"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 500,
+                                        lineNumber: 498,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1155,23 +1155,23 @@ function Footer() {
                                                     children: label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 509,
+                                                    lineNumber: 507,
                                                     columnNumber: 21
                                                 }, this)
                                             }, href, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 508,
+                                                lineNumber: 506,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 501,
+                                        lineNumber: 499,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 499,
+                                lineNumber: 497,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1179,10 +1179,10 @@ function Footer() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
                                         className: "fw-bold",
-                                        children: "Contact"
+                                        children: "Contact Us"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 524,
+                                        lineNumber: 522,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("address", {
@@ -1194,14 +1194,14 @@ function Footer() {
                                                         className: "bi bi-geo-alt me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 526,
+                                                        lineNumber: 524,
                                                         columnNumber: 20
                                                     }, this),
                                                     " 576 North Rd, Ormond VIC 3204, Australia"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 526,
+                                                lineNumber: 524,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1210,7 +1210,7 @@ function Footer() {
                                                         className: "bi bi-telephone me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 527,
+                                                        lineNumber: 525,
                                                         columnNumber: 20
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1219,13 +1219,13 @@ function Footer() {
                                                         children: "+61 422 032 961"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 528,
+                                                        lineNumber: 526,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 527,
+                                                lineNumber: 525,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1234,7 +1234,7 @@ function Footer() {
                                                         className: "bi bi-envelope me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 532,
+                                                        lineNumber: 530,
                                                         columnNumber: 20
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1243,13 +1243,13 @@ function Footer() {
                                                         children: "info.beyondbikes@gmail.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 533,
+                                                        lineNumber: 531,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 532,
+                                                lineNumber: 530,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1258,32 +1258,43 @@ function Footer() {
                                                         className: "bi bi-clock me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 537,
+                                                        lineNumber: 535,
                                                         columnNumber: 20
                                                     }, this),
                                                     " Mon-Sat: 9 am - 7 pm ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 537,
+                                                        lineNumber: 535,
                                                         columnNumber: 78
                                                     }, this),
-                                                    "  Sun: 11 am - 4 pm"
+                                                    " ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            marginLeft: '28px'
+                                                        },
+                                                        children: " Sun: 11 am - 4 pm "
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/Footer.js",
+                                                        lineNumber: 535,
+                                                        columnNumber: 85
+                                                    }, this),
+                                                    " "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 537,
+                                                lineNumber: 535,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 525,
+                                        lineNumber: 523,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 523,
+                                lineNumber: 521,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -1309,12 +1320,12 @@ function Footer() {
                         children: "Freedom to Explore, Power to Move"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 546,
+                        lineNumber: 544,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 547,
+                        lineNumber: 545,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -1322,13 +1333,13 @@ function Footer() {
                         children: "© BEYOND BIKES PRIVATE LIMITED | ALL RIGHTS RESERVED"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 548,
+                        lineNumber: 546,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Footer.js",
-                lineNumber: 545,
+                lineNumber: 543,
                 columnNumber: 7
             }, this)
         ]
@@ -1651,7 +1662,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navi
 ;
 function Contact() {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
-    const siteUrl = "http://localhost:3000";
+    const siteUrl = "https://www.beyondbikes.com.au/";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1688,11 +1699,19 @@ function Contact() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "keywords",
+                        content: "Beyond Bikes contact, ebike shop Melbourne, e-bike rentals Melbourne, electric bikes Ormond"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/contact/page.js",
+                        lineNumber: 346,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:type",
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 348,
+                        lineNumber: 349,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1700,7 +1719,7 @@ function Contact() {
                         content: "Contact Us | Beyond Bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 349,
+                        lineNumber: 350,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1708,7 +1727,7 @@ function Contact() {
                         content: "Contact Beyond Bikes support team. Get help with e-bike rentals, product inquiries, and services. Fast responses guaranteed."
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 350,
+                        lineNumber: 351,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1716,7 +1735,7 @@ function Contact() {
                         content: `${siteUrl}/contact`
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 351,
+                        lineNumber: 352,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1724,7 +1743,7 @@ function Contact() {
                         content: `${siteUrl}/images/contact-og.png`
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 352,
+                        lineNumber: 353,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1732,7 +1751,7 @@ function Contact() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 355,
+                        lineNumber: 356,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1740,7 +1759,7 @@ function Contact() {
                         content: "Contact Us | Beyond Bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 356,
+                        lineNumber: 357,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1748,7 +1767,7 @@ function Contact() {
                         content: "Contact Beyond Bikes support team. Get help with e-bike rentals, product inquiries, and services. Fast responses guaranteed."
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 357,
+                        lineNumber: 358,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1756,7 +1775,7 @@ function Contact() {
                         content: `${siteUrl}/images/contact-og.png`
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 358,
+                        lineNumber: 359,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -1792,7 +1811,7 @@ function Contact() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 361,
+                        lineNumber: 362,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1803,7 +1822,7 @@ function Contact() {
             }, this),
             pathname !== '/' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/contact/page.js",
-                lineNumber: 388,
+                lineNumber: 389,
                 columnNumber: 28
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1820,7 +1839,7 @@ function Contact() {
                                 children: "Contact Beyond Bikes"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/contact/page.js",
-                                lineNumber: 392,
+                                lineNumber: 393,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1841,7 +1860,7 @@ function Contact() {
                                                 children: "Reach Out & Get in Touch"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 397,
+                                                lineNumber: 398,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1850,7 +1869,7 @@ function Contact() {
                                                 children: "Provide details about your inquiry or issue including your bike model. Our team at Beyond Bikes will respond promptly."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 398,
+                                                lineNumber: 399,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1864,7 +1883,7 @@ function Contact() {
                                                         value: "false"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 403,
+                                                        lineNumber: 404,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1873,7 +1892,7 @@ function Contact() {
                                                         value: "table"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 404,
+                                                        lineNumber: 405,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1882,7 +1901,7 @@ function Contact() {
                                                         value: `${siteUrl}/thankyou`
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 405,
+                                                        lineNumber: 406,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1891,7 +1910,7 @@ function Contact() {
                                                         value: "New Contact Submission from Beyond Bikes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 406,
+                                                        lineNumber: 407,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1906,7 +1925,7 @@ function Contact() {
                                                                         children: "Full Name"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 410,
+                                                                        lineNumber: 411,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1919,13 +1938,13 @@ function Contact() {
                                                                         "aria-required": "true"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 411,
+                                                                        lineNumber: 412,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 409,
+                                                                lineNumber: 410,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1937,7 +1956,7 @@ function Contact() {
                                                                         children: "Email Address"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 422,
+                                                                        lineNumber: 423,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1950,19 +1969,19 @@ function Contact() {
                                                                         "aria-required": "true"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 423,
+                                                                        lineNumber: 424,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 421,
+                                                                lineNumber: 422,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 408,
+                                                        lineNumber: 409,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1977,7 +1996,7 @@ function Contact() {
                                                                         children: "Subject"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 437,
+                                                                        lineNumber: 438,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1988,13 +2007,13 @@ function Contact() {
                                                                         name: "Subject"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 438,
+                                                                        lineNumber: 439,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 436,
+                                                                lineNumber: 437,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2006,7 +2025,7 @@ function Contact() {
                                                                         children: "Phone Number"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 447,
+                                                                        lineNumber: 448,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2017,19 +2036,19 @@ function Contact() {
                                                                         name: "Phone Number"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 448,
+                                                                        lineNumber: 449,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 446,
+                                                                lineNumber: 447,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 435,
+                                                        lineNumber: 436,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2041,7 +2060,7 @@ function Contact() {
                                                                 children: "Message"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 459,
+                                                                lineNumber: 460,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -2052,13 +2071,13 @@ function Contact() {
                                                                 name: "Message"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 460,
+                                                                lineNumber: 461,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 458,
+                                                        lineNumber: 459,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2070,19 +2089,19 @@ function Contact() {
                                                         children: "Send Message"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 469,
+                                                        lineNumber: 470,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 402,
+                                                lineNumber: 403,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 396,
+                                        lineNumber: 397,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2098,7 +2117,7 @@ function Contact() {
                                                 className: "responsive-map"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 507,
+                                                lineNumber: 508,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("noscript", {
@@ -2112,31 +2131,31 @@ function Contact() {
                                                         children: "Google Maps"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 518,
+                                                        lineNumber: 519,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 516,
+                                                lineNumber: 517,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 481,
+                                        lineNumber: 482,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/contact/page.js",
-                                lineNumber: 393,
+                                lineNumber: 394,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 391,
+                        lineNumber: 392,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2164,12 +2183,12 @@ function Contact() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 545,
+                                                        lineNumber: 546,
                                                         columnNumber: 13
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 537,
+                                                    lineNumber: 538,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("address", {
@@ -2179,30 +2198,30 @@ function Contact() {
                                                             children: "Address:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 548,
+                                                            lineNumber: 549,
                                                             columnNumber: 13
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 548,
+                                                            lineNumber: 549,
                                                             columnNumber: 38
                                                         }, this),
                                                         "576 North Rd, Ormond VIC 3204, Australia"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 547,
+                                                    lineNumber: 548,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/contact/page.js",
-                                            lineNumber: 536,
+                                            lineNumber: 537,
                                             columnNumber: 9
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 535,
+                                        lineNumber: 536,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2222,12 +2241,12 @@ function Contact() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 565,
+                                                        lineNumber: 566,
                                                         columnNumber: 13
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 557,
+                                                    lineNumber: 558,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2237,7 +2256,7 @@ function Contact() {
                                                             children: "Phone:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 568,
+                                                            lineNumber: 569,
                                                             columnNumber: 13
                                                         }, this),
                                                         " ",
@@ -2247,24 +2266,24 @@ function Contact() {
                                                             children: "+61 422 032 961"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 569,
+                                                            lineNumber: 570,
                                                             columnNumber: 13
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 567,
+                                                    lineNumber: 568,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/contact/page.js",
-                                            lineNumber: 556,
+                                            lineNumber: 557,
                                             columnNumber: 9
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 555,
+                                        lineNumber: 556,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2284,12 +2303,12 @@ function Contact() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 587,
+                                                        lineNumber: 588,
                                                         columnNumber: 13
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 579,
+                                                    lineNumber: 580,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2299,7 +2318,7 @@ function Contact() {
                                                             children: "Email:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 590,
+                                                            lineNumber: 591,
                                                             columnNumber: 13
                                                         }, this),
                                                         " ",
@@ -2309,51 +2328,51 @@ function Contact() {
                                                             children: "info.beyondbikes@gmail.com"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 591,
+                                                            lineNumber: 592,
                                                             columnNumber: 13
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 589,
+                                                    lineNumber: 590,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/contact/page.js",
-                                            lineNumber: 578,
+                                            lineNumber: 579,
                                             columnNumber: 9
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 577,
+                                        lineNumber: 578,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/contact/page.js",
-                                lineNumber: 532,
+                                lineNumber: 533,
                                 columnNumber: 5
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/contact/page.js",
-                            lineNumber: 531,
+                            lineNumber: 532,
                             columnNumber: 3
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 530,
+                        lineNumber: 531,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/contact/page.js",
-                lineNumber: 390,
+                lineNumber: 391,
                 columnNumber: 7
             }, this),
             pathname === '/contact' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/contact/page.js",
-                lineNumber: 605,
+                lineNumber: 606,
                 columnNumber: 35
             }, this)
         ]

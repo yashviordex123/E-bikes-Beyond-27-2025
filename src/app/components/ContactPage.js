@@ -169,7 +169,7 @@ export default function ContactPage() {
         >
           <div className="row justify-content-center mb-sm-5 mb-3">
 
-            <h2 className="text-center" style={{ color: '#1A3B19',fontFamily:'system-ui' }}>
+            <h2 className="text-center" style={{ color: '#1A3B19' }}>
               Contact Beyond Bikes in Melbourne
             </h2>
             {/* <p>Contact Us on this Located Destination and</p> */}

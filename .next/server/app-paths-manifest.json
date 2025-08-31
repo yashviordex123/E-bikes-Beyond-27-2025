@@ -3,8 +3,12 @@
   "/E-bike-6-8h/page": "app/E-bike-6-8h/page.js",
   "/E-bike-8-10h/page": "app/E-bike-8-10h/page.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/basicknowledge/page": "app/basicknowledge/page.js",
+  "/contact/page": "app/contact/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
   "/products/page": "app/products/page.js",
-  "/rental/page": "app/rental/page.js"
+  "/rental/page": "app/rental/page.js",
+  "/termsandcondition/page": "app/termsandcondition/page.js"
 }

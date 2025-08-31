@@ -2439,8 +2439,7 @@ function ProductTabs() {
                     pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "mt-3 mb-5 text-center",
                         style: {
-                            color: "#1A3B19",
-                            fontFamily: 'system-ui'
+                            color: "#1A3B19"
                         },
                         children: "Bikes for Rent"
                     }, void 0, false, {
@@ -2450,8 +2449,7 @@ function ProductTabs() {
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "mt-3 mb-5 text-center",
                         style: {
-                            color: "#1A3B19",
-                            fontFamily: 'system-ui'
+                            color: "#1A3B19"
                         },
                         children: "Our E-Bikes for Rent"
                     }, void 0, false, {
@@ -2506,8 +2504,7 @@ function ProductTabs() {
                                         pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             className: "fs-sm-4 fs-3 fw-bold",
                                             style: {
-                                                color: '#1A3B19',
-                                                fontFamily: 'system-ui'
+                                                color: '#1A3B19'
                                             },
                                             itemProp: "name",
                                             children: product.name
@@ -2518,8 +2515,7 @@ function ProductTabs() {
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "fs-sm-4 fs-3 fw-bold",
                                             style: {
-                                                color: '#1A3B19',
-                                                fontFamily: 'system-ui'
+                                                color: '#1A3B19'
                                             },
                                             itemProp: "name",
                                             children: product.name
@@ -2540,8 +2536,7 @@ function ProductTabs() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     itemProp: "price",
                                                     style: {
-                                                        color: '#1A3B19',
-                                                        fontFamily: 'system-ui'
+                                                        color: '#1A3B19'
                                                     },
                                                     children: product.price
                                                 }, void 0, false, {
@@ -3796,8 +3791,7 @@ function ContactPage() {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-center",
                                 style: {
-                                    color: '#1A3B19',
-                                    fontFamily: 'system-ui'
+                                    color: '#1A3B19'
                                 },
                                 children: "Contact Beyond Bikes in Melbourne"
                             }, void 0, false, {
@@ -11333,8 +11327,7 @@ function Review() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-center pt-3 pb-5",
                         style: {
-                            color: '#1A3B19',
-                            fontFamily: 'system-ui'
+                            color: '#1A3B19'
                         },
                         children: "Customer Reviews"
                     }, void 0, false, {
