@@ -22854,67 +22854,6 @@ textarea.form-control-lg {
 }
 
 
-/* [project]/src/app/styles/Review.css [app-client] (css) */
-.review-slider {
-  width: 104%;
-  position: relative;
-  overflow: hidden;
-}
-
-.review-track {
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  gap: 1rem;
-  padding: 1.5rem;
-  display: flex;
-  overflow-x: auto;
-}
-
-.review-card {
-  scroll-snap-align: start;
-  flex: 0 0 110%;
-  max-width: 117%;
-}
-
-@media (width >= 768px) {
-  .review-card {
-    flex: 0 0 45%;
-    max-width: 45%;
-  }
-}
-
-.review-track::-webkit-scrollbar {
-  display: none;
-}
-
-.review-text {
-  color: #c2f829;
-  white-space: pre-line;
-  margin-bottom: .5rem;
-  font-style: italic;
-}
-
-.dots {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.dot {
-  background: #aaa;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 0 4px;
-  transition: background .3s;
-  display: inline-block;
-}
-
-.dot.active {
-  background: #1a3b19;
-}
-
-
 /* [project]/src/app/styles/amazingoffers.css [app-client] (css) */
 .hero-section {
   text-align: center;
@@ -23027,4 +22966,4 @@ textarea.form-control-lg {
 }
 
 
-/*# sourceMappingURL=_1359d1ac._.css.map*/
+/*# sourceMappingURL=_21dca97f._.css.map*/

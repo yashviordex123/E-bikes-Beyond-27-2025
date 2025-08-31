@@ -263,12 +263,29 @@ export default function RentalEbikes() {
 
       {/* Hero Section */}
       {loading && (
-        <div className="loading-overlay">
-          <div className="loader" role="status" style={{ width: "4rem", height: "4rem",color:'#1A3B19' }}>
-            <span className="visually-hidden">Loading...</span>
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              zIndex: 9999,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div
+              className="loader"
+              style={{ width: "4rem", height: "4rem", color:'#1A3B19' }}
+              role="status"
+            >
+              <span className="visually-hidden">Loading...</span>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       <main>
       <section className="py-5 text-center" style={{
     backgroundImage: "url('/images/RentalBackgroundImageLatest.jpg')", // 👉 Place your image in /public/images/

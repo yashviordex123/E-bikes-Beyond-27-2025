@@ -2033,7 +2033,7 @@ function CartoonDetailsPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                                        className: "container my-5",
+                                        className: "container my-4",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "row g-3",
                                             children: [
@@ -2247,9 +2247,9 @@ function CartoonDetailsPage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         className: "nav-item",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: `nav-link rounded-pill ${activeTab === "features" ? "active" : ""}`,
-                                                            onClick: ()=>setActiveTab("features"),
-                                                            children: "Features"
+                                                            className: `nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`,
+                                                            onClick: ()=>setActiveTab("performance"),
+                                                            children: "Performance"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
                                                             lineNumber: 675,
@@ -2263,33 +2263,33 @@ function CartoonDetailsPage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         className: "nav-item",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: `nav-link rounded-pill ${activeTab === "safety" ? "active" : ""}`,
-                                                            onClick: ()=>setActiveTab("safety"),
-                                                            children: "Safety"
+                                                            className: `nav-link rounded-pill ${activeTab === "features" ? "active" : ""}`,
+                                                            onClick: ()=>setActiveTab("features"),
+                                                            children: "Features"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 683,
+                                                            lineNumber: 684,
                                                             columnNumber: 13
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 682,
+                                                        lineNumber: 683,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         className: "nav-item",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: `nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`,
-                                                            onClick: ()=>setActiveTab("performance"),
-                                                            children: "Performance"
+                                                            className: `nav-link rounded-pill ${activeTab === "safety" ? "active" : ""}`,
+                                                            onClick: ()=>setActiveTab("safety"),
+                                                            children: "Safety"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 691,
+                                                            lineNumber: 692,
                                                             columnNumber: 13
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 690,
+                                                        lineNumber: 691,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
@@ -2314,7 +2314,7 @@ function CartoonDetailsPage() {
                                                                                 children: "Display"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 712,
+                                                                                lineNumber: 713,
                                                                                 columnNumber: 19
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2322,13 +2322,13 @@ function CartoonDetailsPage() {
                                                                                 children: openItem === "display" ? "−" : "+"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 713,
+                                                                                lineNumber: 714,
                                                                                 columnNumber: 19
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 707,
+                                                                        lineNumber: 708,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     openItem === "display" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2336,13 +2336,13 @@ function CartoonDetailsPage() {
                                                                         children: "Multifunctional LED display, clearly visible under sunlight."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 718,
+                                                                        lineNumber: 719,
                                                                         columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 706,
+                                                                lineNumber: 707,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2357,7 +2357,7 @@ function CartoonDetailsPage() {
                                                                                 children: "Lighting"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 731,
+                                                                                lineNumber: 732,
                                                                                 columnNumber: 19
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2365,13 +2365,13 @@ function CartoonDetailsPage() {
                                                                                 children: openItem === "lighting" ? "−" : "+"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 732,
+                                                                                lineNumber: 733,
                                                                                 columnNumber: 19
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 726,
+                                                                        lineNumber: 727,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     openItem === "lighting" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2382,31 +2382,31 @@ function CartoonDetailsPage() {
                                                                                     children: "Front high-brightness headlight with wide aperture"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 739,
+                                                                                    lineNumber: 740,
                                                                                     columnNumber: 23
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                                     children: "Rear light with laser projection for night safety"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 740,
+                                                                                    lineNumber: 741,
                                                                                     columnNumber: 23
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                            lineNumber: 738,
+                                                                            lineNumber: 739,
                                                                             columnNumber: 21
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 737,
+                                                                        lineNumber: 738,
                                                                         columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 725,
+                                                                lineNumber: 726,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2421,7 +2421,7 @@ function CartoonDetailsPage() {
                                                                                 children: "Phone Holder"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 753,
+                                                                                lineNumber: 754,
                                                                                 columnNumber: 19
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2429,13 +2429,13 @@ function CartoonDetailsPage() {
                                                                                 children: openItem === "holder" ? "−" : "+"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 754,
+                                                                                lineNumber: 755,
                                                                                 columnNumber: 19
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 748,
+                                                                        lineNumber: 749,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     openItem === "holder" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2443,13 +2443,13 @@ function CartoonDetailsPage() {
                                                                         children: "USB port (2.1A output)"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 759,
+                                                                        lineNumber: 760,
                                                                         columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 747,
+                                                                lineNumber: 748,
                                                                 columnNumber: 15
                                                             }, this)
                                                         ]
@@ -2468,7 +2468,7 @@ function CartoonDetailsPage() {
                                                                                 children: "Safety System"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 775,
+                                                                                lineNumber: 776,
                                                                                 columnNumber: 19
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2476,13 +2476,13 @@ function CartoonDetailsPage() {
                                                                                 children: openItem === "safety" ? "−" : "+"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 776,
+                                                                                lineNumber: 777,
                                                                                 columnNumber: 19
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 770,
+                                                                        lineNumber: 771,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     openItem === "safety" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2493,31 +2493,31 @@ function CartoonDetailsPage() {
                                                                                     children: "Smart anti-theft remote (alarm + keyless start)"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 783,
+                                                                                    lineNumber: 784,
                                                                                     columnNumber: 23
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                                     children: "NFC smart unlock"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 784,
+                                                                                    lineNumber: 785,
                                                                                     columnNumber: 23
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                            lineNumber: 782,
+                                                                            lineNumber: 783,
                                                                             columnNumber: 21
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 781,
+                                                                        lineNumber: 782,
                                                                         columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 769,
+                                                                lineNumber: 770,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2532,7 +2532,7 @@ function CartoonDetailsPage() {
                                                                                 children: "Braking System"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 797,
+                                                                                lineNumber: 798,
                                                                                 columnNumber: 19
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2540,13 +2540,13 @@ function CartoonDetailsPage() {
                                                                                 children: openItem === "brake" ? "−" : "+"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 798,
+                                                                                lineNumber: 799,
                                                                                 columnNumber: 19
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 792,
+                                                                        lineNumber: 793,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     openItem === "brake" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2554,13 +2554,13 @@ function CartoonDetailsPage() {
                                                                         children: "Hydraulic disc brakes"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 803,
+                                                                        lineNumber: 804,
                                                                         columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 791,
+                                                                lineNumber: 792,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2575,7 +2575,7 @@ function CartoonDetailsPage() {
                                                                                 children: "Battery Hours"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 814,
+                                                                                lineNumber: 815,
                                                                                 columnNumber: 19
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2583,13 +2583,13 @@ function CartoonDetailsPage() {
                                                                                 children: openItem === "hours" ? "−" : "+"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 815,
+                                                                                lineNumber: 816,
                                                                                 columnNumber: 19
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 809,
+                                                                        lineNumber: 810,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     openItem === "hours" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2597,13 +2597,13 @@ function CartoonDetailsPage() {
                                                                         children: "6–8 hours"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 820,
+                                                                        lineNumber: 821,
                                                                         columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 808,
+                                                                lineNumber: 809,
                                                                 columnNumber: 15
                                                             }, this)
                                                         ]
@@ -2622,7 +2622,7 @@ function CartoonDetailsPage() {
                                                                                 children: "Speed Modes"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 836,
+                                                                                lineNumber: 837,
                                                                                 columnNumber: 19
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2630,13 +2630,13 @@ function CartoonDetailsPage() {
                                                                                 children: openItem === "speed" ? "−" : "+"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 837,
+                                                                                lineNumber: 838,
                                                                                 columnNumber: 19
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 831,
+                                                                        lineNumber: 832,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     openItem === "speed" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2647,38 +2647,38 @@ function CartoonDetailsPage() {
                                                                                     children: "Gear 1: 25 km/h"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 844,
+                                                                                    lineNumber: 845,
                                                                                     columnNumber: 23
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                                     children: "Gear 2: 35 km/h"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 845,
+                                                                                    lineNumber: 846,
                                                                                     columnNumber: 23
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                                     children: "Gear 3: 45 km/h"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 846,
+                                                                                    lineNumber: 847,
                                                                                     columnNumber: 23
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                            lineNumber: 843,
+                                                                            lineNumber: 844,
                                                                             columnNumber: 21
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 842,
+                                                                        lineNumber: 843,
                                                                         columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 830,
+                                                                lineNumber: 831,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2693,7 +2693,7 @@ function CartoonDetailsPage() {
                                                                                 children: "Battery Life"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 859,
+                                                                                lineNumber: 860,
                                                                                 columnNumber: 19
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2701,13 +2701,13 @@ function CartoonDetailsPage() {
                                                                                 children: openItem === "life" ? "−" : "+"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 860,
+                                                                                lineNumber: 861,
                                                                                 columnNumber: 19
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 854,
+                                                                        lineNumber: 855,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     openItem === "life" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2715,13 +2715,13 @@ function CartoonDetailsPage() {
                                                                         children: "48V 50A"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 865,
+                                                                        lineNumber: 866,
                                                                         columnNumber: 19
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 853,
+                                                                lineNumber: 854,
                                                                 columnNumber: 15
                                                             }, this)
                                                         ]
@@ -2729,7 +2729,7 @@ function CartoonDetailsPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 701,
+                                                lineNumber: 702,
                                                 columnNumber: 9
                                             }, this)
                                         ]
@@ -2747,15 +2747,15 @@ function CartoonDetailsPage() {
                                         "aria-label": "Open Rental Modal",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-light",
-                                            children: "Rental"
+                                            children: "Rent Now"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                            lineNumber: 879,
+                                            lineNumber: 880,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 873,
+                                        lineNumber: 874,
                                         columnNumber: 13
                                     }, this),
                                     showModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2782,7 +2782,7 @@ function CartoonDetailsPage() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 884,
+                                                lineNumber: 885,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2802,7 +2802,7 @@ function CartoonDetailsPage() {
                                                                     children: "Social Media Links"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                    lineNumber: 889,
+                                                                    lineNumber: 890,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2812,13 +2812,13 @@ function CartoonDetailsPage() {
                                                                     "aria-label": "Close"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                    lineNumber: 890,
+                                                                    lineNumber: 891,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 888,
+                                                            lineNumber: 889,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2839,12 +2839,12 @@ function CartoonDetailsPage() {
                                                                                 alt: "Instagram Logo"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 895,
+                                                                                lineNumber: 896,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 896,
+                                                                                lineNumber: 897,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2852,13 +2852,13 @@ function CartoonDetailsPage() {
                                                                                 children: "Instagram"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 896,
+                                                                                lineNumber: 897,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 894,
+                                                                        lineNumber: 895,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2874,12 +2874,12 @@ function CartoonDetailsPage() {
                                                                                 alt: "Google Logo"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 899,
+                                                                                lineNumber: 900,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 900,
+                                                                                lineNumber: 901,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2887,13 +2887,13 @@ function CartoonDetailsPage() {
                                                                                 children: "Google"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 900,
+                                                                                lineNumber: 901,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 898,
+                                                                        lineNumber: 899,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2910,12 +2910,12 @@ function CartoonDetailsPage() {
                                                                                 alt: "Phone Logo"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 903,
+                                                                                lineNumber: 904,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 904,
+                                                                                lineNumber: 905,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2923,24 +2923,24 @@ function CartoonDetailsPage() {
                                                                                 children: "Call"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 904,
+                                                                                lineNumber: 905,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 902,
+                                                                        lineNumber: 903,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 893,
+                                                                lineNumber: 894,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 892,
+                                                            lineNumber: 893,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2956,29 +2956,29 @@ function CartoonDetailsPage() {
                                                                 children: "Close"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 909,
+                                                                lineNumber: 910,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 908,
+                                                            lineNumber: 909,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                    lineNumber: 887,
+                                                    lineNumber: 888,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 886,
+                                                lineNumber: 887,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 883,
+                                        lineNumber: 884,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -3006,7 +3006,7 @@ function CartoonDetailsPage() {
                                 children: "Description"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                lineNumber: 920,
+                                lineNumber: 921,
                                 columnNumber: 19
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -3016,34 +3016,34 @@ function CartoonDetailsPage() {
                                         children: "Insurance Offered"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 923,
+                                        lineNumber: 924,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "✔ Insurance only covers theft of battery."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 924,
+                                        lineNumber: 925,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "✘ No accident compensation."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 925,
+                                        lineNumber: 926,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "✘ No third-party costs insured."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 926,
+                                        lineNumber: 927,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                lineNumber: 922,
+                                lineNumber: 923,
                                 columnNumber: 19
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -3056,7 +3056,7 @@ function CartoonDetailsPage() {
                                         children: "Rental Information"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 958,
+                                        lineNumber: 959,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3070,7 +3070,7 @@ function CartoonDetailsPage() {
                                                         children: "Documents for Rent"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 962,
+                                                        lineNumber: 963,
                                                         columnNumber: 7
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3080,54 +3080,54 @@ function CartoonDetailsPage() {
                                                                 children: "Name"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 964,
+                                                                lineNumber: 965,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Phone Number"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 965,
+                                                                lineNumber: 966,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Address & Unit Number"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 966,
+                                                                lineNumber: 967,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Email"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 967,
+                                                                lineNumber: 968,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Valid Visa Grant"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 968,
+                                                                lineNumber: 969,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Passport"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 969,
+                                                                lineNumber: 970,
                                                                 columnNumber: 9
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 963,
+                                                        lineNumber: 964,
                                                         columnNumber: 7
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 961,
+                                                lineNumber: 962,
                                                 columnNumber: 5
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3138,7 +3138,7 @@ function CartoonDetailsPage() {
                                                         children: "Our Rental Fee Includes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 975,
+                                                        lineNumber: 976,
                                                         columnNumber: 7
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3148,65 +3148,65 @@ function CartoonDetailsPage() {
                                                                 children: "Delivery bag"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 977,
+                                                                lineNumber: 978,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Locks (2)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 978,
+                                                                lineNumber: 979,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Helmet"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 979,
+                                                                lineNumber: 980,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Charger"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 980,
+                                                                lineNumber: 981,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Basic maintenance"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 981,
+                                                                lineNumber: 982,
                                                                 columnNumber: 9
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 976,
+                                                        lineNumber: 977,
                                                         columnNumber: 7
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 974,
+                                                lineNumber: 975,
                                                 columnNumber: 5
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 959,
+                                        lineNumber: 960,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                lineNumber: 957,
+                                lineNumber: 958,
                                 columnNumber: 19
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 919,
+                        lineNumber: 920,
                         columnNumber: 9
                     }, this)
                 ]
@@ -3217,7 +3217,7 @@ function CartoonDetailsPage() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                lineNumber: 1014,
+                lineNumber: 1015,
                 columnNumber: 7
             }, this)
         ]

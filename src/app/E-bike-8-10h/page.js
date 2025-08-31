@@ -433,7 +433,7 @@ export default function ProductPage() {
               </p>
               <div className="fs-4 text-center fw-bold">PRICE : $65 AUD <del className="text-muted fs-4 ms-2">$70 AUD</del></div>
 
-              <section className="container my-5">
+              <section className="container my-4">
         <div className="row g-3">
   <div className="col-6">
     <div className="spec-box">
@@ -486,6 +486,14 @@ export default function ProductPage() {
 
         {/* NAV TABS */}
         <ul className="nav nav-pills mb-3 bg-light p-1 rounded-pill d-inline-flex">
+        <li className="nav-item">
+            <button
+              className={`nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`}
+              onClick={() => setActiveTab("performance")}
+            >
+              Performance
+            </button>
+          </li>
           <li className="nav-item">
             <button
               className={`nav-link rounded-pill ${activeTab === "features" ? "active" : ""}`}
@@ -502,14 +510,7 @@ export default function ProductPage() {
               Safety
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`}
-              onClick={() => setActiveTab("performance")}
-            >
-              Performance
-            </button>
-          </li>
+          
         </ul>
 
         {/* TAB CONTENT */}
@@ -692,7 +693,7 @@ export default function ProductPage() {
               onClick={handleClick}
               aria-label="Open Rental Modal"
             >
-              <span className="text-light">Rental</span>
+              <span className="text-light">Rent Now</span>
             </button>
 
 

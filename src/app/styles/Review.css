@@ -1,6 +1,6 @@
 .review-slider {
   overflow: hidden;
-  width: 100%;
+  width: 104%;
   position: relative;
 }
 
@@ -36,4 +36,23 @@
   font-style: italic;
   margin-bottom: 0.5rem;
   white-space: pre-line; /* interpret \n as line break */
+}
+
+.dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #aaa;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #1a3b19; /* ✅ Active dot color */
 }

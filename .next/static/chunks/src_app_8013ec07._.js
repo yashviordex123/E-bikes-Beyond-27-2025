@@ -1251,7 +1251,18 @@ function Footer() {
                                                         lineNumber: 537,
                                                         columnNumber: 78
                                                     }, this),
-                                                    "  Sun: 11 am - 4 pm"
+                                                    " ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            marginLeft: '28px'
+                                                        },
+                                                        children: " Sun: 11 am - 4 pm "
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/Footer.js",
+                                                        lineNumber: 537,
+                                                        columnNumber: 85
+                                                    }, this),
+                                                    " "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
@@ -1995,7 +2006,7 @@ function ProductTabs() {
                                             columnNumber: 9
                                         }, this),
                                         pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "fs-5 fw-semibold",
+                                            className: "fs-sm-4 fs-3 fw-bold",
                                             style: {
                                                 color: '#1A3B19',
                                                 fontFamily: 'system-ui'
@@ -2007,7 +2018,7 @@ function ProductTabs() {
                                             lineNumber: 554,
                                             columnNumber: 11
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "fs-5 fw-semibold",
+                                            className: "fs-sm-4 fs-3 fw-bold",
                                             style: {
                                                 color: '#1A3B19',
                                                 fontFamily: 'system-ui'

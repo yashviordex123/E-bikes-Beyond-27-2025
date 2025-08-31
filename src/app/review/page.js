@@ -297,7 +297,7 @@
 
 import Head from 'next/head';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import '../styles/Review.css';
 
 export default function Review() {
@@ -364,6 +364,24 @@ export default function Review() {
       date: '2025-08-15',
     },
   ];
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+// ✅ Added scroll listener to update dots
+useEffect(() => {
+  const track = document.querySelector(".review-track");
+
+  const handleScroll = () => {
+    const cardWidth = track.firstChild.getBoundingClientRect().width;
+    const scrollLeft = track.scrollLeft;
+    const index = Math.round(scrollLeft / cardWidth);
+    setActiveIndex(index);
+  };
+
+  track.addEventListener("scroll", handleScroll);
+  return () => track.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   const renderStars = (count) => '★'.repeat(count) + '☆'.repeat(5 - count);
 
@@ -504,6 +522,14 @@ export default function Review() {
   </div>
 </section>
 
+<div className="dots">
+    {team.map((_, index) => (
+      <span
+        key={index}
+        className={`dot ${activeIndex === index ? "active" : ""}`}
+      ></span>
+    ))}
+  </div>
       </main>
     </>
   );

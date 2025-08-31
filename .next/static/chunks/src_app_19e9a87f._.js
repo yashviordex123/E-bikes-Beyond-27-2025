@@ -1070,7 +1070,7 @@ function Footer() {
                                             ],
                                             [
                                                 '/products',
-                                                'product'
+                                                'Product'
                                             ],
                                             [
                                                 'https://maps.app.goo.gl/wYuVboHaKcQvRjXv8',
@@ -1679,32 +1679,43 @@ function RentalEbikes() {
                 columnNumber: 7
             }, this),
             loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "loading-overlay",
+                style: {
+                    position: "fixed",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    backgroundColor: "rgba(255, 255, 255, 0.8)",
+                    zIndex: 9999,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
+                },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "loader",
-                    role: "status",
                     style: {
                         width: "4rem",
                         height: "4rem",
                         color: '#1A3B19'
                     },
+                    role: "status",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "visually-hidden",
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 268,
-                        columnNumber: 13
+                        lineNumber: 285,
+                        columnNumber: 15
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/rental/page.js",
-                    lineNumber: 267,
-                    columnNumber: 11
+                    lineNumber: 280,
+                    columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/rental/page.js",
                 lineNumber: 266,
-                columnNumber: 9
+                columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 children: [
@@ -1735,17 +1746,17 @@ function RentalEbikes() {
                                 children: "Affordable Weekly E-Bike Rentals"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 286,
+                                lineNumber: 303,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/rental/page.js",
-                            lineNumber: 285,
+                            lineNumber: 302,
                             columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 273,
+                        lineNumber: 290,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1777,7 +1788,7 @@ function RentalEbikes() {
                                                     "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 312,
+                                                    lineNumber: 329,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1786,18 +1797,18 @@ function RentalEbikes() {
                                                     children: "Accessories"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 313,
+                                                    lineNumber: 330,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 311,
+                                            lineNumber: 328,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 310,
+                                        lineNumber: 327,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1813,7 +1824,7 @@ function RentalEbikes() {
                                                     "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 322,
+                                                    lineNumber: 339,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1822,18 +1833,18 @@ function RentalEbikes() {
                                                     children: "GPS System"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 323,
+                                                    lineNumber: 340,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 321,
+                                            lineNumber: 338,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 320,
+                                        lineNumber: 337,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1849,7 +1860,7 @@ function RentalEbikes() {
                                                     "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 332,
+                                                    lineNumber: 349,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1858,18 +1869,18 @@ function RentalEbikes() {
                                                     children: "Maintenance Included"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 333,
+                                                    lineNumber: 350,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 331,
+                                            lineNumber: 348,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 330,
+                                        lineNumber: 347,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1885,7 +1896,7 @@ function RentalEbikes() {
                                                     "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 342,
+                                                    lineNumber: 359,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1894,34 +1905,34 @@ function RentalEbikes() {
                                                     children: "Free Test Ride"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 343,
+                                                    lineNumber: 360,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 341,
+                                            lineNumber: 358,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 340,
+                                        lineNumber: 357,
                                         columnNumber: 11
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 307,
+                                lineNumber: 324,
                                 columnNumber: 9
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/rental/page.js",
-                            lineNumber: 306,
+                            lineNumber: 323,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 294,
+                        lineNumber: 311,
                         columnNumber: 8
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
@@ -1953,7 +1964,7 @@ function RentalEbikes() {
                                 children: "Why Choose Our Beyond Bikes"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 363,
+                                lineNumber: 380,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1965,7 +1976,7 @@ function RentalEbikes() {
                                 children: "Discover the benefits of renting with Beyond Bikes"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 371,
+                                lineNumber: 388,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1985,7 +1996,7 @@ function RentalEbikes() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 383,
+                                                    lineNumber: 400,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1997,7 +2008,7 @@ function RentalEbikes() {
                                                     children: "Tired Of High Fuel Costs and Unreliable Rides?"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 384,
+                                                    lineNumber: 401,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2010,25 +2021,25 @@ function RentalEbikes() {
                                                         "Beyond Bikes is your smarter,greener, and more affordable way to mave through Victoria.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 389,
+                                                            lineNumber: 406,
                                                             columnNumber: 17
                                                         }, this),
                                                         "Trusted by delivery riders,students,and city explorers."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 387,
+                                                    lineNumber: 404,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 378,
+                                            lineNumber: 395,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 377,
+                                        lineNumber: 394,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2045,7 +2056,7 @@ function RentalEbikes() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 402,
+                                                    lineNumber: 419,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2057,7 +2068,7 @@ function RentalEbikes() {
                                                     children: "SMOOTH ELECTRIC RIDE - NO GEARS, NO STRESS"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 403,
+                                                    lineNumber: 420,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2070,25 +2081,25 @@ function RentalEbikes() {
                                                         "Our e-bikes are designed for simplicity.Just hop on and go — no clutch, no fuel, no hassle.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 408,
+                                                            lineNumber: 425,
                                                             columnNumber: 1
                                                         }, this),
                                                         "Glide through traffic with ease and comfort.              "
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 406,
+                                                    lineNumber: 423,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 397,
+                                            lineNumber: 414,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 396,
+                                        lineNumber: 413,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2105,7 +2116,7 @@ function RentalEbikes() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 420,
+                                                    lineNumber: 437,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2117,7 +2128,7 @@ function RentalEbikes() {
                                                     children: "SAVE FUEL. SAVE MONEY."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 421,
+                                                    lineNumber: 438,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2130,37 +2141,37 @@ function RentalEbikes() {
                                                         "WHY SPEND MORE?",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 427,
+                                                            lineNumber: 444,
                                                             columnNumber: 17
                                                         }, this),
                                                         "Get your ride at just $65/week — Includes everything you need.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 430,
+                                                            lineNumber: 447,
                                                             columnNumber: 1
                                                         }, this),
                                                         "No fuel. No extra maintenance."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 424,
+                                                    lineNumber: 441,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 415,
+                                            lineNumber: 432,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 414,
+                                        lineNumber: 431,
                                         columnNumber: 11
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 375,
+                                lineNumber: 392,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2180,7 +2191,7 @@ function RentalEbikes() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 444,
+                                                    lineNumber: 461,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2192,7 +2203,7 @@ function RentalEbikes() {
                                                     children: "BUILT FOR AUSTRALIAN LIFE"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 445,
+                                                    lineNumber: 462,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2205,31 +2216,31 @@ function RentalEbikes() {
                                                         "Whether you are:",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 451,
+                                                            lineNumber: 468,
                                                             columnNumber: 17
                                                         }, this),
                                                         "A food delivery rider, A student commuting to campus, Exploring the city on weekends.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 455,
+                                                            lineNumber: 472,
                                                             columnNumber: 3
                                                         }, this),
                                                         "Beyond Bikes fits your lifestyle."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 449,
+                                                    lineNumber: 466,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 439,
+                                            lineNumber: 456,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 438,
+                                        lineNumber: 455,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2246,7 +2257,7 @@ function RentalEbikes() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 468,
+                                                    lineNumber: 485,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2258,7 +2269,7 @@ function RentalEbikes() {
                                                     children: "FREE TEST RIDE + EASY BOOKING"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 469,
+                                                    lineNumber: 486,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2271,37 +2282,37 @@ function RentalEbikes() {
                                                         "Still unsure? Try it first! ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 474,
+                                                            lineNumber: 491,
                                                             columnNumber: 29
                                                         }, this),
                                                         "Free Test Ride Available Call/WhatsApp: +61 422 032 961 DM us now to book & start riding smarter!             "
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 473,
+                                                    lineNumber: 490,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 463,
+                                            lineNumber: 480,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 462,
+                                        lineNumber: 479,
                                         columnNumber: 11
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 436,
+                                lineNumber: 453,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 353,
+                        lineNumber: 370,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2318,7 +2329,7 @@ function RentalEbikes() {
                                     children: "Bikes For Rent"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/rental/page.js",
-                                    lineNumber: 487,
+                                    lineNumber: 504,
                                     columnNumber: 5
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2375,7 +2386,7 @@ function RentalEbikes() {
                                                         itemProp: "image"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 539,
+                                                        lineNumber: 556,
                                                         columnNumber: 13
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2390,7 +2401,7 @@ function RentalEbikes() {
                                                                 children: bike.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/rental/page.js",
-                                                                lineNumber: 550,
+                                                                lineNumber: 567,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -2405,7 +2416,7 @@ function RentalEbikes() {
                                                                             content: "USD"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/rental/page.js",
-                                                                            lineNumber: 565,
+                                                                            lineNumber: 582,
                                                                             columnNumber: 19
                                                                         }, this),
                                                                         "$",
@@ -2414,18 +2425,18 @@ function RentalEbikes() {
                                                                             children: bike.price
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/rental/page.js",
-                                                                            lineNumber: 566,
+                                                                            lineNumber: 583,
                                                                             columnNumber: 19
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/rental/page.js",
-                                                                    lineNumber: 560,
+                                                                    lineNumber: 577,
                                                                     columnNumber: 17
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/rental/page.js",
-                                                                lineNumber: 558,
+                                                                lineNumber: 575,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -2437,7 +2448,7 @@ function RentalEbikes() {
                                                                         children: "Battery Hours"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 575,
+                                                                        lineNumber: 592,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -2445,7 +2456,7 @@ function RentalEbikes() {
                                                                         children: bike.specs.batteryhours
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 576,
+                                                                        lineNumber: 593,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
@@ -2453,7 +2464,7 @@ function RentalEbikes() {
                                                                         children: "Battery Life"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 578,
+                                                                        lineNumber: 595,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -2461,7 +2472,7 @@ function RentalEbikes() {
                                                                         children: bike.specs.batterylife
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 579,
+                                                                        lineNumber: 596,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
@@ -2469,7 +2480,7 @@ function RentalEbikes() {
                                                                         children: "Motor"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 581,
+                                                                        lineNumber: 598,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -2477,7 +2488,7 @@ function RentalEbikes() {
                                                                         children: bike.specs.motor
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 582,
+                                                                        lineNumber: 599,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
@@ -2485,7 +2496,7 @@ function RentalEbikes() {
                                                                         children: "Top Speed"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 584,
+                                                                        lineNumber: 601,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -2493,13 +2504,13 @@ function RentalEbikes() {
                                                                         children: bike.specs.topspeed
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 585,
+                                                                        lineNumber: 602,
                                                                         columnNumber: 17
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/rental/page.js",
-                                                                lineNumber: 571,
+                                                                lineNumber: 588,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2509,40 +2520,40 @@ function RentalEbikes() {
                                                                 children: "Rent Bike"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/rental/page.js",
-                                                                lineNumber: 594,
+                                                                lineNumber: 611,
                                                                 columnNumber: 15
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 548,
+                                                        lineNumber: 565,
                                                         columnNumber: 13
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 537,
+                                                lineNumber: 554,
                                                 columnNumber: 11
                                             }, this)
                                         }, idx, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 531,
+                                            lineNumber: 548,
                                             columnNumber: 9
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/rental/page.js",
-                                    lineNumber: 491,
+                                    lineNumber: 508,
                                     columnNumber: 5
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/rental/page.js",
-                            lineNumber: 486,
+                            lineNumber: 503,
                             columnNumber: 3
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 485,
+                        lineNumber: 502,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2563,7 +2574,7 @@ function RentalEbikes() {
                                     children: "Accessories Provided"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/rental/page.js",
-                                    lineNumber: 629,
+                                    lineNumber: 646,
                                     columnNumber: 5
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2582,7 +2593,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 637,
+                                                        lineNumber: 654,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -2591,18 +2602,18 @@ function RentalEbikes() {
                                                         children: "Helmet"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 638,
+                                                        lineNumber: 655,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 636,
+                                                lineNumber: 653,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 635,
+                                            lineNumber: 652,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -2618,7 +2629,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 645,
+                                                        lineNumber: 662,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -2627,18 +2638,18 @@ function RentalEbikes() {
                                                         children: "Delivery Bags"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 646,
+                                                        lineNumber: 663,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 644,
+                                                lineNumber: 661,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 643,
+                                            lineNumber: 660,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -2654,7 +2665,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 653,
+                                                        lineNumber: 670,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -2663,18 +2674,18 @@ function RentalEbikes() {
                                                         children: "GPS Tracker"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 654,
+                                                        lineNumber: 671,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 652,
+                                                lineNumber: 669,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 651,
+                                            lineNumber: 668,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -2690,7 +2701,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 661,
+                                                        lineNumber: 678,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -2699,18 +2710,18 @@ function RentalEbikes() {
                                                         children: "Bike Lock"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 662,
+                                                        lineNumber: 679,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 660,
+                                                lineNumber: 677,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 659,
+                                            lineNumber: 676,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -2726,7 +2737,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 669,
+                                                        lineNumber: 686,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -2735,18 +2746,18 @@ function RentalEbikes() {
                                                         children: "Battery Lock"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 670,
+                                                        lineNumber: 687,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 668,
+                                                lineNumber: 685,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 667,
+                                            lineNumber: 684,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -2762,7 +2773,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 677,
+                                                        lineNumber: 694,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -2771,46 +2782,46 @@ function RentalEbikes() {
                                                         children: "Charger"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 678,
+                                                        lineNumber: 695,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 676,
+                                                lineNumber: 693,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 675,
+                                            lineNumber: 692,
                                             columnNumber: 7
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/rental/page.js",
-                                    lineNumber: 632,
+                                    lineNumber: 649,
                                     columnNumber: 5
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/rental/page.js",
-                            lineNumber: 628,
+                            lineNumber: 645,
                             columnNumber: 3
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 622,
+                        lineNumber: 639,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/rental/page.js",
-                lineNumber: 272,
+                lineNumber: 289,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/rental/page.js",
-                lineNumber: 689,
+                lineNumber: 706,
                 columnNumber: 7
             }, this)
         ]

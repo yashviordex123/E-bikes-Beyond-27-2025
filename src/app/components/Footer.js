@@ -451,9 +451,7 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6">
               <h5 className="fw-bold">BEYOND <span className="fw-light">BIKES</span></h5>
               <p>
-                Experience the future of urban mobility with our premium electric
-                bike rental service. Sustainable, convenient, and fun
-                transportation for modern city dwellers.
+                At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues.
               </p>
               <div className="d-flex gap-3 mt-3">
                 <a href="https://g.co/kgs/66Atysa" aria-label="Facebook" className="text-white fs-4">
@@ -521,7 +519,7 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="col-lg-3 col-md-6">
-              <h6 className="fw-bold">Contact</h6>
+              <h6 className="fw-bold">Contact Us</h6>
               <address className="mt-3">
                 <p><i className="bi bi-geo-alt me-2"></i> 576 North Rd, Ormond VIC 3204, Australia</p>
                 <p><i className="bi bi-telephone me-2"></i>
@@ -534,7 +532,7 @@ export default function Footer() {
                     info.beyondbikes@gmail.com
                   </a>
                 </p>
-                <p><i className="bi bi-clock me-2"></i> Mon-Sat: 9 am - 7 pm <br />  Sun: 11 am - 4 pm</p>
+                <p><i className="bi bi-clock me-2"></i> Mon-Sat: 9 am - 7 pm <br /> <span style={{marginLeft:'28px'}}> Sun: 11 am - 4 pm </span> </p>
               </address>
             </div>
           </div>

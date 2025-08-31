@@ -493,7 +493,7 @@ export default function CartoonDetailsPage() {
               <link itemProp="availability" href="https://schema.org/InStock" />
             </p>
             
-          <section className="container my-5">
+          <section className="container my-4">
         <div className="row g-3">
   <div className="col-6">
     <div className="spec-box">
@@ -673,6 +673,15 @@ export default function CartoonDetailsPage() {
         <ul className="nav nav-pills mb-3 bg-light p-1 rounded-pill d-inline-flex">
           <li className="nav-item">
             <button
+              className={`nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`}
+              onClick={() => setActiveTab("performance")}
+            >
+              Performance
+            </button>
+          </li>
+          
+          <li className="nav-item">
+            <button
               className={`nav-link rounded-pill ${activeTab === "features" ? "active" : ""}`}
               onClick={() => setActiveTab("features")}
             >
@@ -685,14 +694,6 @@ export default function CartoonDetailsPage() {
               onClick={() => setActiveTab("safety")}
             >
               Safety
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`}
-              onClick={() => setActiveTab("performance")}
-            >
-              Performance
             </button>
           </li>
         </ul>
@@ -876,7 +877,7 @@ export default function CartoonDetailsPage() {
               onClick={handleClick}
               aria-label="Open Rental Modal"
             >
-              <span className="text-light">Rental</span>
+              <span className="text-light">Rent Now</span>
             </button>
 
             {showModal && (

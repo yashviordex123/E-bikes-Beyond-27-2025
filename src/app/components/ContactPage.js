@@ -162,9 +162,9 @@ export default function ContactPage() {
         )}
 
       {/* Contact Section */}
-      <section className="mt-5" style={{ background: '#f8f8f8' }}>
+      <section>
         <div
-          className="container py-sm-5 py-1 px-3 text-white"
+          className="container py-sm-5 mt-4 py-1 px-3 text-white"
           aria-label="Store Locations"
         >
           <div className="row justify-content-center mb-sm-5 mb-3">

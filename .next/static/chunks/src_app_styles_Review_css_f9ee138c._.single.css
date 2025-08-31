@@ -1,6 +1,6 @@
 /* [project]/src/app/styles/Review.css [app-client] (css) */
 .review-slider {
-  width: 100%;
+  width: 104%;
   position: relative;
   overflow: hidden;
 }
@@ -37,6 +37,25 @@
   white-space: pre-line;
   margin-bottom: .5rem;
   font-style: italic;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  background: #aaa;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  transition: background .3s;
+  display: inline-block;
+}
+
+.dot.active {
+  background: #1a3b19;
 }
 
 /*# sourceMappingURL=src_app_styles_Review_css_f9ee138c._.single.css.map*/

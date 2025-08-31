@@ -497,7 +497,7 @@ export default function CartoonDetailsPage() {
               <h1 id="product-title" className="text-center fw-bold">E-bike 10-12h</h1>
               <p className="fs-4 text-center fw-bold">PRICE: $70 AUD <del className="text-muted fs-4 ms-2">$80 AUD</del></p>
 
-              <section className="container my-5">
+              <section className="container my-4">
         <div className="row g-3">
   <div className="col-6">
     <div className="spec-box">
@@ -547,6 +547,14 @@ export default function CartoonDetailsPage() {
 
         {/* NAV TABS */}
         <ul className="nav nav-pills mb-3 bg-light p-1 rounded-pill d-inline-flex">
+        <li className="nav-item">
+            <button
+              className={`nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`}
+              onClick={() => setActiveTab("performance")}
+            >
+              Performance
+            </button>
+          </li>
           <li className="nav-item">
             <button
               className={`nav-link rounded-pill ${activeTab === "features" ? "active" : ""}`}
@@ -563,14 +571,7 @@ export default function CartoonDetailsPage() {
               Safety
             </button>
           </li>
-          <li className="nav-item">
-            <button
-              className={`nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`}
-              onClick={() => setActiveTab("performance")}
-            >
-              Performance
-            </button>
-          </li>
+          
         </ul>
 
         {/* TAB CONTENT */}
@@ -753,7 +754,7 @@ export default function CartoonDetailsPage() {
               onClick={handleClick}
               aria-label="Open Rental Modal"
             >
-              <span className="text-light">Rental</span>
+              <span className="text-light">Rent Now</span>
             </button>
                 {showModal && (
                   <div className="modal fade show" style={{ display: 'block', opacity: 1 }} aria-labelledby="modal-title">

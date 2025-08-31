@@ -551,11 +551,11 @@ export default function ProductTabs() {
 
         {/* Product Title */}
         {pathname === "/" ? (
-          <h3 className="fs-5 fw-semibold" style={{color:'#1A3B19',fontFamily:'system-ui'}} itemProp="name">
+          <h3 className="fs-sm-4 fs-3 fw-bold" style={{color:'#1A3B19',fontFamily:'system-ui'}} itemProp="name">
             {product.name}
           </h3>
         ) : (
-          <h2 className="fs-5 fw-semibold" style={{color:'#1A3B19',fontFamily:'system-ui'}} itemProp="name">
+          <h2 className="fs-sm-4 fs-3 fw-bold" style={{color:'#1A3B19',fontFamily:'system-ui'}} itemProp="name">
             {product.name}
           </h2>
         )}

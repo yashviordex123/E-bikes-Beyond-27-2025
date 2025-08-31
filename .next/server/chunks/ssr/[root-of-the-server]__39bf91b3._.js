@@ -1495,7 +1495,7 @@ function Footer() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues."
+                                        children: "Experience the future of urban mobility with our premium electric bike rental service. Sustainable, convenient, and fun transportation for modern city dwellers."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 453,
@@ -1512,12 +1512,12 @@ function Footer() {
                                                     className: "bi bi-google"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 458,
+                                                    lineNumber: 460,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 457,
+                                                lineNumber: 459,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1528,12 +1528,12 @@ function Footer() {
                                                     className: "bi bi-instagram"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 461,
+                                                    lineNumber: 463,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 460,
+                                                lineNumber: 462,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1544,18 +1544,18 @@ function Footer() {
                                                     className: "bi bi-geo-alt"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 467,
+                                                    lineNumber: 469,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 466,
+                                                lineNumber: 468,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 456,
+                                        lineNumber: 458,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1572,7 +1572,7 @@ function Footer() {
                                         children: "Quick Links"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 474,
+                                        lineNumber: 476,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1601,23 +1601,23 @@ function Footer() {
                                                     children: label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 483,
+                                                    lineNumber: 485,
                                                     columnNumber: 21
                                                 }, this)
                                             }, href, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 482,
+                                                lineNumber: 484,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 475,
+                                        lineNumber: 477,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 473,
+                                lineNumber: 475,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1628,7 +1628,7 @@ function Footer() {
                                         children: "Support"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 498,
+                                        lineNumber: 500,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1657,23 +1657,23 @@ function Footer() {
                                                     children: label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
-                                                    lineNumber: 507,
+                                                    lineNumber: 509,
                                                     columnNumber: 21
                                                 }, this)
                                             }, href, false, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 506,
+                                                lineNumber: 508,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 499,
+                                        lineNumber: 501,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 497,
+                                lineNumber: 499,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1681,10 +1681,10 @@ function Footer() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
                                         className: "fw-bold",
-                                        children: "Contact Us"
+                                        children: "Contact"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 522,
+                                        lineNumber: 524,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("address", {
@@ -1696,14 +1696,14 @@ function Footer() {
                                                         className: "bi bi-geo-alt me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 524,
+                                                        lineNumber: 526,
                                                         columnNumber: 20
                                                     }, this),
                                                     " 576 North Rd, Ormond VIC 3204, Australia"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 524,
+                                                lineNumber: 526,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1712,7 +1712,7 @@ function Footer() {
                                                         className: "bi bi-telephone me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 525,
+                                                        lineNumber: 527,
                                                         columnNumber: 20
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1721,13 +1721,13 @@ function Footer() {
                                                         children: "+61 422 032 961"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 526,
+                                                        lineNumber: 528,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 525,
+                                                lineNumber: 527,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1736,7 +1736,7 @@ function Footer() {
                                                         className: "bi bi-envelope me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 530,
+                                                        lineNumber: 532,
                                                         columnNumber: 20
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1745,13 +1745,13 @@ function Footer() {
                                                         children: "info.beyondbikes@gmail.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 531,
+                                                        lineNumber: 533,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 530,
+                                                lineNumber: 532,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1760,43 +1760,32 @@ function Footer() {
                                                         className: "bi bi-clock me-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 535,
+                                                        lineNumber: 537,
                                                         columnNumber: 20
                                                     }, this),
                                                     " Mon-Sat: 9 am - 7 pm ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                         fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 535,
+                                                        lineNumber: 537,
                                                         columnNumber: 78
                                                     }, this),
-                                                    " ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        style: {
-                                                            marginLeft: '28px'
-                                                        },
-                                                        children: " Sun: 11 am - 4 pm "
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/components/Footer.js",
-                                                        lineNumber: 535,
-                                                        columnNumber: 85
-                                                    }, this),
-                                                    " "
+                                                    "  Sun: 11 am - 4 pm"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/Footer.js",
-                                                lineNumber: 535,
+                                                lineNumber: 537,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 523,
+                                        lineNumber: 525,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Footer.js",
-                                lineNumber: 521,
+                                lineNumber: 523,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -1822,12 +1811,12 @@ function Footer() {
                         children: "Freedom to Explore, Power to Move"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 544,
+                        lineNumber: 546,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 545,
+                        lineNumber: 547,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -1835,13 +1824,13 @@ function Footer() {
                         children: "© BEYOND BIKES PRIVATE LIMITED | ALL RIGHTS RESERVED"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Footer.js",
-                        lineNumber: 546,
+                        lineNumber: 548,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Footer.js",
-                lineNumber: 543,
+                lineNumber: 545,
                 columnNumber: 7
             }, this)
         ]
@@ -3787,8 +3776,12 @@ function ContactPage() {
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "mt-5",
+                style: {
+                    background: '#f8f8f8'
+                },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "container py-sm-5 mt-4 py-1 px-3 text-white",
+                    className: "container py-sm-5 py-1 px-3 text-white",
                     "aria-label": "Store Locations",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6250,7 +6243,7 @@ function ProductPage() {
                                             "aria-label": "Open Rental Modal",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-light",
-                                                children: "Rent Now"
+                                                children: "Rental"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/E-bike-8-10h/page.js",
                                                 lineNumber: 696,
@@ -10796,714 +10789,6 @@ function RentalEbikes() {
     }, void 0, true);
 }
 }}),
-"[project]/src/app/review/page.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-// import Head from 'next/head';
-// import Image from 'next/image';
-// export default function Review() {
-//   const team = [
-//     {
-//       name: 'Zadid Kawser',
-//       reviewtitle:'Perfect for city living.',
-//       reviewdescription:'Had a fantastic experience with Beyond Bikes! Sahil is incredibly professional and made the whole e-bike rental process super smooth and easy. Their bikes are well-maintained, reliable, and perfect for getting around the city. What really sets them apart is the warm, welcoming vibe. You’re even greeted by the sweetest dog named Jamie at the front! It’s little touches like that that make all the difference. Highly recommend them if you’re looking for a stress-free, quality e-bike rental experience.',
-//       img: '/images/Latest-fifith-review.png',
-//       alt: 'Paul Smith profile picture',
-//       rating: 5,
-//       role: 'Student',
-//     },
-//     {
-//       name: 'Mei lisa',
-//       reviewtitle:'Great service & great bikes!',
-//       reviewdescription:'I had an excellent experience at Beyond Bikes. The owner was genuinely helpful, welcoming, and clearly passionate about what they do. The e-bike I rented has been incredibly reliable and has exceeded my expectations in performance. Highly recommend this shop to anyone looking for quality and great service.',
-//       img: '/images/latest-sixth-review.png',
-//       alt: 'Paul Smith profile picture',
-//       rating: 5,
-//       role: 'Student',
-//     },
-//     {
-//       name: 'Sankeerth Reddy',
-//       role: 'Student',
-//       reviewtitle:'Eco-friendly and fun!',
-//       reviewdescription:'Highly recommend Beyond Bike very understanding owner .Great for renting the Ebike. Lots of varieties available 👍',
-//       img: '/images/Sankeerth.png',
-//       alt: 'Frank Kinney profile picture',
-//       rating: 5,
-//     },
-//     {
-//       name: 'Silvano Kevin',
-//       role: 'Student',
-//       reviewtitle:'Great service & great bikes!',
-//       reviewdescription:'Efficient, friendly, and fair prices. Couldn’t ask for more! Best Ebikes in Melbourne 👍Highly Recommend',
-//       img: '/images/Silvano.png',
-//       alt: 'John Almeda profile picture',
-//       rating: 5,
-//     },
-//     {
-//       name: 'elmuz zaman',
-//       role: 'Student',
-//       reviewtitle:'Perfect for city living.',
-//       reviewdescription:'I rented myself an Ebike from beyond bikes.Guy helped me from start to finish.Really powerful Ebike and foldable too.Highly recommend 👍',
-//       img: '/images/elmuz-zaman.png',
-//       alt: 'Stella Larson profile picture',
-//       rating: 5,
-//     },
-//     {
-//       name: 'Sunny Patel',
-//       reviewtitle:'Reliable, fast, and convenient.',
-//       reviewdescription:'Good e bike. And Its powerful, comfortable, and ready for just about anything. Thank you.',
-//       img: '/images/sunny.png',
-//       alt: 'Paul Smith profile picture',
-//       rating: 5,
-//       role: 'Student',
-//     },
-//   ];
-//   const renderStars = (count, number) => {
-//     return '★'.repeat(count) + '☆'.repeat(5 - count);
-//   };
-//   return (
-//     <>
-//       <Head>
-//         <title>Our Team</title>
-//         <meta
-//           name="description"
-//           content="Meet our professional and dedicated team members. Learn more about our leadership and support team."
-//         />
-//       </Head>
-//       <main className="container px-3 py-3">
-//       <h1 className='text-center py-3' style={{color:'rgb(247, 147, 30)'}}>Reviews</h1>
-//         <section className="row g-4">
-//           {team.map((member, index) => (
-//             <article className="col-md-6 col-lg-6" key={index}>
-//               <div
-//                 className="p-4 text-white text-center h-100"
-//                 style={{ backgroundColor: '#f8f8f8', borderRadius: '1rem' }}
-//               >
-//                 <div
-//                   className="mx-auto mb-3"
-//                   style={{
-//                     width: '100px',
-//                     height: '100px',
-//                     border: '4px solid #f7931e',
-//                     borderRadius: '50%',
-//                     overflow: 'hidden',
-//                     position: 'relative',
-//                   }}
-//                 >
-//                   <Image
-//                     src={member.img}
-//                     alt={member.alt}
-//                     fill
-//                     style={{ objectFit: 'cover' }}
-//                     sizes="(max-width: 768px) 100px, 100px"
-//                   />
-//                 </div>
-//                 <p className="small mb-2 fw-600" style={{color:'#f7931e'}}>
-//                   {member.reviewtitle}
-//                 </p>
-//                 <p className="small mb-2 fw-600" style={{color:'#f7931e',fontStyle:'italic'}}>
-//                   {member.reviewdescription}
-//                 </p>
-//                 <div style={{ color: '#f7931e', fontSize: '1.2rem' }}>
-//                   {renderStars(member.rating)}
-//                 </div>
-//                 <div className="fw-bold" style={{color:'#f7931e',fontStyle:'italic'}}>- {member.name}</div>
-//                 {/* <div className="small" style={{color:'#f7931e'}}>{member.role}</div> */}
-//               </div>
-//             </article>
-//           ))}
-//         </section>
-//       </main>
-//     </>
-//   );
-// }
-// SEO
-// import Head from 'next/head';
-// import Image from 'next/image';
-// export default function Review() {
-//   const team = [
-//     {
-//       name: 'Zadid Kawser',
-//       reviewtitle:'Perfect for city living.',
-//       reviewdescription:'Had a fantastic experience with Beyond Bikes! Sahil is incredibly professional and made the whole e-bike rental process super smooth and easy. Their bikes are well-maintained, reliable, and perfect for getting around the city. What really sets them apart is the warm, welcoming vibe. You’re even greeted by the sweetest dog named Jamie at the front! It’s little touches like that that make all the difference. Highly recommend them if you’re looking for a stress-free, quality e-bike rental experience.',
-//       img: '/images/Latest-fifith-review.png',
-//       alt: 'Zadid Kawser profile picture',
-//       rating: 5,
-//       role: 'Student',
-//       date: '2025-08-15',
-//     },
-//     {
-//       name: 'Mei Lisa',
-//       reviewtitle:'Great service & great bikes!',
-//       reviewdescription:'I had an excellent experience at Beyond Bikes. The owner was genuinely helpful, welcoming, and clearly passionate about what they do. The e-bike I rented has been incredibly reliable and has exceeded my expectations in performance. Highly recommend this shop to anyone looking for quality and great service.',
-//       img: '/images/latest-sixth-review.png',
-//       alt: 'Mei Lisa profile picture',
-//       rating: 5,
-//       role: 'Student',
-//       date: '2025-08-15',
-//     },
-//     {
-//       name: 'Sankeerth Reddy',
-//       role: 'Student',
-//       reviewtitle:'Eco-friendly and fun!',
-//       reviewdescription:'Highly recommend Beyond Bike very understanding owner. Great for renting the Ebike. Lots of varieties available 👍',
-//       img: '/images/Sankeerth.png',
-//       alt: 'Sankeerth Reddy profile picture',
-//       rating: 5,
-//       date: '2025-08-15',
-//     },
-//     {
-//       name: 'Silvano Kevin',
-//       role: 'Student',
-//       reviewtitle:'Great service & great bikes!',
-//       reviewdescription:'Efficient, friendly, and fair prices. Couldn’t ask for more! Best Ebikes in Melbourne 👍 Highly Recommend',
-//       img: '/images/Silvano.png',
-//       alt: 'Silvano Kevin profile picture',
-//       rating: 5,
-//       date: '2025-08-15',
-//     },
-//     {
-//       name: 'Elmuz Zaman',
-//       role: 'Student',
-//       reviewtitle:'Perfect for city living.',
-//       reviewdescription:'I rented myself an Ebike from Beyond Bikes. Guy helped me from start to finish. Really powerful Ebike and foldable too. Highly recommend 👍',
-//       img: '/images/elmuz-zaman.png',
-//       alt: 'Elmuz Zaman profile picture',
-//       rating: 5,
-//       date: '2025-08-15',
-//     },
-//     {
-//       name: 'Sunny Patel',
-//       reviewtitle:'Reliable, fast, and convenient.',
-//       reviewdescription:'Good e-bike. It’s powerful, comfortable, and ready for just about anything. Thank you.',
-//       img: '/images/sunny.png',
-//       alt: 'Sunny Patel profile picture',
-//       rating: 5,
-//       role: 'Student',
-//       date: '2025-08-15',
-//     },
-//   ];
-//   const renderStars = (count) => {
-//     return '★'.repeat(count) + '☆'.repeat(5 - count);
-//   };
-//   return (
-//     <>
-//       <Head>
-//         {/* Primary Meta Tags */}
-//         <title>Customer Reviews - Beyond Bikes E-bike Rentals</title>
-//         <meta name="description" content="Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne." />
-//         <meta name="robots" content="index, follow" />
-//         <link rel="canonical" href="https://www.beyondbikes.com.au/reviews" />
-//         {/* Open Graph / Facebook */}
-//         <meta property="og:type" content="website" />
-//         <meta property="og:title" content="Customer Reviews - Beyond Bikes E-bike Rentals" />
-//         <meta property="og:description" content="Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne." />
-//         <meta property="og:url" content="https://www.beyondbikes.com.au/reviews" />
-//         <meta property="og:image" content="https://www.beyondbikes.com.au/images/reviews-og-image.png" />
-//         {/* Twitter */}
-//         <meta name="twitter:card" content="summary_large_image" />
-//         <meta name="twitter:title" content="Customer Reviews - Beyond Bikes E-bike Rentals" />
-//         <meta name="twitter:description" content="Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne." />
-//         <meta name="twitter:image" content="https://www.beyondbikes.com.au/images/reviews-og-image.png" />
-//       </Head>
-//       <main className="container px-3 py-3">
-//         <h1 className='text-center py-3' style={{color:'rgb(247, 147, 30)'}}>Customer Reviews</h1>
-//         <section className="row g-4" aria-label="Customer Reviews">
-//           {team.map((member, index) => (
-//             <article className="col-md-6 col-lg-6" key={index} itemScope itemType="https://schema.org/Review">
-//               <div
-//                 className="p-4 text-center h-100"
-//                 style={{ backgroundColor: '#f8f8f8', borderRadius: '1rem' }}
-//               >
-//                 <div
-//                   className="mx-auto mb-3"
-//                   style={{
-//                     width: '100px',
-//                     height: '100px',
-//                     border: '4px solid #f7931e',
-//                     borderRadius: '50%',
-//                     overflow: 'hidden',
-//                     position: 'relative',
-//                   }}
-//                 >
-//                   <Image
-//                     src={member.img}
-//                     alt={member.alt}
-//                     fill
-//                     style={{ objectFit: 'cover' }}
-//                     sizes="(max-width: 768px) 100px, 100px"
-//                     priority
-//                   />
-//                 </div>
-//                 <p className="small mb-2 fw-600" style={{color:'#f7931e'}} itemProp="name">
-//                   {member.reviewtitle}
-//                 </p>
-//                 <p className="small mb-2 fw-600" style={{color:'#f7931e', fontStyle:'italic'}} itemProp="reviewBody">
-//                   {member.reviewdescription}
-//                 </p>
-//                 <div style={{ color: '#f7931e', fontSize: '1.2rem' }} itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-//                   <meta itemProp="ratingValue" content={member.rating.toString()} />
-//                   <meta itemProp="bestRating" content="5" />
-//                   {renderStars(member.rating)}
-//                 </div>
-//                 <div className="fw-bold" style={{color:'#f7931e', fontStyle:'italic'}} itemProp="author" itemScope itemType="https://schema.org/Person">
-//                   - <span itemProp="name">{member.name}</span>
-//                 </div>
-//               </div>
-//               {/* Structured Data JSON-LD */}
-//               <script
-//                 type="application/ld+json"
-//                 dangerouslySetInnerHTML={{
-//                   __html: JSON.stringify({
-//                     "@context": "https://schema.org",
-//                     "@type": "Review",
-//                     "author": { "@type": "Person", "name": member.name },
-//                     "datePublished": member.date,
-//                     "reviewBody": member.reviewdescription,
-//                     "reviewRating": {
-//                       "@type": "Rating",
-//                       "ratingValue": member.rating,
-//                       "bestRating": 5
-//                     },
-//                     "itemReviewed": {
-//                       "@type": "Product",
-//                       "name": "Beyond Bikes E-bike Rental"
-//                     }
-//                   })
-//                 }}
-//               />
-//             </article>
-//           ))}
-//         </section>
-//       </main>
-//     </>
-//   );
-// }
-__turbopack_context__.s({
-    "default": (()=>Review)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/components/noop-head.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-'use client';
-;
-;
-;
-;
-;
-function Review() {
-    const team = [
-        {
-            name: 'Zadid Kawser',
-            reviewtitle: 'Perfect for city living.',
-            reviewdescription: 'Had a fantastic experience with Beyond Bikes! Sahil is incredibly professional and made the whole e-bike rental process super smooth and easy. Their bikes are well-maintained, reliable, and perfect for getting around the city. What really sets them apart is the warm, welcoming vibe. You’re even greeted by the sweetest dog named Jamie at the front! It’s little touches like that that make all the difference. Highly recommend them if you’re looking for a stress-free, quality e-bike rental experience.',
-            img: '/images/Latest-fifith-review.png',
-            alt: 'Zadid Kawser profile picture',
-            rating: 5,
-            role: 'Student',
-            date: '2025-08-15'
-        },
-        {
-            name: 'Mei Lisa',
-            reviewtitle: 'Great service & great bikes!',
-            reviewdescription: 'I had an excellent experience at Beyond Bikes. The owner was genuinely helpful, welcoming, and clearly passionate about what they do. The e-bike I rented has been incredibly reliable and has exceeded my expectations in performance. Highly recommend this shop to anyone looking for quality and great service.',
-            img: '/images/latest-sixth-review.png',
-            alt: 'Mei Lisa profile picture',
-            rating: 5,
-            role: 'Student',
-            date: '2025-08-15'
-        },
-        {
-            name: 'Sankeerth Reddy',
-            role: 'Student',
-            reviewtitle: 'Eco-friendly and fun!',
-            reviewdescription: 'Highly recommend Beyond Bike very understanding owner. \nGreat for renting the Ebike. Lots of varieties available 👍',
-            img: '/images/Sankeerth.png',
-            alt: 'Sankeerth Reddy profile picture',
-            rating: 5,
-            date: '2025-08-15'
-        },
-        {
-            name: 'Silvano Kevin',
-            role: 'Student',
-            reviewtitle: 'Great service & great bikes!',
-            reviewdescription: 'Efficient, friendly, and fair prices. \nCouldn’t ask for more! Best Ebikes in Melbourne 👍 Highly Recommend',
-            img: '/images/Silvano.png',
-            alt: 'Silvano Kevin profile picture',
-            rating: 5,
-            date: '2025-08-15'
-        },
-        {
-            name: 'Elmuz Zaman',
-            role: 'Student',
-            reviewtitle: 'Perfect for city living.',
-            // reviewdescription: 'I rented myself an Ebike from Beyond Bikes. Guy helped me from start to finish. Really powerful Ebike and foldable too. Highly recommend 👍',
-            reviewdescription: 'I rented myself an Ebike from Beyond Bikes.\nGuy helped me from start to finish.\nReally powerful Ebike and foldable too.\nHighly recommend 👍',
-            img: '/images/elmuz-zaman.png',
-            alt: 'Elmuz Zaman profile picture',
-            rating: 5,
-            date: '2025-08-15'
-        },
-        {
-            name: 'Sunny Patel',
-            reviewtitle: 'Reliable, fast, and convenient.',
-            reviewdescription: 'Good e-bike. It’s powerful, comfortable, and ready for just about anything. Thank you.',
-            img: '/images/sunny.png',
-            alt: 'Sunny Patel profile picture',
-            rating: 5,
-            role: 'Student',
-            date: '2025-08-15'
-        }
-    ];
-    const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
-    // ✅ Added scroll listener to update dots
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const track = document.querySelector(".review-track");
-        const handleScroll = ()=>{
-            const cardWidth = track.firstChild.getBoundingClientRect().width;
-            const scrollLeft = track.scrollLeft;
-            const index = Math.round(scrollLeft / cardWidth);
-            setActiveIndex(index);
-        };
-        track.addEventListener("scroll", handleScroll);
-        return ()=>track.removeEventListener("scroll", handleScroll);
-    }, []);
-    const renderStars = (count)=>'★'.repeat(count) + '☆'.repeat(5 - count);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("title", {
-                        children: "Customer Reviews - Beyond Bikes E-bike Rentals"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 391,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        name: "description",
-                        content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 392,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        name: "robots",
-                        content: "index, follow"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 396,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
-                        rel: "canonical",
-                        href: "https://www.beyondbikes.com.au/reviews"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 397,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "og:type",
-                        content: "website"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 400,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "og:title",
-                        content: "Customer Reviews - Beyond Bikes E-bike Rentals"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 401,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "og:description",
-                        content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 402,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "og:url",
-                        content: "https://www.beyondbikes.com.au/reviews"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 403,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "og:image",
-                        content: "https://www.beyondbikes.com.au/images/reviews-og-image.png"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 404,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        name: "twitter:card",
-                        content: "summary_large_image"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 407,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        name: "twitter:title",
-                        content: "Customer Reviews - Beyond Bikes E-bike Rentals"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 408,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        name: "twitter:description",
-                        content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 409,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        name: "twitter:image",
-                        content: "https://www.beyondbikes.com.au/images/reviews-og-image.png"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 410,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
-                        type: "application/ld+json",
-                        dangerouslySetInnerHTML: {
-                            __html: JSON.stringify({
-                                "@context": "https://schema.org",
-                                "@type": "ReviewPage",
-                                "mainEntityOfPage": "https://www.beyondbikes.com.au/reviews",
-                                "headline": "Customer Reviews - Beyond Bikes E-bike Rentals",
-                                "description": "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne.",
-                                "publisher": {
-                                    "@type": "Organization",
-                                    "name": "Beyond Bikes",
-                                    "logo": {
-                                        "@type": "ImageObject",
-                                        "url": "https://www.beyondbikes.com.au/images/logo.png"
-                                    }
-                                },
-                                "review": team.map((member)=>({
-                                        "@type": "Review",
-                                        "author": {
-                                            "@type": "Person",
-                                            "name": member.name
-                                        },
-                                        "datePublished": member.date,
-                                        "reviewBody": member.reviewdescription,
-                                        "reviewRating": {
-                                            "@type": "Rating",
-                                            "ratingValue": member.rating,
-                                            "bestRating": 5
-                                        },
-                                        "itemReviewed": {
-                                            "@type": "Product",
-                                            "name": "Beyond Bikes E-bike Rental"
-                                        }
-                                    }))
-                            })
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 413,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/review/page.js",
-                lineNumber: 390,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "container px-3 py-3",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-center pt-3 pb-5",
-                        style: {
-                            color: '#1A3B19',
-                            fontFamily: 'system-ui'
-                        },
-                        children: "Customer Reviews"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 451,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "review-slider",
-                        "aria-label": "Customer Reviews",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "review-track",
-                            children: team.map((member, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                    className: "review-card",
-                                    itemScope: true,
-                                    itemType: "https://schema.org/Review",
-                                    "aria-labelledby": `review-title-${index}`,
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "p-4 text-center h-100",
-                                        style: {
-                                            backgroundColor: '#1A3B19',
-                                            borderRadius: '1rem'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "mx-auto",
-                                                style: {
-                                                    width: '100px',
-                                                    height: '100px',
-                                                    borderRadius: '50%',
-                                                    overflow: 'hidden',
-                                                    position: 'relative',
-                                                    bottom: '47px'
-                                                },
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                    src: member.img,
-                                                    alt: member.alt,
-                                                    fill: true,
-                                                    style: {
-                                                        objectFit: 'cover'
-                                                    },
-                                                    sizes: "(max-width: 768px) 100px, 100px",
-                                                    priority: true
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/review/page.js",
-                                                    lineNumber: 481,
-                                                    columnNumber: 13
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 470,
-                                                columnNumber: 11
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                style: {
-                                                    color: 'orange',
-                                                    fontSize: '1.6rem',
-                                                    marginTop: '-30px'
-                                                },
-                                                itemProp: "reviewRating",
-                                                itemScope: true,
-                                                itemType: "https://schema.org/Rating",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                                                        itemProp: "ratingValue",
-                                                        content: member.rating.toString()
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/review/page.js",
-                                                        lineNumber: 497,
-                                                        columnNumber: 13
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                                                        itemProp: "bestRating",
-                                                        content: "5"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/review/page.js",
-                                                        lineNumber: 498,
-                                                        columnNumber: 13
-                                                    }, this),
-                                                    renderStars(member.rating)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 491,
-                                                columnNumber: 11
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "small review-text mb-2 fw-600",
-                                                style: {
-                                                    color: '#C2F829',
-                                                    fontStyle: 'italic'
-                                                },
-                                                itemProp: "reviewBody",
-                                                children: member.reviewdescription
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 502,
-                                                columnNumber: 11
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "fw-bold",
-                                                style: {
-                                                    color: '#C2F829',
-                                                    fontStyle: 'italic'
-                                                },
-                                                itemProp: "author",
-                                                itemScope: true,
-                                                itemType: "https://schema.org/Person",
-                                                children: [
-                                                    "- ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        itemProp: "name",
-                                                        children: member.name
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/review/page.js",
-                                                        lineNumber: 517,
-                                                        columnNumber: 15
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 510,
-                                                columnNumber: 11
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/review/page.js",
-                                        lineNumber: 466,
-                                        columnNumber: 9
-                                    }, this)
-                                }, index, false, {
-                                    fileName: "[project]/src/app/review/page.js",
-                                    lineNumber: 459,
-                                    columnNumber: 7
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/review/page.js",
-                            lineNumber: 457,
-                            columnNumber: 3
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 456,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "dots",
-                        children: team.map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: `dot ${activeIndex === index ? "active" : ""}`
-                            }, index, false, {
-                                fileName: "[project]/src/app/review/page.js",
-                                lineNumber: 527,
-                                columnNumber: 7
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 525,
-                        columnNumber: 1
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/review/page.js",
-                lineNumber: 450,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-}}),
 "[project]/src/app/amazingoffers/page.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -12256,4 +11541,4 @@ function TermAndCondition() {
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__690344e2._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__39bf91b3._.js.map
