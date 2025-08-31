@@ -298,6 +298,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
+import '../styles/Review.css';
 
 export default function Review() {
   const team = [
@@ -325,7 +326,7 @@ export default function Review() {
       name: 'Sankeerth Reddy',
       role: 'Student',
       reviewtitle: 'Eco-friendly and fun!',
-      reviewdescription: 'Highly recommend Beyond Bike very understanding owner. Great for renting the Ebike. Lots of varieties available 👍',
+      reviewdescription: 'Highly recommend Beyond Bike very understanding owner. \nGreat for renting the Ebike. Lots of varieties available 👍',
       img: '/images/Sankeerth.png',
       alt: 'Sankeerth Reddy profile picture',
       rating: 5,
@@ -335,7 +336,7 @@ export default function Review() {
       name: 'Silvano Kevin',
       role: 'Student',
       reviewtitle: 'Great service & great bikes!',
-      reviewdescription: 'Efficient, friendly, and fair prices. Couldn’t ask for more! Best Ebikes in Melbourne 👍 Highly Recommend',
+      reviewdescription: 'Efficient, friendly, and fair prices. \nCouldn’t ask for more! Best Ebikes in Melbourne 👍 Highly Recommend',
       img: '/images/Silvano.png',
       alt: 'Silvano Kevin profile picture',
       rating: 5,
@@ -345,7 +346,8 @@ export default function Review() {
       name: 'Elmuz Zaman',
       role: 'Student',
       reviewtitle: 'Perfect for city living.',
-      reviewdescription: 'I rented myself an Ebike from Beyond Bikes. Guy helped me from start to finish. Really powerful Ebike and foldable too. Highly recommend 👍',
+      // reviewdescription: 'I rented myself an Ebike from Beyond Bikes. Guy helped me from start to finish. Really powerful Ebike and foldable too. Highly recommend 👍',
+      reviewdescription: 'I rented myself an Ebike from Beyond Bikes.\nGuy helped me from start to finish.\nReally powerful Ebike and foldable too.\nHighly recommend 👍',
       img: '/images/elmuz-zaman.png',
       alt: 'Elmuz Zaman profile picture',
       rating: 5,
@@ -428,85 +430,80 @@ export default function Review() {
       </Head>
 
       <main className="container px-3 py-3">
-        <h2 className="text-center py-3" style={{ color: 'rgb(247, 147, 30)' }}>
+        <h2 className="text-center pt-3 pb-5" style={{ color: '#1A3B19',fontFamily:'system-ui' }}>
           Customer Reviews
         </h2>
+        
 
-        <section className="row g-4" aria-label="Customer Reviews">
-          {team.map((member, index) => (
-            <article
-              className="col-md-6 col-lg-6"
-              key={index}
-              itemScope
-              itemType="https://schema.org/Review"
-              aria-labelledby={`review-title-${index}`}
-            >
-              <div
-                className="p-4 text-center h-100"
-                style={{ backgroundColor: '#f8f8f8', borderRadius: '1rem' }}
-              >
-                <div
-                  className="mx-auto mb-3"
-                  style={{
-                    width: '100px',
-                    height: '100px',
-                    border: '4px solid #f7931e',
-                    borderRadius: '50%',
-                    overflow: 'hidden',
-                    position: 'relative',
-                  }}
-                >
-                  <Image
-                    src={member.img}
-                    alt={member.alt}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 768px) 100px, 100px"
-                    priority
-                  />
-                </div>
+        <section className="review-slider" aria-label="Customer Reviews">
+  <div className="review-track">
+    {team.map((member, index) => (
+      <article
+        className="review-card"
+        key={index}
+        itemScope
+        itemType="https://schema.org/Review"
+        aria-labelledby={`review-title-${index}`}
+      >
+        <div
+          className="p-4 text-center h-100"
+          style={{ backgroundColor: '#1A3B19', borderRadius: '1rem' }}
+        >
+          <div
+            className="mx-auto"
+            style={{
+              width: '100px',
+              height: '100px',
+              borderRadius: '50%',
+              overflow: 'hidden',
+              position: 'relative',
+              bottom: '47px',
+            }}
+          >
+            <Image
+              src={member.img}
+              alt={member.alt}
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100px, 100px"
+              priority
+            />
+          </div>
 
-                <h3
-                  id={`review-title-${index}`}
-                  className="small mb-2 fw-600"
-                  style={{ color: '#f7931e' }}
-                  itemProp="name"
-                >
-                  {member.reviewtitle}
-                </h3>
+          <div
+            style={{ color: 'orange', fontSize: '1.6rem', marginTop: '-30px' }}
+            itemProp="reviewRating"
+            itemScope
+            itemType="https://schema.org/Rating"
+          >
+            <meta itemProp="ratingValue" content={member.rating.toString()} />
+            <meta itemProp="bestRating" content="5" />
+            {renderStars(member.rating)}
+          </div>
 
-                <p
-                  className="small mb-2 fw-600"
-                  style={{ color: '#f7931e', fontStyle: 'italic' }}
-                  itemProp="reviewBody"
-                >
-                  {member.reviewdescription}
-                </p>
+          <p
+            className="small review-text mb-2 fw-600"
+            style={{ color: '#C2F829', fontStyle: 'italic' }}
+            itemProp="reviewBody"
+          >
+            {member.reviewdescription}
+          </p>
 
-                <div
-                  style={{ color: '#f7931e', fontSize: '1.2rem' }}
-                  itemProp="reviewRating"
-                  itemScope
-                  itemType="https://schema.org/Rating"
-                >
-                  <meta itemProp="ratingValue" content={member.rating.toString()} />
-                  <meta itemProp="bestRating" content="5" />
-                  {renderStars(member.rating)}
-                </div>
+          <div
+            className="fw-bold"
+            style={{ color: '#C2F829', fontStyle: 'italic' }}
+            itemProp="author"
+            itemScope
+            itemType="https://schema.org/Person"
+          >
+            - <span itemProp="name">{member.name}</span>
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
 
-                <div
-                  className="fw-bold"
-                  style={{ color: '#f7931e', fontStyle: 'italic' }}
-                  itemProp="author"
-                  itemScope
-                  itemType="https://schema.org/Person"
-                >
-                  - <span itemProp="name">{member.name}</span>
-                </div>
-              </div>
-            </article>
-          ))}
-        </section>
       </main>
     </>
   );

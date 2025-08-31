@@ -1,0 +1,39 @@
+.review-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.review-track {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.review-card {
+  flex: 0 0 110%; 
+  max-width: 117%;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .review-card {
+    flex: 0 0 45%; 
+    max-width: 45%;
+  }
+}
+
+.review-track::-webkit-scrollbar {
+  display: none; 
+}
+
+.review-text {
+  color: #c2f829;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  white-space: pre-line; /* interpret \n as line break */
+}

@@ -3,11 +3,11 @@
 }
 
 .footer-green {
-  background-color: #f7931e;
+  background-color: #1a3b19;
 }
 
 .social-icon {
-  color: #f7931e;
+  color: rgb(198, 252, 42);
   font-size: 1.5rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -23,4 +23,10 @@
   padding: 0.25rem 0.75rem;
 }
 
+.set-color-menu{
+  color: rgb(198, 252, 42);
+}
 
+.set-color-menu:hover{
+  color: rgb(198, 252, 42) !important;
+}

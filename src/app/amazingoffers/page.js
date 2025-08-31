@@ -239,7 +239,7 @@ export default function AmazingOffers() {
 
       <section className="hero-section">
         <header>
-          <h1 className="hero-title">Students Deal</h1>
+          <h1 className="hero-title" style={{color:'rgb(198, 252, 42)',fontFamily:'system-ui'}}>Students Deal</h1>
           <h2 className="hero-subtitle">Coming Soon...</h2>
         </header>
 
@@ -255,7 +255,7 @@ export default function AmazingOffers() {
                   loading="lazy"
                 />
               </div>
-              <p className="food-label" style={{textTransform:'uppercase'}}>{item.label}</p>
+              <p className="rent-now" style={{textTransform:'uppercase'}}>{item.label}</p>
             </article>
           ))}
         </div>

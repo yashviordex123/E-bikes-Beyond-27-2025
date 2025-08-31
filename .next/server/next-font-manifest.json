@@ -1,8 +1,48 @@
 {
   "app": {
+    "[project]/src/app/E-bike-10-12h/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/E-bike-6-8h/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/E-bike-8-10h/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/_not-found/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/about/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/basicknowledge/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/contact/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
     "[project]/src/app/page": [
-      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2",
-      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2"
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/products/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/rental/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
+    ],
+    "[project]/src/app/termsandcondition/page": [
+      "static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2",
+      "static/media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

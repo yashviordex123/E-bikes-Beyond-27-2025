@@ -123,6 +123,7 @@ import Typewriter from "typewriter-effect";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Head from "next/head";
+import '../styles/Hero.css';
 
 export default function Hero() {
   const router = useRouter();
@@ -253,8 +254,8 @@ export default function Hero() {
             }}
           >
             <div
-              className="spinner-border text-warning"
-              style={{ width: "4rem", height: "4rem" }}
+              className="loader"
+              style={{ width: "4rem", height: "4rem", color:'#1A3B19' }}
               role="status"
             >
               <span className="visually-hidden">Loading...</span>
@@ -265,9 +266,9 @@ export default function Hero() {
         <div className="container position-relative z-2 mt-5 pt-5">
           <div className="row mt-sm-0 mt-4">
             <div className="col-12 col-md-6">
-              <h1
+              <h2
                 className="display-5 mb-4"
-                style={{ color: "#ff6b00" }}
+                style={{ color: "#C6FC2A" }}
               >
               <strong className="fw-bold">
                 <Typewriter
@@ -282,26 +283,19 @@ export default function Hero() {
                   }}
                 />
                 </strong>
-              </h1>
-              <h2 className="fw-600 mb-4" style={{ fontStyle: "italic" }}>
-                {subtitles[currentImageIndex]}
               </h2>
+              <h3 className="fw-600 mb-4" style={{ fontStyle: "italic" }}>
+                {subtitles[currentImageIndex]}
+              </h3>
               <a
                 onClick={handleRentalClick}
-                className="btn btn-light set-button-background rounded-1 px-4 py-2 mt-3"
+                className="rent-now px-4 py-2 mt-3"
                 aria-label="Book your Beyond Bikes rental in Melbourne"
                 title="Beyond Bikes - Rent an e-bike in Melbourne"
-                href="/rental"
-                style={{
-                  backgroundColor: "#ff6b00",
-                  fontSize: "13px",
-                  color: "#fff",
-                  fontWeight: "600",
-                  border: "none",
-                  cursor: "pointer",
-                }}
+                
+                
               >
-                RENT NOW
+                RENT NOW <span className="arrow">→</span>
               </a>
 
               {/* Fallback for crawlers */}

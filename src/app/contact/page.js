@@ -22,13 +22,13 @@
 
 
 //       <div className="container px-sm-0 px-3 py-5">
-//       <h1 className='text-center pb-4' style={{color: '#f7931e'}}>Contact Us</h1>
+//       <h1 className='text-center pb-4' style={{color: '#1a3b19'}}>Contact Us</h1>
 //         <div className="row g-4 align-items-start">
 
 //           {/* Form Section */}
 //           <div className="col-lg-7">
-//             <h1 className="fw-bold" style={{ fontSize: '30px', color: '#f7931e' }}>Send a Message</h1>
-//             <h2 className="fw-bold mb-3 mt-3" style={{ color: '#f7931e' }}>Reach out Get in Touch</h2>
+//             <h1 className="fw-bold" style={{ fontSize: '30px', color: '#1a3b19' }}>Send a Message</h1>
+//             <h2 className="fw-bold mb-3 mt-3" style={{ color: '#1a3b19' }}>Reach out Get in Touch</h2>
 //             <p className="text-dark mb-4">
 //               Please be prepared to provide details about your possible issue including your bike model.
 //               The more information you can provide, the quicker our team can provide a solution.
@@ -94,7 +94,7 @@
 //               <button
 //                 type="submit"
 //                 className="btn text-light fw-semibold px-4 py-2"
-//                 style={{ background: '#f7931e' }}
+//                 style={{ background: '#1a3b19' }}
 //               >
 //                 Send Message
 //               </button>
@@ -105,22 +105,22 @@
 //           <div className="col-lg-5">
 //             <div className="bg-light rounded p-4">
 //               <div className="mb-4">
-//                 <h6 className="text-uppercase fw-bold" style={{ color: '#f7931e' }}>Address</h6>
+//                 <h6 className="text-uppercase fw-bold" style={{ color: '#1a3b19' }}>Address</h6>
 //                 <p className="mb-0">667 Glen Huntly Rd Caulfield South, Caulfield VIC 3162, Australia</p>
 //               </div>
 //               <hr />
 //               <div className="mb-4">
-//                 <h6 className="text-uppercase fw-bold" style={{ color: '#f7931e' }}>Phone</h6>
+//                 <h6 className="text-uppercase fw-bold" style={{ color: '#1a3b19' }}>Phone</h6>
 //                 <p className="mb-0">+61 422 032 961</p>
 //               </div>
 //               <hr />
 //               <div className="mb-4">
-//                 <h6 className="text-uppercase fw-bold" style={{ color: '#f7931e' }}>Email</h6>
+//                 <h6 className="text-uppercase fw-bold" style={{ color: '#1a3b19' }}>Email</h6>
 //                 <p className="mb-0">info.beyondbikes@gmail.com</p>
 //               </div>
 //               <hr />
 //               <div>
-//                 <h6 className="text-uppercase fw-bold" style={{ color: '#f7931e' }}>Hours</h6>
+//                 <h6 className="text-uppercase fw-bold" style={{ color: '#1a3b19' }}>Hours</h6>
 //                 <div className="d-flex py-1">
 //                   <span className='me-2'>Mon - Sun :</span> <span>9am - 7pm</span>
 //                 </div>
@@ -199,12 +199,12 @@
 
 //       <main>
 //         <section className="container px-sm-0 px-3 py-5">
-//           <h1 className='text-center fw-bold pb-4' style={{color: '#f7931e'}}>Contact Beyond Bikes</h1>
+//           <h1 className='text-center fw-bold pb-4' style={{color: '#1a3b19'}}>Contact Beyond Bikes</h1>
 //           <div className="row g-4 align-items-start">
 
 //             {/* Form Section */}
 //             <div className="col-lg-7" itemScope itemType="https://schema.org/ContactPage">
-//               <h2 className="fw-bold mb-3 mt-3" style={{ color: '#f7931e' }} itemProp="name">Reach Out & Get in Touch</h2>
+//               <h2 className="fw-bold mb-3 mt-3" style={{ color: '#1a3b19' }} itemProp="name">Reach Out & Get in Touch</h2>
 //               <p className="text-dark mb-4" itemProp="description">
 //                 Provide details about your inquiry or issue including your bike model. Our team at Beyond Bikes will respond promptly.
 //               </p>
@@ -279,7 +279,7 @@
 //                 <button
 //                   type="submit"
 //                   className="btn text-light fw-semibold px-4 py-2"
-//                   style={{ background: '#f7931e' }}
+//                   style={{ background: '#1a3b19' }}
 //                 >
 //                   Send Message
 //                 </button>
@@ -290,24 +290,24 @@
 //             <div className="col-lg-5">
 //               <address className="bg-light rounded p-4" itemScope itemType="https://schema.org/PostalAddress">
 //                 <div className="mb-4">
-//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Address</h3>
+//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Address</h3>
 //                   <p className="mb-0" itemProp="streetAddress">667 Glen Huntly Rd Caulfield South</p>
 //                   <p className="mb-0" itemProp="addressLocality">Caulfield VIC 3162</p>
 //                   <p className="mb-0" itemProp="addressCountry">Australia</p>
 //                 </div>
 //                 <hr />
 //                 <div className="mb-4">
-//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Phone</h3>
+//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Phone</h3>
 //                   <p className="mb-0" itemProp="telephone">+61 422 032 961</p>
 //                 </div>
 //                 <hr />
 //                 <div className="mb-4">
-//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Email</h3>
+//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Email</h3>
 //                   <p className="mb-0" itemProp="email">info.beyondbikes@gmail.com</p>
 //                 </div>
 //                 <hr />
 //                 <div>
-//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Hours</h3>
+//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Hours</h3>
 //                   <div className="d-flex py-1">
 //                     <span className='me-2'>Mon - Sun :</span> <span>9am - 7pm</span>
 //                   </div>
@@ -333,7 +333,7 @@ import { usePathname } from 'next/navigation';
 
 export default function Contact() {
   const pathname = usePathname();
-  const siteUrl = "https://www.beyondbikes.com.au";
+  const siteUrl = "https://www.beyondbikes.com.au/";
 
   return (
     <>
@@ -343,6 +343,7 @@ export default function Contact() {
         <meta name="description" content="Contact Beyond Bikes support team. Get help with e-bike rentals, product inquiries, and services. Fast responses guaranteed." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`${siteUrl}/contact`} />
+        <meta name="keywords" content="Beyond Bikes contact, ebike shop Melbourne, e-bike rentals Melbourne, electric bikes Ormond" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
@@ -389,12 +390,12 @@ export default function Contact() {
 
       <main>
         <section className="container px-sm-0 px-3 py-5">
-          <h1 className='text-center fw-bold pb-4' style={{color: '#f7931e'}}>Contact Beyond Bikes</h1>
+          <h1 className='text-center fw-bold pb-4' style={{color: '#1a3b19',fontFamily:'system-ui'}}>Contact Beyond Bikes</h1>
           <div className="row g-4 align-items-start">
 
             {/* Form Section */}
-            <div className="col-lg-7" itemScope itemType="https://schema.org/ContactPage">
-              <h2 className="fw-bold mb-3 mt-3" style={{ color: '#f7931e' }} itemProp="name">Reach Out & Get in Touch</h2>
+            <div className="col-lg-6" itemScope itemType="https://schema.org/ContactPage">
+              <h2 className="fw-bold mb-3 mt-3" style={{ color: '#1a3b19',fontFamily:'system-ui' }} itemProp="name">Reach Out & Get in Touch</h2>
               <p className="text-dark mb-4" itemProp="description">
                 Provide details about your inquiry or issue including your bike model. Our team at Beyond Bikes will respond promptly.
               </p>
@@ -402,7 +403,7 @@ export default function Contact() {
               <form className="contact-form" action="https://formsubmit.co/info.beyondbikes@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value={`${siteUrl}/thank-you`} />
+                <input type="hidden" name="_next" value={`${siteUrl}/thankyou`} />
                 <input type="hidden" name="_subject" value="New Contact Submission from Beyond Bikes" />
 
                 <div className="row g-3 mb-3">
@@ -468,8 +469,8 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="btn text-light fw-semibold px-4 py-2"
-                  style={{ background: '#f7931e' }}
+                  className="btn text-light rent-now fw-semibold px-4 py-2"
+                  style={{ background: '#1a3b19' }}
                 >
                   Send Message
                 </button>
@@ -477,37 +478,129 @@ export default function Contact() {
             </div>
 
             {/* Info Section */}
-            <div className="col-lg-5">
-              <address className="bg-light rounded p-4" itemScope itemType="https://schema.org/PostalAddress">
+            
+            <div className="col-lg-6 d-flex justify-content-center">
+              {/* <address className="bg-light rounded p-4" itemScope itemType="https://schema.org/PostalAddress">
                 <div className="mb-4">
-                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Address</h3>
+                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Address</h3>
                   <p className="mb-0" itemProp="addressCountry">576 North Rd, Ormond VIC 3204, Australia</p>
-                  {/* <p className="mb-0" itemProp="addressLocality">Ormond VIC 3204</p>
-                  <p className="mb-0" itemProp="addressCountry">Australia</p> */}
+                 
                 </div>
                 <hr />
                 <div className="mb-4">
-                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Phone</h3>
+                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Phone</h3>
                   <p className="mb-0" itemProp="telephone">+61 422 032 961</p>
                 </div>
                 <hr />
                 <div className="mb-4">
-                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Email</h3>
+                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Email</h3>
                   <p className="mb-0" itemProp="email">info.beyondbikes@gmail.com</p>
                 </div>
                 <hr />
                 <div>
-                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Hours</h3>
+                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Hours</h3>
                   <div className="d-flex py-1">
                     <span className='me-2'>Monday - Saturday :</span> <span>9am - 7pm</span>
                   </div>
                   <span className='me-2'>Sunday :</span> <span>11am - 4pm</span>
                 </div>
-              </address>
+              </address> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.120442377545!2d145.0406816!3d-37.904247399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad669652d799b25%3A0xab28d496d1fa88c7!2s576%20North%20Rd%2C%20Ormond%20VIC%203204%2C%20Australia!5e0!3m2!1sen!2sin!4v1756139787406!5m2!1sen!2sin"
+                allowFullScreen={true}
+                loading="lazy"
+                title="Beyond Bikes Location Map"
+                aria-label="Beyond Bikes Store Location on Google Maps"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="responsive-map"
+              ></iframe>
+              <noscript>
+                View our location on{' '}
+                <a
+                  href="https://goo.gl/maps/7hK3uDNWv5LJbGf86"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Maps
+                </a>
+              </noscript>
             </div>
-
-          </div>
+</div>
+          
         </section>
+        <section className="py-5 bg-white" id="contact-info">
+  <div className="container">
+    <div className="row text-center g-4">
+      
+      {/* Address */}
+      <div className="col-md-4">
+        <div className="d-flex flex-column align-items-center">
+          <div
+            className="rounded-circle d-flex align-items-center justify-content-center mb-3"
+            style={{
+              width: "65px",
+              height: "65px",
+              backgroundColor: "#1a3b19"
+            }}
+          >
+            <i className="bi bi-geo-alt-fill text-white fs-3" aria-hidden="true"></i>
+          </div>
+          <address className="mb-0 text-center">
+            <strong>Address:</strong><br />
+            576 North Rd, Ormond VIC 3204, Australia
+          </address>
+        </div>
+      </div>
+
+      {/* Phone */}
+      <div className="col-md-4">
+        <div className="d-flex flex-column align-items-center">
+          <div
+            className="rounded-circle d-flex align-items-center justify-content-center mb-3"
+            style={{
+              width: "65px",
+              height: "65px",
+              backgroundColor: "#1a3b19"
+            }}
+          >
+            <i className="bi bi-telephone-fill text-white fs-3" aria-hidden="true"></i>
+          </div>
+          <p className="mb-0">
+            <strong>Phone:</strong>{" "}
+            <a href="tel:+61422032961" className="text-decoration-none text-dark">
+              +61 422 032 961
+            </a>
+          </p>
+        </div>
+      </div>
+
+      {/* Email */}
+      <div className="col-md-4">
+        <div className="d-flex flex-column align-items-center">
+          <div
+            className="rounded-circle d-flex align-items-center justify-content-center mb-3"
+            style={{
+              width: "65px",
+              height: "65px",
+              backgroundColor: "#1a3b19"
+            }}
+          >
+            <i className="bi bi-envelope-fill text-white fs-3" aria-hidden="true"></i>
+          </div>
+          <p className="mb-0">
+            <strong>Email:</strong>{" "}
+            <a href="mailto:info.beyondbikes@gmail.com" className="text-decoration-none text-dark">
+              info.beyondbikes@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
       </main>
 
       {pathname === '/contact' && <Footer />}

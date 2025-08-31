@@ -1,0 +1,42 @@
+/* [project]/src/app/styles/Review.css [app-client] (css) */
+.review-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.review-track {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  overflow-x: auto;
+}
+
+.review-card {
+  scroll-snap-align: start;
+  flex: 0 0 110%;
+  max-width: 117%;
+}
+
+@media (width >= 768px) {
+  .review-card {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+
+.review-track::-webkit-scrollbar {
+  display: none;
+}
+
+.review-text {
+  color: #c2f829;
+  white-space: pre-line;
+  margin-bottom: .5rem;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=src_app_styles_Review_css_f9ee138c._.single.css.map*/

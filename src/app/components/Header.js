@@ -122,7 +122,7 @@
 
 //   return (
 
-//     <header className="main-header w-100 sticky-top text-dark" style={{backgroundColor:'#f7931e',boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)', zIndex: 1000,}}>
+//     <header className="main-header w-100 sticky-top text-dark" style={{backgroundColor:'#1a3b19',boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)', zIndex: 1000,}}>
 //       <div className="container position-relative py-3 d-flex justify-content-between align-items-center">
 //         {/* <h1 className="fw-bold mb-0" style={{ color: '#ff6b00' }}>RIDE</h1> */}
 //         <img src='/images/Logo-for-ebike-beyond-bikes-removebg-preview.png' alt='logo' className='set-logo-height'/>
@@ -227,7 +227,7 @@
 //       <header
 //         className="main-header w-100 sticky-top text-dark"
 //         style={{
-//           backgroundColor: '#f7931e',
+//           backgroundColor: '#1a3b19',
 //           boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
 //           zIndex: 1000,
 //         }}
@@ -306,6 +306,7 @@ export default function Header() {
     ['/contact', 'Contact'],
     ['/about', 'About Us'],
     ['/basicknowledge', 'Privacy Policy'],
+    ['/termsandcondition','Terms and Condition']
   ];
 
   const handleNavClick = (href) => {
@@ -352,8 +353,9 @@ export default function Header() {
           }}
         >
           <div
-            className="spinner-border text-warning"
-            style={{ width: "4rem", height: "4rem" }}
+            className="loader"
+            // color='#1A3B19'
+            // style={{ width: "4rem", height: "4rem" }}
             role="status"
           >
             <span className="visually-hidden">Loading...</span>
@@ -364,7 +366,7 @@ export default function Header() {
       <header
         className="main-header w-100 sticky-top text-dark"
         style={{
-          backgroundColor: '#f7931e',
+          backgroundColor: '#1A3B19',
           boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
           zIndex: 1000,
         }}
@@ -408,7 +410,7 @@ export default function Header() {
                     role="button"
                     onClick={() => handleNavClick(href)}
                     className={`nav-link set-header-text ${pathname === href
-                      ? 'text-success fw-bold'
+                      ? 'set-color-menu fw-bold'
                       : 'text-light'
                       }`}
                   >

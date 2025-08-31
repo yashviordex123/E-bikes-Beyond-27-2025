@@ -174,7 +174,7 @@
 //             ))}
 //           </ul>
 //         </header> */}
-// <h1 className='mt-3 mb-5 text-center' style={{color:'#f7931e'}}>Our Products</h1>
+// <h1 className='mt-3 mb-5 text-center' style={{color:'#1a3b19'}}>Our Products</h1>
 //         <div className="row">
 //           {filteredProducts.map((product) => (
 //             <div className="col-12 col-md-4 mb-4 text-center shadow-hover" key={product.id}>
@@ -353,7 +353,7 @@
 //         animate={isVisible ? { opacity: 1, y: 0 } : {}}
 //         transition={{ duration: 0.6, ease: "easeOut" }}
 //       >
-//         <h1 className='mt-3 mb-5 text-center' style={{ color: '#f7931e' }}>Our Products</h1>
+//         <h1 className='mt-3 mb-5 text-center' style={{ color: '#1a3b19' }}>Our Products</h1>
 
 //         <div className="row">
 //           {filteredProducts.map((product) => (
@@ -433,7 +433,7 @@ export default function ProductTabs() {
     setTimeout(() => {
       const slug = productName.replace(/\s+/g, "-");
       router.push(`/${slug}`);
-    }, 1000);
+    }, 9000);
   };
 
   const filteredProducts = productsData[activeTab] || [];
@@ -449,6 +449,11 @@ export default function ProductTabs() {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.beyondbikes.com.au/products" />
+
+        <meta
+    name="keywords"
+    content="electric bikes Melbourne, rent e-bikes, Beyond Bikes Australia, e-bike hire Melbourne"
+  />
 
         {/* Open Graph */}
         <meta property="og:title" content="Beyond Bikes | E-Bike Rentals Melbourne – Products" />
@@ -466,14 +471,31 @@ export default function ProductTabs() {
       {pathname !== "/" && <Header />}
 
       {/* Loader Overlay */}
-      {loading && (
-        <div className="loading-overlay">
-          <div className="spinner-border text-warning" role="status" style={{ width: "4rem", height: "4rem" }}>
-            <span className="visually-hidden">Loading...</span>
+      
+{loading && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              zIndex: 9999,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div
+              className="loader"
+              style={{ width: "4rem", height: "4rem", color:'#1A3B19' }}
+              role="status"
+            >
+              <span className="visually-hidden">Loading...</span>
+            </div>
           </div>
-        </div>
-      )}
-
+        )}
       <motion.section
         id="product-section"
         className="container py-4 px-3 px-sm-0"
@@ -484,22 +506,24 @@ export default function ProductTabs() {
       >
         {/* Dynamic Page Title */}
         {pathname === "/" ? (
-          <h2 className="mt-3 mb-5 text-center" style={{ color: "#f7931e" }}>Bikes for Rent</h2>
+          <h2 className="mt-3 mb-5 text-center" style={{ color: "#1A3B19",fontFamily:'system-ui' }}>Bikes for Rent</h2>
         ) : (
-          <h1 className="mt-3 mb-5 text-center" style={{ color: "#f7931e" }}>Our E-Bikes for Rent</h1>
+          <h1 className="mt-3 mb-5 text-center" style={{ color: "#1A3B19",fontFamily:'system-ui' }}>Our E-Bikes for Rent</h1>
         )}
+
+        
 
         <div className="row">
   {filteredProducts.map((product, i) => (
     <div className="col-12 col-md-4 mb-4 text-center shadow-hover" key={product.id}>
       <article 
-        className="product-card position-relative overflow-hidden"
+        className="product-card card border-0 shadow-sm text-center h-100 position-relative"
         itemScope 
         style={{
                   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1)",
                   borderRadius: "0.5rem",
                   padding: "1rem",
-                  backgroundColor: "#fff",
+                  backgroundColor: "#f9f9f9",
                   transition: "transform 0.2s ease, box-shadow 0.2s ease"
                 }}
         // style="box-shadow:0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1);border-radius:0.5rem;padding:1rem;background-color:#fff;transition:transform 0.2s ease, box-shadow 0.2s ease"
@@ -527,11 +551,11 @@ export default function ProductTabs() {
 
         {/* Product Title */}
         {pathname === "/" ? (
-          <h3 className="fs-5 fw-semibold" itemProp="name">
+          <h3 className="fs-5 fw-semibold" style={{color:'#1A3B19',fontFamily:'system-ui'}} itemProp="name">
             {product.name}
           </h3>
         ) : (
-          <h2 className="fs-5 fw-semibold" itemProp="name">
+          <h2 className="fs-5 fw-semibold" style={{color:'#1A3B19',fontFamily:'system-ui'}} itemProp="name">
             {product.name}
           </h2>
         )}
@@ -540,10 +564,11 @@ export default function ProductTabs() {
         <p 
           className="product-price mt-2 fs-5"
           itemProp="offers"
+          style={{color:'#1A3B19'}}
           itemScope
           itemType="https://schema.org/Offer"
         >
-          <span itemProp="price">{product.price}</span>
+          <span itemProp="price" style={{color:'#1A3B19',fontFamily:'system-ui'}}>{product.price}</span>
           <meta itemProp="priceCurrency" content="AUD" />
           {product.oldPrice && (
             <span className="text-decoration-line-through ms-2 fw-600" style={{color:'#ccc'}}>
@@ -551,6 +576,23 @@ export default function ProductTabs() {
             </span>
           )}
         </p>
+        <div className="d-flex justify-content-center gap-4 my-3">
+  <div className="text-center">
+    <i className="bi bi-battery-charging fs-4" style={{color:'#1A3B19'}}></i>
+    {/* <p className="small mb-0" style={{color:'#1A3B19'}}>Battery</p> */}
+    <p className="small mb-0" style={{ color: '#1A3B19' }}>{product.battery || "Battery"}</p>
+  </div>
+  <div className="text-center">
+    <i className="bi bi-clock-history fs-4" style={{ color: '#1A3B19' }}></i>
+    {/* <p className="small mb-0" style={{color:'#1A3B19'}}>Motor</p> */}
+    <p className="small mb-0" style={{ color: '#1A3B19' }}>{product.batteryHours || "Motor"}</p>
+  </div>
+  <div className="text-center">
+    <i className="bi bi-speedometer fs-4" style={{ color: '#1A3B19' }}></i>
+    {/* <p className="small mb-0" style={{color:'#1A3B19'}}>Range</p> */}
+    <p className="small mb-0" style={{ color: '#1A3B19' }}>{product.topSpeed || "Range"}</p>
+  </div>
+</div>
       </article>
     </div>
   ))}

@@ -1,3 +1,4 @@
+@import "https://db.onlinewebfonts.com/c/6032045c739406c023ba28081d83924a?family=Toronto+Subway+W01+Regular";
 /* [next]/internal/font/google/geist_6feb203d.module.css [app-client] (css) */
 @font-face {
   font-family: Geist;
@@ -13434,6 +13435,10 @@ textarea.form-control-lg {
 
 
 /* [project]/src/app/globals.css [app-client] (css) */
+* {
+  font-family: Toronto Subway W01 Regular, sans-serif;
+}
+
 @media (width <= 767px) {
   .set-image-services {
     width: 350px;
@@ -13503,6 +13508,75 @@ textarea.form-control-lg {
   padding: 0 !important;
   position: absolute !important;
   overflow: hidden !important;
+}
+
+.tos-header {
+  background-image: "url('/images/RentalBackgroundImageLatest.jpg')";
+  background-size: "cover";
+  background-position: "center";
+  background-repeat: "no-repeat";
+  height: 30vh;
+}
+
+.tos-header h1 {
+  color: #222;
+  font-size: 2.5rem;
+}
+
+.updated-date {
+  color: #fff;
+  background: #222;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 4px 12px;
+  font-size: .9rem;
+  display: inline-block;
+}
+
+.tos-section {
+  background: #fff;
+}
+
+.tos-content {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.tos-content h2 {
+  color: #111;
+  margin-bottom: .5rem;
+  font-size: 1.3rem;
+}
+
+.loader {
+  --c: no-repeat linear-gradient(#1a3b19 0 0);
+  background: var(--c), var(--c), var(--c), var(--c), var(--c), var(--c), var(--c), var(--c), var(--c);
+  background-size: 16px 16px;
+  margin: auto;
+  animation: 1s infinite l32-1, 1s infinite l32-2;
+}
+
+@keyframes l32-1 {
+  0%, 100% {
+    width: 45px;
+    height: 45px;
+  }
+
+  35%, 65% {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@keyframes l32-2 {
+  0%, 40% {
+    background-position: 0 0, 0, 0 100%, 50% 100%, 100% 100%, 100%, 100% 0, 50% 0, 50%;
+  }
+
+  60%, 100% {
+    background-position: 0, 0 100%, 50% 100%, 100% 100%, 100%, 100% 0, 50% 0, 0 0, 50%;
+  }
 }
 
 

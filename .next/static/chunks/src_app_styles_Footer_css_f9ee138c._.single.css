@@ -4,11 +4,11 @@
 }
 
 .footer-green {
-  background-color: #f7931e;
+  background-color: #1a3b19;
 }
 
 .social-icon {
-  color: #f7931e;
+  color: #c6fc2a;
   font-size: 1.5rem;
   transition: transform .3s, color .3s;
 }
@@ -22,6 +22,14 @@
   letter-spacing: .5px;
   padding: .25rem .75rem;
   font-weight: 600;
+}
+
+.set-color-menu {
+  color: #c6fc2a;
+}
+
+.set-color-menu:hover {
+  color: #c6fc2a !important;
 }
 
 /*# sourceMappingURL=src_app_styles_Footer_css_f9ee138c._.single.css.map*/

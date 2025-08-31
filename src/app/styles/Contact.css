@@ -11,7 +11,7 @@
 @media (max-width: 576px) {
     .set-location-padding{
     padding-left: 20px;
-    padding-top: 6px;
+    padding-top: 10px;
 }
 .responsive-map {
     width: 330px;

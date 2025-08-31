@@ -46,12 +46,17 @@
 // components/ContactPage.js
 "use client";
 
-import React from 'react';
+import {useState} from 'react';
 import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Contact.css';
 
 export default function ContactPage() {
+  const [loading, setLoading] = useState(false);
+  const handleRentalClick = () => {
+    setLoading(true);
+    setTimeout(() => router.push("/rental"), 1000);
+  };
   return (
     <>
       {/* SEO Head */}
@@ -65,7 +70,10 @@ export default function ContactPage() {
           name="keywords"
           content="Beyond Bikes contact, ebike store Melbourne, electric bike shop Caulfield, Beyond Bikes Australia location"
         />
+        <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.beyondbikes.com.au/contact" />
+
 
         {/* Open Graph */}
         <meta property="og:title" content="Contact Beyond Bikes | Melbourne E-Bike Store" />
@@ -128,16 +136,43 @@ export default function ContactPage() {
         />
       </Head>
 
+      {loading && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(255, 255, 255, 0.8)",
+              zIndex: 9999,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div
+              className="loader"
+              style={{ width: "4rem", height: "4rem", color:'#1A3B19' }}
+              role="status"
+            >
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        )}
+
       {/* Contact Section */}
       <section className="mt-5" style={{ background: '#f8f8f8' }}>
         <div
-          className="container py-5 px-3 text-white"
+          className="container py-sm-5 py-1 px-3 text-white"
           aria-label="Store Locations"
         >
-          <div className="row justify-content-center mb-4">
-            <h2 className="text-center" style={{ color: '#ff6b00' }}>
+          <div className="row justify-content-center mb-sm-5 mb-3">
+
+            <h2 className="text-center" style={{ color: '#1A3B19',fontFamily:'system-ui' }}>
               Contact Beyond Bikes in Melbourne
             </h2>
+            {/* <p>Contact Us on this Located Destination and</p> */}
           </div>
 
           {/* Branch */}
@@ -146,19 +181,34 @@ export default function ContactPage() {
             itemScope
             itemType="https://schema.org/LocalBusiness"
           >
+          
             <div className="col-md-6 set-location-padding">
-              <p itemProp="address" style={{ color: '#ff6b00' }}>
-                <strong>Address:</strong> 576 North Rd, Ormond VIC 3204, Australia
-              </p>
-              <p itemProp="email" style={{ color: '#ff6b00' }}>
-                <strong>Email:</strong> info.beyondbikes@gmail.com
-              </p>
-              <p itemProp="telephone" style={{ color: '#ff6b00' }}>
-                <strong>Phone:</strong> +61 422 032 961
-              </p>
-            </div>
+              <h2 className='mb-3' style={{letterSpacing:'4px',color:'rgb(26, 59, 25)',fontSize: '15px',fontWeight:'600'}}>BEYOND BIKES</h2>
+              <h3
+          className="fw-bold mb-3"
+          style={{ color: "rgb(26, 59, 25)" }}
+        >
+          Explore Our Location
+        </h3>
 
-            <div className="col-md-6 d-flex justify-content-center">
+        {/* Description */}
+        <p className="mb-2" style={{ color: "rgb(26, 59, 25)" }}>
+          Visit us at our store for professional e-bike rentals and service.  
+          Conveniently located to serve you better.
+        </p>
+
+        <a
+                onClick={handleRentalClick}
+                className="rent-now px-4 py-2 mt-3"
+                aria-label="Book your Beyond Bikes rental in Melbourne"
+                title="Beyond Bikes - Rent an e-bike in Melbourne"
+                href="/contact"
+                
+              >
+                Contact <span className="arrow">→</span>
+              </a>
+            </div>
+<div className="col-md-6 d-flex justify-content-center mt-5 mt-sm-0">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.120442377545!2d145.0406816!3d-37.904247399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad669652d799b25%3A0xab28d496d1fa88c7!2s576%20North%20Rd%2C%20Ormond%20VIC%203204%2C%20Australia!5e0!3m2!1sen!2sin!4v1756139787406!5m2!1sen!2sin"
                 allowFullScreen={true}
@@ -179,6 +229,7 @@ export default function ContactPage() {
                 </a>
               </noscript>
             </div>
+            
           </div>
         </div>
       </section>

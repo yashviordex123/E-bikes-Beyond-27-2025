@@ -8,10 +8,48 @@
   max-width: 500px;
 }
 
+.set-image-size-about-latest-ui {
+  width: 500px;
+  height: 500px;
+}
+
 .orangeHeading {
-  color: #f7931e;
+  color: #1a3b19;
   margin-bottom: 1rem;
   font-weight: bold;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.backImage {
+  z-index: 1;
+  border-radius: 15px;
+  position: relative;
+}
+
+.frontImage {
+  z-index: 2;
+  border-radius: 15px;
+  max-width: 60%;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+}
+
+@media (width <= 768px) {
+  .frontImage {
+    max-width: 100%;
+    margin-top: 15px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+
+  .set-image-size-about-latest-ui {
+    height: 450px !important;
+  }
 }
 
 /*# sourceMappingURL=src_app_styles_About_css_f9ee138c._.single.css.map*/

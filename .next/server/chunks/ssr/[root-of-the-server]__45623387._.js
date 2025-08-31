@@ -147,7 +147,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //     router.push('/cart'); // navigate to your cart page
 //   };
 //   return (
-//     <header className="main-header w-100 sticky-top text-dark" style={{backgroundColor:'#f7931e',boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)', zIndex: 1000,}}>
+//     <header className="main-header w-100 sticky-top text-dark" style={{backgroundColor:'#1a3b19',boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)', zIndex: 1000,}}>
 //       <div className="container position-relative py-3 d-flex justify-content-between align-items-center">
 //         {/* <h1 className="fw-bold mb-0" style={{ color: '#ff6b00' }}>RIDE</h1> */}
 //         <img src='/images/Logo-for-ebike-beyond-bikes-removebg-preview.png' alt='logo' className='set-logo-height'/>
@@ -236,7 +236,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //       <header
 //         className="main-header w-100 sticky-top text-dark"
 //         style={{
-//           backgroundColor: '#f7931e',
+//           backgroundColor: '#1a3b19',
 //           boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
 //           zIndex: 1000,
 //         }}
@@ -426,7 +426,7 @@ function Header() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
                 className: "main-header w-100 sticky-top text-dark",
                 style: {
-                    backgroundColor: '#f7931e',
+                    backgroundColor: '#1A3B19',
                     boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
                     zIndex: 1000
                 },
@@ -478,7 +478,7 @@ function Header() {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             role: "button",
                                             onClick: ()=>handleNavClick(href),
-                                            className: `nav-link set-header-text ${pathname === href ? 'text-success fw-bold' : 'text-light'}`,
+                                            className: `nav-link set-header-text ${pathname === href ? 'set-color-menu fw-bold' : 'text-light'}`,
                                             children: label
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/Header.js",
@@ -645,6 +645,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
+;
 function Hero() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const images = [
@@ -677,7 +678,7 @@ function Hero() {
                         children: "Beyond Bikes | Electric Bike Rentals in Melbourne | E-Bike Hire"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 164,
+                        lineNumber: 165,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -685,7 +686,7 @@ function Hero() {
                         content: "Rent powerful, quiet, and flexible electric bikes in Melbourne with Beyond Bikes. Perfect for commuters, delivery riders, and city explorers."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 167,
+                        lineNumber: 168,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -693,7 +694,7 @@ function Hero() {
                         content: "electric bike rental Melbourne, e-bike hire Melbourne, Beyond Bikes Australia, delivery e-bikes Melbourne, rent e-bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 171,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -701,7 +702,7 @@ function Hero() {
                         href: "https://www.beyondbikes.com.au/"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 175,
+                        lineNumber: 176,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -709,7 +710,7 @@ function Hero() {
                         content: "Beyond Bikes - Electric Bike Rentals Melbourne"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 176,
+                        lineNumber: 177,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -717,7 +718,7 @@ function Hero() {
                         content: "Flexible electric bike rentals in Melbourne. Freedom to explore, power to move with Beyond Bikes."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 177,
+                        lineNumber: 178,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -725,7 +726,7 @@ function Hero() {
                         content: "https://www.beyondbikes.com.au/images/02-07-2025-Latest-Hero-1.jpg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 181,
+                        lineNumber: 182,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -733,7 +734,7 @@ function Hero() {
                         content: "https://www.beyondbikes.com.au/"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 182,
+                        lineNumber: 183,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -741,7 +742,7 @@ function Hero() {
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 183,
+                        lineNumber: 184,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -749,7 +750,7 @@ function Hero() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 184,
+                        lineNumber: 185,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -757,7 +758,7 @@ function Hero() {
                         content: "Beyond Bikes - Electric Bike Rentals Melbourne"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 185,
+                        lineNumber: 186,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -765,7 +766,7 @@ function Hero() {
                         content: "Rent quiet, powerful electric bikes in Melbourne with Beyond Bikes. Book now."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 186,
+                        lineNumber: 187,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -773,7 +774,7 @@ function Hero() {
                         content: "https://www.beyondbikes.com.au/images/02-07-2025-Latest-Hero-1.jpg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 190,
+                        lineNumber: 191,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -804,13 +805,13 @@ function Hero() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 193,
+                        lineNumber: 194,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Hero.js",
-                lineNumber: 163,
+                lineNumber: 164,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -827,12 +828,12 @@ function Hero() {
                             children: "Beyond Bikes"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Hero.js",
-                            lineNumber: 229,
+                            lineNumber: 230,
                             columnNumber: 39
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 229,
+                        lineNumber: 230,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -846,7 +847,7 @@ function Hero() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 231,
+                        lineNumber: 232,
                         columnNumber: 9
                     }, this),
                     loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -874,17 +875,17 @@ function Hero() {
                                 children: "Loading..."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Hero.js",
-                                lineNumber: 260,
+                                lineNumber: 261,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Hero.js",
-                            lineNumber: 255,
+                            lineNumber: 256,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 241,
+                        lineNumber: 242,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -897,7 +898,7 @@ function Hero() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                         className: "display-5 mb-4",
                                         style: {
-                                            color: "#ff6b00"
+                                            color: "#C6FC2A"
                                         },
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             className: "fw-bold",
@@ -914,17 +915,17 @@ function Hero() {
                                                 }
                                             }, currentImageIndex + "-title", false, {
                                                 fileName: "[project]/src/app/components/Hero.js",
-                                                lineNumber: 273,
+                                                lineNumber: 274,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/Hero.js",
-                                            lineNumber: 272,
+                                            lineNumber: 273,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Hero.js",
-                                        lineNumber: 268,
+                                        lineNumber: 269,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -935,27 +936,29 @@ function Hero() {
                                         children: subtitles[currentImageIndex]
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Hero.js",
-                                        lineNumber: 286,
+                                        lineNumber: 287,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         onClick: handleRentalClick,
-                                        className: "btn btn-light set-button-background rounded-1 px-4 py-2 mt-3",
+                                        className: "rent-now px-4 py-2 mt-3",
                                         "aria-label": "Book your Beyond Bikes rental in Melbourne",
                                         title: "Beyond Bikes - Rent an e-bike in Melbourne",
                                         href: "/rental",
-                                        style: {
-                                            backgroundColor: "#ff6b00",
-                                            fontSize: "13px",
-                                            color: "#fff",
-                                            fontWeight: "600",
-                                            border: "none",
-                                            cursor: "pointer"
-                                        },
-                                        children: "RENT NOW"
-                                    }, void 0, false, {
+                                        children: [
+                                            "RENT NOW ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "arrow",
+                                                children: "→"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/Hero.js",
+                                                lineNumber: 298,
+                                                columnNumber: 26
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/app/components/Hero.js",
-                                        lineNumber: 289,
+                                        lineNumber: 290,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("noscript", {
@@ -964,36 +967,36 @@ function Hero() {
                                                 children: "Electric Bike Rentals in Melbourne"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Hero.js",
-                                                lineNumber: 309,
+                                                lineNumber: 303,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "Your go-to for flexible 6–12 h electric bike hire—perfect for commuters and food delivery riders."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Hero.js",
-                                                lineNumber: 310,
+                                                lineNumber: 304,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Hero.js",
-                                        lineNumber: 308,
+                                        lineNumber: 302,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Hero.js",
-                                lineNumber: 267,
+                                lineNumber: 268,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Hero.js",
-                            lineNumber: 266,
+                            lineNumber: 267,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 265,
+                        lineNumber: 266,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1001,13 +1004,13 @@ function Hero() {
                         children: "Beyond Bikes offers quiet, powerful electric bikes for rent across Melbourne. Rent flexible e-bikes for commuting, food delivery, and city exploring."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 320,
+                        lineNumber: 314,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Hero.js",
-                lineNumber: 223,
+                lineNumber: 224,
                 columnNumber: 7
             }, this)
         ]
@@ -1390,7 +1393,7 @@ function Footer() {
                             ].map(([href, label])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     className: "nav-item mb-2",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: `nav-link link-light bg-transparent border-0 ${pathname === href ? 'text-success fw-bold' : 'text-light'}`,
+                                        className: `nav-link link-light bg-transparent border-0 ${pathname === href ? 'set-color-menu fw-bold' : 'text-light'}`,
                                         onClick: ()=>handleNavigation(href),
                                         style: {
                                             cursor: 'pointer'
@@ -1623,7 +1626,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //             ))}
 //           </ul>
 //         </header> */}
-// <h1 className='mt-3 mb-5 text-center' style={{color:'#f7931e'}}>Our Products</h1>
+// <h1 className='mt-3 mb-5 text-center' style={{color:'#1a3b19'}}>Our Products</h1>
 //         <div className="row">
 //           {filteredProducts.map((product) => (
 //             <div className="col-12 col-md-4 mb-4 text-center shadow-hover" key={product.id}>
@@ -1783,7 +1786,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //         animate={isVisible ? { opacity: 1, y: 0 } : {}}
 //         transition={{ duration: 0.6, ease: "easeOut" }}
 //       >
-//         <h1 className='mt-3 mb-5 text-center' style={{ color: '#f7931e' }}>Our Products</h1>
+//         <h1 className='mt-3 mb-5 text-center' style={{ color: '#1a3b19' }}>Our Products</h1>
 //         <div className="row">
 //           {filteredProducts.map((product) => (
 //             <div className="col-12 col-md-4 mb-4 text-center shadow-hover" key={product.id}>
@@ -2027,7 +2030,8 @@ function ProductTabs() {
                     pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "mt-3 mb-5 text-center",
                         style: {
-                            color: "#f7931e"
+                            color: "#1A3B19",
+                            fontFamily: 'system-ui'
                         },
                         children: "Bikes for Rent"
                     }, void 0, false, {
@@ -2037,7 +2041,8 @@ function ProductTabs() {
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "mt-3 mb-5 text-center",
                         style: {
-                            color: "#f7931e"
+                            color: "#1A3B19",
+                            fontFamily: 'system-ui'
                         },
                         children: "Our E-Bikes for Rent"
                     }, void 0, false, {
@@ -2056,7 +2061,7 @@ function ProductTabs() {
                                         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1)",
                                         borderRadius: "0.5rem",
                                         padding: "1rem",
-                                        backgroundColor: "#fff",
+                                        backgroundColor: "#f9f9f9",
                                         transition: "transform 0.2s ease, box-shadow 0.2s ease"
                                     },
                                     // style="box-shadow:0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1);border-radius:0.5rem;padding:1rem;background-color:#fff;transition:transform 0.2s ease, box-shadow 0.2s ease"
@@ -2091,6 +2096,10 @@ function ProductTabs() {
                                         }, this),
                                         pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             className: "fs-5 fw-semibold",
+                                            style: {
+                                                color: '#1A3B19',
+                                                fontFamily: 'system-ui'
+                                            },
                                             itemProp: "name",
                                             children: product.name
                                         }, void 0, false, {
@@ -2099,6 +2108,10 @@ function ProductTabs() {
                                             columnNumber: 11
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "fs-5 fw-semibold",
+                                            style: {
+                                                color: '#1A3B19',
+                                                fontFamily: 'system-ui'
+                                            },
                                             itemProp: "name",
                                             children: product.name
                                         }, void 0, false, {
@@ -2109,15 +2122,22 @@ function ProductTabs() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "product-price mt-2 fs-5",
                                             itemProp: "offers",
+                                            style: {
+                                                color: '#1A3B19'
+                                            },
                                             itemScope: true,
                                             itemType: "https://schema.org/Offer",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     itemProp: "price",
+                                                    style: {
+                                                        color: '#c2f829',
+                                                        fontFamily: 'system-ui'
+                                                    },
                                                     children: product.price
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 546,
+                                                    lineNumber: 547,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -2125,7 +2145,7 @@ function ProductTabs() {
                                                     content: "AUD"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 547,
+                                                    lineNumber: 548,
                                                     columnNumber: 11
                                                 }, this),
                                                 product.oldPrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2136,7 +2156,7 @@ function ProductTabs() {
                                                     children: product.oldPrice
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 549,
+                                                    lineNumber: 550,
                                                     columnNumber: 13
                                                 }, this)
                                             ]
@@ -2194,12 +2214,12 @@ function ProductTabs() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/app/products/page.js",
-                lineNumber: 562,
+                lineNumber: 563,
                 columnNumber: 7
             }, this),
             pathname === "/products" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/products/page.js",
-                lineNumber: 578,
+                lineNumber: 579,
                 columnNumber: 36
             }, this)
         ]
@@ -2785,39 +2805,79 @@ function Promotion() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "position-absolute w-100 mt-sm-5 mt-0 h-100 d-flex align-items-center justify-content-center justify-content-md-end pe-md-5",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-center bg-white text-dark px-sm-5 px-3 py-4 rounded shadow-lg opening-box animate-opening",
+                        className: "text-center text-dark px-sm-5 px-3 py-4 rounded shadow-lg opening-box animate-opening",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                id: "opening-hours-heading",
-                                className: "fw-bold mb-3",
-                                children: "OPENING HOURS"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    borderRadius: '50%'
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/images/Latest-beyond-logo-12-08.png",
+                                    alt: "Beyond Bikes Logo",
+                                    className: "set-logo-height"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/Promotion.js",
+                                    lineNumber: 140,
+                                    columnNumber: 13
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Promotion.js",
                                 lineNumber: 139,
                                 columnNumber: 13
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "mb-3 fs-5",
-                                children: "Monday - Saturday : 9am - 7pm"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/Promotion.js",
-                                lineNumber: 142,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "mb-3 fs-5",
-                                children: "Sunday : 11am - 4pm"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/Promotion.js",
-                                lineNumber: 145,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mb-0 text-muted",
-                                children: "Visit our Melbourne location anytime during our opening hours."
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                style: {
+                                    fontWeight: '400',
+                                    letterSpacing: '3px',
+                                    fontFamily: 'monospace'
+                                },
+                                children: "Beyond Bikes"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Promotion.js",
                                 lineNumber: 148,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                id: "opening-hours-heading",
+                                className: "fw-bold mb-3",
+                                style: {
+                                    fontSize: '36px',
+                                    fontFamily: 'system-ui'
+                                },
+                                children: "OPENING HOURS"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/Promotion.js",
+                                lineNumber: 149,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "mb-1 fs-5 fw-bold",
+                                children: "Monday - Saturday"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/Promotion.js",
+                                lineNumber: 152,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                children: "9:00am - 7:00pm"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/Promotion.js",
+                                lineNumber: 155,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "mb-1 mt-3 fs-5 fw-bold",
+                                children: "Sunday"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/Promotion.js",
+                                lineNumber: 156,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                children: "11am - 4pm"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/Promotion.js",
+                                lineNumber: 159,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -3095,11 +3155,11 @@ function ContactPage() {
                     "aria-label": "Store Locations",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "row justify-content-center mb-4",
+                            className: "row justify-content-center mb-5",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-center",
                                 style: {
-                                    color: '#ff6b00'
+                                    color: '#1A3B19'
                                 },
                                 children: "Contact Beyond Bikes in Melbourne"
                             }, void 0, false, {
@@ -3118,75 +3178,6 @@ function ContactPage() {
                             itemType: "https://schema.org/LocalBusiness",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "col-md-6 set-location-padding",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            itemProp: "address",
-                                            style: {
-                                                color: '#ff6b00'
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                    children: "Address:"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/components/ContactPage.js",
-                                                    lineNumber: 151,
-                                                    columnNumber: 17
-                                                }, this),
-                                                " 576 North Rd, Ormond VIC 3204, Australia"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 150,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            itemProp: "email",
-                                            style: {
-                                                color: '#ff6b00'
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                    children: "Email:"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/components/ContactPage.js",
-                                                    lineNumber: 154,
-                                                    columnNumber: 17
-                                                }, this),
-                                                " info.beyondbikes@gmail.com"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 153,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            itemProp: "telephone",
-                                            style: {
-                                                color: '#ff6b00'
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                    children: "Phone:"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/components/ContactPage.js",
-                                                    lineNumber: 157,
-                                                    columnNumber: 17
-                                                }, this),
-                                                " +61 422 032 961"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 156,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/components/ContactPage.js",
-                                    lineNumber: 149,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "col-md-6 d-flex justify-content-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
@@ -3199,7 +3190,7 @@ function ContactPage() {
                                             className: "responsive-map"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 162,
+                                            lineNumber: 151,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("noscript", {
@@ -3213,25 +3204,163 @@ function ContactPage() {
                                                     children: "Google Maps"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/ContactPage.js",
-                                                    lineNumber: 173,
+                                                    lineNumber: 162,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/ContactPage.js",
-                                            lineNumber: 171,
+                                            lineNumber: 160,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/ContactPage.js",
-                                    lineNumber: 161,
+                                    lineNumber: 150,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "col-md-6 set-location-padding",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            itemProp: "address",
+                                            style: {
+                                                color: '#1A3B19'
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                    style: {
+                                                        fontSize: '18px'
+                                                    },
+                                                    children: "ADDRESS:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 173,
+                                                    columnNumber: 17
+                                                }, this),
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    children: "576 North Rd, Ormond VIC 3204, Australia"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 173,
+                                                    columnNumber: 69
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/components/ContactPage.js",
+                                            lineNumber: 172,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            itemProp: "email",
+                                            style: {
+                                                color: '#1A3B19'
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                    style: {
+                                                        fontSize: '18px'
+                                                    },
+                                                    children: "EMAIL:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 176,
+                                                    columnNumber: 17
+                                                }, this),
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    children: "info.beyondbikes@gmail.com"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 176,
+                                                    columnNumber: 67
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/components/ContactPage.js",
+                                            lineNumber: 175,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            itemProp: "telephone",
+                                            style: {
+                                                color: '#1A3B19'
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                    style: {
+                                                        fontSize: '18px'
+                                                    },
+                                                    children: "PHONE:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 179,
+                                                    columnNumber: 17
+                                                }, this),
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    children: "+61 422 032 961"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 179,
+                                                    columnNumber: 67
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/components/ContactPage.js",
+                                            lineNumber: 178,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            itemProp: "telephone",
+                                            style: {
+                                                color: '#1A3B19'
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                    style: {
+                                                        fontSize: '18px'
+                                                    },
+                                                    children: "OPENING HOURS:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 182,
+                                                    columnNumber: 17
+                                                }, this),
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "m-0 p-0",
+                                                    children: "Monday - Saturday : 9am - 7pm"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 182,
+                                                    columnNumber: 75
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "m-0 p-0",
+                                                    children: "Sunday : 11am - 4pm"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                                    lineNumber: 184,
+                                                    columnNumber: 1
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/components/ContactPage.js",
+                                            lineNumber: 181,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/components/ContactPage.js",
+                                    lineNumber: 171,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/ContactPage.js",
-                            lineNumber: 144,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, this)
                     ]
@@ -3503,13 +3632,20 @@ __turbopack_context__.s({
     "default": (()=>About)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/components/noop-head.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Latest$2d$admin$2d$image$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Latest$2d$admin$2d$image$2e$jpg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/images/Latest-admin-image.jpg.mjs { IMAGE => "[project]/public/images/Latest-admin-image.jpg (static in ecmascript)" } [app-ssr] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Latest$2d$repairer$2d$admin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Latest$2d$repairer$2d$admin$2e$jpg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/images/Latest-repairer-admin.jpg.mjs { IMAGE => "[project]/public/images/Latest-repairer-admin.jpg (static in ecmascript)" } [app-ssr] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/Header.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/Footer.js [app-ssr] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module 'images/EbikesDeliveryAbout'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 "use client";
 ;
 ;
@@ -3520,7 +3656,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 ;
+;
+;
+;
 function About() {
+    const [currentIndex, setCurrentIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     const siteUrl = "https://www.beyondbikes.com.au";
     const schemaData = {
@@ -3551,285 +3691,408 @@ function About() {
     // Dynamic heading tags
     const MainHeadingTag = pathname === "/about" ? "h1" : "h2";
     const SubHeadingTag = pathname === "/about" ? "h2" : "h3";
+    const contentData = [
+        {
+            title: "Grow Up Your Workflow Speed.",
+            description: "Find all that you expect. Free software, download movies, files, and much more not only free but and each time fast, products and services.",
+            linkText: "Our Work"
+        },
+        {
+            title: "Boost Your Team Productivity.",
+            description: "Streamline your processes with our advanced tools and methodologies. Experience faster delivery times and improved collaboration across all departments.",
+            linkText: "Our Solutions"
+        },
+        {
+            title: "Scale Your Business Efficiently.",
+            description: "Transform your operations with cutting-edge technology. Our comprehensive platform helps you manage resources, track progress, and achieve your goals.",
+            linkText: "Our Services"
+        }
+    ];
+    const handleArrowClick = ()=>{
+        setCurrentIndex((prevIndex)=>(prevIndex + 1) % contentData.length);
+    };
+    const currentContent = contentData[currentIndex];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("title", {
+                        className: "jsx-ca1a8e9d844885a2",
                         children: "About Us | Beyond Bikes – Melbourne e-Bike Rentals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 265,
+                        lineNumber: 297,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "description",
-                        content: "Meet the team behind Beyond Bikes — Melbourne's trusted electric bike rental provider offering flexible, affordable e-bike hire for commuters and delivery riders."
+                        content: "Meet the team behind Beyond Bikes — Melbourne's trusted electric bike rental provider offering flexible, affordable e-bike hire for commuters and delivery riders.",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 266,
+                        lineNumber: 298,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "keywords",
-                        content: "Beyond Bikes, e-bike rentals Melbourne, sustainable transport Melbourne, About Beyond Bikes"
+                        content: "Beyond Bikes, e-bike rentals Melbourne, sustainable transport Melbourne, About Beyond Bikes",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 270,
+                        lineNumber: 302,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "robots",
-                        content: "index, follow"
+                        content: "index, follow",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 274,
+                        lineNumber: 306,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
                         rel: "canonical",
-                        href: `${siteUrl}/about`
+                        href: `${siteUrl}/about`,
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 275,
+                        lineNumber: 307,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:title",
-                        content: "About Beyond Bikes — Melbourne e-Bike Rental Business"
+                        content: "About Beyond Bikes — Melbourne e-Bike Rental Business",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 278,
+                        lineNumber: 310,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:description",
-                        content: "Learn more about Beyond Bikes, our mission and dedication to affordable, reliable e-bike rentals in Melbourne."
+                        content: "Learn more about Beyond Bikes, our mission and dedication to affordable, reliable e-bike rentals in Melbourne.",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 279,
+                        lineNumber: 311,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:image",
-                        content: `${siteUrl}/images/about-og.jpg`
+                        content: `${siteUrl}/images/about-og.jpg`,
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 280,
+                        lineNumber: 312,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:url",
-                        content: `${siteUrl}/about`
+                        content: `${siteUrl}/about`,
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 281,
+                        lineNumber: 313,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:type",
-                        content: "website"
+                        content: "website",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 282,
+                        lineNumber: 314,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:card",
-                        content: "summary_large_image"
+                        content: "summary_large_image",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 285,
+                        lineNumber: 317,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:title",
-                        content: "About Beyond Bikes – Melbourne e-Bike Experts"
+                        content: "About Beyond Bikes – Melbourne e-Bike Experts",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 286,
+                        lineNumber: 318,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:description",
-                        content: "Discover Beyond Bikes’ story and mission: to provide sustainable, flexible e-bike rentals across Melbourne."
+                        content: "Discover Beyond Bikes’ story and mission: to provide sustainable, flexible e-bike rentals across Melbourne.",
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 287,
+                        lineNumber: 319,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:image",
-                        content: `${siteUrl}/images/about-og.jpg`
+                        content: `${siteUrl}/images/about-og.jpg`,
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 288,
+                        lineNumber: 320,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
                         type: "application/ld+json",
                         dangerouslySetInnerHTML: {
                             __html: JSON.stringify(schemaData)
-                        }
+                        },
+                        className: "jsx-ca1a8e9d844885a2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 291,
+                        lineNumber: 323,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 264,
+                lineNumber: 296,
                 columnNumber: 7
             }, this),
             pathname !== "/" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 297,
+                lineNumber: 329,
                 columnNumber: 28
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "aboutSection mb-5",
+                style: {
+                    backgroundImage: `url(${EbikesDeliveryAbout.src})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    minHeight: "400px"
+                },
+                role: "banner",
+                "aria-label": "About Us Hero Section",
                 itemScope: true,
                 itemType: "https://schema.org/AboutPage",
+                className: "jsx-ca1a8e9d844885a2" + " " + "hero-section position-relative d-flex align-items-center justify-content-center text-white",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MainHeadingTag, {
-                        className: "text-center",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
-                            marginBottom: "40px",
-                            color: "#f7931e",
-                            marginTop: "40px"
+                            backgroundColor: "rgba(0, 0, 0, 0.6)",
+                            zIndex: 1
                         },
-                        children: "About Us"
+                        "aria-hidden": "true",
+                        className: "jsx-ca1a8e9d844885a2" + " " + "position-absolute top-0 start-0 w-100 h-100"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 300,
+                        lineNumber: 397,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "container px-3 px-sm-0",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row align-items-center",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "col-md-6 mb-4 mb-md-0",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Latest$2d$admin$2d$image$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Latest$2d$admin$2d$image$2e$jpg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                            alt: "Beyond Bikes team in Melbourne store",
-                                            className: "ovalImage",
-                                            width: 500,
-                                            height: 500,
-                                            itemProp: "image"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 311,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/about/page.js",
-                                        lineNumber: 310,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "col-md-6",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SubHeadingTag, {
-                                                className: "orangeHeading",
-                                                itemProp: "headline",
-                                                children: "MISSION"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/about/page.js",
-                                                lineNumber: 321,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                itemProp: "text",
-                                                children: "Beyond Bikes offers reliable and affordable electric bike rentals designed for both everyday riders and food delivery professionals in Melbourne. Whether you are exploring the city or delivering with Uber Eats or DoorDash, our e-bikes provide the perfect blend of power, comfort, and efficiency. We understand the needs of urban commuters - that’s why our bikes are built for performance, long battery life, and convenience. “Freedom to Explore, Power to Move” - that’s the promise we ride on. With flexible rental options, quick support, and service across Melbourne, Beyond Bikes is your go-to for hassle-free electric mobility."
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/about/page.js",
-                                                lineNumber: 324,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/about/page.js",
-                                        lineNumber: 320,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                        style: {
+                            zIndex: 2
+                        },
+                        className: "jsx-ca1a8e9d844885a2" + " " + "container position-relative",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "jsx-ca1a8e9d844885a2" + " " + "row",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-ca1a8e9d844885a2" + " " + "col-12 text-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MainHeadingTag, {
+                                    style: {
+                                        fontSize: "3rem",
+                                        fontFamily: "system-ui"
+                                    },
+                                    itemProp: "headline",
+                                    className: "jsx-ca1a8e9d844885a2" + " " + "display-4 fw-bold mb-0",
+                                    children: "About Us"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/about/page.js",
+                                    lineNumber: 408,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.js",
-                                lineNumber: 309,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row mt-sm-5 mt-2 align-items-center",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "col-md-6 order-sm-1 order-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SubHeadingTag, {
-                                                className: "orangeHeading",
-                                                children: "STORE BACKGROUND"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/about/page.js",
-                                                lineNumber: 333,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                itemProp: "text",
-                                                children: "At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues."
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/about/page.js",
-                                                lineNumber: 334,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/about/page.js",
-                                        lineNumber: 332,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "col-md-6 order-sm-2 order-1 text-end mb-4 mb-md-0",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Latest$2d$repairer$2d$admin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Latest$2d$repairer$2d$admin$2e$jpg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                            alt: "Beyond Bikes team and workshop in Melbourne",
-                                            className: "ovalImage",
-                                            width: 500,
-                                            height: 500,
-                                            itemProp: "image"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 339,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/about/page.js",
-                                        lineNumber: 338,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/about/page.js",
-                                lineNumber: 331,
-                                columnNumber: 11
+                                lineNumber: 407,
+                                columnNumber: 13
                             }, this)
-                        ]
-                    }, void 0, true, {
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/about/page.js",
+                            lineNumber: 406,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 307,
+                        lineNumber: 405,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 299,
+                lineNumber: 384,
                 columnNumber: 7
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                "aria-label": "Company Information",
+                className: "jsx-ca1a8e9d844885a2" + " " + "py-5 bg-light",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "jsx-ca1a8e9d844885a2" + " " + "container",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-ca1a8e9d844885a2" + " " + "row align-items-center",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-ca1a8e9d844885a2" + " " + "col-lg-6 mb-4 mb-lg-0",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "jsx-ca1a8e9d844885a2" + " " + "position-relative",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/person-working-at-computer-in-modern-office-with-b.png",
+                                        alt: "Professional working at computer in modern office environment with geometric design elements",
+                                        width: 500,
+                                        height: 400,
+                                        className: "img-fluid rounded shadow",
+                                        priority: true,
+                                        style: {
+                                            objectFit: "cover"
+                                        },
+                                        itemProp: "image"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/about/page.js",
+                                        lineNumber: 426,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/about/page.js",
+                                    lineNumber: 425,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/about/page.js",
+                                lineNumber: 424,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-ca1a8e9d844885a2" + " " + "col-lg-6",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "jsx-ca1a8e9d844885a2" + " " + "ps-lg-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SubHeadingTag, {
+                                            style: {
+                                                fontSize: "2.5rem",
+                                                lineHeight: "1.2",
+                                                fontFamily: "system-ui"
+                                            },
+                                            itemProp: "headline",
+                                            className: "jsx-ca1a8e9d844885a2" + " " + "display-5 fw-bold mb-4 text-dark",
+                                            children: currentContent.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/about/page.js",
+                                            lineNumber: 440,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            style: {
+                                                fontSize: "1.1rem",
+                                                lineHeight: "1.6"
+                                            },
+                                            itemProp: "text",
+                                            className: "jsx-ca1a8e9d844885a2" + " " + "lead mb-4 text-muted",
+                                            children: currentContent.description
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/about/page.js",
+                                            lineNumber: 447,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: handleArrowClick,
+                                            style: {
+                                                color: "#333",
+                                                fontSize: "1rem",
+                                                fontWeight: "600",
+                                                transition: "all 0.3s ease"
+                                            },
+                                            "aria-label": `View ${currentContent.linkText} - Click to see next content`,
+                                            onMouseEnter: (e)=>{
+                                                e.currentTarget.style.color = "#007bff";
+                                            },
+                                            onMouseLeave: (e)=>{
+                                                e.currentTarget.style.color = "#333";
+                                            },
+                                            className: "jsx-ca1a8e9d844885a2" + " " + "btn btn-link p-0 text-decoration-none d-inline-flex align-items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "jsx-ca1a8e9d844885a2" + " " + "me-2",
+                                                    children: currentContent.linkText
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/about/page.js",
+                                                    lineNumber: 467,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    width: "20",
+                                                    height: "20",
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "none",
+                                                    stroke: "currentColor",
+                                                    strokeWidth: "2",
+                                                    strokeLinecap: "round",
+                                                    strokeLinejoin: "round",
+                                                    style: {
+                                                        transition: "transform 0.3s ease"
+                                                    },
+                                                    "aria-hidden": "true",
+                                                    className: "jsx-ca1a8e9d844885a2" + " " + "arrow-icon",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        d: "M5 12h14M12 5l7 7-7 7",
+                                                        className: "jsx-ca1a8e9d844885a2"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/about/page.js",
+                                                        lineNumber: 481,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/about/page.js",
+                                                    lineNumber: 468,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/about/page.js",
+                                            lineNumber: 450,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/about/page.js",
+                                    lineNumber: 439,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/about/page.js",
+                                lineNumber: 438,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 423,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/about/page.js",
+                    lineNumber: 422,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/about/page.js",
+                lineNumber: 421,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                id: "ca1a8e9d844885a2",
+                children: ".btn.jsx-ca1a8e9d844885a2:hover .arrow-icon.jsx-ca1a8e9d844885a2{transform:translate(5px)}.hero-section.jsx-ca1a8e9d844885a2{background-attachment:fixed}@media (width<=768px){.hero-section.jsx-ca1a8e9d844885a2{background-attachment:scroll;min-height:300px}.display-4.jsx-ca1a8e9d844885a2{font-size:2.5rem!important}.display-5.jsx-ca1a8e9d844885a2{font-size:2rem!important}}"
+            }, void 0, false, void 0, this),
             pathname === "/about" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 352,
+                lineNumber: 515,
                 columnNumber: 33
             }, this)
         ]
@@ -5398,12 +5661,12 @@ var { g: global, __dirname } = __turbopack_context__;
 //       {/* ✅ Header will only render if NOT on home page */}
 //       {pathname !== '/' && <Header />}
 //       <div className="container px-sm-0 px-3 py-5">
-//       <h1 className='text-center pb-4' style={{color: '#f7931e'}}>Contact Us</h1>
+//       <h1 className='text-center pb-4' style={{color: '#1a3b19'}}>Contact Us</h1>
 //         <div className="row g-4 align-items-start">
 //           {/* Form Section */}
 //           <div className="col-lg-7">
-//             <h1 className="fw-bold" style={{ fontSize: '30px', color: '#f7931e' }}>Send a Message</h1>
-//             <h2 className="fw-bold mb-3 mt-3" style={{ color: '#f7931e' }}>Reach out Get in Touch</h2>
+//             <h1 className="fw-bold" style={{ fontSize: '30px', color: '#1a3b19' }}>Send a Message</h1>
+//             <h2 className="fw-bold mb-3 mt-3" style={{ color: '#1a3b19' }}>Reach out Get in Touch</h2>
 //             <p className="text-dark mb-4">
 //               Please be prepared to provide details about your possible issue including your bike model.
 //               The more information you can provide, the quicker our team can provide a solution.
@@ -5464,7 +5727,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //               <button
 //                 type="submit"
 //                 className="btn text-light fw-semibold px-4 py-2"
-//                 style={{ background: '#f7931e' }}
+//                 style={{ background: '#1a3b19' }}
 //               >
 //                 Send Message
 //               </button>
@@ -5474,22 +5737,22 @@ var { g: global, __dirname } = __turbopack_context__;
 //           <div className="col-lg-5">
 //             <div className="bg-light rounded p-4">
 //               <div className="mb-4">
-//                 <h6 className="text-uppercase fw-bold" style={{ color: '#f7931e' }}>Address</h6>
+//                 <h6 className="text-uppercase fw-bold" style={{ color: '#1a3b19' }}>Address</h6>
 //                 <p className="mb-0">667 Glen Huntly Rd Caulfield South, Caulfield VIC 3162, Australia</p>
 //               </div>
 //               <hr />
 //               <div className="mb-4">
-//                 <h6 className="text-uppercase fw-bold" style={{ color: '#f7931e' }}>Phone</h6>
+//                 <h6 className="text-uppercase fw-bold" style={{ color: '#1a3b19' }}>Phone</h6>
 //                 <p className="mb-0">+61 422 032 961</p>
 //               </div>
 //               <hr />
 //               <div className="mb-4">
-//                 <h6 className="text-uppercase fw-bold" style={{ color: '#f7931e' }}>Email</h6>
+//                 <h6 className="text-uppercase fw-bold" style={{ color: '#1a3b19' }}>Email</h6>
 //                 <p className="mb-0">info.beyondbikes@gmail.com</p>
 //               </div>
 //               <hr />
 //               <div>
-//                 <h6 className="text-uppercase fw-bold" style={{ color: '#f7931e' }}>Hours</h6>
+//                 <h6 className="text-uppercase fw-bold" style={{ color: '#1a3b19' }}>Hours</h6>
 //                 <div className="d-flex py-1">
 //                   <span className='me-2'>Mon - Sun :</span> <span>9am - 7pm</span>
 //                 </div>
@@ -5558,11 +5821,11 @@ var { g: global, __dirname } = __turbopack_context__;
 //       {pathname !== '/' && <Header />}
 //       <main>
 //         <section className="container px-sm-0 px-3 py-5">
-//           <h1 className='text-center fw-bold pb-4' style={{color: '#f7931e'}}>Contact Beyond Bikes</h1>
+//           <h1 className='text-center fw-bold pb-4' style={{color: '#1a3b19'}}>Contact Beyond Bikes</h1>
 //           <div className="row g-4 align-items-start">
 //             {/* Form Section */}
 //             <div className="col-lg-7" itemScope itemType="https://schema.org/ContactPage">
-//               <h2 className="fw-bold mb-3 mt-3" style={{ color: '#f7931e' }} itemProp="name">Reach Out & Get in Touch</h2>
+//               <h2 className="fw-bold mb-3 mt-3" style={{ color: '#1a3b19' }} itemProp="name">Reach Out & Get in Touch</h2>
 //               <p className="text-dark mb-4" itemProp="description">
 //                 Provide details about your inquiry or issue including your bike model. Our team at Beyond Bikes will respond promptly.
 //               </p>
@@ -5632,7 +5895,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //                 <button
 //                   type="submit"
 //                   className="btn text-light fw-semibold px-4 py-2"
-//                   style={{ background: '#f7931e' }}
+//                   style={{ background: '#1a3b19' }}
 //                 >
 //                   Send Message
 //                 </button>
@@ -5642,24 +5905,24 @@ var { g: global, __dirname } = __turbopack_context__;
 //             <div className="col-lg-5">
 //               <address className="bg-light rounded p-4" itemScope itemType="https://schema.org/PostalAddress">
 //                 <div className="mb-4">
-//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Address</h3>
+//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Address</h3>
 //                   <p className="mb-0" itemProp="streetAddress">667 Glen Huntly Rd Caulfield South</p>
 //                   <p className="mb-0" itemProp="addressLocality">Caulfield VIC 3162</p>
 //                   <p className="mb-0" itemProp="addressCountry">Australia</p>
 //                 </div>
 //                 <hr />
 //                 <div className="mb-4">
-//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Phone</h3>
+//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Phone</h3>
 //                   <p className="mb-0" itemProp="telephone">+61 422 032 961</p>
 //                 </div>
 //                 <hr />
 //                 <div className="mb-4">
-//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Email</h3>
+//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Email</h3>
 //                   <p className="mb-0" itemProp="email">info.beyondbikes@gmail.com</p>
 //                 </div>
 //                 <hr />
 //                 <div>
-//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#f7931e' }}>Hours</h3>
+//                   <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Hours</h3>
 //                   <div className="d-flex py-1">
 //                     <span className='me-2'>Mon - Sun :</span> <span>9am - 7pm</span>
 //                   </div>
@@ -5852,7 +6115,7 @@ function Contact() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "text-center fw-bold pb-4",
                             style: {
-                                color: '#f7931e'
+                                color: '#1a3b19'
                             },
                             children: "Contact Beyond Bikes"
                         }, void 0, false, {
@@ -5871,7 +6134,7 @@ function Contact() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "fw-bold mb-3 mt-3",
                                             style: {
-                                                color: '#f7931e'
+                                                color: '#1a3b19'
                                             },
                                             itemProp: "name",
                                             children: "Reach Out & Get in Touch"
@@ -6099,9 +6362,9 @@ function Contact() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     type: "submit",
-                                                    className: "btn text-light fw-semibold px-4 py-2",
+                                                    className: "btn text-light rent-now fw-semibold px-4 py-2",
                                                     style: {
-                                                        background: '#f7931e'
+                                                        background: '#1a3b19'
                                                     },
                                                     children: "Send Message"
                                                 }, void 0, false, {
@@ -6134,7 +6397,7 @@ function Contact() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-uppercase fs-5 fw-bold",
                                                         style: {
-                                                            color: '#f7931e'
+                                                            color: '#1a3b19'
                                                         },
                                                         children: "Address"
                                                     }, void 0, false, {
@@ -6168,7 +6431,7 @@ function Contact() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-uppercase fs-5 fw-bold",
                                                         style: {
-                                                            color: '#f7931e'
+                                                            color: '#1a3b19'
                                                         },
                                                         children: "Phone"
                                                     }, void 0, false, {
@@ -6202,7 +6465,7 @@ function Contact() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-uppercase fs-5 fw-bold",
                                                         style: {
-                                                            color: '#f7931e'
+                                                            color: '#1a3b19'
                                                         },
                                                         children: "Email"
                                                     }, void 0, false, {
@@ -6235,7 +6498,7 @@ function Contact() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-uppercase fs-5 fw-bold",
                                                         style: {
-                                                            color: '#f7931e'
+                                                            color: '#1a3b19'
                                                         },
                                                         children: "Hours"
                                                     }, void 0, false, {
@@ -6930,11 +7193,11 @@ var { g: global, __dirname } = __turbopack_context__;
 //       </Head>
 // <Header />
 //       <div className="container py-4 px-4 warranty-page">
-//         <h2 className="text-center fw-bold mb-4 mt-4" style={{color:'#f7931e'}}>Privacy Policy</h2>
+//         <h2 className="text-center fw-bold mb-4 mt-4" style={{color:'#1a3b19'}}>Privacy Policy</h2>
 //         <hr />
-//         <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Abstract</h5>
+//         <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Abstract</h5>
 //         <p className='fs-6'>This section presents the privacy policy of Beyond Bikes Pty Ltd, outlining the companys approach to managing personal information. The policy is designed to ensure transparency and security in handling data collected from various stakeholders, including website visitors, mobile application users, members, job applicants, and service providers. The policy covers the types of data collected, the methods of data collection, purposes for data use, data sharing protocols, retention periods, data protection rights, security measures..</p>
-//         <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Introduction</h5>
+//         <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Introduction</h5>
 //         <p className='fs-6'>Beyond Bikes Pty Ltd is committed to protecting the privacy and personal information of its stakeholders. This privacy policy provides an in-depth overview of how personal data is collected, utilized, stored, shared, and protected when individuals engage with our company. The policy applies to all interactions, including visiting our website, using mobile applications, participating in promotions or contests, registering as a member, applying for a job, or offering services to us.
 // The policy aims to ensure compliance with data protection regulations and to provide clarity on how personal information is managed. It also outlines the rights of individuals concerning their personal data and how they can exercise these rights.</p>
 //         {/* <ul className='fw-bold fs-6'>
@@ -6944,7 +7207,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //             <li>Items that are beyond their warranty period</li>
 //             <li>Pre-owned items (our warranty is non-transferable and only applies to the original purchaser)​​</li>
 //         </ul> */}
-//         <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Methods of Data Collection</h5>
+//         <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Methods of Data Collection</h5>
 //         <p className='fs-6'>Data collection methods vary depending on the type of interaction with Beyond Bikes:
 // Website or App Visitors: Collection of Technical and Usage Information through cookies and similar tools, as well as Identity, Contact, and Marketing Information if provided voluntarily.
 // Users: Data is collected through automated methods, direct interactions, and third-party sources to fulfill contractual obligations, comply with legal requirements, and support legitimate business interests.</p>
@@ -6953,7 +7216,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //           Delivery Job Applicants: Data is collected when applying for employment through our platforms or third parties, based on consent and processing requirements for employment contracts.
 // Service Providers: Data is obtained through direct interactions or automated processes, necessary for contract execution and legal obligations.
 //         </p>
-//         {/* <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Coverage Overview (excluding damage caused by misuse or external factors):</h5>
+//         {/* <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Coverage Overview (excluding damage caused by misuse or external factors):</h5>
 //         <ul className='fw-bold fs-6'>
 //             <li>12 months for factory defects related to the main body frame, including structural elements <br />
 //             <span className='text-danger'>Please note: The handlebar, headset, and fork are not included as part of the body frame in this section</span>
@@ -6961,7 +7224,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //             <li>12 months for manufacturing faults in the battery, charger, and motor hub</li>
 //             <span className='text-danger'>Please be aware that natural battery performance deterioration over time is not covered.</span>
 //         </ul> */}
-//         <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Information Collected</h5>
+//         <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Information Collected</h5>
 //         <p className='fs-6'>Personal data refers to any information that can identify a specific individual. This policy does not include data that has been anonymized. Beyond Bikes collects, utilizes, stores, and shares various categories of personal data, as described below:</p>
 //         {/* <ul>
 //           <li className='fw-bold fs-6'>conditions, malfunctions or damage not resulting from defects in material or workmanship</li>
@@ -6975,22 +7238,22 @@ var { g: global, __dirname } = __turbopack_context__;
 // <p className='fs-6'>Insights into how users interact with our services, including patterns and frequency of use.
 // User preferences about receiving marketing messages and preferred communication channels.
 // Generalized data derived from personal information, like statistics or demographic trends, does not directly identify individuals.</p>
-// <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Information Collected</h5>
+// <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Information Collected</h5>
 // <p className='fs-6'>Personal information is used strictly for the purposes for which it was collected, unless a new, related purpose arises. The primary purposes include:</p>
 // <ul>
 //   <li>Fulfilling contractual obligations.</li>
 //   <li>Complying with legal and regulatory requirements.</li>
 //   <li>Supporting legitimate business interests, such as improving services and engaging with customers.</li>
 // </ul>
-// <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Data Sharing Protocols</h5>
+// <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Data Sharing Protocols</h5>
 // <p>Beyond Bikes may share personal information with the following entities:</p>
 // <ul>
 //   <li>Within the organization and associated companies.</li>
 //   <li>External Partners: Including customer service and engagement platforms, telematics service providers, payment processors, insurance companies, maintenance and repair partners, recruitment agencies, technology vendors, legal and financial advisors, delivery services, regulatory bodies, and potential partners in mergers or acquisitions.</li>
 // </ul>
-// <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Data Retention Policy</h5>
+// <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Data Retention Policy</h5>
 // <p className='fs-6'>Beyond Bikes retains personal data only for as long as necessary to achieve the purposes for which it was collected, including legal, regulatory, tax, accounting, or reporting obligations. Core customer information is typically kept for up to six years post-relationship, primarily for tax purposes. In some cases, data may be anonymized for research or statistical analysis.</p>
-// <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Data Protection Rights</h5>    
+// <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Data Protection Rights</h5>    
 // <p className='fs-6'>Data protection laws provide individuals with specific rights regarding their personal information, including:</p>
 // <ul>
 //   <li>Access to personal data.</li>
@@ -7002,12 +7265,12 @@ var { g: global, __dirname } = __turbopack_context__;
 //   <li>Withdrawal of consent.</li>
 //   <p>To exercise any of these rights, individuals can contact Beyond Bikes</p>
 // </ul>   
-// <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Security Measures</h5>
+// <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Security Measures</h5>
 // <p className='fs-6'>Beyond Bikes has implemented robust security protocols to prevent unauthorized access, use, modification, or disclosure of personal data. Access is strictly limited to employees, contractors, and third parties with legitimate business needs.</p>
-// <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Security Measures</h5>
+// <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Security Measures</h5>
 // <p className='fs-6'>Beyond Bikes remains committed to protecting personal information and ensuring transparency in its data management practices. This policy serves as a comprehensive guide for stakeholders on how their data is handled and the rights they have concerning their information.</p>
 // <p className='mt-4 fs-6'>This Privacy Statement is regularly reviewed and was last updated on <strong>September 13, 2024.</strong></p>
-//         {/* <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>What do you have to do?</h5>
+//         {/* <h5 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>What do you have to do?</h5>
 //         <p className='fw-bold fs-6'>
 //           To obtain warranty service, you must first contact us to determine the problem and the most appropriate solution for you.
 //         </p> */}
@@ -7043,22 +7306,22 @@ var { g: global, __dirname } = __turbopack_context__;
 //       </Head>
 //       <Header />
 //       <main className="container py-4 px-4 warranty-page" itemScope itemType="https://schema.org/WebPage">
-//         <h1 className="text-center fw-bold mb-4 mt-4" style={{color:'#f7931e'}} itemProp="name">Privacy Policy</h1>
+//         <h1 className="text-center fw-bold mb-4 mt-4" style={{color:'#1a3b19'}} itemProp="name">Privacy Policy</h1>
 //         <hr />
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Abstract</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Abstract</h2>
 //           <p className='fs-6' itemProp="description">
 //             This section presents the privacy policy of Beyond Bikes Pty Ltd, outlining the companys approach to managing personal information. The policy is designed to ensure transparency and security in handling data collected from various stakeholders, including website visitors, mobile application users, members, job applicants, and service providers. The policy covers the types of data collected, the methods of data collection, purposes for data use, data sharing protocols, retention periods, data protection rights, security measures.
 //           </p>
 //         </section>
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Introduction</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Introduction</h2>
 //           <p className='fs-6'>
 //             Beyond Bikes Pty Ltd is committed to protecting the privacy and personal information of its stakeholders. This privacy policy provides an in-depth overview of how personal data is collected, utilized, stored, shared, and protected when individuals engage with our company. The policy applies to all interactions, including visiting our website, using mobile applications, participating in promotions or contests, registering as a member, applying for a job, or offering services to us. The policy aims to ensure compliance with data protection regulations and to provide clarity on how personal information is managed. It also outlines the rights of individuals concerning their personal data and how they can exercise these rights.
 //           </p>
 //         </section>
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Methods of Data Collection</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Methods of Data Collection</h2>
 //           <p className='fs-6'>
 //             Data collection methods vary depending on the type of interaction with Beyond Bikes: Website or App Visitors: Collection of Technical and Usage Information through cookies and similar tools, as well as Identity, Contact, and Marketing Information if provided voluntarily. Users: Data is collected through automated methods, direct interactions, and third-party sources to fulfill contractual obligations, comply with legal requirements, and support legitimate business interests.
 //           </p>
@@ -7067,7 +7330,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //           </p>
 //         </section>
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Information Collected</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Information Collected</h2>
 //           <p className='fs-6'>
 //             {/* Beyond Bikes collects personal data including names, ID numbers, contact details, financial information, device and usage data, preferences, and user feedback. This information helps improve our services, ensure contractual compliance, and provide customer support. */}
 //           Personal data refers to any information that can identify a specific individual. This policy does not include data that has been anonymized. Beyond Bikes collects, utilizes, stores, and shares various categories of personal data, as described below:
@@ -7083,7 +7346,7 @@ var { g: global, __dirname } = __turbopack_context__;
 // <p>Generalized data derived from personal information, like statistics or demographic trends, does not directly identify individuals.</p>
 //         </section>
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Purposes for Data Use</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Purposes for Data Use</h2>
 //           <p className='fs-6'>
 //             Personal information is used strictly for the purposes for which it was collected, unless a new, related purpose arises. The primary purposes include:
 //           </p>
@@ -7094,7 +7357,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //           </ol>
 //         </section>
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Data Sharing Protocols</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Data Sharing Protocols</h2>
 //           <p className='fs-6'>
 //             {/* Personal data is retained only as long as necessary to achieve the purposes of collection, comply with legal obligations, or perform analytics. Core customer info is typically kept for up to six years. */}
 //           Beyond Bikes may share personal information with the following entities:
@@ -7109,14 +7372,14 @@ var { g: global, __dirname } = __turbopack_context__;
 //           </ul>
 //         </section>
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Data Retention Policy</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Data Retention Policy</h2>
 //           <p className='fs-6'>
 //             {/* Personal data is retained only as long as necessary to achieve the purposes of collection, comply with legal obligations, or perform analytics. Core customer info is typically kept for up to six years. */}
 //           Beyond Bikes retains personal data only for as long as necessary to achieve the purposes for which it was collected, including legal, regulatory, tax, accounting, or reporting obligations. Core customer information is typically kept for up to six years post-relationship, primarily for tax purposes. In some cases, data may be anonymized for research or statistical analysis.
 //           </p>
 //         </section>
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Data Protection Rights</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Data Protection Rights</h2>
 //           <p className='fs-6'>
 //             {/* Individuals have rights including access, correction, deletion, objection, restriction, data portability, and withdrawal of consent. Contact Beyond Bikes to exercise these rights. */}
 //           Data protection laws provide individuals with specific rights regarding their personal information, including:</p>
@@ -7132,14 +7395,14 @@ var { g: global, __dirname } = __turbopack_context__;
 //           <p>To exercise any of these rights, individuals can contact Lithium Bicycle at <a href='mailto:info.beyondbikes@gmail.com' style={{textDecoration:'none'}}>info.beyondbikes@gmail.com</a></p>        
 //         </section>
 //         <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Security Measures</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Security Measures</h2>
 //           <p className='fs-6'>
 //             {/* Beyond Bikes implements robust security protocols, restricting access to employees, contractors, and authorized third parties only. We aim to protect your personal information and ensure transparency. */}
 //           Beyond Bikes has implemented robust security protocols to prevent unauthorized access, use, modification, or disclosure of personal data. Access is strictly limited to employees, contractors, and third parties with legitimate business needs.
 //           </p>
 //         </section>
 // <section>
-//           <h2 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Conclusion</h2>
+//           <h2 className="mt-4 fw-bold" style={{color:'#1a3b19'}}>Conclusion</h2>
 //           <p className='fs-6'>
 //             {/* Beyond Bikes implements robust security protocols, restricting access to employees, contractors, and authorized third parties only. We aim to protect your personal information and ensure transparency. */}
 //           {/* Beyond Bikes has implemented robust security protocols to prevent unauthorized access, use, modification, or disclosure of personal data. Access is strictly limited to employees, contractors, and third parties with legitimate business needs. */}
@@ -7336,7 +7599,7 @@ function PrivacyPolicyPage() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-center fw-bold mb-4 mt-4",
                         style: {
-                            color: '#f7931e'
+                            color: '#1a3b19'
                         },
                         itemProp: "name",
                         children: "Privacy Policy"
@@ -7355,7 +7618,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Abstract"
                             }, void 0, false, {
@@ -7383,7 +7646,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Introduction"
                             }, void 0, false, {
@@ -7410,7 +7673,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Methods of Data Collection"
                             }, void 0, false, {
@@ -7445,7 +7708,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Information Collected"
                             }, void 0, false, {
@@ -7544,7 +7807,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Purposes for Data Use"
                             }, void 0, false, {
@@ -7600,7 +7863,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Data Sharing Protocols"
                             }, void 0, false, {
@@ -7649,7 +7912,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Data Retention Policy"
                             }, void 0, false, {
@@ -7676,7 +7939,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Data Protection Rights"
                             }, void 0, false, {
@@ -7780,7 +8043,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Security Measures"
                             }, void 0, false, {
@@ -7807,7 +8070,7 @@ function PrivacyPolicyPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 fw-bold",
                                 style: {
-                                    color: '#f7931e'
+                                    color: '#1a3b19'
                                 },
                                 children: "Conclusion"
                             }, void 0, false, {
@@ -7887,7 +8150,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //       {/* Hero Section */}
 //       <section className="bg-light py-5 text-center" itemScope itemType="https://schema.org/Product">
 //         <div className="container">
-//           <h1 className="display-5 fw-bold mb-3" style={{color:'#f7931e'}} itemProp="name">Affordable Weekly E-Bike Rentals</h1>
+//           <h1 className="display-5 fw-bold mb-3" style={{color:'#1a3b19'}} itemProp="name">Affordable Weekly E-Bike Rentals</h1>
 //           <p className="text-dark" itemProp="description" style={{fontSize:'18px',fontWeight:'600'}}>
 //             Rent e-bikes with GPS — perfect for delivery riders. Includes helmet, charger, 2 locks, and maintenance.
 //           </p>
@@ -7896,7 +8159,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //       {/* Terms Section */}
 //       <section className="pb-2 pt-4" id="rental-terms">
 //         <div className="container">
-//           <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Rental Terms & Conditions</h2>
+//           <h2 className="fw-bold mb-4" style={{color:'#1a3b19'}}>Rental Terms & Conditions</h2>
 //           <ul className="list-group list-group-flush mb-4">
 //             <li className="list-group-item"><strong>1.</strong> The renter agrees to waive all claims and/or causes of action against the Lessor (BEYOND
 // BIKES PTY LTD) arising from the operation, use, or misuse of the rented bicycle.
@@ -7916,7 +8179,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //       </section>
 //       <section className="py-2">
 //         <div className="container">
-//           <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Accessories Provided</h2>
+//           <h2 className="fw-bold mb-4" style={{color:'#1a3b19'}}>Accessories Provided</h2>
 //           <ul className="list-group list-group-flush mb-4">
 //             <li className="list-group-item"><strong>1.</strong> Helmet
 // </li>
@@ -7932,9 +8195,9 @@ var { g: global, __dirname } = __turbopack_context__;
 //       {/* Rental Package One */}
 //       <section className="bg-white" id="no-gps">
 //         <div className="container px-3">
-//           <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Bikes For Rent:-</h2>
-//           {/* <p><FaBicycle className="me-2 fs-1" style={{color:'#f7931e'}}/> Includes delivery bag, 2 locks, helmet, charger, and free maintenance.</p> */}
-//           {/* <p><FaLock className="me-2 fs-2" style={{color:'#f7931e'}}/> Bond: <strong>$300</strong> | Minimum Rental: <strong>2 weeks</strong></p> */}
+//           <h2 className="fw-bold mb-4" style={{color:'#1a3b19'}}>Bikes For Rent:-</h2>
+//           {/* <p><FaBicycle className="me-2 fs-1" style={{color:'#1a3b19'}}/> Includes delivery bag, 2 locks, helmet, charger, and free maintenance.</p> */}
+//           {/* <p><FaLock className="me-2 fs-2" style={{color:'#1a3b19'}}/> Bond: <strong>$300</strong> | Minimum Rental: <strong>2 weeks</strong></p> */}
 //           <div className="row mt-4 mb-4 g-4">
 //             {/* Bike 1 */}
 // <div className="col-md-4" itemScope itemType="https://schema.org/Product">
@@ -7976,10 +8239,10 @@ var { g: global, __dirname } = __turbopack_context__;
 //       {/* Rental Package Two */}
 //       {/* <section className="py-5 mt-4 bg-light" id="with-gps">
 //         <div className="container">
-//           <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Package Two: With GPS Tracking</h2>
-//           <p><FaMapMarkedAlt className="me-2 fs-2" style={{color:'#f7931e'}}/> GPS installed on both battery and frame for theft protection.</p>
-//           <p><FaHardHat className="me-2 fs-2" style={{color:'#f7931e'}}/> Comes with helmet, locks, delivery bag, charger, and maintenance.</p>
-//           <p><FaLock className="me-2 fs-2" style={{color:'#f7931e'}}/> Bond: <strong>$500</strong> | Minimum Rental: <strong>2 weeks</strong></p>
+//           <h2 className="fw-bold mb-4" style={{color:'#1a3b19'}}>Package Two: With GPS Tracking</h2>
+//           <p><FaMapMarkedAlt className="me-2 fs-2" style={{color:'#1a3b19'}}/> GPS installed on both battery and frame for theft protection.</p>
+//           <p><FaHardHat className="me-2 fs-2" style={{color:'#1a3b19'}}/> Comes with helmet, locks, delivery bag, charger, and maintenance.</p>
+//           <p><FaLock className="me-2 fs-2" style={{color:'#1a3b19'}}/> Bond: <strong>$500</strong> | Minimum Rental: <strong>2 weeks</strong></p>
 //           <div className="my-5" itemScope itemType="https://schema.org/Product">
 //             <Image src="/images/Product-images-beyond-bikes-product-one-crop (3).png" alt="Ebike100 with GPS" width={400} height={400} className="img-fluid rounded" priority itemProp="image" />
 //             <h5 className="fw-bold mt-4" style={{color:'rgb(255, 107, 0)'}} itemProp="name">EBIKE100 With GPS</h5>
@@ -7989,7 +8252,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //         </div>
 //       </section> */}
 //       {/* Call to Action */}
-//       {/* <section className="text-dark py-5 text-center" style={{background:'#f7931e'}}>
+//       {/* <section className="text-dark py-5 text-center" style={{background:'#1a3b19'}}>
 //         <div className="container">
 //           <h2 className="fw-bold text-light">Book Your Rental Now</h2>
 //           <p className="mb-4 text-light" style={{fontSize:'18px'}}>Get on the road with our fully equipped electric bikes. Limited stock available!</p>
@@ -8208,7 +8471,7 @@ function RentalEbikes() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "display-5 fw-bold mb-3",
                             style: {
-                                color: '#f7931e'
+                                color: '#1a3b19'
                             },
                             itemProp: "name",
                             children: "Affordable Weekly E-Bike Rentals"
@@ -8250,7 +8513,7 @@ function RentalEbikes() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "fw-bold mb-4",
                             style: {
-                                color: '#f7931e'
+                                color: '#1a3b19'
                             },
                             children: "Rental Terms & Conditions"
                         }, void 0, false, {
@@ -8388,7 +8651,7 @@ function RentalEbikes() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "fw-bold mb-4",
                             style: {
-                                color: '#f7931e'
+                                color: '#1a3b19'
                             },
                             children: "Accessories Provided"
                         }, void 0, false, {
@@ -8527,7 +8790,7 @@ function RentalEbikes() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "fw-bold mb-4",
                             style: {
-                                color: '#f7931e'
+                                color: '#1a3b19'
                             },
                             children: "Bikes For Rent"
                         }, void 0, false, {
@@ -8561,7 +8824,7 @@ function RentalEbikes() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "fw-bold",
                                                         style: {
-                                                            color: 'rgb(255, 107, 0)'
+                                                            color: '#1A3B19'
                                                         },
                                                         itemProp: "name",
                                                         children: bike.name
@@ -8578,7 +8841,7 @@ function RentalEbikes() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "fw-bold",
                                                                 style: {
-                                                                    color: 'rgb(255, 107, 0)'
+                                                                    color: '#1A3B19'
                                                                 },
                                                                 itemProp: "offers",
                                                                 itemScope: true,
@@ -8965,6 +9228,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
+;
 function Review() {
     const team = [
         {
@@ -8991,7 +9255,7 @@ function Review() {
             name: 'Sankeerth Reddy',
             role: 'Student',
             reviewtitle: 'Eco-friendly and fun!',
-            reviewdescription: 'Highly recommend Beyond Bike very understanding owner. Great for renting the Ebike. Lots of varieties available 👍',
+            reviewdescription: 'Highly recommend Beyond Bike very understanding owner. \nGreat for renting the Ebike. Lots of varieties available 👍',
             img: '/images/Sankeerth.png',
             alt: 'Sankeerth Reddy profile picture',
             rating: 5,
@@ -9001,7 +9265,7 @@ function Review() {
             name: 'Silvano Kevin',
             role: 'Student',
             reviewtitle: 'Great service & great bikes!',
-            reviewdescription: 'Efficient, friendly, and fair prices. Couldn’t ask for more! Best Ebikes in Melbourne 👍 Highly Recommend',
+            reviewdescription: 'Efficient, friendly, and fair prices. \nCouldn’t ask for more! Best Ebikes in Melbourne 👍 Highly Recommend',
             img: '/images/Silvano.png',
             alt: 'Silvano Kevin profile picture',
             rating: 5,
@@ -9011,7 +9275,8 @@ function Review() {
             name: 'Elmuz Zaman',
             role: 'Student',
             reviewtitle: 'Perfect for city living.',
-            reviewdescription: 'I rented myself an Ebike from Beyond Bikes. Guy helped me from start to finish. Really powerful Ebike and foldable too. Highly recommend 👍',
+            // reviewdescription: 'I rented myself an Ebike from Beyond Bikes. Guy helped me from start to finish. Really powerful Ebike and foldable too. Highly recommend 👍',
+            reviewdescription: 'I rented myself an Ebike from Beyond Bikes.\nGuy helped me from start to finish.\nReally powerful Ebike and foldable too.\nHighly recommend 👍',
             img: '/images/elmuz-zaman.png',
             alt: 'Elmuz Zaman profile picture',
             rating: 5,
@@ -9037,7 +9302,7 @@ function Review() {
                         children: "Customer Reviews - Beyond Bikes E-bike Rentals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 371,
+                        lineNumber: 373,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9045,7 +9310,7 @@ function Review() {
                         content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 372,
+                        lineNumber: 374,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9053,7 +9318,7 @@ function Review() {
                         content: "index, follow"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 376,
+                        lineNumber: 378,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -9061,7 +9326,7 @@ function Review() {
                         href: "https://www.beyondbikes.com.au/reviews"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 377,
+                        lineNumber: 379,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9069,7 +9334,7 @@ function Review() {
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 380,
+                        lineNumber: 382,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9077,7 +9342,7 @@ function Review() {
                         content: "Customer Reviews - Beyond Bikes E-bike Rentals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 381,
+                        lineNumber: 383,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9085,7 +9350,7 @@ function Review() {
                         content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 382,
+                        lineNumber: 384,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9093,7 +9358,7 @@ function Review() {
                         content: "https://www.beyondbikes.com.au/reviews"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 383,
+                        lineNumber: 385,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9101,7 +9366,7 @@ function Review() {
                         content: "https://www.beyondbikes.com.au/images/reviews-og-image.png"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 384,
+                        lineNumber: 386,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9109,7 +9374,7 @@ function Review() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 387,
+                        lineNumber: 389,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9117,7 +9382,7 @@ function Review() {
                         content: "Customer Reviews - Beyond Bikes E-bike Rentals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 388,
+                        lineNumber: 390,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9125,7 +9390,7 @@ function Review() {
                         content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 389,
+                        lineNumber: 391,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9133,7 +9398,7 @@ function Review() {
                         content: "https://www.beyondbikes.com.au/images/reviews-og-image.png"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 390,
+                        lineNumber: 392,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -9175,176 +9440,171 @@ function Review() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 393,
+                        lineNumber: 395,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/review/page.js",
-                lineNumber: 370,
+                lineNumber: 372,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 className: "container px-3 py-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-center py-3",
+                        className: "text-center pt-3 pb-5",
                         style: {
-                            color: 'rgb(247, 147, 30)'
+                            color: '#1A3B19'
                         },
                         children: "Customer Reviews"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 431,
+                        lineNumber: 433,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "row g-4",
+                        className: "review-slider",
                         "aria-label": "Customer Reviews",
-                        children: team.map((member, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                className: "col-md-6 col-lg-6",
-                                itemScope: true,
-                                itemType: "https://schema.org/Review",
-                                "aria-labelledby": `review-title-${index}`,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-4 text-center h-100",
-                                    style: {
-                                        backgroundColor: '#f8f8f8',
-                                        borderRadius: '1rem'
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mx-auto mb-3",
-                                            style: {
-                                                width: '100px',
-                                                height: '100px',
-                                                border: '4px solid #f7931e',
-                                                borderRadius: '50%',
-                                                overflow: 'hidden',
-                                                position: 'relative'
-                                            },
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                src: member.img,
-                                                alt: member.alt,
-                                                fill: true,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "review-track",
+                            children: team.map((member, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                                    className: "review-card",
+                                    itemScope: true,
+                                    itemType: "https://schema.org/Review",
+                                    "aria-labelledby": `review-title-${index}`,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "p-4 text-center h-100",
+                                        style: {
+                                            backgroundColor: '#1A3B19',
+                                            borderRadius: '1rem'
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "mx-auto",
                                                 style: {
-                                                    objectFit: 'cover'
+                                                    width: '100px',
+                                                    height: '100px',
+                                                    borderRadius: '50%',
+                                                    overflow: 'hidden',
+                                                    position: 'relative',
+                                                    bottom: '47px'
                                                 },
-                                                sizes: "(max-width: 768px) 100px, 100px",
-                                                priority: true
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: member.img,
+                                                    alt: member.alt,
+                                                    fill: true,
+                                                    style: {
+                                                        objectFit: 'cover'
+                                                    },
+                                                    sizes: "(max-width: 768px) 100px, 100px",
+                                                    priority: true
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/review/page.js",
+                                                    lineNumber: 463,
+                                                    columnNumber: 13
+                                                }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 459,
-                                                columnNumber: 19
+                                                lineNumber: 452,
+                                                columnNumber: 11
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    color: 'orange',
+                                                    fontSize: '1.6rem',
+                                                    marginTop: '-30px'
+                                                },
+                                                itemProp: "reviewRating",
+                                                itemScope: true,
+                                                itemType: "https://schema.org/Rating",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                                                        itemProp: "ratingValue",
+                                                        content: member.rating.toString()
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/review/page.js",
+                                                        lineNumber: 479,
+                                                        columnNumber: 13
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                                                        itemProp: "bestRating",
+                                                        content: "5"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/review/page.js",
+                                                        lineNumber: 480,
+                                                        columnNumber: 13
+                                                    }, this),
+                                                    renderStars(member.rating)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/review/page.js",
+                                                lineNumber: 473,
+                                                columnNumber: 11
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "small review-text mb-2 fw-600",
+                                                style: {
+                                                    color: '#C2F829',
+                                                    fontStyle: 'italic'
+                                                },
+                                                itemProp: "reviewBody",
+                                                children: member.reviewdescription
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/review/page.js",
+                                                lineNumber: 484,
+                                                columnNumber: 11
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "fw-bold",
+                                                style: {
+                                                    color: '#C2F829',
+                                                    fontStyle: 'italic'
+                                                },
+                                                itemProp: "author",
+                                                itemScope: true,
+                                                itemType: "https://schema.org/Person",
+                                                children: [
+                                                    "- ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        itemProp: "name",
+                                                        children: member.name
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/review/page.js",
+                                                        lineNumber: 499,
+                                                        columnNumber: 15
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/review/page.js",
+                                                lineNumber: 492,
+                                                columnNumber: 11
                                             }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/review/page.js",
-                                            lineNumber: 448,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            id: `review-title-${index}`,
-                                            className: "small mb-2 fw-600",
-                                            style: {
-                                                color: '#f7931e'
-                                            },
-                                            itemProp: "name",
-                                            children: member.reviewtitle
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/review/page.js",
-                                            lineNumber: 469,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "small mb-2 fw-600",
-                                            style: {
-                                                color: '#f7931e',
-                                                fontStyle: 'italic'
-                                            },
-                                            itemProp: "reviewBody",
-                                            children: member.reviewdescription
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/review/page.js",
-                                            lineNumber: 478,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            style: {
-                                                color: '#f7931e',
-                                                fontSize: '1.2rem'
-                                            },
-                                            itemProp: "reviewRating",
-                                            itemScope: true,
-                                            itemType: "https://schema.org/Rating",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                                                    itemProp: "ratingValue",
-                                                    content: member.rating.toString()
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/review/page.js",
-                                                    lineNumber: 492,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                                                    itemProp: "bestRating",
-                                                    content: "5"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/review/page.js",
-                                                    lineNumber: 493,
-                                                    columnNumber: 19
-                                                }, this),
-                                                renderStars(member.rating)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/review/page.js",
-                                            lineNumber: 486,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "fw-bold",
-                                            style: {
-                                                color: '#f7931e',
-                                                fontStyle: 'italic'
-                                            },
-                                            itemProp: "author",
-                                            itemScope: true,
-                                            itemType: "https://schema.org/Person",
-                                            children: [
-                                                "- ",
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    itemProp: "name",
-                                                    children: member.name
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/review/page.js",
-                                                    lineNumber: 504,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/review/page.js",
-                                            lineNumber: 497,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/review/page.js",
+                                        lineNumber: 448,
+                                        columnNumber: 9
+                                    }, this)
+                                }, index, false, {
                                     fileName: "[project]/src/app/review/page.js",
-                                    lineNumber: 444,
-                                    columnNumber: 15
-                                }, this)
-                            }, index, false, {
-                                fileName: "[project]/src/app/review/page.js",
-                                lineNumber: 437,
-                                columnNumber: 13
-                            }, this))
+                                    lineNumber: 441,
+                                    columnNumber: 7
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/review/page.js",
+                            lineNumber: 439,
+                            columnNumber: 3
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 435,
+                        lineNumber: 438,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/review/page.js",
-                lineNumber: 430,
+                lineNumber: 432,
                 columnNumber: 7
             }, this)
         ]
@@ -9688,6 +9948,10 @@ function AmazingOffers() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "hero-title",
+                                style: {
+                                    color: 'rgb(198, 252, 42)',
+                                    fontFamily: 'system-ui'
+                                },
                                 children: "Students Deal"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/amazingoffers/page.js",
@@ -9734,7 +9998,7 @@ function AmazingOffers() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "food-label",
+                                        className: "rent-now",
                                         style: {
                                             textTransform: 'uppercase'
                                         },
