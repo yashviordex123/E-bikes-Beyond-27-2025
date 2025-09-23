@@ -347,7 +347,7 @@ function Header() {
             setLoading(true);
             setTimeout(()=>{
                 router.push(href);
-            }, 1000);
+            }, 100);
         }
     };
     // JSON-LD for Navigation (SEO)
@@ -1095,7 +1095,7 @@ function Footer() {
                                         ].map(([href, label])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>handleNavigation(href),
-                                                    className: `btn btn-link p-0 text-white text-decoration-none ${pathname === href ? 'fw-bold text-success' : ''}`,
+                                                    className: `btn btn-link p-0 text-white text-decoration-none ${pathname === href ? 'fw-bold text-decoration-underline' : ''}`,
                                                     children: label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.js",
@@ -1971,10 +1971,10 @@ function ProductPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "fs-4 text-center fw-bold",
                                             children: [
-                                                "PRICE : $65 AUD ",
+                                                "PRICE : $70 AUD ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("del", {
                                                     className: "text-muted fs-4 ms-2",
-                                                    children: "$70 AUD"
+                                                    children: "$80 AUD"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/E-bike-8-10h/page.js",
                                                     lineNumber: 434,

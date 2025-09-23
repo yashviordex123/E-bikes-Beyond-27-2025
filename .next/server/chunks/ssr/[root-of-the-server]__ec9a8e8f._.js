@@ -347,7 +347,7 @@ function Header() {
             setLoading(true);
             setTimeout(()=>{
                 router.push(href);
-            }, 1000);
+            }, 100);
         }
     };
     // JSON-LD for Navigation (SEO)
@@ -2358,7 +2358,7 @@ function RentalEbikes() {
                                                 batterylife: "48V 50A",
                                                 topspeed: "45 MPH"
                                             },
-                                            price: "60.00 AUD"
+                                            price: "65.00 AUD"
                                         },
                                         {
                                             name: "E-bike 8-10h",
@@ -2370,7 +2370,7 @@ function RentalEbikes() {
                                                 batterylife: "48V 70A",
                                                 topspeed: "45 MPH"
                                             },
-                                            price: "65.00 AUD"
+                                            price: "70.00 AUD"
                                         },
                                         {
                                             name: "E-bike 10-12h",
@@ -2382,7 +2382,7 @@ function RentalEbikes() {
                                                 batterylife: "48V 80A",
                                                 topspeed: "45 MPH"
                                             },
-                                            price: "70.00 AUD"
+                                            price: "80.00 AUD"
                                         }
                                     ].map((bike, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "col-12 col-md-6 col-lg-4",

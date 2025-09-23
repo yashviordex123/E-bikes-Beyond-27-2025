@@ -317,7 +317,7 @@ function Header() {
             setLoading(true);
             setTimeout(()=>{
                 router.push(href);
-            }, 1000);
+            }, 100);
         }
     };
     // JSON-LD for Navigation (SEO)
@@ -1346,7 +1346,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text-latest.png\",\"price\":\"$60.00 AUD\",\"oldPrice\":\"$65.00 AUD\",\"battery\":\"48V 50A\",\"batteryHours\":\"6-8 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":2,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$65.00 AUD\",\"oldPrice\":\"$70.00 AUD\",\"battery\":\"48V 70A\",\"batteryHours\":\"8-10 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/Latest-Change-Angle-Red-Cycle-latest.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 AUD\",\"oldPrice\":\"$120.00 AUD\"}]}"));}}),
+__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text-latest.png\",\"price\":\"$65.00 AUD\",\"oldPrice\":\"$70.00 AUD\",\"battery\":\"48V 50A\",\"batteryHours\":\"6-8 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":2,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 70A\",\"batteryHours\":\"8-10 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/Latest-Change-Angle-Red-Cycle-latest.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 AUD\",\"oldPrice\":\"$120.00 AUD\"}]}"));}}),
 "[project]/src/app/products/page.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1761,7 +1761,7 @@ function ProductTabs() {
         setTimeout(()=>{
             const slug = productName.replace(/\s+/g, "-");
             router.push(`/${slug}`);
-        }, 9000);
+        }, 100);
     };
     const filteredProducts = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$json$2f$products$2e$json__$28$json$29$__["default"][activeTab] || [];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {

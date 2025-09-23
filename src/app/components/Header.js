@@ -314,7 +314,7 @@ export default function Header() {
       setLoading(true);
       setTimeout(() => {
         router.push(href);
-      }, 1000);
+      }, 100);
     }
   };
 

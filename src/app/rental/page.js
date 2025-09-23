@@ -518,7 +518,7 @@ DM us now to book & start riding smarter!             </p>
             topspeed: "45 MPH",
             
           },
-          price: "60.00 AUD",
+          price: "65.00 AUD",
         },
         {
           name: "E-bike 8-10h",
@@ -530,7 +530,7 @@ DM us now to book & start riding smarter!             </p>
             batterylife: "48V 70A",
             topspeed: "45 MPH",
           },
-          price: "65.00 AUD",
+          price: "70.00 AUD",
         },
         {
           name: "E-bike 10-12h",
@@ -542,7 +542,7 @@ DM us now to book & start riding smarter!             </p>
             batterylife: "48V 80A",
             topspeed: "45 MPH",
           },
-          price: "70.00 AUD",
+          price: "80.00 AUD",
         }
       ].map((bike, idx) => (
         <div

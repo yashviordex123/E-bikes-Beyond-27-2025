@@ -155,7 +155,7 @@ export default function Hero() {
 
   const handleRentalClick = () => {
     setLoading(true);
-    setTimeout(() => router.push("/rental"), 1000);
+    setTimeout(() => router.push("/rental"), 100);
   };
 
   return (

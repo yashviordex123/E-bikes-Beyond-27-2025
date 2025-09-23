@@ -495,7 +495,7 @@ export default function CartoonDetailsPage() {
             {/* Right Info */}
             <div className="col-xl-5">
               <h1 id="product-title" className="text-center fw-bold">E-bike 10-12h</h1>
-              <p className="fs-4 text-center fw-bold">PRICE: $70 AUD <del className="text-muted fs-4 ms-2">$80 AUD</del></p>
+              <p className="fs-4 text-center fw-bold">PRICE: $80 AUD <del className="text-muted fs-4 ms-2">$90 AUD</del></p>
 
               <section className="container my-4">
         <div className="row g-3">

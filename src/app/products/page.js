@@ -433,7 +433,7 @@ export default function ProductTabs() {
     setTimeout(() => {
       const slug = productName.replace(/\s+/g, "-");
       router.push(`/${slug}`);
-    }, 9000);
+    }, 100);
   };
 
   const filteredProducts = productsData[activeTab] || [];

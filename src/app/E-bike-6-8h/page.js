@@ -487,7 +487,7 @@ export default function CartoonDetailsPage() {
           <div className="col-xl-5">
             <h1 className="text-center fw-bold" itemProp="name">E-bike 6-8h</h1>
             <p className="fs-4 text-center fw-bold" itemProp="offers" itemScope itemType="https://schema.org/Offer">
-              PRICE : $60 AUD <del className="text-muted fs-4 ms-2">$70 AUD</del>
+              PRICE : $65 AUD <del className="text-muted fs-4 ms-2">$70 AUD</del>
               <meta itemProp="price" content="60" />
               <meta itemProp="priceCurrency" content="AUD" />
               <link itemProp="availability" href="https://schema.org/InStock" />

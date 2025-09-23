@@ -21,7 +21,7 @@ import Cart from './cart/page';
 import BasicKnowlegePage from './basicknowledge/page';
 import RentalEbikes from './rental/page';
 import Review from './review/page';
-import AmazingOffers from './amazingoffers/page';
+// import AmazingOffers from './amazingoffers/page';
 import TermAndCondition from './termsandcondition/page';
 
 
@@ -50,7 +50,7 @@ export default function Home() {
       <Review />
       {/* <About /> */}
       <About />
-      <AmazingOffers />
+     
       <ContactPage />
       
       {/* <ProductPage /> */}

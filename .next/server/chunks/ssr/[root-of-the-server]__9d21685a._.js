@@ -347,7 +347,7 @@ function Header() {
             setLoading(true);
             setTimeout(()=>{
                 router.push(href);
-            }, 1000);
+            }, 100);
         }
     };
     // JSON-LD for Navigation (SEO)
