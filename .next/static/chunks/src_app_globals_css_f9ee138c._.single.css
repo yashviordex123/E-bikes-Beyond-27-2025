@@ -19,8 +19,31 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150vh;
-  transition: background-image .5s ease-in-out;
+  transition: background-image 1s ease-in-out;
+  animation: 4s ease-in-out infinite fadeZoom;
+  position: relative;
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: .6;
+    filter: grayscale() hue-rotate(30deg);
+  }
+
+  20% {
+    opacity: 1;
+    filter: grayscale(0%) hue-rotate();
+  }
+
+  80% {
+    opacity: 1;
+    filter: grayscale(0%) hue-rotate();
+  }
+
+  100% {
+    opacity: .6;
+    filter: grayscale() hue-rotate(-30deg);
+  }
 }
 
 @media (width <= 768px) {
@@ -141,6 +164,54 @@
   60%, 100% {
     background-position: 0, 0 100%, 50% 100%, 100% 100%, 100%, 100% 0, 50% 0, 0 0, 50%;
   }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-120px)scale(.95);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(15px)scale(1.02);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)scale(1);
+  }
+}
+
+.list-group-item {
+  opacity: 0;
+  animation: 1s cubic-bezier(.25, 1, .5, 1) forwards slideInLeft;
+  animation-delay: calc(var(--i) * .8s);
+  transform: translateX(-120px);
+}
+
+.list-group-item:first-child {
+  --i: 1;
+}
+
+.list-group-item:nth-child(2) {
+  --i: 2;
+}
+
+.list-group-item:nth-child(3) {
+  --i: 3;
+}
+
+.list-group-item:nth-child(4) {
+  --i: 4;
+}
+
+.list-group-item:nth-child(5) {
+  --i: 5;
+}
+
+.list-group-item:nth-child(6) {
+  --i: 6;
 }
 
 /*# sourceMappingURL=src_app_globals_css_f9ee138c._.single.css.map*/

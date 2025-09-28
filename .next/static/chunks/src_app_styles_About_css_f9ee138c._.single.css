@@ -38,6 +38,18 @@
   left: -20px;
 }
 
+.scroll-animate {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: all .8s ease-out;
+  transform: translateY(60px);
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (width <= 768px) {
   .frontImage {
     max-width: 100%;

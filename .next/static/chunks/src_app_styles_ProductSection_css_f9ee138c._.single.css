@@ -92,4 +92,37 @@
   }
 }
 
+.animated-underline {
+  padding-bottom: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.animated-underline:after {
+  content: "";
+  background-color: #1a3b19;
+  border-radius: 2px;
+  width: 0;
+  height: 4px;
+  animation: 2s ease-in-out infinite underlineExpand;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes underlineExpand {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
 /*# sourceMappingURL=src_app_styles_ProductSection_css_f9ee138c._.single.css.map*/

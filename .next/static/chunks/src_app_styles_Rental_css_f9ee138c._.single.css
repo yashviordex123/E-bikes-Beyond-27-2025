@@ -99,6 +99,28 @@
   transform: translateX(6px);
 }
 
+.scroll-animate {
+  opacity: 0;
+  transition: all .8s ease-out;
+  transform: translateY(50px);
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-animate-text {
+  opacity: 0;
+  transition: all .8s ease-out;
+  transform: translateX(-50px);
+}
+
+.scroll-animate-text.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media (width <= 768px) {
   .rent-now-rental {
     gap: 8px;
@@ -109,6 +131,130 @@
   .rent-now-rental .arrow {
     font-size: 18px;
   }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.feature-card:hover .bi {
+  animation-play-state: paused;
+}
+
+.animate-float {
+  animation: 6s ease-in-out infinite float;
+}
+
+.animate-glow {
+  animation: 3s ease-in-out infinite glow;
+}
+
+.animate-scroll {
+  animation: 10s linear infinite scroll;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+#why-choose .row > div > div {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 16px;
+  transition: all .35s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px #00000014;
+}
+
+#why-choose i {
+  transition: transform .3s, color .3s;
+  color: #fff !important;
+}
+
+#why-choose h3, #why-choose p {
+  font-family: Toronto Subway W01 Regular, sans-serif;
+  transition: color .3s;
+}
+
+#why-choose .row > div > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px #00000026;
+}
+
+#why-choose .row > div > div:hover i {
+  transform: scale(1.15);
+  color: #fff !important;
+}
+
+#why-choose .row > div > div:hover h3 {
+  color: #2f6d2c !important;
+}
+
+#why-choose .row > div > div:hover p {
+  color: #333 !important;
+}
+
+.heading-underline {
+  position: relative;
+}
+
+.heading-underline:after {
+  content: "";
+  background-color: #1a3b19;
+  border-radius: 2px;
+  width: 90px;
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-circle {
+  background-color: #1a3b19;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+}
+
+.icon-circle i {
+  font-size: 28px;
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=src_app_styles_Rental_css_f9ee138c._.single.css.map*/

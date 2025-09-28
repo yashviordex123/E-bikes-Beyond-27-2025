@@ -294,7 +294,6 @@
 // }
 
 'use client';
-
 import Head from 'next/head';
 import Image from 'next/image';
 import React, { useState, useEffect } from "react";
@@ -382,6 +381,73 @@ useEffect(() => {
   return () => track.removeEventListener("scroll", handleScroll);
 }, []);
 
+// ✅ Scroll animation effect
+useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-animate");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    { threshold: 0.2 } // 20% visible = trigger animation
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => {
+    elements.forEach((el) => observer.unobserve(el));
+  };
+}, []);
+
+// ✅ Enable drag-to-scroll on desktop
+useEffect(() => {
+  const track = document.querySelector(".review-track");
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  const handleMouseDown = (e) => {
+    isDown = true;
+    track.classList.add("active");
+    startX = e.pageX - track.offsetLeft;
+    scrollLeft = track.scrollLeft;
+  };
+
+  const handleMouseLeave = () => {
+    isDown = false;
+    track.classList.remove("active");
+  };
+
+  const handleMouseUp = () => {
+    isDown = false;
+    track.classList.remove("active");
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.5; // drag speed
+    track.scrollLeft = scrollLeft - walk;
+  };
+
+  track.addEventListener("mousedown", handleMouseDown);
+  track.addEventListener("mouseleave", handleMouseLeave);
+  track.addEventListener("mouseup", handleMouseUp);
+  track.addEventListener("mousemove", handleMouseMove);
+
+  return () => {
+    track.removeEventListener("mousedown", handleMouseDown);
+    track.removeEventListener("mouseleave", handleMouseLeave);
+    track.removeEventListener("mouseup", handleMouseUp);
+    track.removeEventListener("mousemove", handleMouseMove);
+  };
+}, []);
+
 
   const renderStars = (count) => '★'.repeat(count) + '☆'.repeat(5 - count);
 
@@ -448,7 +514,7 @@ useEffect(() => {
       </Head>
 
       <main className="container px-3 py-3">
-        <h2 className="text-center pt-3 pb-5" style={{ color: '#1A3B19' }}>
+        <h2 className="text-center fs-1 fw-bold pt-3 pb-5 heading-underline-customer" style={{ color: '#1A3B19' }}>
           Customer Reviews
         </h2>
         
@@ -457,7 +523,7 @@ useEffect(() => {
   <div className="review-track">
     {team.map((member, index) => (
       <article
-        className="review-card"
+        className="review-card scroll-animate"
         key={index}
         itemScope
         itemType="https://schema.org/Review"

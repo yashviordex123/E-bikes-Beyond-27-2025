@@ -79,4 +79,45 @@
   }
 }
 
+@keyframes fallDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-texts h2, .animate-texts h3, .animate-texts h4 {
+  opacity: 0;
+  animation: .8s ease-out forwards fallDown;
+}
+
+.animate-texts h2 {
+  animation-delay: .2s;
+}
+
+.animate-texts h3 {
+  animation-delay: .4s;
+}
+
+.animate-texts h4:first-of-type {
+  animation-delay: .6s;
+}
+
+.animate-texts h4:nth-of-type(2) {
+  animation-delay: .8s;
+}
+
+.animate-texts h4:nth-of-type(3) {
+  animation-delay: 1s;
+}
+
+.animate-texts h4:nth-of-type(4) {
+  animation-delay: 1.2s;
+}
+
 /*# sourceMappingURL=src_app_styles_OpeningHours_css_f9ee138c._.single.css.map*/

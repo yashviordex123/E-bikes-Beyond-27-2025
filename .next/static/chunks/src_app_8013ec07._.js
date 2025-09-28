@@ -282,6 +282,7 @@ function Header() {
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false); // Loader state
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
+    const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false); // ✅ Scroll state
     const navLinks = [
         [
             '/',
@@ -304,12 +305,8 @@ function Header() {
             'About Us'
         ],
         [
-            '/basicknowledge',
-            'Privacy Policy'
-        ],
-        [
-            '/termsandcondition',
-            'Terms and Condition'
+            '/bookrent',
+            'Make a Payment'
         ]
     ];
     const handleNavClick = (href)=>{
@@ -320,6 +317,23 @@ function Header() {
             }, 100);
         }
     };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Header.useEffect": ()=>{
+            const handleScroll = {
+                "Header.useEffect.handleScroll": ()=>{
+                    if (window.scrollY > 50) {
+                        setScrolled(true);
+                    } else {
+                        setScrolled(false);
+                    }
+                }
+            }["Header.useEffect.handleScroll"];
+            window.addEventListener("scroll", handleScroll);
+            return ({
+                "Header.useEffect": ()=>window.removeEventListener("scroll", handleScroll)
+            })["Header.useEffect"];
+        }
+    }["Header.useEffect"], []);
     // JSON-LD for Navigation (SEO)
     const jsonLd = {
         "@context": "https://schema.org",
@@ -337,12 +351,12 @@ function Header() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 333,
+                    lineNumber: 349,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 331,
+                lineNumber: 347,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -351,12 +365,12 @@ function Header() {
                     children: "Beyond Bikes"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 340,
+                    lineNumber: 356,
                     columnNumber: 39
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 340,
+                lineNumber: 356,
                 columnNumber: 7
             }, this),
             loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -382,21 +396,21 @@ function Header() {
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Header.js",
-                        lineNumber: 361,
+                        lineNumber: 377,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 355,
+                    lineNumber: 371,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 344,
+                lineNumber: 360,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-                className: "main-header w-100 sticky-top text-dark",
+                className: `main-header w-100 sticky-top text-dark ${scrolled ? "scrolled" : ""}`,
                 style: {
                     backgroundColor: '#1A3B19',
                     boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
@@ -406,9 +420,9 @@ function Header() {
                     className: "container position-relative py-sm-3 py-1 d-flex justify-content-between align-items-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/images/Latest-beyond-logo-12-08.png",
+                            src: "/images/15-09-Latest-Freedom-Logo-12-15.png",
                             alt: "Beyond Bikes Logo",
-                            className: "set-logo-height",
+                            className: `logo ${scrolled ? "logo-small" : ""}`,
                             onClick: ()=>{
                                 if (pathname !== '/') {
                                     setLoading(true);
@@ -419,7 +433,7 @@ function Header() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 375,
+                            lineNumber: 391,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -433,60 +447,85 @@ function Header() {
                                 alt: "menu-bar"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Header.js",
-                                lineNumber: 394,
+                                lineNumber: 410,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 389,
+                            lineNumber: 405,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                             className: "d-md-flex flex-grow-1 justify-content-end",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                 className: `nav flex-column flex-md-row text-center custom-nav set-bg-header ${menuOpen ? 'open' : ''}`,
-                                children: navLinks.map(([href, label], i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: "nav-item",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            role: "button",
-                                            onClick: ()=>handleNavClick(href),
-                                            className: `nav-link set-header-text ${pathname === href ? 'set-color-menu fw-bold' : 'text-light'}`,
-                                            children: label
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "nav-item d-md-none text-end mb-0 pb-0 pe-3",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "btn text-light fs-3",
+                                            onClick: ()=>setMenuOpen(false),
+                                            "aria-label": "Close menu",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "bi bi-x-lg"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/Header.js",
+                                                lineNumber: 430,
+                                                columnNumber: 5
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/Header.js",
-                                            lineNumber: 409,
-                                            columnNumber: 19
+                                            lineNumber: 425,
+                                            columnNumber: 3
                                         }, this)
-                                    }, i, false, {
+                                    }, void 0, false, {
                                         fileName: "[project]/src/app/components/Header.js",
-                                        lineNumber: 408,
-                                        columnNumber: 17
-                                    }, this))
-                            }, void 0, false, {
+                                        lineNumber: 424,
+                                        columnNumber: 15
+                                    }, this),
+                                    navLinks.map(([href, label], i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            className: "nav-item mt-0",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                role: "button",
+                                                onClick: ()=>handleNavClick(href),
+                                                className: `nav-link set-header-text ${pathname === href ? 'set-color-menu fw-bold' : 'text-light'}`,
+                                                children: label
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/Header.js",
+                                                lineNumber: 436,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, i, false, {
+                                            fileName: "[project]/src/app/components/Header.js",
+                                            lineNumber: 435,
+                                            columnNumber: 17
+                                        }, this))
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/app/components/Header.js",
-                                lineNumber: 403,
+                                lineNumber: 419,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 402,
+                            lineNumber: 418,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 374,
+                    lineNumber: 390,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 366,
+                lineNumber: 382,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(Header, "L3xC638IPkK+aklFyyB7nI4Uxik=", false, function() {
+_s(Header, "6pydfDLUURyPYW+Hg5TGa2rAntE=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
@@ -851,7 +890,7 @@ function Footer() {
         setLoading(true);
         setTimeout(()=>{
             router.push(href);
-        }, 1000); // loader delay
+        }, 100); // loader delay
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -1346,7 +1385,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text-latest.png\",\"price\":\"$65.00 AUD\",\"oldPrice\":\"$70.00 AUD\",\"battery\":\"48V 50A\",\"batteryHours\":\"6-8 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":2,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 70A\",\"batteryHours\":\"8-10 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/Latest-Change-Angle-Red-Cycle-latest.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 AUD\",\"oldPrice\":\"$120.00 AUD\"}]}"));}}),
+__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text-latest.png\",\"price\":\"$65.00 AUD\",\"oldPrice\":\"$70.00 AUD\",\"battery\":\"48V 50A\",\"batteryHours\":\"6-8 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":2,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 70A\",\"batteryHours\":\"8-10 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/Latest-Change-Angle-Red-Cycle-latest.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":4,\"name\":\"White E-bike\",\"image\":\"/images/White-E-bike-Product.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":5,\"name\":\"Black E-bike\",\"image\":\"/images/Latest-Black-Cycle-Product-26-09.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"12-15 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":6,\"name\":\"Red E-bike\",\"image\":\"/images/24-09-Red-Cycle-Product-Latest.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 AUD\",\"oldPrice\":\"$120.00 AUD\"}]}"));}}),
 "[project]/src/app/products/page.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1939,7 +1978,7 @@ function ProductTabs() {
                 },
                 children: [
                     pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "mt-3 mb-5 text-center",
+                        className: "mt-3 mb-5 fs-1 fw-bold text-center heading-underline",
                         style: {
                             color: "#1A3B19"
                         },
@@ -1949,7 +1988,7 @@ function ProductTabs() {
                         lineNumber: 509,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "mt-3 mb-5 text-center",
+                        className: "mt-3 mb-5 fs-1 fw-bold text-center heading-underline",
                         style: {
                             color: "#1A3B19"
                         },
@@ -1982,7 +2021,7 @@ function ProductTabs() {
                                             children: "Sale"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 533,
+                                            lineNumber: 535,
                                             columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2000,7 +2039,7 @@ function ProductTabs() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 541,
+                                            lineNumber: 543,
                                             columnNumber: 9
                                         }, this),
                                         pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2012,7 +2051,7 @@ function ProductTabs() {
                                             children: product.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 554,
+                                            lineNumber: 556,
                                             columnNumber: 11
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "fs-sm-4 fs-3 fw-bold",
@@ -2023,7 +2062,7 @@ function ProductTabs() {
                                             children: product.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 558,
+                                            lineNumber: 560,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2043,7 +2082,7 @@ function ProductTabs() {
                                                     children: product.price
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 571,
+                                                    lineNumber: 573,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -2051,7 +2090,7 @@ function ProductTabs() {
                                                     content: "AUD"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 572,
+                                                    lineNumber: 574,
                                                     columnNumber: 11
                                                 }, this),
                                                 product.oldPrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2062,13 +2101,13 @@ function ProductTabs() {
                                                     children: product.oldPrice
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 574,
+                                                    lineNumber: 576,
                                                     columnNumber: 13
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 564,
+                                            lineNumber: 566,
                                             columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2078,13 +2117,13 @@ function ProductTabs() {
                                                     className: "text-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                            className: "bi bi-battery-charging fs-4",
+                                                            className: "bi bi-battery-full fs-4",
                                                             style: {
                                                                 color: '#1A3B19'
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 581,
+                                                            lineNumber: 583,
                                                             columnNumber: 5
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2095,26 +2134,26 @@ function ProductTabs() {
                                                             children: product.battery || "Battery"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 583,
+                                                            lineNumber: 585,
                                                             columnNumber: 5
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 580,
+                                                    lineNumber: 582,
                                                     columnNumber: 3
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                            className: "bi bi-clock-history fs-4",
+                                                            className: "bi bi-clock fs-4",
                                                             style: {
                                                                 color: '#1A3B19'
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 586,
+                                                            lineNumber: 588,
                                                             columnNumber: 5
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2125,13 +2164,13 @@ function ProductTabs() {
                                                             children: product.batteryHours || "Motor"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 588,
+                                                            lineNumber: 590,
                                                             columnNumber: 5
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 585,
+                                                    lineNumber: 587,
                                                     columnNumber: 3
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2144,7 +2183,7 @@ function ProductTabs() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 591,
+                                                            lineNumber: 593,
                                                             columnNumber: 5
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2155,19 +2194,19 @@ function ProductTabs() {
                                                             children: product.topSpeed || "Range"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 593,
+                                                            lineNumber: 595,
                                                             columnNumber: 5
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 590,
+                                                    lineNumber: 592,
                                                     columnNumber: 3
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 579,
+                                            lineNumber: 581,
                                             columnNumber: 9
                                         }, this)
                                     ]
@@ -2219,12 +2258,12 @@ function ProductTabs() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/app/products/page.js",
-                lineNumber: 604,
+                lineNumber: 608,
                 columnNumber: 7
             }, this),
             pathname === "/products" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/products/page.js",
-                lineNumber: 620,
+                lineNumber: 624,
                 columnNumber: 36
             }, this)
         ]

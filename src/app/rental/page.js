@@ -148,13 +148,13 @@
 // }
 
 'use client';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Rental from '../styles/Rental.css';
+import '../styles/Rental.css';
 import { motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 
@@ -172,6 +172,58 @@ export default function RentalEbikes() {
       router.push(`/${slug}`);
     }, 1000);
   };
+
+  useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-animate");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
+
+useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-animate, .scroll-left, .scroll-right, .scroll-up, .scroll-down, .scroll-pop, .scroll-zoom");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target); // only animate once
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
+
+const features = [
+    { icon: "bi-tools", title: "Accessories" },
+    { icon: "bi-geo-alt-fill", title: "GPS System" },
+    { icon: "bi-tools", title: "Maintenance Included" },
+    { icon: "bi-bicycle", title: "Free Test Ride" },
+  ]
+
+  const duplicatedFeatures = [...features, ...features, ...features]
+
+
+
 
   const bikes = [
     {
@@ -287,7 +339,7 @@ export default function RentalEbikes() {
           </div>
         )}
       <main>
-      <section className="py-5 text-center" style={{
+      <section className="py-5 text-center scroll-animate" style={{
     backgroundImage: "url('/images/RentalBackgroundImageLatest.jpg')", // 👉 Place your image in /public/images/
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -308,60 +360,34 @@ export default function RentalEbikes() {
           </p> */}
         </div>
       </section>
-       <section
-      className="w-100 py-2"
+     <section
+      className="w-100 py-4 position-relative overflow-hidden"
       aria-label="Fleet Features"
       itemScope
       itemType="https://schema.org/Service"
       style={{
-    backgroundColor: "rgb(26, 59, 25)", // solid black background
-    marginTop: "-50px", // overlap with previous section
-    position: "relative",
-    zIndex: 2,
-  }}
+        backgroundColor: "rgb(26, 59, 25)",
+        position: "relative",
+        zIndex: 2,
+      }}
     >
-      <div className="container">
-        <div className="row g-3 text-center text-white">
-
-          {/* Feature 1 */}
-          <article className="col-6 col-md-3" itemProp="feature" itemScope itemType="https://schema.org/PropertyValue">
-            <div className="py-4 px-2">
-              <i className="bi bi-tools fs-1 mb-2" aria-hidden="true"></i>
-              <h4 className="feature-title mb-1" itemProp="name">
-                Accessories
-              </h4>
+      <div className="position-relative">
+        <div className="d-flex animate-scroll text-nowrap">
+          {duplicatedFeatures.map((feature, index) => (
+            <div
+              key={index}
+              className="d-inline-flex align-items-center mx-4 text-white flex-shrink-0"
+              itemProp="feature"
+              itemScope
+              itemType="https://schema.org/PropertyValue"
+            >
+              <i className={`bi ${feature.icon} fs-1 me-3`} aria-hidden="true"></i>
+              <span className="fs-4 fw-semibold" itemProp="name">
+                {feature.title}
+              </span>
+             
             </div>
-          </article>
-
-          {/* Feature 2 */}
-          <article className="col-6 col-md-3" itemProp="feature" itemScope itemType="https://schema.org/PropertyValue">
-            <div className="py-4 px-2">
-              <i className="bi bi-geo-alt-fill fs-1 mb-2" aria-hidden="true"></i>
-              <h4 className="feature-title mb-1" itemProp="name">
-                GPS System
-              </h4>
-            </div>
-          </article>
-
-          {/* Feature 3 */}
-          <article className="col-6 col-md-3" itemProp="feature" itemScope itemType="https://schema.org/PropertyValue">
-            <div className="py-4 px-2">
-              <i className="bi bi-tools fs-1 mb-2" aria-hidden="true"></i>
-              <h4 className="feature-title mb-0 fw-bold" itemProp="name">
-                Maintenance Included 
-              </h4>
-            </div>
-          </article>
-
-          {/* Feature 4 */}
-          <article className="col-6 col-md-3" itemProp="feature" itemScope itemType="https://schema.org/PropertyValue">
-            <div className="py-4 px-2">
-              <i className="bi bi-bicycle fs-1 mb-2" aria-hidden="true"></i>
-              <h4 className="feature-title mb-0 fw-bold" itemProp="name">
-                Free Test Ride
-              </h4>
-            </div>
-          </article>
+          ))}
         </div>
       </div>
     </section>
@@ -369,27 +395,26 @@ export default function RentalEbikes() {
      
 <motion.section
         id="why-choose"
-        className="container text-center py-5"
+        className="container text-center py-5 scroll-animate"
         aria-labelledby="why-choose-heading"
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+  whileInView={{ opacity: 1, y: 0 }}    
+  viewport={{ once: true, amount: 0.3 }} 
+  transition={{ duration: 0.6 }}
         itemScope
         itemType="https://schema.org/Service"
       >
         <h2
           id="why-choose-heading"
-          className="mb-3 fw-bold"
+          className="mb-5 fw-bold heading-underline"
           style={{ color: "#1A3B19", fontFamily: "system-ui" }}
           itemProp="name"
         >
-          Why Choose Our Beyond Bikes
+          Why Choose Beyond Bikes
         </h2>
-        <p className="text-muted mb-5" style={{ fontFamily: "system-ui" }} itemProp="description">
-          Discover the benefits of renting with Beyond Bikes
-        </p>
+        
 
-        <div className="row g-4">
+        <div className="row g-sm-2 g-3">
           {/* Feature 1 */}
           <div className="col-12 col-md-4">
             <div
@@ -397,8 +422,10 @@ export default function RentalEbikes() {
               itemScope
               itemType="https://schema.org/Service"
             >
-              <i className="bi bi-fuel-pump fs-1 mb-3" style={{ color: "#1A3B19" }}></i>
-              <h3 className="fs-5 fw-semibold mb-2" style={{ color: "#1A3B19" }} itemProp="serviceType">
+              <div className="icon-circle mb-3">
+  <i className="bi bi-fuel-pump"></i>
+</div>
+              <h3 className="fs-5 fw-semibold mb-2" style={{ color: "#1A3B19",fontStyle:'Toronto Subway W01 Regular' }} itemProp="serviceType">
                 Tired Of High Fuel Costs and Unreliable Rides?
               </h3>
               <p className="text-muted small" style={{ fontFamily: "system-ui" }} itemProp="description">
@@ -416,7 +443,8 @@ export default function RentalEbikes() {
               itemScope
               itemType="https://schema.org/Service"
             >
-              <i className="bi bi-lightning-charge fs-1 mb-3" style={{ color: "#1A3B19" }}></i>
+              <div className="icon-circle mb-3">
+              <i className="bi bi-lightning-charge fs-1" style={{ color: "#1A3B19" }}></i></div>
               <h3 className="fs-5 fw-semibold mb-2" style={{ color: "#1A3B19" }} itemProp="serviceType">
                 SMOOTH ELECTRIC RIDE - NO GEARS, NO STRESS
               </h3>
@@ -434,7 +462,8 @@ Glide through traffic with ease and comfort.              </p>
               itemScope
               itemType="https://schema.org/Service"
             >
-              <i className="bi bi-cash-coin fs-1 mb-3" style={{ color: "#1A3B19" }}></i>
+              <div className="icon-circle mb-3">
+              <i className="bi bi-cash-coin fs-1" style={{ color: "#1A3B19" }}></i></div>
               <h3 className="fs-5 fw-semibold mb-2" style={{ color: "#1A3B19" }} itemProp="serviceType">
 SAVE FUEL. SAVE MONEY.
               </h3>
@@ -450,7 +479,7 @@ No fuel. No extra maintenance.
             </div>
           </div>
         </div>
-        <div className="row g-4">
+        <div className="row mt-4">
           {/* Feature 1 */}
           <div className="col-12 col-md-4">
             <div
@@ -458,7 +487,8 @@ No fuel. No extra maintenance.
               itemScope
               itemType="https://schema.org/Service"
             >
-              <i className="bi bi-geo-alt fs-1 mb-3" style={{ color: "#1A3B19" }}></i>
+              <div className="icon-circle mb-3">
+              <i className="bi bi-geo-alt fs-1" style={{ color: "#1A3B19" }}></i></div>
               <h3 className="fs-5 fw-semibold mb-2" style={{ color: "#1A3B19" }} itemProp="serviceType">
                 BUILT FOR AUSTRALIAN
 LIFE
@@ -482,16 +512,16 @@ Beyond Bikes fits your lifestyle.
               itemScope
               itemType="https://schema.org/Service"
             >
-              <i className="bi bi-calendar-check fs-1 mb-3" style={{ color: "#1A3B19" }}></i>
+              <div className="icon-circle mb-3">
+              <i className="bi bi-calendar-check fs-1" style={{ color: "#1A3B19" }}></i></div>
               <h3 className="fs-5 fw-semibold mb-2" style={{ color: "#1A3B19" }} itemProp="serviceType">
-                FREE TEST RIDE + EASY
-BOOKING
+                FREE TEST RIDE + EASY BOOKING
               </h3>
               <p className="text-muted small" style={{ fontFamily: "system-ui" }} itemProp="description">
 Still unsure? Try it first! <br />
 Free Test Ride Available
 Call/WhatsApp: +61 422 032 961
-DM us now to book & start riding smarter!             </p>
+DM us now to book & start riding smarter!</p>
             </div>
           </div>
 
@@ -499,9 +529,9 @@ DM us now to book & start riding smarter!             </p>
         </div>
       </motion.section>
 
-<section className="bg-white" id="bikes-for-rent">
+<section className="bg-white scroll-animate" id="bikes-for-rent">
   <div className="container px-3">
-    <h2 className="fw-bold mb-4" style={{ color: "#1a3b19" }}>
+    <h2 className="fw-bolder mb-4 heading-underline" style={{ color: "#1a3b19",textAlign:'center' }}>
       Bikes For Rent
     </h2>
 
@@ -543,7 +573,44 @@ DM us now to book & start riding smarter!             </p>
             topspeed: "45 MPH",
           },
           price: "80.00 AUD",
+        },
+        {
+          name: "White E-bike",
+          img: "/images/White-E-bike-Product.png",
+          alt: "E-bike 8-10h",
+          specs: {
+            batteryhours: "10-12 hours",
+            motor: 500,
+            batterylife: "48V 70A",
+            topspeed: "45 MPH",
+          },
+          price: "70.00 AUD",
+        },
+        {
+          name: "Black E-bike",
+          img: "/images/Latest-Black-Cycle-Product-26-09.png",
+          alt: "E-bike 8-10h",
+          specs: {
+            batteryhours: "10-12 hours",
+            motor: 500,
+            batterylife: "48V 70A",
+            topspeed: "45 MPH",
+          },
+          price: "80.00 AUD",
+        },
+        {
+          name: "Red E-bike",
+          img: "/images/24-09-Red-Cycle-Product-Latest.png",
+          alt: "E-bike 8-10h",
+          specs: {
+            batteryhours: "12-15 hours",
+            motor: 500,
+            batterylife: "48V 70A",
+            topspeed: "45 MPH",
+          },
+          price: "70.00 AUD",
         }
+        
       ].map((bike, idx) => (
         <div
           className="col-12 col-md-6 col-lg-4"
@@ -637,13 +704,13 @@ DM us now to book & start riding smarter!             </p>
       </section> */}
 
       <section 
-  className="py-5" 
+  className="py-5 scroll-animate" 
   aria-label="Accessories Provided" 
   itemScope 
   itemType="https://schema.org/OfferCatalog"
 >
   <div className="container">
-    <h2 className="fw-bold mb-4 text-center" style={{ color: "#1a3b19",fontFamily: "system-ui" }} itemProp="name">
+    <h2 className="fw-bold mb-4 text-center heading-underline" style={{ color: "#1a3b19 !important",fontFamily: "system-ui" }} itemProp="name">
       Accessories Provided
     </h2>
     <div className="row g-4">

@@ -358,7 +358,7 @@ export default function Footer() {
     setLoading(true);
     setTimeout(() => {
       router.push(href);
-    }, 1000); // loader delay
+    }, 100); // loader delay
   };
 
   return (

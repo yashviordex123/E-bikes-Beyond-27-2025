@@ -38,6 +38,18 @@
   left: -20px;
 }
 
+.scroll-animate {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: all .8s ease-out;
+  transform: translateY(60px);
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (width <= 768px) {
   .frontImage {
     max-width: 100%;
@@ -62,13 +74,31 @@ nav ul.nav li.nav-item a {
 }
 
 .main-header {
-  box-shadow: 0 10px 20px #00000080;
+  background-color: #1a3b19;
+  padding: .2rem 0;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 4px 25px #000c;
+}
+
+.main-header.scrolled {
+  padding: .4rem 0;
+}
+
+.logo {
+  width: auto;
+  height: 70px;
+  transition: all .3s ease-in-out;
+}
+
+.logo-small {
+  width: auto;
+  height: 50px;
 }
 
 .set-logo-height {
   cursor: pointer;
-  width: 100px;
-  height: 80px;
+  width: 110px;
+  height: 90px;
 }
 
 .set-bg-header {
@@ -88,6 +118,18 @@ nav ul.nav li.nav-item a {
 
 .menu-position:hover {
   border: 1px solid #1a3b19 !important;
+}
+
+.custom-nav .btn {
+  color: #fff;
+  background: none;
+  border: none;
+  transition: transform .2s;
+}
+
+.custom-nav .btn:hover {
+  color: #ff4d4d;
+  transform: rotate(90deg);
 }
 
 @media (width >= 768px) {
@@ -203,6 +245,14 @@ nav ul.nav li.nav-item a {
 
   .custom-nav.open li.nav-item:nth-child(6) {
     transition-delay: .6s;
+  }
+
+  .custom-nav.open li.nav-item:nth-child(7) {
+    transition-delay: .7s;
+  }
+
+  .custom-nav.open li.nav-item:nth-child(8) {
+    transition-delay: .8s;
   }
 
   h1.fw-bold {

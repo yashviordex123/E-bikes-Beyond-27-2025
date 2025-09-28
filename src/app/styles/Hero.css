@@ -90,6 +90,8 @@
   transform: translateX(6px);
 }
 
+
+
 /* Responsive (mobile) */
 @media (max-width: 768px) {
   .rent-now {

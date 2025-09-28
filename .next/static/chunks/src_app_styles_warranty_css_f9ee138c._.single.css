@@ -12,4 +12,14 @@
   padding: 2px 4px;
 }
 
+.step-connector {
+  background-color: #1a3b19;
+  flex-grow: 1;
+  height: 4px;
+}
+
+.stepper-item {
+  flex: 1;
+}
+
 /*# sourceMappingURL=src_app_styles_warranty_css_f9ee138c._.single.css.map*/

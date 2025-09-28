@@ -58,4 +58,43 @@
   background: #1a3b19;
 }
 
+.scroll-animate {
+  opacity: 0;
+  transition: all .8s ease-out;
+  transform: translateY(60px);
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heading-underline-customer {
+  position: relative;
+}
+
+.heading-underline-customer:after {
+  content: "";
+  background-color: #1a3b19;
+  border-radius: 2px;
+  width: 90px;
+  height: 3px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.review-track {
+  scroll-behavior: smooth;
+  cursor: grab;
+  gap: 1rem;
+  display: flex;
+  overflow-x: auto;
+}
+
+.review-track.active {
+  cursor: grabbing;
+}
+
 /*# sourceMappingURL=src_app_styles_Review_css_f9ee138c._.single.css.map*/

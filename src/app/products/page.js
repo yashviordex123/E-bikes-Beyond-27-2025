@@ -506,9 +506,9 @@ export default function ProductTabs() {
       >
         {/* Dynamic Page Title */}
         {pathname === "/" ? (
-          <h2 className="mt-3 mb-5 text-center" style={{ color: "#1A3B19" }}>Bikes for Rent</h2>
+          <h2 className="mt-3 mb-5 fs-1 fw-bold text-center heading-underline" style={{ color: "#1A3B19" }}>Bikes for Rent</h2>
         ) : (
-          <h1 className="mt-3 mb-5 text-center" style={{ color: "#1A3B19" }}>Our E-Bikes for Rent</h1>
+          <h1 className="mt-3 mb-5 fs-1 fw-bold text-center heading-underline" style={{ color: "#1A3B19" }}>Our E-Bikes for Rent</h1>
         )}
 
         
@@ -529,6 +529,8 @@ export default function ProductTabs() {
         // style="box-shadow:0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1);border-radius:0.5rem;padding:1rem;background-color:#fff;transition:transform 0.2s ease, box-shadow 0.2s ease"
         itemType="https://schema.org/Product"
       >
+     
+
         {/* Sale Ribbon */}
         <span 
           className="sale-badge"
@@ -578,12 +580,12 @@ export default function ProductTabs() {
         </p>
         <div className="d-flex justify-content-center gap-4 my-3">
   <div className="text-center">
-    <i className="bi bi-battery-charging fs-4" style={{color:'#1A3B19'}}></i>
+    <i className="bi bi-battery-full fs-4" style={{color:'#1A3B19'}}></i>
     {/* <p className="small mb-0" style={{color:'#1A3B19'}}>Battery</p> */}
     <p className="small mb-0" style={{ color: '#1A3B19' }}>{product.battery || "Battery"}</p>
   </div>
   <div className="text-center">
-    <i className="bi bi-clock-history fs-4" style={{ color: '#1A3B19' }}></i>
+    <i className="bi bi-clock fs-4" style={{ color: '#1A3B19' }}></i>
     {/* <p className="small mb-0" style={{color:'#1A3B19'}}>Motor</p> */}
     <p className="small mb-0" style={{ color: '#1A3B19' }}>{product.batteryHours || "Motor"}</p>
   </div>
@@ -593,6 +595,8 @@ export default function ProductTabs() {
     <p className="small mb-0" style={{ color: '#1A3B19' }}>{product.topSpeed || "Range"}</p>
   </div>
 </div>
+
+
       </article>
     </div>
   ))}

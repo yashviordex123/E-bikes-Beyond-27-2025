@@ -109,4 +109,16 @@
   display: block;
 }
 
+.scroll-animate {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: all .8s ease-out;
+  transform: translateY(60px);
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*# sourceMappingURL=src_app_styles_amazingoffers_css_f9ee138c._.single.css.map*/

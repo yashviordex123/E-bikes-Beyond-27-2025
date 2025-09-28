@@ -289,7 +289,7 @@
 "use client";
 import Link from 'next/link';
 import '../styles/header.css';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Head from 'next/head';
 
@@ -298,6 +298,8 @@ export default function Header() {
   const [loading, setLoading] = useState(false); // Loader state
   const router = useRouter();
   const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false); // ✅ Scroll state
+
 
   const navLinks = [
     ['/', 'Home'],
@@ -305,8 +307,8 @@ export default function Header() {
     ['/rental', 'Rental'],
     ['/contact', 'Contact'],
     ['/about', 'About Us'],
-    ['/basicknowledge', 'Privacy Policy'],
-    ['/termsandcondition','Terms and Condition']
+    ['/bookrent', 'Make a Payment']
+    
   ];
 
   const handleNavClick = (href) => {
@@ -317,6 +319,20 @@ export default function Header() {
       }, 100);
     }
   };
+
+  useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   // JSON-LD for Navigation (SEO)
   const jsonLd = {
@@ -364,7 +380,7 @@ export default function Header() {
       )}
 
       <header
-        className="main-header w-100 sticky-top text-dark"
+        className={`main-header w-100 sticky-top text-dark ${scrolled ? "scrolled" : ""}`}
         style={{
           backgroundColor: '#1A3B19',
           boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
@@ -373,9 +389,9 @@ export default function Header() {
       >
         <div className="container position-relative py-sm-3 py-1 d-flex justify-content-between align-items-center">
           <img
-            src="/images/Latest-beyond-logo-12-08.png"
+            src="/images/15-09-Latest-Freedom-Logo-12-15.png"
             alt="Beyond Bikes Logo"
-            className="set-logo-height"
+            className={`logo ${scrolled ? "logo-small" : ""}`}
             onClick={() => {
               if (pathname !== '/') {
                 setLoading(true);
@@ -404,8 +420,19 @@ export default function Header() {
               className={`nav flex-column flex-md-row text-center custom-nav set-bg-header ${menuOpen ? 'open' : ''
                 }`}
             >
+
+              <li className="nav-item d-md-none text-end mb-0 pb-0 pe-3">
+  <button
+    className="btn text-light fs-3"
+    onClick={() => setMenuOpen(false)}
+    aria-label="Close menu"
+  >
+    <i className="bi bi-x-lg"></i> 
+  </button>
+</li>
+
               {navLinks.map(([href, label], i) => (
-                <li className="nav-item" key={i}>
+                <li className="nav-item mt-0" key={i}>
                   <a
                     role="button"
                     onClick={() => handleNavClick(href)}

@@ -24,8 +24,28 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150vh;
-  transition: background-image 0.5s ease-in-out;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+  animation: fadeZoom 4s ease-in-out infinite;
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0.6;
+    filter: grayscale(100%) hue-rotate(30deg);
+  }
+  20% {
+    opacity: 1;
+    filter: grayscale(0%) hue-rotate(0deg);
+  }
+  80% {
+    opacity: 1;
+    filter: grayscale(0%) hue-rotate(0deg);
+  }
+  100% {
+    opacity: 0.6;
+    filter: grayscale(100%) hue-rotate(-30deg);
+  }
 }
 
 /* Optional: tweak height or position for mobile */
@@ -156,3 +176,35 @@
                          50% 0, 0 0, 50% 50%;
   }
 }
+
+/* More noticeable slide-in */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-120px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(15px) scale(1.02); /* overshoot */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Base style before animation */
+.list-group-item {
+  opacity: 0;
+  transform: translateX(-120px);
+  animation: slideInLeft 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: calc(var(--i) * 0.8s); /* more gap between items */
+}
+
+/* Assign index for stagger effect */
+.list-group-item:nth-child(1) { --i: 1; }
+.list-group-item:nth-child(2) { --i: 2; }
+.list-group-item:nth-child(3) { --i: 3; }
+.list-group-item:nth-child(4) { --i: 4; }
+.list-group-item:nth-child(5) { --i: 5; }
+.list-group-item:nth-child(6) { --i: 6; }

@@ -160,7 +160,7 @@ export default function Promotion() {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <div className="position-absolute w-100 mt-sm-5 mt-0 h-100 d-flex align-items-center justify-content-center justify-content-md-end pe-md-5">
-          <div className="text-center text-dark px-sm-5 px-3 py-4 rounded shadow-lg opening-box animate-opening">
+          <div className={`text-center text-dark px-sm-5 px-3 py-4 rounded shadow-lg opening-box ${isVisible ? "animate-texts" : ""}`}>
             <div style={{borderRadius:'50%'}}>
             <img
             src="/images/Latest-beyond-logo-12-08.png"

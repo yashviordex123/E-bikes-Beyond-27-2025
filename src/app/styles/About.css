@@ -40,6 +40,21 @@
   max-width: 60%;
 }
 
+/* Initial hidden state */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(60px); /* falling down effect */
+  transition: all 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+/* When visible */
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .frontImage {

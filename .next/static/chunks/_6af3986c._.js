@@ -282,6 +282,7 @@ function Header() {
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false); // Loader state
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
+    const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false); // ✅ Scroll state
     const navLinks = [
         [
             '/',
@@ -304,12 +305,8 @@ function Header() {
             'About Us'
         ],
         [
-            '/basicknowledge',
-            'Privacy Policy'
-        ],
-        [
-            '/termsandcondition',
-            'Terms and Condition'
+            '/bookrent',
+            'Make a Payment'
         ]
     ];
     const handleNavClick = (href)=>{
@@ -317,9 +314,26 @@ function Header() {
             setLoading(true);
             setTimeout(()=>{
                 router.push(href);
-            }, 1000);
+            }, 100);
         }
     };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Header.useEffect": ()=>{
+            const handleScroll = {
+                "Header.useEffect.handleScroll": ()=>{
+                    if (window.scrollY > 50) {
+                        setScrolled(true);
+                    } else {
+                        setScrolled(false);
+                    }
+                }
+            }["Header.useEffect.handleScroll"];
+            window.addEventListener("scroll", handleScroll);
+            return ({
+                "Header.useEffect": ()=>window.removeEventListener("scroll", handleScroll)
+            })["Header.useEffect"];
+        }
+    }["Header.useEffect"], []);
     // JSON-LD for Navigation (SEO)
     const jsonLd = {
         "@context": "https://schema.org",
@@ -337,12 +351,12 @@ function Header() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 333,
+                    lineNumber: 349,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 331,
+                lineNumber: 347,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -351,12 +365,12 @@ function Header() {
                     children: "Beyond Bikes"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 340,
+                    lineNumber: 356,
                     columnNumber: 39
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 340,
+                lineNumber: 356,
                 columnNumber: 7
             }, this),
             loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -382,21 +396,21 @@ function Header() {
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Header.js",
-                        lineNumber: 361,
+                        lineNumber: 377,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 355,
+                    lineNumber: 371,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 344,
+                lineNumber: 360,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-                className: "main-header w-100 sticky-top text-dark",
+                className: `main-header w-100 sticky-top text-dark ${scrolled ? "scrolled" : ""}`,
                 style: {
                     backgroundColor: '#1A3B19',
                     boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
@@ -406,9 +420,9 @@ function Header() {
                     className: "container position-relative py-sm-3 py-1 d-flex justify-content-between align-items-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/images/Latest-beyond-logo-12-08.png",
+                            src: "/images/15-09-Latest-Freedom-Logo-12-15.png",
                             alt: "Beyond Bikes Logo",
-                            className: "set-logo-height",
+                            className: `logo ${scrolled ? "logo-small" : ""}`,
                             onClick: ()=>{
                                 if (pathname !== '/') {
                                     setLoading(true);
@@ -419,7 +433,7 @@ function Header() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 375,
+                            lineNumber: 391,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -433,60 +447,85 @@ function Header() {
                                 alt: "menu-bar"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Header.js",
-                                lineNumber: 394,
+                                lineNumber: 410,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 389,
+                            lineNumber: 405,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                             className: "d-md-flex flex-grow-1 justify-content-end",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                 className: `nav flex-column flex-md-row text-center custom-nav set-bg-header ${menuOpen ? 'open' : ''}`,
-                                children: navLinks.map(([href, label], i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: "nav-item",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            role: "button",
-                                            onClick: ()=>handleNavClick(href),
-                                            className: `nav-link set-header-text ${pathname === href ? 'set-color-menu fw-bold' : 'text-light'}`,
-                                            children: label
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "nav-item d-md-none text-end mb-0 pb-0 pe-3",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "btn text-light fs-3",
+                                            onClick: ()=>setMenuOpen(false),
+                                            "aria-label": "Close menu",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "bi bi-x-lg"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/Header.js",
+                                                lineNumber: 430,
+                                                columnNumber: 5
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/Header.js",
-                                            lineNumber: 409,
-                                            columnNumber: 19
+                                            lineNumber: 425,
+                                            columnNumber: 3
                                         }, this)
-                                    }, i, false, {
+                                    }, void 0, false, {
                                         fileName: "[project]/src/app/components/Header.js",
-                                        lineNumber: 408,
-                                        columnNumber: 17
-                                    }, this))
-                            }, void 0, false, {
+                                        lineNumber: 424,
+                                        columnNumber: 15
+                                    }, this),
+                                    navLinks.map(([href, label], i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            className: "nav-item mt-0",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                role: "button",
+                                                onClick: ()=>handleNavClick(href),
+                                                className: `nav-link set-header-text ${pathname === href ? 'set-color-menu fw-bold' : 'text-light'}`,
+                                                children: label
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/Header.js",
+                                                lineNumber: 436,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, i, false, {
+                                            fileName: "[project]/src/app/components/Header.js",
+                                            lineNumber: 435,
+                                            columnNumber: 17
+                                        }, this))
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/app/components/Header.js",
-                                lineNumber: 403,
+                                lineNumber: 419,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 402,
+                            lineNumber: 418,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 374,
+                    lineNumber: 390,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 366,
+                lineNumber: 382,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(Header, "L3xC638IPkK+aklFyyB7nI4Uxik=", false, function() {
+_s(Header, "6pydfDLUURyPYW+Hg5TGa2rAntE=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
@@ -504,115 +543,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
-// "use client";
-// import { useEffect, useState } from 'react';
-// import Typewriter from 'typewriter-effect';
-// import { useRouter } from 'next/navigation';
-// export default function Hero() {
-//   const router = useRouter();
-//   const images = [
-//     '/images/02-07-2025-Latest-Hero-1.jpg',
-//     '/images/Set-Product-Data-Background-Hero-28-06-2025-latest.jpg',
-//   ];
-//   const titles = [
-//     'Ride Green. Ride Smart. Ride Melbourne.',
-//     'From City Streets to Coastal Rides — Go Electric'
-//   ];
-//   const subtitles = [
-//     'Quiet Power. Big Freedom',
-//     'Charge. Ride. Repeat.'
-//   ];
-//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-//   const [loading, setLoading] = useState(false);
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-//     }, 4000);
-//     return () => clearInterval(interval);
-//   }, []);
-//   const handleRentalClick = () => {
-//     setLoading(true);
-//     setTimeout(() => {
-//       router.push('/rental');
-//     }, 1000); // 1 second delay
-//   };
-//   return (
-//     <section
-//       className="d-flex position-relative responsive-bg text-white text-center text-md-start"
-//       style={{
-//         backgroundImage: `url(${images[currentImageIndex]})`,
-//       }}
-//     >
-//       {/* Loader Overlay */}
-//       {loading && (
-//         <div
-//           style={{
-//             position: "fixed",
-//             top: 0,
-//             left: 0,
-//             right: 0,
-//             bottom: 0,
-//             backgroundColor: "rgba(255, 255, 255, 0.8)",
-//             zIndex: 9999,
-//             display: "flex",
-//             justifyContent: "center",
-//             alignItems: "center"
-//           }}
-//         >
-//           <div
-//             className="spinner-border text-warning"
-//             style={{ width: "4rem", height: "4rem" }}
-//             role="status"
-//           >
-//             <span className="visually-hidden">Loading...</span>
-//           </div>
-//         </div>
-//       )}
-//       <div className="container position-relative z-2 mt-5 pt-5">
-//         <div className="row">
-//           <div className="col-12 col-md-6">
-//             <h2 className="display-5 fw-bold mb-4" style={{ color: '#ff6b00' }}>
-//               <Typewriter
-//                 key={currentImageIndex + '-title'}
-//                 options={{
-//                   strings: [titles[currentImageIndex]],
-//                   autoStart: true,
-//                   loop: false,
-//                   delay: 50,
-//                   deleteSpeed: 20,
-//                   pauseFor: 3500
-//                 }}
-//               />
-//             </h2>
-//             <h4 className="fw-600 mb-4" style={{ fontStyle: 'italic' }}>
-//               {subtitles[currentImageIndex]}
-//             </h4>
-//             <a
-//               onClick={handleRentalClick}
-//               className="btn btn-light set-button-background rounded-1 px-4 py-2 mt-3"
-//               aria-label="Shop Electric Bikes"
-//               style={{
-//                 backgroundColor: '#ff6b00',
-//                 fontSize: '13px',
-//                 color: '#fff',
-//                 fontWeight: '600',
-//                 border: 'none',
-//                 cursor: 'pointer'
-//               }}
-//             >
-//               RENT NOW
-//             </a>
-//             <noscript>
-//               <h2>Electric Road Bikes</h2>
-//               <p>More mileage means more fun</p>
-//             </noscript>
-//           </div>
-//         </div>
-//       </div>
-//       <span className="visually-hidden">Background showcasing electric road bikes</span>
-//     </section>
-//   );
-// }
 __turbopack_context__.s({
     "default": (()=>Hero)
 });
@@ -635,8 +565,10 @@ function Hero() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const images = [
-        "/images/02-07-2025-Latest-Hero-1.jpg",
-        "/images/Set-Product-Data-Background-Hero-28-06-2025-latest.jpg"
+        // "/images/02-07-2025-Latest-Hero-1.jpg",
+        // "/images/Set-Product-Data-Background-Hero-28-06-2025-latest.jpg",
+        "/images/Latest-hero-05-09-first.jpg",
+        "/images/Latest-hero-05-09-second.jpg"
     ];
     const titles = [
         "Beyond Bikes - Freedom <br /> to Explore, Power to <br /> Move.",
@@ -672,7 +604,7 @@ function Hero() {
                         children: "Beyond Bikes | Electric Bike Rentals in Melbourne | E-Bike Hire"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 165,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -680,7 +612,7 @@ function Hero() {
                         content: "Rent powerful, quiet, and flexible electric bikes in Melbourne with Beyond Bikes. Perfect for commuters, delivery riders, and city explorers."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 168,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -688,7 +620,7 @@ function Hero() {
                         content: "electric bike rental Melbourne, e-bike hire Melbourne, Beyond Bikes Australia, delivery e-bikes Melbourne, rent e-bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 172,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -696,7 +628,7 @@ function Hero() {
                         href: "https://www.beyondbikes.com.au/"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 176,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -704,7 +636,7 @@ function Hero() {
                         content: "Beyond Bikes - Electric Bike Rentals Melbourne"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 177,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -712,7 +644,7 @@ function Hero() {
                         content: "Flexible electric bike rentals in Melbourne. Freedom to explore, power to move with Beyond Bikes."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 178,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -720,7 +652,7 @@ function Hero() {
                         content: "https://www.beyondbikes.com.au/images/02-07-2025-Latest-Hero-1.jpg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 182,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -728,7 +660,7 @@ function Hero() {
                         content: "https://www.beyondbikes.com.au/"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 183,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -736,7 +668,7 @@ function Hero() {
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 184,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -744,7 +676,7 @@ function Hero() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 185,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -752,7 +684,7 @@ function Hero() {
                         content: "Beyond Bikes - Electric Bike Rentals Melbourne"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 186,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -760,7 +692,7 @@ function Hero() {
                         content: "Rent quiet, powerful electric bikes in Melbourne with Beyond Bikes. Book now."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 187,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -768,7 +700,7 @@ function Hero() {
                         content: "https://www.beyondbikes.com.au/images/02-07-2025-Latest-Hero-1.jpg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 191,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -799,13 +731,13 @@ function Hero() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 194,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Hero.js",
-                lineNumber: 164,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -822,12 +754,12 @@ function Hero() {
                             children: "Beyond Bikes"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Hero.js",
-                            lineNumber: 230,
+                            lineNumber: 114,
                             columnNumber: 39
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 230,
+                        lineNumber: 114,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -841,7 +773,7 @@ function Hero() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 232,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this),
                     loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -870,21 +802,21 @@ function Hero() {
                                 children: "Loading..."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Hero.js",
-                                lineNumber: 261,
+                                lineNumber: 145,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Hero.js",
-                            lineNumber: 256,
+                            lineNumber: 140,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 242,
+                        lineNumber: 126,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "container position-relative z-2 mt-5 pt-5",
+                        className: "container position-relative z-2 mt-sm-5 mt-2 pt-5",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "row mt-sm-0 mt-4",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -910,17 +842,17 @@ function Hero() {
                                                 }
                                             }, currentImageIndex + "-title", false, {
                                                 fileName: "[project]/src/app/components/Hero.js",
-                                                lineNumber: 274,
+                                                lineNumber: 158,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/Hero.js",
-                                            lineNumber: 273,
+                                            lineNumber: 157,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Hero.js",
-                                        lineNumber: 269,
+                                        lineNumber: 153,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -931,7 +863,7 @@ function Hero() {
                                         children: subtitles[currentImageIndex]
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Hero.js",
-                                        lineNumber: 287,
+                                        lineNumber: 171,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -946,13 +878,13 @@ function Hero() {
                                                 children: "→"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Hero.js",
-                                                lineNumber: 298,
+                                                lineNumber: 182,
                                                 columnNumber: 26
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Hero.js",
-                                        lineNumber: 290,
+                                        lineNumber: 174,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("noscript", {
@@ -961,36 +893,36 @@ function Hero() {
                                                 children: "Electric Bike Rentals in Melbourne"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Hero.js",
-                                                lineNumber: 303,
+                                                lineNumber: 187,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "Your go-to for flexible 6–12 h electric bike hire—perfect for commuters and food delivery riders."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Hero.js",
-                                                lineNumber: 304,
+                                                lineNumber: 188,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/Hero.js",
-                                        lineNumber: 302,
+                                        lineNumber: 186,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/Hero.js",
-                                lineNumber: 268,
+                                lineNumber: 152,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Hero.js",
-                            lineNumber: 267,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 266,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -998,13 +930,13 @@ function Hero() {
                         children: "Beyond Bikes offers quiet, powerful electric bikes for rent across Melbourne. Rent flexible e-bikes for commuting, food delivery, and city exploring."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Hero.js",
-                        lineNumber: 314,
+                        lineNumber: 198,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Hero.js",
-                lineNumber: 224,
+                lineNumber: 108,
                 columnNumber: 7
             }, this)
         ]
@@ -1374,7 +1306,7 @@ function Footer() {
         setLoading(true);
         setTimeout(()=>{
             router.push(href);
-        }, 1000); // loader delay
+        }, 100); // loader delay
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -1869,7 +1801,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text-latest.png\",\"price\":\"$60.00 AUD\",\"oldPrice\":\"$65.00 AUD\",\"battery\":\"48V 50A\",\"batteryHours\":\"6-8 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":2,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$65.00 AUD\",\"oldPrice\":\"$70.00 AUD\",\"battery\":\"48V 70A\",\"batteryHours\":\"8-10 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/Latest-Change-Angle-Red-Cycle-latest.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 AUD\",\"oldPrice\":\"$120.00 AUD\"}]}"));}}),
+__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text-latest.png\",\"price\":\"$65.00 AUD\",\"oldPrice\":\"$70.00 AUD\",\"battery\":\"48V 50A\",\"batteryHours\":\"6-8 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":2,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 70A\",\"batteryHours\":\"8-10 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/Latest-Change-Angle-Red-Cycle-latest.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":4,\"name\":\"White E-bike\",\"image\":\"/images/White-E-bike-Product.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":5,\"name\":\"Black E-bike\",\"image\":\"/images/Latest-Black-Cycle-Product-26-09.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"12-15 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":6,\"name\":\"Red E-bike\",\"image\":\"/images/24-09-Red-Cycle-Product-Latest.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 AUD\",\"oldPrice\":\"$120.00 AUD\"}]}"));}}),
 "[project]/src/app/products/page.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -2284,7 +2216,7 @@ function ProductTabs() {
         setTimeout(()=>{
             const slug = productName.replace(/\s+/g, "-");
             router.push(`/${slug}`);
-        }, 9000);
+        }, 100);
     };
     const filteredProducts = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$json$2f$products$2e$json__$28$json$29$__["default"][activeTab] || [];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2462,7 +2394,7 @@ function ProductTabs() {
                 },
                 children: [
                     pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "mt-3 mb-5 text-center",
+                        className: "mt-3 mb-5 fs-1 fw-bold text-center heading-underline",
                         style: {
                             color: "#1A3B19"
                         },
@@ -2472,7 +2404,7 @@ function ProductTabs() {
                         lineNumber: 509,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "mt-3 mb-5 text-center",
+                        className: "mt-3 mb-5 fs-1 fw-bold text-center heading-underline",
                         style: {
                             color: "#1A3B19"
                         },
@@ -2505,7 +2437,7 @@ function ProductTabs() {
                                             children: "Sale"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 533,
+                                            lineNumber: 535,
                                             columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2523,7 +2455,7 @@ function ProductTabs() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 541,
+                                            lineNumber: 543,
                                             columnNumber: 9
                                         }, this),
                                         pathname === "/" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2535,7 +2467,7 @@ function ProductTabs() {
                                             children: product.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 554,
+                                            lineNumber: 556,
                                             columnNumber: 11
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "fs-sm-4 fs-3 fw-bold",
@@ -2546,7 +2478,7 @@ function ProductTabs() {
                                             children: product.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 558,
+                                            lineNumber: 560,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2566,7 +2498,7 @@ function ProductTabs() {
                                                     children: product.price
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 571,
+                                                    lineNumber: 573,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -2574,7 +2506,7 @@ function ProductTabs() {
                                                     content: "AUD"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 572,
+                                                    lineNumber: 574,
                                                     columnNumber: 11
                                                 }, this),
                                                 product.oldPrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2585,13 +2517,13 @@ function ProductTabs() {
                                                     children: product.oldPrice
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 574,
+                                                    lineNumber: 576,
                                                     columnNumber: 13
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 564,
+                                            lineNumber: 566,
                                             columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2601,13 +2533,13 @@ function ProductTabs() {
                                                     className: "text-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                            className: "bi bi-battery-charging fs-4",
+                                                            className: "bi bi-battery-full fs-4",
                                                             style: {
                                                                 color: '#1A3B19'
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 581,
+                                                            lineNumber: 583,
                                                             columnNumber: 5
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2618,26 +2550,26 @@ function ProductTabs() {
                                                             children: product.battery || "Battery"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 583,
+                                                            lineNumber: 585,
                                                             columnNumber: 5
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 580,
+                                                    lineNumber: 582,
                                                     columnNumber: 3
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                            className: "bi bi-clock-history fs-4",
+                                                            className: "bi bi-clock fs-4",
                                                             style: {
                                                                 color: '#1A3B19'
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 586,
+                                                            lineNumber: 588,
                                                             columnNumber: 5
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2648,13 +2580,13 @@ function ProductTabs() {
                                                             children: product.batteryHours || "Motor"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 588,
+                                                            lineNumber: 590,
                                                             columnNumber: 5
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 585,
+                                                    lineNumber: 587,
                                                     columnNumber: 3
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2667,7 +2599,7 @@ function ProductTabs() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 591,
+                                                            lineNumber: 593,
                                                             columnNumber: 5
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2678,19 +2610,19 @@ function ProductTabs() {
                                                             children: product.topSpeed || "Range"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/products/page.js",
-                                                            lineNumber: 593,
+                                                            lineNumber: 595,
                                                             columnNumber: 5
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/products/page.js",
-                                                    lineNumber: 590,
+                                                    lineNumber: 592,
                                                     columnNumber: 3
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/products/page.js",
-                                            lineNumber: 579,
+                                            lineNumber: 581,
                                             columnNumber: 9
                                         }, this)
                                     ]
@@ -2742,12 +2674,12 @@ function ProductTabs() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/app/products/page.js",
-                lineNumber: 604,
+                lineNumber: 608,
                 columnNumber: 7
             }, this),
             pathname === "/products" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/products/page.js",
-                lineNumber: 620,
+                lineNumber: 624,
                 columnNumber: 36
             }, this)
         ]
@@ -3441,7 +3373,7 @@ function Promotion() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "position-absolute w-100 mt-sm-5 mt-0 h-100 d-flex align-items-center justify-content-center justify-content-md-end pe-md-5",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-center text-dark px-sm-5 px-3 py-4 rounded shadow-lg opening-box animate-opening",
+                        className: `text-center text-dark px-sm-5 px-3 py-4 rounded shadow-lg opening-box ${isVisible ? "animate-texts" : ""}`,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 style: {
@@ -3851,18 +3783,19 @@ function ContactPage() {
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "scroll-animate",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "container py-sm-5 mt-4 py-1 px-3 text-white",
+                    className: "container mt-2 py-1 px-3 text-white",
                     "aria-label": "Store Locations",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "row justify-content-center mb-sm-5 mb-3",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-center",
+                                className: "text-center fw-600 fs-1 heading-underline mb-3",
                                 style: {
                                     color: '#1A3B19'
                                 },
-                                children: "Contact Beyond Bikes in Melbourne"
+                                children: "Contact Beyond Bikes"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/ContactPage.js",
                                 lineNumber: 172,
@@ -4047,494 +3980,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
-// "use client";
-// import Head from 'next/head';
-// import Image from 'next/image';
-// import aboutImg from '../../../public/images/Latest-admin-image.jpg'; 
-// import aboutImg1 from '../../../public/images/Latest-repairer-admin.jpg'; 
-// import aboutthree from '../../../public/images/about-image.jpg';
-// import '../styles/About.css';
-// import Header from '../components/Header';
-// import { usePathname } from 'next/navigation';
-// import Footer from '../components/Footer';
-// export default function About() {
-//   const pathname = usePathname();
-//   return (
-//     <>
-//       <Head>
-//         <title>About Us | EBIKE100</title>
-//         <meta name="description" content="Get to know the team behind EBIKE100 and our passion for sustainable transport in Melbourne." />
-//         <meta name="keywords" content="About EBIKE100, electric bikes, Melbourne, sustainable transport" />
-//         <meta name="robots" content="index, follow" />
-//         <link rel="canonical" href="https://yourdomain.com/about" />
-//       </Head>
-//       {/* ✅ Only render Header when not on homepage */}
-//       {pathname !== "/" && <Header />}
-//       <section className='aboutSection mb-5'>
-//         <h1 className='text-center' style={{marginBottom:'40px',color:'#f7931e',marginTop:'40px'}}>About Us</h1>
-//         <div className="container px-3 px-sm-0">
-//           {/* Section 1 */}
-//           <div className="row align-items-center">
-//             <div className="col-md-6 mb-4 mb-md-0">
-//               <Image
-//                 src={aboutImg}
-//                 alt="About EBIKE100"
-//                 className='ovalImage'
-//                 width={500}
-//                 height={500}
-//               />
-//             </div>
-//             <div className="col-md-6">
-//               <h2 className='orangeHeading'>MISSION</h2>
-//               <p>
-//                 Beyond Bikes offers reliable and affordable electric bike rentals designed for both everyday riders and food delivery professionals in Melbourne. Whether you are exploring the city or delivering with Uber Eats or DoorDash, our e-bikes provide the perfect blend of power, comfort, and efficiency. We understand the needs of urban commuters - that’s why our bikes are built for performance, long battery life, and convenience. “Freedom to Explore, Power to Move” - that’s the promise we ride on. With flexible rental options, quick support, and service across Melbourne, Beyond Bikes is your go-to for hassle-free electric mobility.
-//               </p>
-//             </div>
-//           </div>
-//           {/* Section 2 */}
-//           <div className="row mt-sm-5 mt-2 align-items-center">
-//             <div className="col-md-6 order-sm-1 order-2">
-//               <h2 className='orangeHeading'>STORE BACKGROUND</h2>
-//               <p>
-//                 At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues.              </p>
-//             </div>
-//             <div className="col-md-6 order-sm-2 order-1 text-end mb-4 mb-md-0">
-//               <Image
-//                 src={aboutImg1}
-//                 alt="About EBIKE100"
-//                 className='ovalImage'
-//                 width={500}
-//                 height={500}
-//               />
-//             </div>
-//           </div>         
-//         </div>
-//       </section>
-//       {pathname === '/about' && <Footer />}
-//     </>
-//   );
-// }
-// "use client";
-// import Head from "next/head";
-// import Image from "next/image";
-// import aboutImg from "../../../public/images/Latest-admin-image.jpg";
-// import aboutImg1 from "../../../public/images/Latest-repairer-admin.jpg";
-// import aboutthree from "../../../public/images/about-image.jpg";
-// import "../styles/About.css";
-// import Header from "../components/Header";
-// import { usePathname } from "next/navigation";
-// import Footer from "../components/Footer";
-// export default function About() {
-//   const pathname = usePathname();
-//   const siteUrl = "https://www.beyondbikes.com.au";
-//   const schemaData = {
-//     "@context": "https://schema.org",
-//     "@type": "Organization",
-//     name: "Beyond Bikes",
-//     url: siteUrl,
-//     logo: `${siteUrl}/images/logo.png`, // replace with actual logo path
-//     sameAs: [
-//       "https://www.instagram.com/beyondbikes_vic",
-//       "https://www.facebook.com/beyondbikes",
-//     ],
-//     description: "Reliable and affordable e-bike rentals in Melbourne for commuters and delivery riders.",
-//     address: {
-//       "@type": "PostalAddress",
-//       streetAddress: "667 Glen Huntly Rd, Caulfield South",
-//       addressLocality: "Melbourne",
-//       addressRegion: "VIC",
-//       postalCode: "3162",
-//       addressCountry: "AU"
-//     },
-//     contactPoint: {
-//       "@type": "ContactPoint",
-//       telephone: "+61 422 032 961",
-//       contactType: "Customer Service"
-//     }
-//   };
-//   return (
-//     <>
-//       <Head>
-//         <title>About Us | Beyond Bikes – Melbourne e-Bike Rentals</title>
-//         <meta
-//           name="description"
-//           content="Meet the team behind Beyond Bikes — Melbourne's trusted electric bike rental provider offering flexible, affordable e-bike hire for commuters and delivery riders."
-//         />
-//         <meta
-//           name="keywords"
-//           content="Beyond Bikes, e-bike rentals Melbourne, sustainable transport Melbourne, About Beyond Bikes"
-//         />
-//         <meta name="robots" content="index, follow" />
-//         <link rel="canonical" href={`${siteUrl}/about`} />
-//         {/* Open Graph tags */}
-//         <meta property="og:title" content="About Beyond Bikes — Melbourne e-Bike Rental Business" />
-//         <meta
-//           property="og:description"
-//           content="Learn more about Beyond Bikes, our mission and dedication to affordable, reliable e-bike rentals in Melbourne."
-//         />
-//         <meta property="og:image" content={`${siteUrl}/images/about-og.jpg`} /> {/* replace as needed */}
-//         <meta property="og:url" content={`${siteUrl}/about`} />
-//         <meta property="og:type" content="website" />
-//         {/* Twitter Card */}
-//         <meta name="twitter:card" content="summary_large_image" />
-//         <meta name="twitter:title" content="About Beyond Bikes – Melbourne e-Bike Experts" />
-//         <meta
-//           name="twitter:description"
-//           content="Discover Beyond Bikes’ story and mission: to provide sustainable, flexible e-bike rentals across Melbourne."
-//         />
-//         <meta name="twitter:image" content={`${siteUrl}/images/about-og.jpg`} />
-//         {/* JSON-LD Organization Schema */}
-//         <script
-//           type="application/ld+json"
-//           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-//         />
-//       </Head>
-//       {pathname !== "/" && <Header />}
-//       <section className="aboutSection mb-5" itemScope itemType="https://schema.org/AboutPage">
-//         <h1
-//           className="text-center"
-//           style={{ marginBottom: "40px", color: "#f7931e", marginTop: "40px" }}
-//         >
-//           About Us
-//         </h1>
-//         <div className="container px-3 px-sm-0">
-//           {/* Section 1 */}
-//           <div className="row align-items-center">
-//             <div className="col-md-6 mb-4 mb-md-0">
-//               <Image
-//                 src={aboutImg}
-//                 alt="Beyond Bikes team in Melbourne store"
-//                 className="ovalImage"
-//                 width={500}
-//                 height={500}
-//                 itemProp="image"
-//               />
-//             </div>
-//             <div className="col-md-6">
-//               <h2 className="orangeHeading" itemProp="headline">
-//                 MISSION
-//               </h2>
-//               <p itemProp="text">
-//                 Beyond Bikes offers reliable and affordable electric bike rentals designed for both everyday riders and delivery professionals in Melbourne. Whether you are exploring the city or delivering with Uber Eats or DoorDash, our e-bikes provide power, comfort, and efficiency. Our promise: “Freedom to Explore, Power to Move.” With flexible rentals, fast support, and service across the city, Beyond Bikes is your go-to for hassle-free electric mobility.
-//               </p>
-//             </div>
-//           </div>
-//           {/* Section 2 */}
-//           <div className="row mt-sm-5 mt-2 align-items-center">
-//             <div className="col-md-6 order-sm-1 order-2">
-//               <h2 className="orangeHeading">STORE BACKGROUND</h2>
-//               <p itemProp="text">
-//                 At Beyond Bikes Pty Ltd, exceptional service starts with passionate people. We curate a top-quality range of electric bikes and accessories, and offer delivery anywhere in Melbourne with no battery problems. Our roots are local, and our focus is on making electric mobility seamless for every rider.
-//               </p>
-//             </div>
-//             <div className="col-md-6 order-sm-2 order-1 text-end mb-4 mb-md-0">
-//               <Image
-//                 src={aboutImg1}
-//                 alt="Beyond Bikes team and workshop in Melbourne"
-//                 className="ovalImage"
-//                 width={500}
-//                 height={500}
-//                 itemProp="image"
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//       {pathname === "/about" && <Footer />}
-//     </>
-//   );
-// }
-// "use client";
-// import Head from "next/head";
-// import Image from "next/image";
-// import "../styles/About.css";
-// import Header from "../components/Header";
-// import { usePathname } from "next/navigation";
-// import { useState } from "react";
-// import Footer from "../components/Footer";
-// import EbikesDeliveryAbout from "../../../public/images/EbikesDeliveryAbout.jpg";
-// export default function About() {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-//   const pathname = usePathname();
-//   const siteUrl = "https://www.beyondbikes.com.au";
-//   const schemaData = {
-//     "@context": "https://schema.org",
-//     "@type": "Organization",
-//     name: "Beyond Bikes",
-//     url: siteUrl,
-//     logo: `${siteUrl}/images/logo.png`,
-//     sameAs: [
-//       "https://www.instagram.com/beyondbikes_vic",
-//       "https://www.facebook.com/beyondbikes",
-//     ],
-//     description: "Reliable and affordable e-bike rentals in Melbourne for commuters and delivery riders.",
-//     address: {
-//       "@type": "PostalAddress",
-//       streetAddress: "576 North Rd, Ormond VIC 3204, Australia",
-//       addressLocality: "Melbourne",
-//       addressRegion: "VIC",
-//       postalCode: "3162",
-//       addressCountry: "AU"
-//     },
-//     contactPoint: {
-//       "@type": "ContactPoint",
-//       telephone: "+61 422 032 961",
-//       contactType: "Customer Service"
-//     }
-//   };
-//   // Dynamic heading tags
-//   const MainHeadingTag = pathname === "/about" ? "h1" : "h2";
-//   const SubHeadingTag = pathname === "/about" ? "h2" : "h3";
-// const contentData = [
-//   {
-//     title: "MISSION",
-//     description:
-//       "Beyond Bikes offers reliable and affordable electric bike rentals designed for both everyday riders and delivery professionals in Melbourne. Whether you are exploring the city or delivering with Uber Eats or DoorDash, our e-bikes provide power, comfort, and efficiency. Our promise: “Freedom to Explore, Power to Move.” With flexible rentals, fast support, and service across the city, Beyond Bikes is your go-to for hassle-free electric mobility.",
-//     linkText: "MISSION",
-//   },
-//   {
-//     title: "STORE BACKGROUND",
-//     description:
-//       "At Beyond Bikes Pty Ltd, exceptional service starts with passionate people. We curate a top-quality range of electric bikes and accessories, and offer delivery anywhere in Melbourne with no battery problems. Our roots are local, and our focus is on making electric mobility seamless for every rider.",
-//     linkText: "STORE BACKGROUND",
-//   },
-// ]
-// const handleArrowClick = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex + 1) % contentData.length)
-//   }
-//   const currentContent = contentData[currentIndex]
-//   return (
-//     <>
-//       <Head>
-//         <title>About Us | Beyond Bikes – Melbourne e-Bike Rentals</title>
-//         <meta
-//           name="description"
-//           content="Meet the team behind Beyond Bikes — Melbourne's trusted electric bike rental provider offering flexible, affordable e-bike hire for commuters and delivery riders."
-//         />
-//         <meta
-//           name="keywords"
-//           content="Beyond Bikes, e-bike rentals Melbourne, sustainable transport Melbourne, About Beyond Bikes"
-//         />
-//         <meta name="robots" content="index, follow" />
-//         <link rel="canonical" href={`${siteUrl}/about`} />
-//         {/* Open Graph */}
-//         <meta property="og:title" content="About Beyond Bikes — Melbourne e-Bike Rental Business" />
-//         <meta property="og:description" content="Learn more about Beyond Bikes, our mission and dedication to affordable, reliable e-bike rentals in Melbourne." />
-//         <meta property="og:image" content={`${siteUrl}/images/about-og.jpg`} />
-//         <meta property="og:url" content={`${siteUrl}/about`} />
-//         <meta property="og:type" content="website" />
-//         {/* Twitter Card */}
-//         <meta name="twitter:card" content="summary_large_image" />
-//         <meta name="twitter:title" content="About Beyond Bikes – Melbourne e-Bike Experts" />
-//         <meta name="twitter:description" content="Discover Beyond Bikes’ story and mission: to provide sustainable, flexible e-bike rentals across Melbourne." />
-//         <meta name="twitter:image" content={`${siteUrl}/images/about-og.jpg`} />
-//         {/* JSON-LD */}
-//         <script
-//           type="application/ld+json"
-//           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-//         />
-//       </Head>
-//       {pathname !== "/" && <Header />}
-//       {/* <section className="aboutSection mb-5" itemScope itemType="https://schema.org/AboutPage">
-//         <MainHeadingTag
-//           className="text-center"
-//           style={{ marginBottom: "40px", color: "#1A3B19", marginTop: "40px",fontFamily:'system-ui' }}
-//         >
-//           About Us
-//         </MainHeadingTag>
-//         <div className="container px-3 px-sm-0">
-//           <div className="row align-items-center">
-//             <div className="col-md-6 mb-4 mb-md-0">
-//               <Image
-//                 src={aboutImg}
-//                 alt="Beyond Bikes team in Melbourne store"
-//                 className="ovalImage"
-//                 width={500}
-//                 height={500}
-//                 itemProp="image"
-//               />
-//             </div>
-//             <div className="col-md-6">
-//               <SubHeadingTag className="orangeHeading" itemProp="headline" style={{color:'#1A3B19',fontFamily:'system-ui'}}>
-//                 MISSION
-//               </SubHeadingTag>
-//               <p itemProp="text">
-//                 Beyond Bikes offers reliable and affordable electric bike rentals designed for both everyday riders and food delivery professionals in Melbourne. Whether you are exploring the city or delivering with Uber Eats or DoorDash, our e-bikes provide the perfect blend of power, comfort, and efficiency. We understand the needs of urban commuters - that’s why our bikes are built for performance, long battery life, and convenience. “Freedom to Explore, Power to Move” - that’s the promise we ride on. With flexible rental options, quick support, and service across Melbourne, Beyond Bikes is your go-to for hassle-free electric mobility.
-//               </p>
-//             </div>
-//           </div>
-//           <div className="row mt-sm-5 mt-2 align-items-center">
-//             <div className="col-md-6 order-sm-1 order-2">
-//               <SubHeadingTag className="orangeHeading" style={{color:'#1A3B19',fontFamily:'system-ui'}}>STORE BACKGROUND</SubHeadingTag>
-//               <p itemProp="text">
-//                 At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues.
-//               </p>
-//             </div>
-//             <div className="col-md-6 order-sm-2 order-1 text-end mb-4 mb-md-0">
-//               <Image
-//                 src={aboutImg1}
-//                 alt="Beyond Bikes team and workshop in Melbourne"
-//                 className="ovalImage"
-//                 width={500}
-//                 height={500}
-//                 itemProp="image"
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </section> */}
-//       <section
-//         className="hero-section position-relative d-flex align-items-center justify-content-center text-white"
-//         style={{
-//           backgroundImage: `url(${EbikesDeliveryAbout.src})`,
-//           backgroundSize: "cover",
-//           backgroundPosition: "center",
-//           minHeight: "400px",
-//         }}
-//         role="banner"
-//         aria-label="About Us Hero Section"
-//         itemScope
-//         itemType="https://schema.org/AboutPage"
-//       >
-//         <div
-//           className="position-absolute top-0 start-0 w-100 h-100"
-//           style={{
-//             backgroundColor: "rgba(0, 0, 0, 0.6)",
-//             zIndex: 1,
-//           }}
-//           aria-hidden="true"
-//         ></div>
-//         <div className="container position-relative" style={{ zIndex: 2 }}>
-//           <div className="row">
-//             <div className="col-12 text-center">
-//               <MainHeadingTag
-//                 className="display-4 fw-bold mb-0"
-//                 style={{ fontSize: "3rem", fontFamily: "system-ui" }}
-//                 itemProp="headline"
-//               >
-//                 About Us
-//               </MainHeadingTag>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//       {/* Content Section */}
-//       <section className="py-5 bg-light" aria-label="Company Information">
-//         <div className="container">
-//           <div className="row align-items-center">
-//             {/* <div className="col-lg-6 mb-4 mb-lg-0">
-//               <div className="position-relative">
-//                 <Image
-//                   src="/person-working-at-computer-in-modern-office-with-b.png"
-//                   alt="Professional working at computer in modern office environment with geometric design elements"
-//                   width={500}
-//                   height={400}
-//                   className="img-fluid rounded shadow"
-//                   priority
-//                   style={{ objectFit: "cover" }}
-//                   itemProp="image"
-//                 />
-//               </div>
-//             </div> */}
-//             <div className="col-lg-6 mb-4 mb-lg-0">
-//   <div className="position-relative d-flex justify-content-center">
-//     {/* BACK IMAGE */}
-//     <Image
-//       src="/images/Services-repairer.jpg"
-//       alt="Modern office environment with geometric design elements"
-//       width={500}
-//       height={400}
-//       className="img-fluid rounded shadow backImage"
-//       priority
-//       style={{ objectFit: "cover" }}
-//     />
-//     {/* FRONT IMAGE */}
-//     {/* <Image
-//       src="/images/Services-repairer.jpg"
-//       alt="Professional working at computer in modern office"
-//       width={300}
-//       height={400}
-//       className="img-fluid rounded shadow frontImage"
-//       priority
-//       style={{ objectFit: "cover" }}
-//     /> */}
-//   </div>
-// </div>
-//             <div className="col-lg-6">
-//               <div className="ps-lg-4">
-//                 <SubHeadingTag
-//                   className="display-5 fw-bold mb-4 text-dark"
-//                   style={{ fontSize: "2.5rem", lineHeight: "1.2", fontFamily: "system-ui" }}
-//                   itemProp="headline"
-//                 >
-//                   {currentContent.title}
-//                 </SubHeadingTag>
-//                 <p className="lead mb-4 text-muted" style={{ fontSize: "1.1rem", lineHeight: "1.6" }} itemProp="text">
-//                   {currentContent.description}
-//                 </p>
-//                 <button
-//                   onClick={handleArrowClick}
-//                   className="btn btn-link p-0 text-decoration-none d-inline-flex align-items-center"
-//                   style={{
-//                     color: "#333",
-//                     fontSize: "1rem",
-//                     fontWeight: "600",
-//                     transition: "all 0.3s ease",
-//                   }}
-//                   aria-label={`View ${currentContent.linkText} - Click to see next content`}
-//                   onMouseEnter={(e) => {
-//                     e.currentTarget.style.color = "#007bff"
-//                   }}
-//                   onMouseLeave={(e) => {
-//                     e.currentTarget.style.color = "#333"
-//                   }}
-//                 >
-//                   <span className="me-2">{currentContent.linkText}</span>
-//                   <svg
-//                     width="20"
-//                     height="20"
-//                     viewBox="0 0 24 24"
-//                     fill="none"
-//                     stroke="currentColor"
-//                     strokeWidth="2"
-//                     strokeLinecap="round"
-//                     strokeLinejoin="round"
-//                     className="arrow-icon"
-//                     style={{ transition: "transform 0.3s ease" }}
-//                     aria-hidden="true"
-//                   >
-//                     <path d="M5 12h14M12 5l7 7-7 7" />
-//                   </svg>
-//                 </button>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//       <style jsx>{`
-//         .btn:hover .arrow-icon {
-//           transform: translateX(5px);
-//         }
-//         .hero-section {
-//           background-attachment: fixed;
-//         }
-//         @media (max-width: 768px) {
-//           .hero-section {
-//             background-attachment: scroll;
-//             min-height: 300px;
-//           }
-//           .display-4 {
-//             font-size: 2.5rem !important;
-//           }
-//           .display-5 {
-//             font-size: 2rem !important;
-//           }
-//         }
-//       `}</style>
-//       {pathname === "/about" && <Footer />}
-//     </>
-//   );
-// }
 __turbopack_context__.s({
     "default": (()=>About)
 });
@@ -4595,149 +4040,149 @@ function About() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("title", {
-                        className: "jsx-b2595b0ad831bf8b",
+                        className: "jsx-13ba95d122c83d95",
                         children: [
                             currentContent.title,
                             " | Beyond Bikes – Melbourne e-Bike Rentals"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 588,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "description",
                         content: currentContent.description,
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 589,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
                         rel: "canonical",
                         href: `${siteUrl}/about`,
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 590,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "robots",
                         content: "index, follow",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 591,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "viewport",
                         content: "width=device-width, initial-scale=1",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 592,
+                        lineNumber: 54,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "keywords",
                         content: "Beyond Bikes, electric bike rentals Melbourne, rent e-bikes, e-bike hire Melbourne, food delivery e-bikes",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 593,
+                        lineNumber: 55,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:type",
                         content: "website",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 594,
+                        lineNumber: 56,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:site_name",
                         content: "Beyond Bikes",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 595,
+                        lineNumber: 57,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:title",
                         content: "About Us | Beyond Bikes – Melbourne e-Bike Rentals",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 596,
+                        lineNumber: 58,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:description",
                         content: "Learn more about Beyond Bikes – our mission, store background, and why we’re Melbourne’s trusted choice for e-bike rentals.",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 597,
+                        lineNumber: 59,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:url",
                         content: "https://www.beyondbikes.com.au/about",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 598,
+                        lineNumber: 60,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:image",
                         content: "https://www.beyondbikes.com.au/images/EbikesDeliveryAbout-latest.jpg",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 599,
+                        lineNumber: 61,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:card",
                         content: "summary_large_image",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 600,
+                        lineNumber: 62,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:title",
                         content: "About Us | Beyond Bikes – Melbourne e-Bike Rentals",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 601,
+                        lineNumber: 63,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:description",
                         content: "Learn more about Beyond Bikes – our mission, store background, and why we’re Melbourne’s trusted choice for e-bike rentals.",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 602,
+                        lineNumber: 64,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:image",
                         content: "https://www.beyondbikes.com.au/images/EbikesDeliveryAbout-latest.jpg",
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 603,
+                        lineNumber: 65,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -4760,21 +4205,21 @@ function About() {
                                 }
                             })
                         },
-                        className: "jsx-b2595b0ad831bf8b"
+                        className: "jsx-13ba95d122c83d95"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 604,
+                        lineNumber: 66,
                         columnNumber: 1
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 587,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             pathname !== "/" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 628,
+                lineNumber: 90,
                 columnNumber: 28
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -4786,54 +4231,54 @@ function About() {
                 },
                 role: "banner",
                 "aria-label": "About Us Hero Section",
-                className: "jsx-b2595b0ad831bf8b" + " " + "hero-section position-relative d-flex align-items-center justify-content-center text-white",
+                className: "jsx-13ba95d122c83d95" + " " + "hero-section position-relative d-flex align-items-center justify-content-center text-white",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
                             backgroundColor: "rgba(0, 0, 0, 0.6)",
                             zIndex: 1
                         },
-                        className: "jsx-b2595b0ad831bf8b" + " " + "position-absolute top-0 start-0 w-100 h-100"
+                        className: "jsx-13ba95d122c83d95" + " " + "position-absolute top-0 start-0 w-100 h-100"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 642,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
                             zIndex: 2
                         },
-                        className: "jsx-b2595b0ad831bf8b" + " " + "container position-relative",
+                        className: "jsx-13ba95d122c83d95" + " " + "container position-relative",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MainHeadingTag, {
-                            className: "jsx-b2595b0ad831bf8b" + " " + "display-4 text-center fw-bold mb-0",
+                            className: "jsx-13ba95d122c83d95" + " " + "display-4 text-center fw-bold mb-0",
                             children: "About Us"
                         }, void 0, false, {
                             fileName: "[project]/src/app/about/page.js",
-                            lineNumber: 650,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 649,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 631,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "jsx-b2595b0ad831bf8b" + " " + "py-5 bg-light",
+                className: "jsx-13ba95d122c83d95" + " " + "py-5 bg-light",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-b2595b0ad831bf8b" + " " + "container",
+                    className: "jsx-13ba95d122c83d95" + " " + "container scroll-fade",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-b2595b0ad831bf8b" + " " + "row align-items-center",
+                        className: "jsx-13ba95d122c83d95" + " " + "row align-items-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-b2595b0ad831bf8b" + " " + "col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center",
+                                className: "jsx-13ba95d122c83d95" + " " + "col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-b2595b0ad831bf8b" + " " + `${fade ? "fade-out" : "fade-in"}`,
+                                    className: "jsx-13ba95d122c83d95" + " " + `${fade ? "fade-out" : "fade-in"}`,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: currentContent.image,
                                         alt: currentContent.title,
@@ -4846,42 +4291,42 @@ function About() {
                                         priority: true
                                     }, currentContent.image, false, {
                                         fileName: "[project]/src/app/about/page.js",
-                                        lineNumber: 661,
+                                        lineNumber: 123,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/about/page.js",
-                                    lineNumber: 660,
+                                    lineNumber: 122,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.js",
-                                lineNumber: 659,
+                                lineNumber: 121,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-b2595b0ad831bf8b" + " " + "col-lg-6",
+                                className: "jsx-13ba95d122c83d95" + " " + "col-lg-6",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-b2595b0ad831bf8b" + " " + `ps-lg-4 content-wrapper ${fade ? "fade-out" : "fade-in"}`,
+                                    className: "jsx-13ba95d122c83d95" + " " + `ps-lg-4 content-wrapper ${fade ? "fade-out" : "fade-in"}`,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SubHeadingTag, {
                                             style: {
                                                 color: '#1A3B19',
                                                 fontFamily: 'system-ui'
                                             },
-                                            className: "jsx-b2595b0ad831bf8b" + " " + "fs-3 fw-bold mb-2",
+                                            className: "jsx-13ba95d122c83d95" + " " + "fs-3 fw-bold mb-2",
                                             children: currentContent.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 677,
+                                            lineNumber: 139,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "jsx-b2595b0ad831bf8b" + " " + "mb-2",
+                                            className: "jsx-13ba95d122c83d95" + " " + "mb-2",
                                             children: currentContent.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 680,
+                                            lineNumber: 142,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4891,14 +4336,14 @@ function About() {
                                                 fontWeight: 'bold',
                                                 fontFamily: 'system-ui'
                                             },
-                                            className: "jsx-b2595b0ad831bf8b" + " " + "btn btn-link p-0 text-decoration-none d-inline-flex align-items-center",
+                                            className: "jsx-13ba95d122c83d95" + " " + "btn btn-link p-0 text-decoration-none d-inline-flex align-items-center",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-b2595b0ad831bf8b" + " " + "me-2",
+                                                    className: "jsx-13ba95d122c83d95" + " " + "me-2",
                                                     children: currentContent.linkText
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/about/page.js",
-                                                    lineNumber: 686,
+                                                    lineNumber: 148,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -4910,60 +4355,83 @@ function About() {
                                                     strokeWidth: "2",
                                                     strokeLinecap: "round",
                                                     strokeLinejoin: "round",
-                                                    className: "jsx-b2595b0ad831bf8b" + " " + "arrow-icon",
+                                                    className: "jsx-13ba95d122c83d95" + " " + "arrow-icon",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                         d: "M5 12h14M12 5l7 7-7 7",
-                                                        className: "jsx-b2595b0ad831bf8b"
+                                                        className: "jsx-13ba95d122c83d95"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.js",
-                                                        lineNumber: 698,
+                                                        lineNumber: 160,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/about/page.js",
-                                                    lineNumber: 687,
+                                                    lineNumber: 149,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 681,
+                                            lineNumber: 143,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/about/page.js",
-                                    lineNumber: 676,
+                                    lineNumber: 138,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.js",
-                                lineNumber: 675,
+                                lineNumber: 137,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/about/page.js",
-                        lineNumber: 657,
+                        lineNumber: 119,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/about/page.js",
-                    lineNumber: 656,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 655,
+                lineNumber: 117,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                dangerouslySetInnerHTML: {
+                    __html: `
+      function handleScrollFade() {
+        const elements = document.querySelectorAll('.scroll-fade');
+        const windowBottom = window.innerHeight + window.scrollY;
+        elements.forEach(el => {
+          const elementTop = el.getBoundingClientRect().top + window.scrollY;
+          if (windowBottom > elementTop + 100) {
+            el.classList.add('visible');
+          }
+        });
+      }
+      window.addEventListener('scroll', handleScrollFade);
+      window.addEventListener('load', handleScrollFade);
+    `
+                },
+                className: "jsx-13ba95d122c83d95"
+            }, void 0, false, {
+                fileName: "[project]/src/app/about/page.js",
+                lineNumber: 169,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "b2595b0ad831bf8b",
-                children: ".image-wrapper.jsx-b2595b0ad831bf8b,.content-wrapper.jsx-b2595b0ad831bf8b{transition:opacity .3s ease-in-out}.fade-out.jsx-b2595b0ad831bf8b{opacity:0}.fade-in.jsx-b2595b0ad831bf8b{opacity:1}.btn.jsx-b2595b0ad831bf8b:hover .arrow-icon.jsx-b2595b0ad831bf8b{transition:transform .3s;transform:translate(5px)}"
+                id: "13ba95d122c83d95",
+                children: ".image-wrapper.jsx-13ba95d122c83d95,.content-wrapper.jsx-13ba95d122c83d95{transition:opacity .3s ease-in-out}.fade-out.jsx-13ba95d122c83d95{opacity:0}.fade-in.jsx-13ba95d122c83d95{opacity:1}.btn.jsx-13ba95d122c83d95:hover .arrow-icon.jsx-13ba95d122c83d95{transition:transform .3s;transform:translate(5px)}.scroll-fade.jsx-13ba95d122c83d95{opacity:0;transition:opacity .6s ease-out,transform .6s ease-out;transform:translateY(50px)}.scroll-fade.visible.jsx-13ba95d122c83d95{opacity:1;transform:translateY(0)}"
             }, void 0, false, void 0, this),
             pathname === "/about" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 724,
+                lineNumber: 217,
                 columnNumber: 33
             }, this)
         ]
@@ -4985,7 +4453,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/instagram-latest.ddbe124c.svg");}}),
+__turbopack_context__.v("/_next/static/media/instagram-latest.6b072ada.svg");}}),
 "[project]/public/images/instagram-latest.svg.mjs { IMAGE => \"[project]/public/images/instagram-latest.svg (static in ecmascript)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -5039,7 +4507,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/phone-latest.074faa8b.svg");}}),
+__turbopack_context__.v("/_next/static/media/phone-latest.e5a65752.svg");}}),
 "[project]/public/images/phone-latest.svg.mjs { IMAGE => \"[project]/public/images/phone-latest.svg (static in ecmascript)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -7152,9 +6620,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/Header.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/Footer.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -7164,6 +6634,33 @@ function Contact() {
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const siteUrl = "https://www.beyondbikes.com.au/";
+    const [errors, setErrors] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
+    const validateField = (name, value)=>{
+        let error = "";
+        switch(name){
+            case "Full Name":
+                if (!value.trim()) error = "Name is required";
+                break;
+            case "Email Address":
+                if (!value.trim()) {
+                    error = "Email is required";
+                } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                    error = "Enter a valid email";
+                }
+                break;
+            case "Phone Number":
+                if (value && !/^\+?\d{7,15}$/.test(value)) {
+                    error = "Enter a valid phone number";
+                }
+                break;
+            default:
+                break;
+        }
+        setErrors((prev)=>({
+                ...prev,
+                [name]: error
+            }));
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -7172,7 +6669,7 @@ function Contact() {
                         children: "Contact Us | Beyond Bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 342,
+                        lineNumber: 371,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7180,7 +6677,7 @@ function Contact() {
                         content: "Contact Beyond Bikes support team. Get help with e-bike rentals, product inquiries, and services. Fast responses guaranteed."
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 343,
+                        lineNumber: 372,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7188,7 +6685,7 @@ function Contact() {
                         content: "index, follow"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 344,
+                        lineNumber: 373,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -7196,7 +6693,7 @@ function Contact() {
                         href: `${siteUrl}/contact`
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 345,
+                        lineNumber: 374,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7204,7 +6701,7 @@ function Contact() {
                         content: "Beyond Bikes contact, ebike shop Melbourne, e-bike rentals Melbourne, electric bikes Ormond"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 346,
+                        lineNumber: 375,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7212,7 +6709,7 @@ function Contact() {
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 349,
+                        lineNumber: 378,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7220,7 +6717,7 @@ function Contact() {
                         content: "Contact Us | Beyond Bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 350,
+                        lineNumber: 379,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7228,7 +6725,7 @@ function Contact() {
                         content: "Contact Beyond Bikes support team. Get help with e-bike rentals, product inquiries, and services. Fast responses guaranteed."
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 351,
+                        lineNumber: 380,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7236,7 +6733,7 @@ function Contact() {
                         content: `${siteUrl}/contact`
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 352,
+                        lineNumber: 381,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7244,7 +6741,7 @@ function Contact() {
                         content: `${siteUrl}/images/contact-og.png`
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 353,
+                        lineNumber: 382,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7252,7 +6749,7 @@ function Contact() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 356,
+                        lineNumber: 385,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7260,7 +6757,7 @@ function Contact() {
                         content: "Contact Us | Beyond Bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 357,
+                        lineNumber: 386,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7268,7 +6765,7 @@ function Contact() {
                         content: "Contact Beyond Bikes support team. Get help with e-bike rentals, product inquiries, and services. Fast responses guaranteed."
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 358,
+                        lineNumber: 387,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -7276,7 +6773,7 @@ function Contact() {
                         content: `${siteUrl}/images/contact-og.png`
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 359,
+                        lineNumber: 388,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -7312,18 +6809,18 @@ function Contact() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 362,
+                        lineNumber: 391,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/contact/page.js",
-                lineNumber: 340,
+                lineNumber: 369,
                 columnNumber: 7
             }, this),
             pathname !== '/' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/contact/page.js",
-                lineNumber: 389,
+                lineNumber: 418,
                 columnNumber: 28
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -7332,7 +6829,7 @@ function Contact() {
                         className: "container px-sm-0 px-3 py-5",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-center fw-bold pb-4",
+                                className: "text-center fw-bold pb-4 heading-underline-contact-main",
                                 style: {
                                     color: '#1a3b19',
                                     fontFamily: 'system-ui'
@@ -7340,11 +6837,11 @@ function Contact() {
                                 children: "Contact Beyond Bikes"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/contact/page.js",
-                                lineNumber: 393,
+                                lineNumber: 422,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row g-4 align-items-start",
+                                className: "row g-5 align-items-start",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "col-lg-6",
@@ -7361,7 +6858,7 @@ function Contact() {
                                                 children: "Reach Out & Get in Touch"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 398,
+                                                lineNumber: 427,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7370,7 +6867,7 @@ function Contact() {
                                                 children: "Provide details about your inquiry or issue including your bike model. Our team at Beyond Bikes will respond promptly."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 399,
+                                                lineNumber: 428,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -7384,7 +6881,7 @@ function Contact() {
                                                         value: "false"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 404,
+                                                        lineNumber: 433,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -7393,7 +6890,7 @@ function Contact() {
                                                         value: "table"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 405,
+                                                        lineNumber: 434,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -7402,7 +6899,7 @@ function Contact() {
                                                         value: `${siteUrl}/thankyou`
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 406,
+                                                        lineNumber: 435,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -7411,174 +6908,239 @@ function Contact() {
                                                         value: "New Contact Submission from Beyond Bikes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 407,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "row g-3 mb-3",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "col-md-6",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                        htmlFor: "name",
-                                                                        className: "visually-hidden",
-                                                                        children: "Full Name"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 411,
-                                                                        columnNumber: 21
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
-                                                                        id: "name",
-                                                                        className: "form-control form-control-lg bg-light",
-                                                                        placeholder: "Your Name",
-                                                                        name: "Full Name",
-                                                                        required: true,
-                                                                        "aria-required": "true"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 412,
-                                                                        columnNumber: 21
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 410,
-                                                                columnNumber: 19
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "col-md-6",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                        htmlFor: "email",
-                                                                        className: "visually-hidden",
-                                                                        children: "Email Address"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 423,
-                                                                        columnNumber: 21
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "email",
-                                                                        id: "email",
-                                                                        className: "form-control form-control-lg bg-light",
-                                                                        placeholder: "Your Email",
-                                                                        name: "Email Address",
-                                                                        required: true,
-                                                                        "aria-required": "true"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 424,
-                                                                        columnNumber: 21
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 422,
-                                                                columnNumber: 19
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 409,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "row g-3 mb-3",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "col-md-6",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                        htmlFor: "subject",
-                                                                        className: "visually-hidden",
-                                                                        children: "Subject"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 438,
-                                                                        columnNumber: 21
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
-                                                                        id: "subject",
-                                                                        className: "form-control form-control-lg bg-light",
-                                                                        placeholder: "Your Subject",
-                                                                        name: "Subject"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 439,
-                                                                        columnNumber: 21
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 437,
-                                                                columnNumber: 19
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "col-md-6",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                        htmlFor: "phone",
-                                                                        className: "visually-hidden",
-                                                                        children: "Phone Number"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 448,
-                                                                        columnNumber: 21
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
-                                                                        id: "phone",
-                                                                        className: "form-control form-control-lg bg-light",
-                                                                        placeholder: "Your Phone Number",
-                                                                        name: "Phone Number"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/contact/page.js",
-                                                                        lineNumber: 449,
-                                                                        columnNumber: 21
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 447,
-                                                                columnNumber: 19
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/contact/page.js",
                                                         lineNumber: 436,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "mb-3",
+                                                        className: "row g-3 mb-3",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                htmlFor: "message",
-                                                                className: "visually-hidden",
-                                                                children: "Message"
-                                                            }, void 0, false, {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "col-md-6",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "form-floating",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                                type: "text",
+                                                                                id: "name",
+                                                                                className: `form-control ${errors["Full Name"] ? "is-invalid" : ""}`,
+                                                                                placeholder: "Your Name",
+                                                                                name: "Full Name",
+                                                                                required: true,
+                                                                                "aria-required": "true",
+                                                                                onChange: (e)=>validateField(e.target.name, e.target.value)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/contact/page.js",
+                                                                                lineNumber: 442,
+                                                                                columnNumber: 7
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                                htmlFor: "name",
+                                                                                children: "Full Name"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/contact/page.js",
+                                                                                lineNumber: 452,
+                                                                                columnNumber: 7
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/app/contact/page.js",
+                                                                        lineNumber: 441,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    errors["Full Name"] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
+                                                                        className: "text-danger ms-2",
+                                                                        children: errors["Full Name"]
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/contact/page.js",
+                                                                        lineNumber: 455,
+                                                                        columnNumber: 7
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 460,
+                                                                lineNumber: 439,
                                                                 columnNumber: 19
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
-                                                                id: "message",
-                                                                className: "form-control form-control-lg bg-light",
-                                                                rows: "5",
-                                                                placeholder: "Your Message",
-                                                                name: "Message"
-                                                            }, void 0, false, {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "col-md-6",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "form-floating",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                                type: "email",
+                                                                                id: "email",
+                                                                                className: "form-control form-control-lg",
+                                                                                placeholder: "Your Email",
+                                                                                name: "Email Address",
+                                                                                required: true,
+                                                                                "aria-required": "true",
+                                                                                onChange: (e)=>validateField(e.target.name, e.target.value)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/contact/page.js",
+                                                                                lineNumber: 460,
+                                                                                columnNumber: 5
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                                htmlFor: "email",
+                                                                                children: "Email Address"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/contact/page.js",
+                                                                                lineNumber: 470,
+                                                                                columnNumber: 5
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/app/contact/page.js",
+                                                                        lineNumber: 459,
+                                                                        columnNumber: 3
+                                                                    }, this),
+                                                                    errors["Email Address"] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
+                                                                        className: "text-danger ms-3",
+                                                                        children: errors["Email Address"]
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/contact/page.js",
+                                                                        lineNumber: 474,
+                                                                        columnNumber: 5
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/src/app/contact/page.js",
-                                                                lineNumber: 461,
+                                                                lineNumber: 458,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 459,
+                                                        lineNumber: 438,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "row g-3 mb-3",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "col-md-6",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "form-floating",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                                type: "text",
+                                                                                id: "phone",
+                                                                                className: "form-control form-control-lg",
+                                                                                placeholder: "Your Phone Number",
+                                                                                name: "Phone Number",
+                                                                                onChange: (e)=>validateField(e.target.name, e.target.value)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/contact/page.js",
+                                                                                lineNumber: 484,
+                                                                                columnNumber: 5
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                                htmlFor: "phone",
+                                                                                children: "Phone Number"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/contact/page.js",
+                                                                                lineNumber: 492,
+                                                                                columnNumber: 5
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/app/contact/page.js",
+                                                                        lineNumber: 483,
+                                                                        columnNumber: 3
+                                                                    }, this),
+                                                                    errors["Phone Number"] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
+                                                                        className: "text-danger ms-3",
+                                                                        children: errors["Phone Number"]
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/contact/page.js",
+                                                                        lineNumber: 496,
+                                                                        columnNumber: 5
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/app/contact/page.js",
+                                                                lineNumber: 482,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "col-md-6",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "form-floating",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                            type: "text",
+                                                                            id: "subject",
+                                                                            className: "form-control form-control-lg",
+                                                                            placeholder: "Your Subject",
+                                                                            name: "Subject"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/contact/page.js",
+                                                                            lineNumber: 503,
+                                                                            columnNumber: 5
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                            htmlFor: "subject",
+                                                                            children: "Subject"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/contact/page.js",
+                                                                            lineNumber: 510,
+                                                                            columnNumber: 5
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/contact/page.js",
+                                                                    lineNumber: 502,
+                                                                    columnNumber: 3
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/contact/page.js",
+                                                                lineNumber: 501,
+                                                                columnNumber: 18
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/contact/page.js",
+                                                        lineNumber: 480,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mb-3",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "form-floating",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                                                    id: "message",
+                                                                    className: "form-control form-control-lg",
+                                                                    placeholder: "Your Message",
+                                                                    name: "Message",
+                                                                    style: {
+                                                                        height: "150px"
+                                                                    }
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/contact/page.js",
+                                                                    lineNumber: 518,
+                                                                    columnNumber: 3
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                    htmlFor: "message",
+                                                                    children: "Message"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/contact/page.js",
+                                                                    lineNumber: 525,
+                                                                    columnNumber: 3
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/contact/page.js",
+                                                            lineNumber: 517,
+                                                            columnNumber: 18
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/contact/page.js",
+                                                        lineNumber: 516,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -7590,19 +7152,19 @@ function Contact() {
                                                         children: "Send Message"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 470,
+                                                        lineNumber: 530,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 403,
+                                                lineNumber: 432,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 397,
+                                        lineNumber: 426,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7618,7 +7180,7 @@ function Contact() {
                                                 className: "responsive-map"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 508,
+                                                lineNumber: 568,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("noscript", {
@@ -7632,31 +7194,31 @@ function Contact() {
                                                         children: "Google Maps"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 519,
+                                                        lineNumber: 579,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/contact/page.js",
-                                                lineNumber: 517,
+                                                lineNumber: 577,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 482,
+                                        lineNumber: 542,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/contact/page.js",
-                                lineNumber: 394,
+                                lineNumber: 423,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 392,
+                        lineNumber: 421,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -7684,12 +7246,12 @@ function Contact() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 546,
+                                                        lineNumber: 607,
                                                         columnNumber: 13
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 538,
+                                                    lineNumber: 599,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("address", {
@@ -7699,30 +7261,30 @@ function Contact() {
                                                             children: "Address:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 549,
+                                                            lineNumber: 610,
                                                             columnNumber: 13
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 549,
+                                                            lineNumber: 610,
                                                             columnNumber: 38
                                                         }, this),
                                                         "576 North Rd, Ormond VIC 3204, Australia"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 548,
+                                                    lineNumber: 609,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/contact/page.js",
-                                            lineNumber: 537,
+                                            lineNumber: 598,
                                             columnNumber: 9
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 536,
+                                        lineNumber: 597,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7742,12 +7304,12 @@ function Contact() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 566,
+                                                        lineNumber: 627,
                                                         columnNumber: 13
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 558,
+                                                    lineNumber: 619,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7757,34 +7319,38 @@ function Contact() {
                                                             children: "Phone:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 569,
+                                                            lineNumber: 630,
                                                             columnNumber: 13
                                                         }, this),
-                                                        " ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/app/contact/page.js",
+                                                            lineNumber: 630,
+                                                            columnNumber: 36
+                                                        }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                             href: "tel:+61422032961",
                                                             className: "text-decoration-none text-dark",
                                                             children: "+61 422 032 961"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 570,
+                                                            lineNumber: 631,
                                                             columnNumber: 13
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 568,
+                                                    lineNumber: 629,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/contact/page.js",
-                                            lineNumber: 557,
+                                            lineNumber: 618,
                                             columnNumber: 9
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 556,
+                                        lineNumber: 617,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7804,12 +7370,12 @@ function Contact() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contact/page.js",
-                                                        lineNumber: 588,
+                                                        lineNumber: 649,
                                                         columnNumber: 13
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 580,
+                                                    lineNumber: 641,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7819,67 +7385,71 @@ function Contact() {
                                                             children: "Email:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 591,
+                                                            lineNumber: 652,
                                                             columnNumber: 13
                                                         }, this),
-                                                        " ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/app/contact/page.js",
+                                                            lineNumber: 652,
+                                                            columnNumber: 36
+                                                        }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                             href: "mailto:info.beyondbikes@gmail.com",
                                                             className: "text-decoration-none text-dark",
                                                             children: "info.beyondbikes@gmail.com"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/contact/page.js",
-                                                            lineNumber: 592,
+                                                            lineNumber: 653,
                                                             columnNumber: 13
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/contact/page.js",
-                                                    lineNumber: 590,
+                                                    lineNumber: 651,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/contact/page.js",
-                                            lineNumber: 579,
+                                            lineNumber: 640,
                                             columnNumber: 9
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contact/page.js",
-                                        lineNumber: 578,
+                                        lineNumber: 639,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/contact/page.js",
-                                lineNumber: 533,
+                                lineNumber: 594,
                                 columnNumber: 5
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/contact/page.js",
-                            lineNumber: 532,
+                            lineNumber: 592,
                             columnNumber: 3
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
-                        lineNumber: 531,
+                        lineNumber: 591,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/contact/page.js",
-                lineNumber: 391,
+                lineNumber: 420,
                 columnNumber: 7
             }, this),
             pathname === '/contact' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/contact/page.js",
-                lineNumber: 606,
+                lineNumber: 667,
                 columnNumber: 35
             }, this)
         ]
     }, void 0, true);
 }
-_s(Contact, "xbyQPtUVMO7MNj7WjJlpdWqRcTo=", false, function() {
+_s(Contact, "ixEhCk+NmZJvJZ+7oU2Q7VcFQ2U=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
     ];
@@ -7915,11 +7485,11 @@ function ChatWidget() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 "aria-label": "Open chat",
                 onClick: ()=>setOpen(!open),
-                className: "jsx-5203f7a25d9ac569" + " " + "chat-toggle-btn",
+                className: "jsx-f0456c9f50220fe3" + " " + "chat-toggle-btn",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                         "aria-label": "chat",
-                        className: "jsx-5203f7a25d9ac569" + " " + "bi bi-chat text-light me-2"
+                        className: "jsx-f0456c9f50220fe3" + " " + "bi bi-chat text-light me-2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/ChatWidget.js",
                         lineNumber: 16,
@@ -7933,13 +7503,13 @@ function ChatWidget() {
                 columnNumber: 7
             }, this),
             open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "jsx-5203f7a25d9ac569" + " " + "chat-box bg-white shadow rounded",
+                className: "jsx-f0456c9f50220fe3" + " " + "chat-box bg-white shadow rounded",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-5203f7a25d9ac569" + " " + "chat-header d-flex justify-content-between align-items-center px-3 py-2 border-bottom",
+                        className: "jsx-f0456c9f50220fe3" + " " + "chat-header d-flex justify-content-between align-items-center px-3 py-2 border-bottom",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                className: "jsx-5203f7a25d9ac569",
+                                className: "jsx-f0456c9f50220fe3",
                                 children: "Ebikes Support"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/ChatWidget.js",
@@ -7948,7 +7518,7 @@ function ChatWidget() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setOpen(false),
-                                className: "jsx-5203f7a25d9ac569" + " " + "btn btn-sm btn-outline-danger",
+                                className: "jsx-f0456c9f50220fe3" + " " + "btn btn-sm btn-outline-danger",
                                 children: "×"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/ChatWidget.js",
@@ -7962,9 +7532,9 @@ function ChatWidget() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-5203f7a25d9ac569" + " " + "chat-body px-5 py-5",
+                        className: "jsx-f0456c9f50220fe3" + " " + "chat-body px-5 py-5",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "jsx-5203f7a25d9ac569" + " " + "text-muted small",
+                            className: "jsx-f0456c9f50220fe3" + " " + "text-muted small",
                             children: "Hi there 👋 How can we help you today?"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/ChatWidget.js",
@@ -7977,12 +7547,12 @@ function ChatWidget() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-5203f7a25d9ac569" + " " + "chat-footer border-top p-2",
+                        className: "jsx-f0456c9f50220fe3" + " " + "chat-footer border-top p-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                             type: "text",
                             placeholder: "Write your message...",
                             disabled: true,
-                            className: "jsx-5203f7a25d9ac569" + " " + "form-control"
+                            className: "jsx-f0456c9f50220fe3" + " " + "form-control"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/ChatWidget.js",
                             lineNumber: 33,
@@ -8000,8 +7570,8 @@ function ChatWidget() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "5203f7a25d9ac569",
-                children: ".chat-toggle-btn.jsx-5203f7a25d9ac569{color:#fff;z-index:1050;background-color:#e01b24;border:none;border-radius:50px;align-items:center;padding:10px 20px;font-weight:600;display:flex;position:fixed;bottom:20px;right:20px;box-shadow:0 4px 8px #00000026}.chat-box.jsx-5203f7a25d9ac569{z-index:1050;flex-direction:column;width:300px;max-height:400px;display:flex;position:fixed;bottom:80px;right:20px}@media (width<=576px){.chat-box.jsx-5203f7a25d9ac569{width:90%;bottom:80px;right:5%}}"
+                id: "f0456c9f50220fe3",
+                children: ".chat-toggle-btn.jsx-f0456c9f50220fe3{color:#fff;z-index:1050;background-color:#e01b24;border:none;border-radius:50px;align-items:center;padding:10px 20px;font-weight:600;display:flex;position:fixed;bottom:20px;right:20px;box-shadow:0 4px 8px #00000026}.chat-box.jsx-f0456c9f50220fe3{z-index:1050;flex-direction:column;width:300px;max-height:400px;display:flex;position:fixed;bottom:80px;right:20px}@media (width<=576px){.chat-box.jsx-f0456c9f50220fe3{width:90%;bottom:80px;right:5%}}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true);
@@ -8028,9 +7598,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/Header.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/Footer.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -8087,7 +7659,7 @@ function ShoppingCart() {
                         children: "Shopping Cart | YourStore"
                     }, void 0, false, {
                         fileName: "[project]/src/app/cart/page.js",
-                        lineNumber: 62,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -8095,18 +7667,18 @@ function ShoppingCart() {
                         content: "View and manage your shopping cart items. Apply discounts and proceed to secure checkout."
                     }, void 0, false, {
                         fileName: "[project]/src/app/cart/page.js",
-                        lineNumber: 63,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/cart/page.js",
-                lineNumber: 61,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/cart/page.js",
-                lineNumber: 66,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8117,7 +7689,7 @@ function ShoppingCart() {
                         children: "Shopping Cart"
                     }, void 0, false, {
                         fileName: "[project]/src/app/cart/page.js",
-                        lineNumber: 69,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8140,7 +7712,7 @@ function ShoppingCart() {
                                                             className: "rounded"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 76,
+                                                            lineNumber: 77,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8150,7 +7722,7 @@ function ShoppingCart() {
                                                                     children: item.title
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cart/page.js",
-                                                                    lineNumber: 78,
+                                                                    lineNumber: 79,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -8158,12 +7730,12 @@ function ShoppingCart() {
                                                                     children: item.platform
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cart/page.js",
-                                                                    lineNumber: 79,
+                                                                    lineNumber: 80,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                     fileName: "[project]/src/app/cart/page.js",
-                                                                    lineNumber: 80,
+                                                                    lineNumber: 81,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8172,19 +7744,19 @@ function ShoppingCart() {
                                                                     children: "Remove"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cart/page.js",
-                                                                    lineNumber: 81,
+                                                                    lineNumber: 82,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 77,
+                                                            lineNumber: 78,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 75,
+                                                    lineNumber: 76,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8196,7 +7768,7 @@ function ShoppingCart() {
                                                             children: "-"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 86,
+                                                            lineNumber: 87,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -8209,7 +7781,7 @@ function ShoppingCart() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 90,
+                                                            lineNumber: 91,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8218,13 +7790,13 @@ function ShoppingCart() {
                                                             children: "+"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 91,
+                                                            lineNumber: 92,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 85,
+                                                    lineNumber: 86,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8238,7 +7810,7 @@ function ShoppingCart() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 98,
+                                                            lineNumber: 99,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -8250,22 +7822,22 @@ function ShoppingCart() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 101,
+                                                            lineNumber: 102,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 97,
+                                                    lineNumber: 98,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, item.id, true, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 74,
+                                            lineNumber: 75,
                                             columnNumber: 15
                                         }, this)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/products",
                                         className: "text-decoration-none mt-4 d-inline-block",
                                         children: [
@@ -8273,20 +7845,20 @@ function ShoppingCart() {
                                                 className: "bi bi-arrow-left"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/cart/page.js",
-                                                lineNumber: 108,
+                                                lineNumber: 109,
                                                 columnNumber: 15
                                             }, this),
                                             " Continue Shopping"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/cart/page.js",
-                                        lineNumber: 107,
+                                        lineNumber: 108,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/cart/page.js",
-                                lineNumber: 72,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8299,7 +7871,7 @@ function ShoppingCart() {
                                             children: "Order Summary"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 114,
+                                            lineNumber: 115,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8313,7 +7885,7 @@ function ShoppingCart() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 116,
+                                                    lineNumber: 117,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8324,13 +7896,13 @@ function ShoppingCart() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 117,
+                                                    lineNumber: 118,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 115,
+                                            lineNumber: 116,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8340,7 +7912,7 @@ function ShoppingCart() {
                                                     children: "Shipping"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 120,
+                                                    lineNumber: 121,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8350,18 +7922,18 @@ function ShoppingCart() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 121,
+                                                    lineNumber: 122,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 119,
+                                            lineNumber: 120,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 123,
+                                            lineNumber: 124,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8373,7 +7945,7 @@ function ShoppingCart() {
                                                     children: "Promo Code"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 125,
+                                                    lineNumber: 126,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8388,7 +7960,7 @@ function ShoppingCart() {
                                                             onChange: (e)=>setPromoCode(e.target.value)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 129,
+                                                            lineNumber: 130,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8396,24 +7968,24 @@ function ShoppingCart() {
                                                             children: "Apply"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cart/page.js",
-                                                            lineNumber: 137,
+                                                            lineNumber: 138,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 128,
+                                                    lineNumber: 129,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 124,
+                                            lineNumber: 125,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 140,
+                                            lineNumber: 141,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8423,7 +7995,7 @@ function ShoppingCart() {
                                                     children: "Total"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 142,
+                                                    lineNumber: 143,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8433,13 +8005,13 @@ function ShoppingCart() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cart/page.js",
-                                                    lineNumber: 143,
+                                                    lineNumber: 144,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 141,
+                                            lineNumber: 142,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8447,35 +8019,35 @@ function ShoppingCart() {
                                             children: "Proceed to Checkout"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cart/page.js",
-                                            lineNumber: 145,
+                                            lineNumber: 146,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/cart/page.js",
-                                    lineNumber: 113,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/cart/page.js",
-                                lineNumber: 112,
+                                lineNumber: 113,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/cart/page.js",
-                        lineNumber: 71,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/cart/page.js",
-                lineNumber: 68,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/cart/page.js",
-                lineNumber: 150,
+                lineNumber: 151,
                 columnNumber: 7
             }, this)
         ]
@@ -9631,6 +9203,79 @@ function RentalEbikes() {
             router.push(`/${slug}`);
         }, 1000);
     };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "RentalEbikes.useEffect": ()=>{
+            const elements = document.querySelectorAll(".scroll-animate");
+            const observer = new IntersectionObserver({
+                "RentalEbikes.useEffect": (entries)=>{
+                    entries.forEach({
+                        "RentalEbikes.useEffect": (entry)=>{
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("in-view");
+                                observer.unobserve(entry.target); // animate once
+                            }
+                        }
+                    }["RentalEbikes.useEffect"]);
+                }
+            }["RentalEbikes.useEffect"], {
+                threshold: 0.2
+            });
+            elements.forEach({
+                "RentalEbikes.useEffect": (el)=>observer.observe(el)
+            }["RentalEbikes.useEffect"]);
+            return ({
+                "RentalEbikes.useEffect": ()=>observer.disconnect()
+            })["RentalEbikes.useEffect"];
+        }
+    }["RentalEbikes.useEffect"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "RentalEbikes.useEffect": ()=>{
+            const elements = document.querySelectorAll(".scroll-animate, .scroll-left, .scroll-right, .scroll-up, .scroll-down, .scroll-pop, .scroll-zoom");
+            const observer = new IntersectionObserver({
+                "RentalEbikes.useEffect": (entries)=>{
+                    entries.forEach({
+                        "RentalEbikes.useEffect": (entry)=>{
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("in-view");
+                                observer.unobserve(entry.target); // only animate once
+                            }
+                        }
+                    }["RentalEbikes.useEffect"]);
+                }
+            }["RentalEbikes.useEffect"], {
+                threshold: 0.2
+            });
+            elements.forEach({
+                "RentalEbikes.useEffect": (el)=>observer.observe(el)
+            }["RentalEbikes.useEffect"]);
+            return ({
+                "RentalEbikes.useEffect": ()=>observer.disconnect()
+            })["RentalEbikes.useEffect"];
+        }
+    }["RentalEbikes.useEffect"], []);
+    const features = [
+        {
+            icon: "bi-tools",
+            title: "Accessories"
+        },
+        {
+            icon: "bi-geo-alt-fill",
+            title: "GPS System"
+        },
+        {
+            icon: "bi-tools",
+            title: "Maintenance Included"
+        },
+        {
+            icon: "bi-bicycle",
+            title: "Free Test Ride"
+        }
+    ];
+    const duplicatedFeatures = [
+        ...features,
+        ...features,
+        ...features
+    ];
     const bikes = [
         {
             name: "E-bike 6-8h",
@@ -9665,7 +9310,7 @@ function RentalEbikes() {
                         children: "Affordable Weekly E-Bike Rentals in Melbourne | Beyond Bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 207,
+                        lineNumber: 259,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9673,7 +9318,7 @@ function RentalEbikes() {
                         content: "Rent affordable electric bikes in Melbourne with Beyond Bikes. Perfect for delivery riders and everyday commuters. Weekly plans, reliable e-bikes & free delivery."
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 208,
+                        lineNumber: 260,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9681,7 +9326,7 @@ function RentalEbikes() {
                         content: "electric bikes Melbourne, rent e-bikes Melbourne, Beyond Bikes Australia, e-bike hire Melbourne"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 212,
+                        lineNumber: 264,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -9689,7 +9334,7 @@ function RentalEbikes() {
                         href: "https://www.beyondbikes.com.au/"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 215,
+                        lineNumber: 267,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9697,7 +9342,7 @@ function RentalEbikes() {
                         content: "Affordable Weekly E-Bike Rentals in Melbourne | Beyond Bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 218,
+                        lineNumber: 270,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9705,7 +9350,7 @@ function RentalEbikes() {
                         content: "Explore Melbourne or power through deliveries with our affordable electric bike rentals. Flexible weekly plans & reliable service."
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 219,
+                        lineNumber: 271,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9713,7 +9358,7 @@ function RentalEbikes() {
                         content: "https://www.beyondbikes.com.au/"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 223,
+                        lineNumber: 275,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9721,7 +9366,7 @@ function RentalEbikes() {
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 224,
+                        lineNumber: 276,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9729,7 +9374,7 @@ function RentalEbikes() {
                         content: "https://www.beyondbikes.com.au/images/og-image.jpg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 225,
+                        lineNumber: 277,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9737,7 +9382,7 @@ function RentalEbikes() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 228,
+                        lineNumber: 280,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9745,7 +9390,7 @@ function RentalEbikes() {
                         content: "Affordable Weekly E-Bike Rentals in Melbourne | Beyond Bikes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 229,
+                        lineNumber: 281,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9753,7 +9398,7 @@ function RentalEbikes() {
                         content: "Rent an e-bike in Melbourne today! Affordable, reliable, and perfect for riders & delivery professionals."
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 230,
+                        lineNumber: 282,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -9761,7 +9406,7 @@ function RentalEbikes() {
                         content: "https://www.beyondbikes.com.au/images/og-image.jpg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 234,
+                        lineNumber: 286,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -9788,18 +9433,18 @@ function RentalEbikes() {
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 237,
+                        lineNumber: 289,
                         columnNumber: 3
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/rental/page.js",
-                lineNumber: 205,
+                lineNumber: 257,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/rental/page.js",
-                lineNumber: 262,
+                lineNumber: 314,
                 columnNumber: 7
             }, this),
             loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9828,23 +9473,23 @@ function RentalEbikes() {
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 285,
+                        lineNumber: 337,
                         columnNumber: 15
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/rental/page.js",
-                    lineNumber: 280,
+                    lineNumber: 332,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/rental/page.js",
-                lineNumber: 266,
+                lineNumber: 318,
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "py-5 text-center",
+                        className: "py-5 text-center scroll-animate",
                         style: {
                             backgroundImage: "url('/images/RentalBackgroundImageLatest.jpg')",
                             backgroundSize: "cover",
@@ -9870,206 +9515,92 @@ function RentalEbikes() {
                                 children: "Affordable Weekly E-Bike Rentals"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 303,
+                                lineNumber: 355,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/rental/page.js",
-                            lineNumber: 302,
+                            lineNumber: 354,
                             columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 290,
+                        lineNumber: 342,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "w-100 py-2",
+                        className: "w-100 py-4 position-relative overflow-hidden",
                         "aria-label": "Fleet Features",
                         itemScope: true,
                         itemType: "https://schema.org/Service",
                         style: {
                             backgroundColor: "rgb(26, 59, 25)",
-                            marginTop: "-50px",
                             position: "relative",
                             zIndex: 2
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "container",
+                            className: "position-relative",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row g-3 text-center text-white",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                        className: "col-6 col-md-3",
+                                className: "d-flex animate-scroll text-nowrap",
+                                children: duplicatedFeatures.map((feature, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "d-inline-flex align-items-center mx-4 text-white flex-shrink-0",
                                         itemProp: "feature",
                                         itemScope: true,
                                         itemType: "https://schema.org/PropertyValue",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "py-4 px-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-tools fs-1 mb-2",
-                                                    "aria-hidden": "true"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 329,
-                                                    columnNumber: 15
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "feature-title mb-1",
-                                                    itemProp: "name",
-                                                    children: "Accessories"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 330,
-                                                    columnNumber: 15
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 328,
-                                            columnNumber: 13
-                                        }, this)
-                                    }, void 0, false, {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: `bi ${feature.icon} fs-1 me-3`,
+                                                "aria-hidden": "true"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/rental/page.js",
+                                                lineNumber: 384,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "fs-4 fw-semibold",
+                                                itemProp: "name",
+                                                children: feature.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/rental/page.js",
+                                                lineNumber: 385,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, index, true, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 327,
-                                        columnNumber: 11
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                        className: "col-6 col-md-3",
-                                        itemProp: "feature",
-                                        itemScope: true,
-                                        itemType: "https://schema.org/PropertyValue",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "py-4 px-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-geo-alt-fill fs-1 mb-2",
-                                                    "aria-hidden": "true"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 339,
-                                                    columnNumber: 15
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "feature-title mb-1",
-                                                    itemProp: "name",
-                                                    children: "GPS System"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 340,
-                                                    columnNumber: 15
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 338,
-                                            columnNumber: 13
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 337,
-                                        columnNumber: 11
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                        className: "col-6 col-md-3",
-                                        itemProp: "feature",
-                                        itemScope: true,
-                                        itemType: "https://schema.org/PropertyValue",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "py-4 px-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-tools fs-1 mb-2",
-                                                    "aria-hidden": "true"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 349,
-                                                    columnNumber: 15
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "feature-title mb-0 fw-bold",
-                                                    itemProp: "name",
-                                                    children: "Maintenance Included"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 350,
-                                                    columnNumber: 15
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 348,
-                                            columnNumber: 13
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 347,
-                                        columnNumber: 11
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                        className: "col-6 col-md-3",
-                                        itemProp: "feature",
-                                        itemScope: true,
-                                        itemType: "https://schema.org/PropertyValue",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "py-4 px-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-bicycle fs-1 mb-2",
-                                                    "aria-hidden": "true"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 359,
-                                                    columnNumber: 15
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "feature-title mb-0 fw-bold",
-                                                    itemProp: "name",
-                                                    children: "Free Test Ride"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 360,
-                                                    columnNumber: 15
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 358,
-                                            columnNumber: 13
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 357,
-                                        columnNumber: 11
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                        lineNumber: 377,
+                                        columnNumber: 13
+                                    }, this))
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 324,
+                                lineNumber: 375,
                                 columnNumber: 9
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/rental/page.js",
-                            lineNumber: 323,
+                            lineNumber: 374,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 311,
-                        columnNumber: 8
+                        lineNumber: 363,
+                        columnNumber: 6
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
                         id: "why-choose",
-                        className: "container text-center py-5",
+                        className: "container text-center py-5 scroll-animate",
                         "aria-labelledby": "why-choose-heading",
                         initial: {
                             opacity: 0,
                             y: 30
                         },
-                        animate: {
+                        whileInView: {
                             opacity: 1,
                             y: 0
+                        },
+                        viewport: {
+                            once: true,
+                            amount: 0.3
                         },
                         transition: {
                             duration: 0.6
@@ -10079,32 +9610,20 @@ function RentalEbikes() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 id: "why-choose-heading",
-                                className: "mb-3 fw-bold",
+                                className: "mb-5 fw-bold heading-underline",
                                 style: {
                                     color: "#1A3B19",
                                     fontFamily: "system-ui"
                                 },
                                 itemProp: "name",
-                                children: "Why Choose Our Beyond Bikes"
+                                children: "Why Choose Beyond Bikes"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 380,
-                                columnNumber: 9
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-muted mb-5",
-                                style: {
-                                    fontFamily: "system-ui"
-                                },
-                                itemProp: "description",
-                                children: "Discover the benefits of renting with Beyond Bikes"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 388,
+                                lineNumber: 407,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row g-4",
+                                className: "row g-sm-2 g-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "col-12 col-md-4",
@@ -10113,26 +9632,31 @@ function RentalEbikes() {
                                             itemScope: true,
                                             itemType: "https://schema.org/Service",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-fuel-pump fs-1 mb-3",
-                                                    style: {
-                                                        color: "#1A3B19"
-                                                    }
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "icon-circle mb-3",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "bi bi-fuel-pump"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/rental/page.js",
+                                                        lineNumber: 426,
+                                                        columnNumber: 3
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 400,
+                                                    lineNumber: 425,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "fs-5 fw-semibold mb-2",
                                                     style: {
-                                                        color: "#1A3B19"
+                                                        color: "#1A3B19",
+                                                        fontStyle: 'Toronto Subway W01 Regular'
                                                     },
                                                     itemProp: "serviceType",
                                                     children: "Tired Of High Fuel Costs and Unreliable Rides?"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 401,
+                                                    lineNumber: 428,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10145,25 +9669,25 @@ function RentalEbikes() {
                                                         "Beyond Bikes is your smarter,greener, and more affordable way to mave through Victoria.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 406,
+                                                            lineNumber: 433,
                                                             columnNumber: 17
                                                         }, this),
                                                         "Trusted by delivery riders,students,and city explorers."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 404,
+                                                    lineNumber: 431,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 395,
+                                            lineNumber: 420,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 394,
+                                        lineNumber: 419,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10173,14 +9697,21 @@ function RentalEbikes() {
                                             itemScope: true,
                                             itemType: "https://schema.org/Service",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-lightning-charge fs-1 mb-3",
-                                                    style: {
-                                                        color: "#1A3B19"
-                                                    }
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "icon-circle mb-3",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "bi bi-lightning-charge fs-1",
+                                                        style: {
+                                                            color: "#1A3B19"
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/rental/page.js",
+                                                        lineNumber: 447,
+                                                        columnNumber: 15
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 419,
+                                                    lineNumber: 446,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -10192,7 +9723,7 @@ function RentalEbikes() {
                                                     children: "SMOOTH ELECTRIC RIDE - NO GEARS, NO STRESS"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 420,
+                                                    lineNumber: 448,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10205,25 +9736,25 @@ function RentalEbikes() {
                                                         "Our e-bikes are designed for simplicity.Just hop on and go — no clutch, no fuel, no hassle.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 425,
+                                                            lineNumber: 453,
                                                             columnNumber: 1
                                                         }, this),
                                                         "Glide through traffic with ease and comfort.              "
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 423,
+                                                    lineNumber: 451,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 414,
+                                            lineNumber: 441,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 413,
+                                        lineNumber: 440,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10233,14 +9764,21 @@ function RentalEbikes() {
                                             itemScope: true,
                                             itemType: "https://schema.org/Service",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-cash-coin fs-1 mb-3",
-                                                    style: {
-                                                        color: "#1A3B19"
-                                                    }
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "icon-circle mb-3",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "bi bi-cash-coin fs-1",
+                                                        style: {
+                                                            color: "#1A3B19"
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/rental/page.js",
+                                                        lineNumber: 466,
+                                                        columnNumber: 15
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 437,
+                                                    lineNumber: 465,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -10252,7 +9790,7 @@ function RentalEbikes() {
                                                     children: "SAVE FUEL. SAVE MONEY."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 438,
+                                                    lineNumber: 467,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10265,41 +9803,41 @@ function RentalEbikes() {
                                                         "WHY SPEND MORE?",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 444,
+                                                            lineNumber: 473,
                                                             columnNumber: 17
                                                         }, this),
                                                         "Get your ride at just $65/week — Includes everything you need.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 447,
+                                                            lineNumber: 476,
                                                             columnNumber: 1
                                                         }, this),
                                                         "No fuel. No extra maintenance."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 441,
+                                                    lineNumber: 470,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 432,
+                                            lineNumber: 460,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 431,
+                                        lineNumber: 459,
                                         columnNumber: 11
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 392,
+                                lineNumber: 417,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row g-4",
+                                className: "row mt-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "col-12 col-md-4",
@@ -10308,14 +9846,21 @@ function RentalEbikes() {
                                             itemScope: true,
                                             itemType: "https://schema.org/Service",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-geo-alt fs-1 mb-3",
-                                                    style: {
-                                                        color: "#1A3B19"
-                                                    }
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "icon-circle mb-3",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "bi bi-geo-alt fs-1",
+                                                        style: {
+                                                            color: "#1A3B19"
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/rental/page.js",
+                                                        lineNumber: 491,
+                                                        columnNumber: 15
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 461,
+                                                    lineNumber: 490,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -10327,7 +9872,7 @@ function RentalEbikes() {
                                                     children: "BUILT FOR AUSTRALIAN LIFE"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 462,
+                                                    lineNumber: 492,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10340,31 +9885,31 @@ function RentalEbikes() {
                                                         "Whether you are:",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 468,
+                                                            lineNumber: 498,
                                                             columnNumber: 17
                                                         }, this),
                                                         "A food delivery rider, A student commuting to campus, Exploring the city on weekends.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 472,
+                                                            lineNumber: 502,
                                                             columnNumber: 3
                                                         }, this),
                                                         "Beyond Bikes fits your lifestyle."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 466,
+                                                    lineNumber: 496,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 456,
+                                            lineNumber: 485,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 455,
+                                        lineNumber: 484,
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10374,14 +9919,21 @@ function RentalEbikes() {
                                             itemScope: true,
                                             itemType: "https://schema.org/Service",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                    className: "bi bi-calendar-check fs-1 mb-3",
-                                                    style: {
-                                                        color: "#1A3B19"
-                                                    }
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "icon-circle mb-3",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "bi bi-calendar-check fs-1",
+                                                        style: {
+                                                            color: "#1A3B19"
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/rental/page.js",
+                                                        lineNumber: 516,
+                                                        columnNumber: 15
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 485,
+                                                    lineNumber: 515,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -10393,7 +9945,7 @@ function RentalEbikes() {
                                                     children: "FREE TEST RIDE + EASY BOOKING"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 486,
+                                                    lineNumber: 517,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -10406,54 +9958,55 @@ function RentalEbikes() {
                                                         "Still unsure? Try it first! ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/app/rental/page.js",
-                                                            lineNumber: 491,
+                                                            lineNumber: 521,
                                                             columnNumber: 29
                                                         }, this),
-                                                        "Free Test Ride Available Call/WhatsApp: +61 422 032 961 DM us now to book & start riding smarter!             "
+                                                        "Free Test Ride Available Call/WhatsApp: +61 422 032 961 DM us now to book & start riding smarter!"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
-                                                    lineNumber: 490,
+                                                    lineNumber: 520,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 480,
+                                            lineNumber: 510,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/rental/page.js",
-                                        lineNumber: 479,
+                                        lineNumber: 509,
                                         columnNumber: 11
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/rental/page.js",
-                                lineNumber: 453,
+                                lineNumber: 482,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 370,
+                        lineNumber: 396,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "bg-white",
+                        className: "bg-white scroll-animate",
                         id: "bikes-for-rent",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "container px-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "fw-bold mb-4",
+                                    className: "fw-bolder mb-4 heading-underline",
                                     style: {
-                                        color: "#1a3b19"
+                                        color: "#1a3b19",
+                                        textAlign: 'center'
                                     },
                                     children: "Bikes For Rent"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/rental/page.js",
-                                    lineNumber: 504,
+                                    lineNumber: 534,
                                     columnNumber: 5
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10469,7 +10022,7 @@ function RentalEbikes() {
                                                 batterylife: "48V 50A",
                                                 topspeed: "45 MPH"
                                             },
-                                            price: "60.00 AUD"
+                                            price: "65.00 AUD"
                                         },
                                         {
                                             name: "E-bike 8-10h",
@@ -10481,7 +10034,7 @@ function RentalEbikes() {
                                                 batterylife: "48V 70A",
                                                 topspeed: "45 MPH"
                                             },
-                                            price: "65.00 AUD"
+                                            price: "70.00 AUD"
                                         },
                                         {
                                             name: "E-bike 10-12h",
@@ -10491,6 +10044,42 @@ function RentalEbikes() {
                                                 batteryhours: "10-12 hours",
                                                 motor: 500,
                                                 batterylife: "48V 80A",
+                                                topspeed: "45 MPH"
+                                            },
+                                            price: "80.00 AUD"
+                                        },
+                                        {
+                                            name: "White E-bike",
+                                            img: "/images/White-E-bike-Product.png",
+                                            alt: "E-bike 8-10h",
+                                            specs: {
+                                                batteryhours: "10-12 hours",
+                                                motor: 500,
+                                                batterylife: "48V 70A",
+                                                topspeed: "45 MPH"
+                                            },
+                                            price: "70.00 AUD"
+                                        },
+                                        {
+                                            name: "Black E-bike",
+                                            img: "/images/Latest-Black-Cycle-Product-26-09.png",
+                                            alt: "E-bike 8-10h",
+                                            specs: {
+                                                batteryhours: "10-12 hours",
+                                                motor: 500,
+                                                batterylife: "48V 70A",
+                                                topspeed: "45 MPH"
+                                            },
+                                            price: "80.00 AUD"
+                                        },
+                                        {
+                                            name: "Red E-bike",
+                                            img: "/images/24-09-Red-Cycle-Product-Latest.png",
+                                            alt: "E-bike 8-10h",
+                                            specs: {
+                                                batteryhours: "12-15 hours",
+                                                motor: 500,
+                                                batterylife: "48V 70A",
                                                 topspeed: "45 MPH"
                                             },
                                             price: "70.00 AUD"
@@ -10510,7 +10099,7 @@ function RentalEbikes() {
                                                         itemProp: "image"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 556,
+                                                        lineNumber: 623,
                                                         columnNumber: 13
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10525,7 +10114,7 @@ function RentalEbikes() {
                                                                 children: bike.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/rental/page.js",
-                                                                lineNumber: 567,
+                                                                lineNumber: 634,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -10540,7 +10129,7 @@ function RentalEbikes() {
                                                                             content: "USD"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/rental/page.js",
-                                                                            lineNumber: 582,
+                                                                            lineNumber: 649,
                                                                             columnNumber: 19
                                                                         }, this),
                                                                         "$",
@@ -10549,18 +10138,18 @@ function RentalEbikes() {
                                                                             children: bike.price
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/rental/page.js",
-                                                                            lineNumber: 583,
+                                                                            lineNumber: 650,
                                                                             columnNumber: 19
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/rental/page.js",
-                                                                    lineNumber: 577,
+                                                                    lineNumber: 644,
                                                                     columnNumber: 17
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/rental/page.js",
-                                                                lineNumber: 575,
+                                                                lineNumber: 642,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -10572,7 +10161,7 @@ function RentalEbikes() {
                                                                         children: "Battery Hours"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 592,
+                                                                        lineNumber: 659,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -10580,7 +10169,7 @@ function RentalEbikes() {
                                                                         children: bike.specs.batteryhours
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 593,
+                                                                        lineNumber: 660,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
@@ -10588,7 +10177,7 @@ function RentalEbikes() {
                                                                         children: "Battery Life"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 595,
+                                                                        lineNumber: 662,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -10596,7 +10185,7 @@ function RentalEbikes() {
                                                                         children: bike.specs.batterylife
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 596,
+                                                                        lineNumber: 663,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
@@ -10604,7 +10193,7 @@ function RentalEbikes() {
                                                                         children: "Motor"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 598,
+                                                                        lineNumber: 665,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -10612,7 +10201,7 @@ function RentalEbikes() {
                                                                         children: bike.specs.motor
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 599,
+                                                                        lineNumber: 666,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
@@ -10620,7 +10209,7 @@ function RentalEbikes() {
                                                                         children: "Top Speed"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 601,
+                                                                        lineNumber: 668,
                                                                         columnNumber: 17
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -10628,13 +10217,13 @@ function RentalEbikes() {
                                                                         children: bike.specs.topspeed
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/rental/page.js",
-                                                                        lineNumber: 602,
+                                                                        lineNumber: 669,
                                                                         columnNumber: 17
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/rental/page.js",
-                                                                lineNumber: 588,
+                                                                lineNumber: 655,
                                                                 columnNumber: 15
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -10644,44 +10233,44 @@ function RentalEbikes() {
                                                                 children: "Rent Bike"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/rental/page.js",
-                                                                lineNumber: 611,
+                                                                lineNumber: 678,
                                                                 columnNumber: 15
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 565,
+                                                        lineNumber: 632,
                                                         columnNumber: 13
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 554,
+                                                lineNumber: 621,
                                                 columnNumber: 11
                                             }, this)
                                         }, idx, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 548,
+                                            lineNumber: 615,
                                             columnNumber: 9
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/rental/page.js",
-                                    lineNumber: 508,
+                                    lineNumber: 538,
                                     columnNumber: 5
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/rental/page.js",
-                            lineNumber: 503,
+                            lineNumber: 533,
                             columnNumber: 3
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 502,
+                        lineNumber: 532,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "py-5",
+                        className: "py-5 scroll-animate",
                         "aria-label": "Accessories Provided",
                         itemScope: true,
                         itemType: "https://schema.org/OfferCatalog",
@@ -10689,16 +10278,16 @@ function RentalEbikes() {
                             className: "container",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "fw-bold mb-4 text-center",
+                                    className: "fw-bold mb-4 text-center heading-underline",
                                     style: {
-                                        color: "#1a3b19",
+                                        color: "#1a3b19 !important",
                                         fontFamily: "system-ui"
                                     },
                                     itemProp: "name",
                                     children: "Accessories Provided"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/rental/page.js",
-                                    lineNumber: 646,
+                                    lineNumber: 713,
                                     columnNumber: 5
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -10717,7 +10306,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 654,
+                                                        lineNumber: 721,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -10726,18 +10315,18 @@ function RentalEbikes() {
                                                         children: "Helmet"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 655,
+                                                        lineNumber: 722,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 653,
+                                                lineNumber: 720,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 652,
+                                            lineNumber: 719,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -10753,7 +10342,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 662,
+                                                        lineNumber: 729,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -10762,18 +10351,18 @@ function RentalEbikes() {
                                                         children: "Delivery Bags"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 663,
+                                                        lineNumber: 730,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 661,
+                                                lineNumber: 728,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 660,
+                                            lineNumber: 727,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -10789,7 +10378,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 670,
+                                                        lineNumber: 737,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -10798,18 +10387,18 @@ function RentalEbikes() {
                                                         children: "GPS Tracker"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 671,
+                                                        lineNumber: 738,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 669,
+                                                lineNumber: 736,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 668,
+                                            lineNumber: 735,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -10825,7 +10414,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 678,
+                                                        lineNumber: 745,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -10834,18 +10423,18 @@ function RentalEbikes() {
                                                         children: "Bike Lock"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 679,
+                                                        lineNumber: 746,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 677,
+                                                lineNumber: 744,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 676,
+                                            lineNumber: 743,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -10861,7 +10450,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 686,
+                                                        lineNumber: 753,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -10870,18 +10459,18 @@ function RentalEbikes() {
                                                         children: "Battery Lock"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 687,
+                                                        lineNumber: 754,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 685,
+                                                lineNumber: 752,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 684,
+                                            lineNumber: 751,
                                             columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -10897,7 +10486,7 @@ function RentalEbikes() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 694,
+                                                        lineNumber: 761,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -10906,52 +10495,52 @@ function RentalEbikes() {
                                                         children: "Charger"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/rental/page.js",
-                                                        lineNumber: 695,
+                                                        lineNumber: 762,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/rental/page.js",
-                                                lineNumber: 693,
+                                                lineNumber: 760,
                                                 columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/rental/page.js",
-                                            lineNumber: 692,
+                                            lineNumber: 759,
                                             columnNumber: 7
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/rental/page.js",
-                                    lineNumber: 649,
+                                    lineNumber: 716,
                                     columnNumber: 5
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/rental/page.js",
-                            lineNumber: 645,
+                            lineNumber: 712,
                             columnNumber: 3
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/rental/page.js",
-                        lineNumber: 639,
+                        lineNumber: 706,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/rental/page.js",
-                lineNumber: 289,
+                lineNumber: 341,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/rental/page.js",
-                lineNumber: 706,
+                lineNumber: 773,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(RentalEbikes, "gepvbwYNyqMYgzcp/JaINWjmXuo=", false, function() {
+_s(RentalEbikes, "eAp96GmdsCYoVFooy/G5s7KNkw4=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
@@ -11347,6 +10936,86 @@ function Review() {
             })["Review.useEffect"];
         }
     }["Review.useEffect"], []);
+    // ✅ Scroll animation effect
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Review.useEffect": ()=>{
+            const elements = document.querySelectorAll(".scroll-animate");
+            const observer = new IntersectionObserver({
+                "Review.useEffect": (entries)=>{
+                    entries.forEach({
+                        "Review.useEffect": (entry)=>{
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("in-view");
+                            }
+                        }
+                    }["Review.useEffect"]);
+                }
+            }["Review.useEffect"], {
+                threshold: 0.2
+            } // 20% visible = trigger animation
+            );
+            elements.forEach({
+                "Review.useEffect": (el)=>observer.observe(el)
+            }["Review.useEffect"]);
+            return ({
+                "Review.useEffect": ()=>{
+                    elements.forEach({
+                        "Review.useEffect": (el)=>observer.unobserve(el)
+                    }["Review.useEffect"]);
+                }
+            })["Review.useEffect"];
+        }
+    }["Review.useEffect"], []);
+    // ✅ Enable drag-to-scroll on desktop
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Review.useEffect": ()=>{
+            const track = document.querySelector(".review-track");
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            const handleMouseDown = {
+                "Review.useEffect.handleMouseDown": (e)=>{
+                    isDown = true;
+                    track.classList.add("active");
+                    startX = e.pageX - track.offsetLeft;
+                    scrollLeft = track.scrollLeft;
+                }
+            }["Review.useEffect.handleMouseDown"];
+            const handleMouseLeave = {
+                "Review.useEffect.handleMouseLeave": ()=>{
+                    isDown = false;
+                    track.classList.remove("active");
+                }
+            }["Review.useEffect.handleMouseLeave"];
+            const handleMouseUp = {
+                "Review.useEffect.handleMouseUp": ()=>{
+                    isDown = false;
+                    track.classList.remove("active");
+                }
+            }["Review.useEffect.handleMouseUp"];
+            const handleMouseMove = {
+                "Review.useEffect.handleMouseMove": (e)=>{
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - track.offsetLeft;
+                    const walk = (x - startX) * 1.5; // drag speed
+                    track.scrollLeft = scrollLeft - walk;
+                }
+            }["Review.useEffect.handleMouseMove"];
+            track.addEventListener("mousedown", handleMouseDown);
+            track.addEventListener("mouseleave", handleMouseLeave);
+            track.addEventListener("mouseup", handleMouseUp);
+            track.addEventListener("mousemove", handleMouseMove);
+            return ({
+                "Review.useEffect": ()=>{
+                    track.removeEventListener("mousedown", handleMouseDown);
+                    track.removeEventListener("mouseleave", handleMouseLeave);
+                    track.removeEventListener("mouseup", handleMouseUp);
+                    track.removeEventListener("mousemove", handleMouseMove);
+                }
+            })["Review.useEffect"];
+        }
+    }["Review.useEffect"], []);
     const renderStars = (count)=>'★'.repeat(count) + '☆'.repeat(5 - count);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -11356,7 +11025,7 @@ function Review() {
                         children: "Customer Reviews - Beyond Bikes E-bike Rentals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 391,
+                        lineNumber: 457,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11364,7 +11033,7 @@ function Review() {
                         content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 392,
+                        lineNumber: 458,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11372,7 +11041,7 @@ function Review() {
                         content: "index, follow"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 396,
+                        lineNumber: 462,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -11380,7 +11049,7 @@ function Review() {
                         href: "https://www.beyondbikes.com.au/reviews"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 397,
+                        lineNumber: 463,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11388,7 +11057,7 @@ function Review() {
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 400,
+                        lineNumber: 466,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11396,7 +11065,7 @@ function Review() {
                         content: "Customer Reviews - Beyond Bikes E-bike Rentals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 401,
+                        lineNumber: 467,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11404,7 +11073,7 @@ function Review() {
                         content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 402,
+                        lineNumber: 468,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11412,7 +11081,7 @@ function Review() {
                         content: "https://www.beyondbikes.com.au/reviews"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 403,
+                        lineNumber: 469,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11420,7 +11089,7 @@ function Review() {
                         content: "https://www.beyondbikes.com.au/images/reviews-og-image.png"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 404,
+                        lineNumber: 470,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11428,7 +11097,7 @@ function Review() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 407,
+                        lineNumber: 473,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11436,7 +11105,7 @@ function Review() {
                         content: "Customer Reviews - Beyond Bikes E-bike Rentals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 408,
+                        lineNumber: 474,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11444,7 +11113,7 @@ function Review() {
                         content: "Read authentic customer reviews about Beyond Bikes' e-bike rentals. See why students love our service in Melbourne."
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 409,
+                        lineNumber: 475,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11452,7 +11121,7 @@ function Review() {
                         content: "https://www.beyondbikes.com.au/images/reviews-og-image.png"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 410,
+                        lineNumber: 476,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -11494,27 +11163,27 @@ function Review() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 413,
+                        lineNumber: 479,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/review/page.js",
-                lineNumber: 390,
+                lineNumber: 456,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 className: "container px-3 py-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-center pt-3 pb-5",
+                        className: "text-center fs-1 fw-bold pt-3 pb-5 heading-underline-customer",
                         style: {
                             color: '#1A3B19'
                         },
                         children: "Customer Reviews"
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 451,
+                        lineNumber: 517,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -11523,7 +11192,7 @@ function Review() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "review-track",
                             children: team.map((member, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                    className: "review-card",
+                                    className: "review-card scroll-animate",
                                     itemScope: true,
                                     itemType: "https://schema.org/Review",
                                     "aria-labelledby": `review-title-${index}`,
@@ -11555,12 +11224,12 @@ function Review() {
                                                     priority: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/review/page.js",
-                                                    lineNumber: 481,
+                                                    lineNumber: 547,
                                                     columnNumber: 13
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 470,
+                                                lineNumber: 536,
                                                 columnNumber: 11
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11578,7 +11247,7 @@ function Review() {
                                                         content: member.rating.toString()
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/review/page.js",
-                                                        lineNumber: 497,
+                                                        lineNumber: 563,
                                                         columnNumber: 13
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11586,14 +11255,14 @@ function Review() {
                                                         content: "5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/review/page.js",
-                                                        lineNumber: 498,
+                                                        lineNumber: 564,
                                                         columnNumber: 13
                                                     }, this),
                                                     renderStars(member.rating)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 491,
+                                                lineNumber: 557,
                                                 columnNumber: 11
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -11606,7 +11275,7 @@ function Review() {
                                                 children: member.reviewdescription
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 502,
+                                                lineNumber: 568,
                                                 columnNumber: 11
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11625,34 +11294,34 @@ function Review() {
                                                         children: member.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/review/page.js",
-                                                        lineNumber: 517,
+                                                        lineNumber: 583,
                                                         columnNumber: 15
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/review/page.js",
-                                                lineNumber: 510,
+                                                lineNumber: 576,
                                                 columnNumber: 11
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/review/page.js",
-                                        lineNumber: 466,
+                                        lineNumber: 532,
                                         columnNumber: 9
                                     }, this)
                                 }, index, false, {
                                     fileName: "[project]/src/app/review/page.js",
-                                    lineNumber: 459,
+                                    lineNumber: 525,
                                     columnNumber: 7
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/review/page.js",
-                            lineNumber: 457,
+                            lineNumber: 523,
                             columnNumber: 3
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 456,
+                        lineNumber: 522,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -11661,24 +11330,24 @@ function Review() {
                                 className: `dot ${activeIndex === index ? "active" : ""}`
                             }, index, false, {
                                 fileName: "[project]/src/app/review/page.js",
-                                lineNumber: 527,
+                                lineNumber: 593,
                                 columnNumber: 7
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/review/page.js",
-                        lineNumber: 525,
+                        lineNumber: 591,
                         columnNumber: 1
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/review/page.js",
-                lineNumber: 450,
+                lineNumber: 516,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(Review, "16En7kR7TbAJMjBrm+xutVNIc5Q=");
+_s(Review, "4So68MlXuOrMJPKYbjGDxnh6Lfw=");
 _c = Review;
 var _c;
 __turbopack_context__.k.register(_c, "Review");
@@ -11845,16 +11514,49 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/components/noop-head.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 ;
 ;
 function AmazingOffers() {
+    _s();
     const pageTitle = "Student Deals | Beyond Bikes Melbourne | Special Offers";
     const pageDescription = "Discover exclusive student deals at Beyond Bikes Melbourne. Special discounts on e-bike accessories including caps, helmets, and T-shirts. Limited time offers!";
     const pageUrl = "https://www.beyondbikes.com.au/amazing-offers";
     const pageImage = "https://www.beyondbikes.com.au/images/helmetebikes.jpeg";
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "AmazingOffers.useEffect": ()=>{
+            const elements = document.querySelectorAll(".scroll-animate");
+            const observer = new IntersectionObserver({
+                "AmazingOffers.useEffect": (entries)=>{
+                    entries.forEach({
+                        "AmazingOffers.useEffect": (entry)=>{
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("in-view");
+                            }
+                        }
+                    }["AmazingOffers.useEffect"]);
+                }
+            }["AmazingOffers.useEffect"], {
+                threshold: 0.2
+            } // trigger when 20% visible
+            );
+            elements.forEach({
+                "AmazingOffers.useEffect": (el)=>observer.observe(el)
+            }["AmazingOffers.useEffect"]);
+            return ({
+                "AmazingOffers.useEffect": ()=>{
+                    elements.forEach({
+                        "AmazingOffers.useEffect": (el)=>observer.unobserve(el)
+                    }["AmazingOffers.useEffect"]);
+                }
+            })["AmazingOffers.useEffect"];
+        }
+    }["AmazingOffers.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -11863,7 +11565,7 @@ function AmazingOffers() {
                         children: pageTitle
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 189,
+                        lineNumber: 213,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11871,7 +11573,7 @@ function AmazingOffers() {
                         content: pageDescription
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 190,
+                        lineNumber: 214,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11879,7 +11581,7 @@ function AmazingOffers() {
                         content: "student deals Melbourne, beyond bikes offers, e-bike accessories, helmet discount, cap discount, T-shirt discount"
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 191,
+                        lineNumber: 215,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11887,7 +11589,7 @@ function AmazingOffers() {
                         content: "index, follow"
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 192,
+                        lineNumber: 216,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11895,7 +11597,7 @@ function AmazingOffers() {
                         content: "width=device-width, initial-scale=1"
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 193,
+                        lineNumber: 217,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -11903,7 +11605,7 @@ function AmazingOffers() {
                         href: pageUrl
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 194,
+                        lineNumber: 218,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11911,7 +11613,7 @@ function AmazingOffers() {
                         content: "website"
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 197,
+                        lineNumber: 221,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11919,7 +11621,7 @@ function AmazingOffers() {
                         content: pageTitle
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 198,
+                        lineNumber: 222,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11927,7 +11629,7 @@ function AmazingOffers() {
                         content: pageDescription
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 199,
+                        lineNumber: 223,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11935,7 +11637,7 @@ function AmazingOffers() {
                         content: pageUrl
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 200,
+                        lineNumber: 224,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11943,7 +11645,7 @@ function AmazingOffers() {
                         content: pageImage
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 201,
+                        lineNumber: 225,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11951,7 +11653,7 @@ function AmazingOffers() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 204,
+                        lineNumber: 228,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11959,7 +11661,7 @@ function AmazingOffers() {
                         content: pageTitle
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 205,
+                        lineNumber: 229,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11967,7 +11669,7 @@ function AmazingOffers() {
                         content: pageDescription
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 206,
+                        lineNumber: 230,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -11975,7 +11677,7 @@ function AmazingOffers() {
                         content: pageImage
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 207,
+                        lineNumber: 231,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -12007,17 +11709,17 @@ function AmazingOffers() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 210,
+                        lineNumber: 234,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/amazingoffers/page.js",
-                lineNumber: 187,
+                lineNumber: 211,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "hero-section",
+                className: "hero-section scroll-animate",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
                         children: [
@@ -12030,7 +11732,7 @@ function AmazingOffers() {
                                 children: "Students Deal"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/amazingoffers/page.js",
-                                lineNumber: 242,
+                                lineNumber: 266,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -12038,17 +11740,17 @@ function AmazingOffers() {
                                 children: "Coming Soon..."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/amazingoffers/page.js",
-                                lineNumber: 243,
+                                lineNumber: 267,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 241,
+                        lineNumber: 265,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "food-container",
+                        className: "food-container scroll-animate",
                         role: "list",
                         children: foodData.map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                                 className: "food-item",
@@ -12064,12 +11766,12 @@ function AmazingOffers() {
                                             loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/amazingoffers/page.js",
-                                            lineNumber: 250,
+                                            lineNumber: 274,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/amazingoffers/page.js",
-                                        lineNumber: 249,
+                                        lineNumber: 273,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -12080,29 +11782,30 @@ function AmazingOffers() {
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/amazingoffers/page.js",
-                                        lineNumber: 258,
+                                        lineNumber: 282,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, idx, true, {
                                 fileName: "[project]/src/app/amazingoffers/page.js",
-                                lineNumber: 248,
+                                lineNumber: 272,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/amazingoffers/page.js",
-                        lineNumber: 246,
+                        lineNumber: 270,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/amazingoffers/page.js",
-                lineNumber: 240,
+                lineNumber: 264,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
+_s(AmazingOffers, "OD7bBpZva5O2jO+Puf00hKivP7c=");
 _c = AmazingOffers;
 const foodData = [
     {
@@ -12149,7 +11852,7 @@ function TermAndCondition() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("title", {
-                        className: "jsx-a094cb095ac335dd",
+                        className: "jsx-29c7e6a7a9c68248",
                         children: "Terms And Condition | Your Brand"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12159,7 +11862,7 @@ function TermAndCondition() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "description",
                         content: "Read the Terms of Service for using Your Brand's website, services, and products.",
-                        className: "jsx-a094cb095ac335dd"
+                        className: "jsx-29c7e6a7a9c68248"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
                         lineNumber: 12,
@@ -12168,7 +11871,7 @@ function TermAndCondition() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "robots",
                         content: "index, follow",
-                        className: "jsx-a094cb095ac335dd"
+                        className: "jsx-29c7e6a7a9c68248"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
                         lineNumber: 16,
@@ -12177,7 +11880,7 @@ function TermAndCondition() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:title",
                         content: "Terms of Service | Your Brand",
-                        className: "jsx-a094cb095ac335dd"
+                        className: "jsx-29c7e6a7a9c68248"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
                         lineNumber: 17,
@@ -12186,7 +11889,7 @@ function TermAndCondition() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:description",
                         content: "Official Terms of Service for Your Brand.",
-                        className: "jsx-a094cb095ac335dd"
+                        className: "jsx-29c7e6a7a9c68248"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
                         lineNumber: 18,
@@ -12195,7 +11898,7 @@ function TermAndCondition() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:type",
                         content: "website",
-                        className: "jsx-a094cb095ac335dd"
+                        className: "jsx-29c7e6a7a9c68248"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
                         lineNumber: 22,
@@ -12204,7 +11907,7 @@ function TermAndCondition() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
                         rel: "canonical",
                         href: "https://yourwebsite.com/terms-of-service",
-                        className: "jsx-a094cb095ac335dd"
+                        className: "jsx-29c7e6a7a9c68248"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
                         lineNumber: 23,
@@ -12224,18 +11927,18 @@ function TermAndCondition() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
                 style: {
                     height: '40vh',
-                    backgroundImage: "url('/images/Terms-condition-background.jpg')",
+                    backgroundImage: "url('/images/Latest-termsandcondition.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat"
                 },
-                className: "jsx-a094cb095ac335dd" + " " + "py-5 text-center position-relative",
+                className: "jsx-29c7e6a7a9c68248" + " " + "py-5 text-center position-relative",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         style: {
                             color: '#1a3b19'
                         },
-                        className: "jsx-a094cb095ac335dd" + " " + "fw-bold",
+                        className: "jsx-29c7e6a7a9c68248" + " " + "fw-bold",
                         children: "TERMS AND CONDITIONS"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12246,7 +11949,7 @@ function TermAndCondition() {
                         style: {
                             color: '#1a3b19'
                         },
-                        className: "jsx-a094cb095ac335dd" + " " + "mb-0",
+                        className: "jsx-29c7e6a7a9c68248" + " " + "mb-0",
                         children: "Updated August 25, 2025"
                     }, void 0, false, {
                         fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12260,17 +11963,17 @@ function TermAndCondition() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "jsx-a094cb095ac335dd" + " " + "container",
+                className: "jsx-29c7e6a7a9c68248" + " " + "container",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-a094cb095ac335dd" + " " + "card shadow-lg terms-card mx-auto p-4",
+                    className: "jsx-29c7e6a7a9c68248" + " " + "card shadow-lg terms-card mx-auto p-4",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-a094cb095ac335dd" + " " + "card-body",
+                        className: "jsx-29c7e6a7a9c68248" + " " + "card-body",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 style: {
                                     color: '#1a3b19'
                                 },
-                                className: "jsx-a094cb095ac335dd" + " " + "fw-bold text-center mb-4",
+                                className: "jsx-29c7e6a7a9c68248" + " " + "fw-bold text-center mb-4",
                                 children: "Rental Terms & Conditions"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12278,16 +11981,16 @@ function TermAndCondition() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
-                                className: "jsx-a094cb095ac335dd" + " " + "list-group list-group-flush mb-4",
+                                className: "jsx-29c7e6a7a9c68248" + " " + "list-group list-group-flush mb-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         style: {
                                             border: 'none'
                                         },
-                                        className: "jsx-a094cb095ac335dd" + " " + "list-group-item",
+                                        className: "jsx-29c7e6a7a9c68248" + " " + "list-group-item",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                className: "jsx-a094cb095ac335dd",
+                                                className: "jsx-29c7e6a7a9c68248",
                                                 children: "1."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12305,10 +12008,10 @@ function TermAndCondition() {
                                         style: {
                                             border: 'none'
                                         },
-                                        className: "jsx-a094cb095ac335dd" + " " + "list-group-item",
+                                        className: "jsx-29c7e6a7a9c68248" + " " + "list-group-item",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                className: "jsx-a094cb095ac335dd",
+                                                className: "jsx-29c7e6a7a9c68248",
                                                 children: "2."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12326,10 +12029,10 @@ function TermAndCondition() {
                                         style: {
                                             border: 'none'
                                         },
-                                        className: "jsx-a094cb095ac335dd" + " " + "list-group-item",
+                                        className: "jsx-29c7e6a7a9c68248" + " " + "list-group-item",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                className: "jsx-a094cb095ac335dd",
+                                                className: "jsx-29c7e6a7a9c68248",
                                                 children: "3."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12347,10 +12050,10 @@ function TermAndCondition() {
                                         style: {
                                             border: 'none'
                                         },
-                                        className: "jsx-a094cb095ac335dd" + " " + "list-group-item",
+                                        className: "jsx-29c7e6a7a9c68248" + " " + "list-group-item",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                className: "jsx-a094cb095ac335dd",
+                                                className: "jsx-29c7e6a7a9c68248",
                                                 children: "4."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12368,10 +12071,10 @@ function TermAndCondition() {
                                         style: {
                                             border: 'none'
                                         },
-                                        className: "jsx-a094cb095ac335dd" + " " + "list-group-item",
+                                        className: "jsx-29c7e6a7a9c68248" + " " + "list-group-item",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                className: "jsx-a094cb095ac335dd",
+                                                className: "jsx-29c7e6a7a9c68248",
                                                 children: "5."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12389,10 +12092,10 @@ function TermAndCondition() {
                                         style: {
                                             border: 'none'
                                         },
-                                        className: "jsx-a094cb095ac335dd" + " " + "list-group-item",
+                                        className: "jsx-29c7e6a7a9c68248" + " " + "list-group-item",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                className: "jsx-a094cb095ac335dd",
+                                                className: "jsx-29c7e6a7a9c68248",
                                                 children: "6."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/termsandcondition/page.js",
@@ -12434,8 +12137,8 @@ function TermAndCondition() {
                 columnNumber: 1
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "a094cb095ac335dd",
-                children: ".terms-card.jsx-a094cb095ac335dd{background:#fff;border-radius:12px;max-width:900px;margin-top:-120px;margin-bottom:50px}"
+                id: "29c7e6a7a9c68248",
+                children: ".terms-card.jsx-29c7e6a7a9c68248{background:#fff;border-radius:12px;max-width:900px;margin-top:-120px;margin-bottom:50px}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true);
