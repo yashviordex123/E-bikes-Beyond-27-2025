@@ -214,4 +214,29 @@
   --i: 6;
 }
 
+.rent-now-payment {
+  letter-spacing: .5px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1a3b19, #2f5a2c);
+  border: none;
+  border-radius: 6px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.Checkout-email {
+  color: green;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=src_app_globals_css_f9ee138c._.single.css.map*/
