@@ -2,22 +2,22 @@
   "Lastest Products": [
     {
       "id": 1,
-      "name": "E-bike 6-8h",
+      "name": "E-bike 4-6h",
       "image": "/images/Cartoon-Cycle-remove-text-latest.png",
       "price": "$65.00 AUD",
       "oldPrice": "$70.00 AUD",
       "battery": "48V 50A",
-      "batteryHours": "6-8 hrs",
+      "batteryHours": "4-6 hrs",
       "topSpeed": "45 MPH"
     },
     {
       "id": 2,
-      "name": "E-bike 8-10h",
+      "name": "E-bike 6-8h",
       "image": "/images/Product-images-beyond-bikes-product-one-crop (3).png",
       "price": "$70.00 AUD",
       "oldPrice": "$80.00 AUD",
       "battery": "48V 70A",
-      "batteryHours": "8-10 hrs",
+      "batteryHours": "6-8 hrs",
       "topSpeed": "45 MPH"
     }
     ,

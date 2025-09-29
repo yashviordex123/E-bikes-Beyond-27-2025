@@ -10,7 +10,7 @@ import ContactPage from './components/ContactPage'
 import About from './about/page';
 import Footer from './components/Footer'
 // import ProductPage from './components/ProductDetails'
-import ProductPage from './E-bike-8-10h/page'
+import ProductPage from './E-bike-6-8h/page'
 // import WarrantyPage from './components/Warranty'
 // import Contact from './components/Contact'
 import Contact from './contact/page';

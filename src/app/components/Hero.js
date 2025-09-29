@@ -10,10 +10,10 @@ import '../styles/Hero.css';
 export default function Hero() {
   const router = useRouter();
   const images = [
-    // "/images/02-07-2025-Latest-Hero-1.jpg",
-    // "/images/Set-Product-Data-Background-Hero-28-06-2025-latest.jpg",
-    "/images/Latest-hero-05-09-first.jpg",
-    "/images/Latest-hero-05-09-second.jpg",
+    "/images/02-07-2025-Latest-Hero-1.jpg",
+    "/images/Set-Product-Data-Background-Hero-28-06-2025-latest.jpg",
+    // "/images/Latest-hero-05-09-first.jpg",
+    // "/images/Latest-hero-05-09-second.jpg",
   ];
 
   const titles = [

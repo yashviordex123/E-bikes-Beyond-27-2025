@@ -565,10 +565,8 @@ function Hero() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const images = [
-        // "/images/02-07-2025-Latest-Hero-1.jpg",
-        // "/images/Set-Product-Data-Background-Hero-28-06-2025-latest.jpg",
-        "/images/Latest-hero-05-09-first.jpg",
-        "/images/Latest-hero-05-09-second.jpg"
+        "/images/02-07-2025-Latest-Hero-1.jpg",
+        "/images/Set-Product-Data-Background-Hero-28-06-2025-latest.jpg"
     ];
     const titles = [
         "Beyond Bikes - Freedom <br /> to Explore, Power to <br /> Move.",
@@ -1801,7 +1799,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text-latest.png\",\"price\":\"$65.00 AUD\",\"oldPrice\":\"$70.00 AUD\",\"battery\":\"48V 50A\",\"batteryHours\":\"6-8 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":2,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 70A\",\"batteryHours\":\"8-10 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/Latest-Change-Angle-Red-Cycle-latest.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":4,\"name\":\"White E-bike\",\"image\":\"/images/White-E-bike-Product.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":5,\"name\":\"Black E-bike\",\"image\":\"/images/Latest-Black-Cycle-Product-26-09.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"12-15 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":6,\"name\":\"Red E-bike\",\"image\":\"/images/24-09-Red-Cycle-Product-Latest.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 AUD\",\"oldPrice\":\"$120.00 AUD\"}]}"));}}),
+__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 4-6h\",\"image\":\"/images/Cartoon-Cycle-remove-text-latest.png\",\"price\":\"$65.00 AUD\",\"oldPrice\":\"$70.00 AUD\",\"battery\":\"48V 50A\",\"batteryHours\":\"4-6 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":2,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 70A\",\"batteryHours\":\"6-8 hrs\",\"topSpeed\":\"45 MPH\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/Latest-Change-Angle-Red-Cycle-latest.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":4,\"name\":\"White E-bike\",\"image\":\"/images/White-E-bike-Product.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":5,\"name\":\"Black E-bike\",\"image\":\"/images/Latest-Black-Cycle-Product-26-09.png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"12-15 hours\",\"topSpeed\":\"45 MPH\"},{\"id\":6,\"name\":\"Red E-bike\",\"image\":\"/images/24-09-Red-Cycle-Product-Latest.png\",\"price\":\"$70.00 AUD\",\"oldPrice\":\"$80.00 AUD\",\"battery\":\"48V 80A\",\"batteryHours\":\"10-12 hours\",\"topSpeed\":\"45 MPH\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 AUD\",\"oldPrice\":\"$90.00 AUD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 AUD\",\"oldPrice\":\"$120.00 AUD\"}]}"));}}),
 "[project]/src/app/products/page.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -5070,7 +5068,7 @@ function ProductPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             className: "text-orange text-center fw-bold",
-                                            children: "E-Bike 8-10h"
+                                            children: "E-Bike 6-8h"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/E-bike-8-10h/page.js",
                                             lineNumber: 430,
@@ -9837,7 +9835,7 @@ function RentalEbikes() {
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row mt-4",
+                                className: "row g-sm-2 g-3 mt-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "col-12 col-md-4",
@@ -9961,7 +9959,19 @@ function RentalEbikes() {
                                                             lineNumber: 521,
                                                             columnNumber: 29
                                                         }, this),
-                                                        "Free Test Ride Available Call/WhatsApp: +61 422 032 961 DM us now to book & start riding smarter!"
+                                                        "Free Test Ride Available ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/app/rental/page.js",
+                                                            lineNumber: 522,
+                                                            columnNumber: 26
+                                                        }, this),
+                                                        "Call/WhatsApp: +61 422 032 961 ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/app/rental/page.js",
+                                                            lineNumber: 523,
+                                                            columnNumber: 32
+                                                        }, this),
+                                                        "DM us now to book & start riding smarter!"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",

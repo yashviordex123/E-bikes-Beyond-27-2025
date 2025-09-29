@@ -227,18 +227,18 @@ const features = [
 
   const bikes = [
     {
-      name: "E-bike 6-8h",
+      name: "E-bike 4-6h",
       battery: "48V 50A",
       price: 60,
-      hours: "6-8 hrs",
+      hours: "4-6 hrs",
       img: "/images/Cartoon-Cycle-remove-text-latest.png",
       alt: "Ebike100 rental"
     },
     {
-      name: "E-bike 8-10h",
+      name: "E-bike 6-8h",
       battery: "48V 70A",
       price: 65,
-      hours: "8-10 hrs",
+      hours: "6-8 hrs",
       img: "/images/Product-images-beyond-bikes-product-one-crop (3).png",
       alt: "Flyebike electric bike rental"
     },
@@ -479,7 +479,7 @@ No fuel. No extra maintenance.
             </div>
           </div>
         </div>
-        <div className="row mt-4">
+        <div className="row g-sm-2 g-3 mt-4">
           {/* Feature 1 */}
           <div className="col-12 col-md-4">
             <div
@@ -519,8 +519,8 @@ Beyond Bikes fits your lifestyle.
               </h3>
               <p className="text-muted small" style={{ fontFamily: "system-ui" }} itemProp="description">
 Still unsure? Try it first! <br />
-Free Test Ride Available
-Call/WhatsApp: +61 422 032 961
+Free Test Ride Available <br />
+Call/WhatsApp: +61 422 032 961 <br />
 DM us now to book & start riding smarter!</p>
             </div>
           </div>
@@ -591,7 +591,7 @@ DM us now to book & start riding smarter!</p>
           img: "/images/Latest-Black-Cycle-Product-26-09.png",
           alt: "E-bike 8-10h",
           specs: {
-            batteryhours: "10-12 hours",
+            batteryhours: "12-15 hours",
             motor: 500,
             batterylife: "48V 70A",
             topspeed: "45 MPH",

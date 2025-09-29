@@ -312,6 +312,7 @@ function Header() {
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false); // Loader state
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
+    const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false); // ✅ Scroll state
     const navLinks = [
         [
             '/',
@@ -334,12 +335,8 @@ function Header() {
             'About Us'
         ],
         [
-            '/basicknowledge',
-            'Privacy Policy'
-        ],
-        [
-            '/termsandcondition',
-            'Terms and Condition'
+            '/bookrent',
+            'Make a Payment'
         ]
     ];
     const handleNavClick = (href)=>{
@@ -350,6 +347,17 @@ function Header() {
             }, 100);
         }
     };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const handleScroll = ()=>{
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return ()=>window.removeEventListener("scroll", handleScroll);
+    }, []);
     // JSON-LD for Navigation (SEO)
     const jsonLd = {
         "@context": "https://schema.org",
@@ -367,12 +375,12 @@ function Header() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 333,
+                    lineNumber: 349,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 331,
+                lineNumber: 347,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -381,12 +389,12 @@ function Header() {
                     children: "Beyond Bikes"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 340,
+                    lineNumber: 356,
                     columnNumber: 39
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 340,
+                lineNumber: 356,
                 columnNumber: 7
             }, this),
             loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -412,21 +420,21 @@ function Header() {
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Header.js",
-                        lineNumber: 361,
+                        lineNumber: 377,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 355,
+                    lineNumber: 371,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 344,
+                lineNumber: 360,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-                className: "main-header w-100 sticky-top text-dark",
+                className: `main-header w-100 sticky-top text-dark ${scrolled ? "scrolled" : ""}`,
                 style: {
                     backgroundColor: '#1A3B19',
                     boxShadow: '0 4px 25px rgba(0, 0, 0, 0.8)',
@@ -436,9 +444,9 @@ function Header() {
                     className: "container position-relative py-sm-3 py-1 d-flex justify-content-between align-items-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/images/Latest-beyond-logo-12-08.png",
+                            src: "/images/15-09-Latest-Freedom-Logo-12-15.png",
                             alt: "Beyond Bikes Logo",
-                            className: "set-logo-height",
+                            className: `logo ${scrolled ? "logo-small" : ""}`,
                             onClick: ()=>{
                                 if (pathname !== '/') {
                                     setLoading(true);
@@ -449,7 +457,7 @@ function Header() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 375,
+                            lineNumber: 391,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -463,54 +471,79 @@ function Header() {
                                 alt: "menu-bar"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Header.js",
-                                lineNumber: 394,
+                                lineNumber: 410,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 389,
+                            lineNumber: 405,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                             className: "d-md-flex flex-grow-1 justify-content-end",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                 className: `nav flex-column flex-md-row text-center custom-nav set-bg-header ${menuOpen ? 'open' : ''}`,
-                                children: navLinks.map(([href, label], i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: "nav-item",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            role: "button",
-                                            onClick: ()=>handleNavClick(href),
-                                            className: `nav-link set-header-text ${pathname === href ? 'set-color-menu fw-bold' : 'text-light'}`,
-                                            children: label
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "nav-item d-md-none text-end mb-0 pb-0 pe-3",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "btn text-light fs-3",
+                                            onClick: ()=>setMenuOpen(false),
+                                            "aria-label": "Close menu",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "bi bi-x-lg"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/Header.js",
+                                                lineNumber: 430,
+                                                columnNumber: 5
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/Header.js",
-                                            lineNumber: 409,
-                                            columnNumber: 19
+                                            lineNumber: 425,
+                                            columnNumber: 3
                                         }, this)
-                                    }, i, false, {
+                                    }, void 0, false, {
                                         fileName: "[project]/src/app/components/Header.js",
-                                        lineNumber: 408,
-                                        columnNumber: 17
-                                    }, this))
-                            }, void 0, false, {
+                                        lineNumber: 424,
+                                        columnNumber: 15
+                                    }, this),
+                                    navLinks.map(([href, label], i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            className: "nav-item mt-0",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                role: "button",
+                                                onClick: ()=>handleNavClick(href),
+                                                className: `nav-link set-header-text ${pathname === href ? 'set-color-menu fw-bold' : 'text-light'}`,
+                                                children: label
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/Header.js",
+                                                lineNumber: 436,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, i, false, {
+                                            fileName: "[project]/src/app/components/Header.js",
+                                            lineNumber: 435,
+                                            columnNumber: 17
+                                        }, this))
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/app/components/Header.js",
-                                lineNumber: 403,
+                                lineNumber: 419,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.js",
-                            lineNumber: 402,
+                            lineNumber: 418,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/Header.js",
-                    lineNumber: 374,
+                    lineNumber: 390,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.js",
-                lineNumber: 366,
+                lineNumber: 382,
                 columnNumber: 7
             }, this)
         ]
@@ -867,7 +900,7 @@ function Footer() {
         setLoading(true);
         setTimeout(()=>{
             router.push(href);
-        }, 1000); // loader delay
+        }, 100); // loader delay
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -1350,7 +1383,7 @@ function Footer() {
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/instagram-latest.ddbe124c.svg");}}),
+__turbopack_context__.v("/_next/static/media/instagram-latest.6b072ada.svg");}}),
 "[project]/public/images/instagram-latest.svg.mjs { IMAGE => \"[project]/public/images/instagram-latest.svg (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1398,7 +1431,7 @@ const __TURBOPACK__default__export__ = {
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/phone-latest.074faa8b.svg");}}),
+__turbopack_context__.v("/_next/static/media/phone-latest.e5a65752.svg");}}),
 "[project]/public/images/phone-latest.svg.mjs { IMAGE => \"[project]/public/images/phone-latest.svg (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -2004,10 +2037,10 @@ function CartoonDetailsPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "fs-4 text-center fw-bold",
                                             children: [
-                                                "PRICE: $80 AUD ",
+                                                "PRICE: $70 AUD ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("del", {
                                                     className: "text-muted fs-4 ms-2",
-                                                    children: "$90 AUD"
+                                                    children: "$80 AUD"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/E-bike-10-12h/page.js",
                                                     lineNumber: 498,

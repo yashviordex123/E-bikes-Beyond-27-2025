@@ -1608,18 +1608,18 @@ function RentalEbikes() {
     ];
     const bikes = [
         {
-            name: "E-bike 6-8h",
+            name: "E-bike 4-6h",
             battery: "48V 50A",
             price: 60,
-            hours: "6-8 hrs",
+            hours: "4-6 hrs",
             img: "/images/Cartoon-Cycle-remove-text-latest.png",
             alt: "Ebike100 rental"
         },
         {
-            name: "E-bike 8-10h",
+            name: "E-bike 6-8h",
             battery: "48V 70A",
             price: 65,
-            hours: "8-10 hrs",
+            hours: "6-8 hrs",
             img: "/images/Product-images-beyond-bikes-product-one-crop (3).png",
             alt: "Flyebike electric bike rental"
         },
@@ -2167,7 +2167,7 @@ function RentalEbikes() {
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "row mt-4",
+                                className: "row g-sm-2 g-3 mt-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "col-12 col-md-4",
@@ -2291,7 +2291,19 @@ function RentalEbikes() {
                                                             lineNumber: 521,
                                                             columnNumber: 29
                                                         }, this),
-                                                        "Free Test Ride Available Call/WhatsApp: +61 422 032 961 DM us now to book & start riding smarter!"
+                                                        "Free Test Ride Available ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/app/rental/page.js",
+                                                            lineNumber: 522,
+                                                            columnNumber: 26
+                                                        }, this),
+                                                        "Call/WhatsApp: +61 422 032 961 ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/app/rental/page.js",
+                                                            lineNumber: 523,
+                                                            columnNumber: 32
+                                                        }, this),
+                                                        "DM us now to book & start riding smarter!"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/rental/page.js",
@@ -2395,7 +2407,7 @@ function RentalEbikes() {
                                             img: "/images/Latest-Black-Cycle-Product-26-09.png",
                                             alt: "E-bike 8-10h",
                                             specs: {
-                                                batteryhours: "10-12 hours",
+                                                batteryhours: "12-15 hours",
                                                 motor: 500,
                                                 batterylife: "48V 70A",
                                                 topspeed: "45 MPH"

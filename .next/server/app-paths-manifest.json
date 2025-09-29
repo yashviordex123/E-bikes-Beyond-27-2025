@@ -1,4 +1,13 @@
 {
+  "/Black-E-bike/page": "app/Black-E-bike/page.js",
+  "/E-bike-10-12h/page": "app/E-bike-10-12h/page.js",
+  "/E-bike-4-6h/page": "app/E-bike-4-6h/page.js",
+  "/E-bike-6-8h/page": "app/E-bike-6-8h/page.js",
+  "/Red-E-bike/page": "app/Red-E-bike/page.js",
+  "/White-E-bike/page": "app/White-E-bike/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/products/page": "app/products/page.js",
+  "/rental/page": "app/rental/page.js"
 }

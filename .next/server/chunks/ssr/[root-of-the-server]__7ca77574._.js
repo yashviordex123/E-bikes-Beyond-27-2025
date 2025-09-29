@@ -1471,20 +1471,20 @@ var { g: global, __dirname } = __turbopack_context__;
 // import Google from '../../../public/images/google-latest.svg';
 // import Call from '../../../public/images/phone-latest.svg';
 // const images = {
-//   front: '/images/CartoonCycleProductdetailsFrontBlur.jpg',
-//   back: '/images/CartoonCycleProductdetailsBackBlur.jpg',
-//   middle: '/images/CartoonCycleProductdetailsAngleBlur.jpg',
-//   battery:'/images/CartoonCycleProductdetailsWholeBlur.jpg'
+//   front: '/images/BlueCycleProductDetailsFront.jpg',
+//   back: '/images/BlueCycleProductDetailsAngleBlur.jpg',
+//   middle: '/images/BlueCycleProductDetailsFrontLatest.jpg',
+//   battery:'/images/BlueCycleProductDetailsBackBlur.jpg'
 // };
-// export default function CartoonDetailsPage() {
-//   const [selectedColor, setSelectedColor] = useState('front');
+// export default function ProductPage() {
+//   const [selectedColor, setSelectedColor] = useState('middle');
 //   const [quantity, setQuantity] = useState(1);
-//   const router = useRouter();
 //   const [showModal, setShowModal] = useState(false);
-//   // const handleAddToCart = () => {
-//   //   router.push('/rental'); // navigate to your cart page
-//   //   alert('sbhs')
-//   // };
+//   const router = useRouter();
+//   const handleAddToCart = () => {
+//     router.push('/rental'); // navigate to your cart page
+//     alert('sbhs')
+//   };
 //   const documentsForRent = [
 //     'Name',
 //     'Phone Number',
@@ -1514,7 +1514,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //   return (
 //     <>
 //       <Head>
-//         <title>Cartoon Bikes | Electric Bike</title>
+//         <title>Cali Cruiser | Electric Bike</title>
 //         <meta name="description" content="Buy Cali Cruiser – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
 //         <meta name="keywords" content="electric bike, e-bike, Cali Cruiser, green transport" />
 //         <meta name="robots" content="index, follow" />
@@ -1526,7 +1526,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //           {/* Left Image */}
 //           <div className="col-xl-7 mb-4 only-mobile-center">
 //             <Image src={images[selectedColor]} alt="Cali Cruiser" width={600} height={600} className='set-image-bikes'/>
-//             {/* <div className="d-sm-flex mt-3 gap-3">
+//             <div className="d-sm-flex thumbnail-gallery mt-3 gap-3">
 //               {Object.keys(images).map(color => (
 //                 <Image
 //                   key={color}
@@ -1534,31 +1534,21 @@ var { g: global, __dirname } = __turbopack_context__;
 //                   alt={color}
 //                   width={138}
 //                   height={120}
-//                   className={`thumb me-4 me-sm-0 mt-3 mt-sm-0 ${selectedColor === color ? 'border border-dark' : ''}`}
+//                   // className={`thumb me-4 me-sm-0 mt-3 mt-sm-0 ${selectedColor === color ? 'border border-dark' : ''}`}
+//                   className={`thumb ${selectedColor === color ? 'active' : ''}`}
 //                   onClick={() => setSelectedColor(color)}
 //                 />
 //               ))}
-//             </div> */}
-//             <div className="d-sm-flex thumbnail-gallery mt-3">
-//   {Object.keys(images).map(color => (
-//     <img
-//       key={color}
-//       src={images[color]}
-//       alt={color}
-//       className={`thumb ${selectedColor === color ? 'active' : ''}`}
-//       onClick={() => setSelectedColor(color)}
-//     />
-//   ))}
-// </div>
+//             </div>
 //           </div>
 //           {/* Right Info */}
 //           <div className="col-xl-5">
-//             <h1 className="text-orange fw-bold">E-bike 6-8h</h1>
+//             <h1 className="text-orange fw-bold">E-bike 8-10h</h1>
 //             {/* <small className="text-muted" style={{fontSize:'20px'}}>★ ★ ★ ☆ ☆ (3 Reviews)</small> */}
-//             {/* <p className="mt-3">
+//             <p className="mt-3">
 //               Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The City Surfer delivers unmatched performance you won’t find anywhere else.
-//             </p> */}
-//             <div className="fs-4 fw-bold">PRICE : $60 AUD <del className="text-muted fs-4 ms-2">$70 AUD</del></div>
+//             </p>
+//             <div className="fs-4 fw-bold">PRICE : $65 AUD <del className="text-muted fs-4 ms-2">$70 AUD</del></div>
 //             <div className="mt-3">
 //   <h5 className="fw-bold text-orange mb-3">Specifications</h5>
 //   <ul className="list-unstyled">
@@ -1578,8 +1568,8 @@ var { g: global, __dirname } = __turbopack_context__;
 //       <ul className="ps-3 mt-1">
 //         <li>Front high-brightness headlight with wide aperture</li>
 //         <li>Rear light with laser projection for night safety</li>
-//         {/* <li>Front and rear indicators</li> */}
-//         {/* <li>Breathing light strips on frame and rear rack</li> */}
+//         {/* <li>Front and rear indicators</li>
+//         <li>Breathing light strips on frame and rear rack</li> */}
 //       </ul>
 //     </li>
 //     <li className="mb-3">
@@ -1596,70 +1586,15 @@ var { g: global, __dirname } = __turbopack_context__;
 //       <strong>Braking System:</strong> Hydraulic disc brakes (optimized for high power engine).
 //     </li>
 //     <li className="mb-3">
-//       <strong>Battery Hours:</strong> 6-8 hours
+//       <strong>Battery Hours:</strong> 8-10 hrs.
 //     </li>
 //     <li className="mb-3">
-//       <strong>Battery Life:</strong> 48V 50A
+//       <strong>Battery Life:</strong> 48V 70A.
 //     </li>
 //   </ul>
 // </div>
-//             {/* <div className="p-3 rounded mt-3">
-//               <label className="fw-semibold">Color: <span className="text-capitalize">{selectedColor}</span></label>
-//               <div className="d-flex gap-3 mt-2">
-//                 <button className={`color-swatch ${selectedColor === 'green' ? 'active' : ''}`} style={{ backgroundColor: 'green' }} onClick={() => setSelectedColor('green')}></button>
-//                 <button className={`color-swatch ${selectedColor === 'red' ? 'active' : ''}`} style={{ backgroundColor: 'red' }} onClick={() => setSelectedColor('red')}></button>
-//                 <button className={`color-swatch ${selectedColor === 'blue' ? 'active' : ''}`} style={{ backgroundColor: 'blue' }} onClick={() => setSelectedColor('blue')}></button>
-//               </div>
-//               <div className="mt-2"><a href="#" className="text-danger small">Clear</a></div>
-//             </div> */}
-// {/* <div class="mb-3 mt-4">
-//   <label htmlFor="batteryOption" class="form-label fw-bold">
-//     Battery Capacity Option <span class="text-danger">*</span>
-//   </label>
-//   <select class="form-select" id="batteryOption" required>
-//     <option selected disabled>Select</option>
-//     <option value="10Ah">10Ah</option>
-//     <option value="13Ah">13Ah</option>
-//     <option value="15Ah">15Ah</option>
-//   </select>
-// </div> */}
-// {/* <div class="mb-3">
-//   <label htmlFor="wheelSize" class="form-label fw-bold">
-//     Wheel Size <span class="text-danger">*</span>
-//   </label>
-//   <select class="form-select" id="wheelSize" required>
-//     <option selected disabled>Select</option>
-//     <option value="26in">26 inch</option>
-//     <option value="27.5in">27.5 inch</option>
-//     <option value="29in">29 inch</option>
-//   </select>
-// </div> */}
-// {/* 
 //             <div className="mt-4 d-flex align-items-center gap-3">
-//               <button
-//     className="btn px-3"
-//     style={{border:'1px solid #f7931e',color:'#f7931e'}}
-//     onClick={() => setQuantity(prev => prev + 1)}
-//   >
-//     +
-//   </button>
-//   <div className="px-3 py-2 border rounded text-center ">
-//     {quantity}
-//   </div>
-//   <button
-//     className="btn px-3"
-//     style={{border:'1px solid #f7931e',color:'#f7931e'}}
-//     onClick={() => setQuantity(prev => Math.max(1, prev - 1))}
-//   >
-//     -
-//   </button>
-//               <button className="btn" style={{background:'#f7931e'}}><i className="bi bi-cart text-light me-2" aria-label="cart" onClick={handleAddToCart}></i><span className='text-light'>Add to cart</span></button>
-//             </div> */}
-//             {/* <div className="mt-3">
-//               <span className="badge rounded-pill border border-dark text-dark">Urban</span>
-//             </div> */}
-//             {/* <button className="btn" style={{background:'#f7931e'}} onClick={() =>router.push('/rental')}><i className="bi bi-cart text-light me-2" aria-label="cart" ></i><span className='text-light'>Rental</span></button> */}
-//             <button 
+//               <button 
 //         className="btn" 
 //         style={{ background: '#f7931e' }} 
 //         onClick={handleClick}
@@ -1667,88 +1602,72 @@ var { g: global, __dirname } = __turbopack_context__;
 //         {/* <i className="bi bi-bike text-light me-2" aria-label="bike"></i> */}
 //         <span className="text-light">Rental</span>
 //       </button>
-// {showModal && (
-//         <div
-//           className="modal fade show"
-//           style={{
-//             display: 'block',
-//             opacity: 1,
-//             transition: 'opacity 0.3s ease',
-//           }}
-//           aria-labelledby="exampleModalLabel"
-//           aria-hidden="true"
-//         >
-//           {/* Modal backdrop with blur effect */}
-//           <div
-//             className="modal-backdrop fade show"
-//             style={{
-//               backdropFilter: 'blur(5px)',  // Apply blur effect to the background
-//               position: 'fixed',
-//               top: 0,
-//               left: 0,
-//               right: 0,
-//               bottom: 0,
-//               zIndex: -1,  // Make sure the backdrop is behind the modal
-//               backgroundColor: 'rgba(0, 0, 0, 0.8)', // Semi-transparent background
-//             }}
-//           ></div>
-//           <div
-//             className="modal-dialog"
-//             style={{
-//               display: 'flex',
-//               justifyContent: 'center',
-//               alignItems: 'center',
-//               minHeight: '100vh',
-//             }}
-//           >
-//             <div className="modal-content">
-//               <div className="modal-header">
-//                 <h5 className="modal-title" id="exampleModalLabel" style={{color:'rgb(247, 147, 30)'}}>Social Media Links</h5>
-//                 <button type="button" className="btn-close" onClick={handleClose} aria-label="Close"></button>
-//               </div>
-//               <div className="modal-body">
-//                 {/* Icons and Labels for Instagram, Google, and Call */}
-//                 <div className="d-flex justify-content-around">
-//                   <a target='_blank'  href="https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D" className="text-decoration-none text-center"><Image src={Instagram} height={30} width={30}/><br /><span style={{color:'rgb(247, 147, 30)',fontSize:'17px'}}>Instagram</span></a>
-//             <a target='_blank' href="https://g.co/kgs/66Atysa" className="text-decoration-none text-center"><Image src={Google} height={30} width={30}/><br /><span style={{color:'rgb(247, 147, 30)',fontSize:'17px'}}>Google</span></a>
-//             <a target='_blank' href="tel:+61422032961" className="text-decoration-none text-center" title="Call Us">
-//   <Image src={Call} height={30} width={30}/><br /><span style={{color:'rgb(247, 147, 30)',fontSize:'17px'}}>Call</span>
-// </a>
+//       {showModal && (
+//               <div
+//                 className="modal fade show"
+//                 style={{
+//                   display: 'block',
+//                   opacity: 1,
+//                   transition: 'opacity 0.3s ease',
+//                 }}
+//                 aria-labelledby="exampleModalLabel"
+//                 aria-hidden="true"
+//               >
+//                 {/* Modal backdrop with blur effect */}
+//                 <div
+//                   className="modal-backdrop fade show"
+//                   style={{
+//                     backdropFilter: 'blur(5px)',  // Apply blur effect to the background
+//                     position: 'fixed',
+//                     top: 0,
+//                     left: 0,
+//                     right: 0,
+//                     bottom: 0,
+//                     zIndex: -1,  // Make sure the backdrop is behind the modal
+//                     backgroundColor: 'rgba(0, 0, 0, 0.8)', // Semi-transparent background
+//                   }}
+//                 ></div>
+//                 <div
+//                   className="modal-dialog"
+//                   style={{
+//                     display: 'flex',
+//                     justifyContent: 'center',
+//                     alignItems: 'center',
+//                     minHeight: '100vh',
+//                   }}
+//                 >
+//                   <div className="modal-content">
+//                     <div className="modal-header">
+//                       <h5 className="modal-title" id="exampleModalLabel" style={{color:'rgb(247, 147, 30)'}}>Social Media Links</h5>
+//                       <button type="button" className="btn-close" onClick={handleClose} aria-label="Close"></button>
+//                     </div>
+//                     <div className="modal-body">
+//                       {/* Icons and Labels for Instagram, Google, and Call */}
+//                       <div className="d-flex justify-content-around">
+//                         <a target='_blank'  href="https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D" className="text-decoration-none text-center"><Image src={Instagram} height={30} width={30}/><br /><span style={{color:'rgb(247, 147, 30)',fontSize:'17px'}}>Instagram</span></a>
+//                   <a target='_blank' href="https://g.co/kgs/66Atysa" className="text-decoration-none text-center"><Image src={Google} height={30} width={30}/><br /><span style={{color:'rgb(247, 147, 30)',fontSize:'17px'}}>Google</span></a>
+//                   <a target='_blank' href="tel:+61422032961" className="text-decoration-none text-center" title="Call Us">
+//         <Image src={Call} height={30} width={30}/><br /><span style={{color:'rgb(247, 147, 30)',fontSize:'17px'}}>Call</span>
+//       </a>
+//                       </div>
+//                     </div>
+//                     <div className="modal-footer">
+//                       <button type="button" className="btn" style={{background:'#f7931e',color:'white'}} onClick={handleClose}>Close</button>
+//                     </div>
+//                   </div>
 //                 </div>
 //               </div>
-//               <div className="modal-footer">
-//                 <button type="button" className="btn" style={{background:'#f7931e',color:'white'}} onClick={handleClose}>Close</button>
-//               </div>
+//             )}
 //             </div>
-//           </div>
-//         </div>
-//       )}
+//             {/* <div className="mt-3">
+//               <span className="badge rounded-pill border border-dark text-dark">Urban</span>
+//             </div> */}
 //           </div>
 //         </div>
 //       </div>
 //       <div className="container text-center py-4">
-//         {/* <ul className="nav nav-tabs justify-content-center border-0 mb-4">
-//           <li className="nav-item">
-//             <a className="nav-link active fw-bold" aria-current="page" href="#">Description</a>
-//           </li>
-//           <li className="nav-item">
-//             <a className="nav-link text-muted" href="#">Additional information</a>
-//           </li>
-//           <li className="nav-item">
-//             <a className="nav-link text-muted" href="#">Reviews (1)</a>
-//           </li>
-//         </ul> */}
-//         <h1 className="fw-bold mb-4" aria-current="page" href="#" style={{color:'rgb(247,147,30)'}}>Description</h1>
-//             <h2>Insurance offered</h2>
-//             <h3>Insurance only covers theft of battery.</h3>
-//             <h4>No accident compensation.</h4>
-//             <h4>No third party costs insured.</h4>
-//         {/* <h2 className="fw-bold display-5">Conquer the city streets or <br /><span className="text-secondary">the mountain trails</span></h2>
-//         <p className="mt-3 fs-5 text-muted px-2 px-md-5">
-//          The MK220 new generation 20 Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trips distance and 10% more of the gradeability and 10% less of its weight than our old generation .  
-//          </p> */}
-//         <div className="description-section">
-//   {/* <h1 className="section-title">Description</h1> */}
+//     <div className="description-section">
+//   <h1 className="section-title" style={{color:'rgb(247,147,30)'}}>Description</h1>
 //   <div className="insurance-box">
 //     <h2 className="insurance-title">Insurance Offered</h2>
 //     <p className="positive">✔ Insurance only covers theft of battery.</p>
@@ -1780,7 +1699,9 @@ var { g: global, __dirname } = __turbopack_context__;
 //     </div>
 //   </div>
 // </div>
-//         <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
+//         {/* <p className="mt-3 fs-5 text-muted px-2 px-md-5">
+//          The MK220 new generation 20 Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trip is distance and 10% more of the gradeability and 10% less of its weight than our old generation .  </p> */}
+//         <div className="row g-4 mt-5">
 //           <div className="col-md-4">
 //             <div className="border rounded py-4 px-2 h-100">
 //               <Image src="/images/speed.svg" alt="Top Speed" width={40} height={40} />
@@ -1791,32 +1712,26 @@ var { g: global, __dirname } = __turbopack_context__;
 //           <div className="col-md-4">
 //             <div className="border rounded py-4 px-2 h-100">
 //               <Image src="/images/running.svg" alt="Average Miles" width={40} height={40} />
-//               <p className="text-muted mb-1 mt-3 small">Battery Hour</p>
-//               <h5 className="text-orange fw-bold">6-8 hours</h5>
+//               <p className="text-muted mb-1 mt-3 small">Battery Hours</p>
+//               <h5 className="text-orange fw-bold">8-10 hrs</h5>
 //             </div>
 //           </div>
 //           <div className="col-md-4">
 //             <div className="border rounded py-4 px-2 h-100">
 //               <Image src="/images/battery.svg" alt="Battery Life" width={40} height={40} />
 //               <p className="text-muted mb-1 mt-3 small">Battery Life</p>
-//               <h5 className="text-orange fw-bold">48V 50A</h5>
+//               <h5 className="text-orange fw-bold">48V 70A</h5>
 //             </div>
 //           </div>
-//           {/* <div className="col">
-//             <div className="border rounded py-4 px-2 h-100">
-//               <Image src="/images/motor.svg" alt="Motor Output" width={40} height={40} />
-//               <p className="text-muted mb-1 mt-3 small">Motor Output</p>
-//               <h5 className="text-orange fw-bold">5,000 Watts</h5>
-//             </div>
-//           </div> */}
 //         </div>
 //       </div>
-//       <Footer />
+//            <Footer />
 //     </>
 //   );
 // }
+// SEO
 __turbopack_context__.s({
-    "default": (()=>CartoonDetailsPage)
+    "default": (()=>ProductPage)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
@@ -1842,16 +1757,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$phone$2d
 ;
 ;
 const images = {
-    front: '/images/CartoonCycleProductdetailsFrontBlur.jpg',
-    back: '/images/CartoonCycleProductdetailsBackBlur.jpg',
-    middle: '/images/CartoonCycleProductdetailsAngleBlur.jpg',
-    battery: '/images/CartoonCycleProductdetailsWholeBlur.jpg'
+    front: '/images/BlueCycleProductDetailsFront.jpg',
+    back: '/images/BlueCycleProductDetailsAngleBlur.jpg',
+    middle: '/images/BlueCycleProductDetailsFrontLatest.jpg',
+    battery: '/images/BlueCycleProductDetailsBackBlur.jpg'
 };
-function CartoonDetailsPage() {
-    const [selectedColor, setSelectedColor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('front');
+function ProductPage() {
+    const [selectedColor, setSelectedColor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('middle');
     const [quantity, setQuantity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const [showModal, setShowModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleClick = ()=>setShowModal(true);
     const handleClose = ()=>setShowModal(false);
     const [openItem, setOpenItem] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -1867,26 +1782,26 @@ function CartoonDetailsPage() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("title", {
-                        children: "E-bikes-6-8h Bikes | Beyond Bikes Electric Bike"
+                        children: "E-bike 8-10h E-Bike | Beyond Bikes Electric Bicycle"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 443,
+                        lineNumber: 359,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "description",
-                        content: "Explore the Cartoon Bikes E-bike 6-8h by Beyond Bikes. Learn specifications, rental info, insurance, and battery details. Book your ride now!"
+                        content: "Explore E-bike 8-10h E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power."
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 444,
+                        lineNumber: 360,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "keywords",
-                        content: "Beyond Bikes, Cartoon Bikes, electric bike, e-bike, rental, battery life, mid-drive, all-terrain"
+                        content: "E-bike 8-10h, Beyond Bikes, electric bike, e-bike, all-terrain, rental, battery life, mid-drive, eco transport"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 445,
+                        lineNumber: 361,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1894,39 +1809,15 @@ function CartoonDetailsPage() {
                         content: "index, follow"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 446,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        name: "viewport",
-                        content: "width=device-width, initial-scale=1"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 447,
+                        lineNumber: 362,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
                         rel: "canonical",
-                        href: "https://yourdomain.com/product/cartoon"
+                        href: "https://yourdomain.com/product/cali-cruiser"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 448,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "og:title",
-                        content: "Cartoon Bikes | Beyond Bikes Electric Bike"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 451,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "og:description",
-                        content: "Explore the Cartoon Bikes E-bike 6-8h by Beyond Bikes. Learn specifications, rental info, insurance, and battery details. Book your ride now!"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 452,
+                        lineNumber: 363,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1934,1098 +1825,1167 @@ function CartoonDetailsPage() {
                         content: "product"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 453,
+                        lineNumber: 366,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                        property: "og:url",
-                        content: "https://yourdomain.com/product/cartoon"
+                        property: "og:title",
+                        content: "Cali Cruiser E-Bike | Beyond Bikes Electric Bicycle"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 454,
+                        lineNumber: 367,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        property: "og:description",
+                        content: "Explore Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power."
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                        lineNumber: 368,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:image",
-                        content: "https://yourdomain.com/images/CartoonCycleProductdetailsFrontBlur.jpg"
+                        content: "https://yourdomain.com/images/BlueCycleProductDetailsFront.jpg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 455,
+                        lineNumber: 369,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        property: "og:url",
+                        content: "https://yourdomain.com/product/cali-cruiser"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                        lineNumber: 370,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "twitter:card",
+                        content: "summary_large_image"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                        lineNumber: 373,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "twitter:title",
+                        content: "Cali Cruiser E-Bike | Beyond Bikes Electric Bicycle"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                        lineNumber: 374,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "twitter:description",
+                        content: "Explore Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power."
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                        lineNumber: 375,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
+                        name: "twitter:image",
+                        content: "https://yourdomain.com/images/BlueCycleProductDetailsFront.jpg"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                        lineNumber: 376,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                        type: "application/ld+json",
+                        dangerouslySetInnerHTML: {
+                            __html: JSON.stringify({
+                                "@context": "https://schema.org/",
+                                "@type": "Product",
+                                "name": "Cali Cruiser E-Bike",
+                                "image": [
+                                    "https://yourdomain.com/images/BlueCycleProductDetailsFront.jpg",
+                                    "https://yourdomain.com/images/BlueCycleProductDetailsAngleBlur.jpg",
+                                    "https://yourdomain.com/images/BlueCycleProductDetailsFrontLatest.jpg",
+                                    "https://yourdomain.com/images/BlueCycleProductDetailsBackBlur.jpg"
+                                ],
+                                "description": "Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power.",
+                                "sku": "CC-EBIKE-001",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "Beyond Bikes"
+                                },
+                                "offers": {
+                                    "@type": "Offer",
+                                    "url": "https://yourdomain.com/product/cali-cruiser",
+                                    "priceCurrency": "AUD",
+                                    "price": "65",
+                                    "availability": "https://schema.org/InStock"
+                                }
+                            })
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                        lineNumber: 379,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                lineNumber: 442,
+                lineNumber: 357,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                lineNumber: 458,
+                lineNumber: 405,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "container py-5",
-                itemScope: true,
-                itemType: "https://schema.org/Product",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "row align-items-start",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col-xl-7 mb-4 only-mobile-center",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        src: images[selectedColor],
-                                        alt: `Cartoon Bikes E-bike view: ${selectedColor}`,
-                                        width: 600,
-                                        height: 600,
-                                        className: "set-image-bikes",
-                                        itemProp: "image"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 464,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "d-sm-flex thumbnail-gallery mt-3",
-                                        children: Object.keys(images).map((color)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                src: images[color],
-                                                alt: `Cartoon Bikes ${color} view`,
-                                                className: `thumb ${selectedColor === color ? 'active' : ''}`,
-                                                onClick: ()=>setSelectedColor(color)
-                                            }, color, false, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 475,
-                                                columnNumber: 17
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 473,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                lineNumber: 463,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col-xl-5",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "text-center fw-bold",
-                                        itemProp: "name",
-                                        children: "E-bike 6-8h"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 488,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "fs-4 text-center fw-bold",
-                                        itemProp: "offers",
-                                        itemScope: true,
-                                        itemType: "https://schema.org/Offer",
-                                        children: [
-                                            "PRICE : $60 AUD ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("del", {
-                                                className: "text-muted fs-4 ms-2",
-                                                children: "$70 AUD"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 490,
-                                                columnNumber: 31
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                                                itemProp: "price",
-                                                content: "60"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 491,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
-                                                itemProp: "priceCurrency",
-                                                content: "AUD"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 492,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
-                                                itemProp: "availability",
-                                                href: "https://schema.org/InStock"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 493,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 489,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                                        className: "container my-4",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "row g-3",
+                        className: "container py-5",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "row align-items-start",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "col-xl-7 mb-4 only-mobile-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            src: images[selectedColor],
+                                            alt: "E-bike 8-10h E-Bike image",
+                                            width: 600,
+                                            height: 600,
+                                            className: "set-image-bikes"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                            lineNumber: 412,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "d-sm-flex thumbnail-gallery mt-3 gap-3",
+                                            children: Object.keys(images).map((color)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: images[color],
+                                                    alt: `Cali Cruiser - ${color} view`,
+                                                    width: 138,
+                                                    height: 120,
+                                                    className: `thumb ${selectedColor === color ? 'active' : ''}`,
+                                                    onClick: ()=>setSelectedColor(color)
+                                                }, color, false, {
+                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                    lineNumber: 415,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                            lineNumber: 413,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                    lineNumber: 411,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "col-xl-5",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            className: "text-orange text-center fw-bold",
+                                            children: "E-Bike 6-8h"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                            lineNumber: 430,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "mt-3 text-center",
+                                            children: "Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The Cali Cruiser delivers unmatched performance and reliability."
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                            lineNumber: 431,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "fs-4 text-center fw-bold",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "col-6",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "spec-box",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                className: "bi bi-battery-full"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 500,
-                                                                columnNumber: 7
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                        children: "6-8 hours"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 502,
-                                                                        columnNumber: 9
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        children: "Battery Hours"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 503,
-                                                                        columnNumber: 9
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 501,
-                                                                columnNumber: 7
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 499,
-                                                        columnNumber: 5
-                                                    }, this)
+                                                "PRICE : $70 AUD ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("del", {
+                                                    className: "text-muted fs-4 ms-2",
+                                                    children: "$80 AUD"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                    lineNumber: 498,
-                                                    columnNumber: 3
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "col-6",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "spec-box",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                className: "bi bi-lightning-charge"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 510,
-                                                                columnNumber: 7
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                        children: "500W"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 512,
-                                                                        columnNumber: 9
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        children: "Motor"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 513,
-                                                                        columnNumber: 9
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 511,
-                                                                columnNumber: 7
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 509,
-                                                        columnNumber: 5
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                    lineNumber: 508,
-                                                    columnNumber: 3
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "col-6",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "spec-box",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                className: "bi bi-clock"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 520,
-                                                                columnNumber: 7
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                        children: "48V 50A"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 522,
-                                                                        columnNumber: 9
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        children: "Battery Life"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 523,
-                                                                        columnNumber: 9
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 521,
-                                                                columnNumber: 7
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 519,
-                                                        columnNumber: 5
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                    lineNumber: 518,
-                                                    columnNumber: 3
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "col-6",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "spec-box",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                className: "bi bi-wrench"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 530,
-                                                                columnNumber: 7
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                        children: "Included"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 532,
-                                                                        columnNumber: 9
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        children: "Maintenance"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 533,
-                                                                        columnNumber: 9
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 531,
-                                                                columnNumber: 7
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 529,
-                                                        columnNumber: 5
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                    lineNumber: 528,
-                                                    columnNumber: 3
+                                                    lineNumber: 434,
+                                                    columnNumber: 73
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                            lineNumber: 497,
-                                            columnNumber: 9
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 496,
-                                        columnNumber: 11
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                                        className: "mt-3",
-                                        itemScope: true,
-                                        itemType: "https://schema.org/Product",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "fw-bold text-orange mb-3",
-                                                children: "Specifications"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 670,
-                                                columnNumber: 9
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                className: "nav nav-pills mb-3 bg-light p-1 rounded-pill d-inline-flex",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        className: "nav-item",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: `nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`,
-                                                            onClick: ()=>setActiveTab("performance"),
-                                                            children: "Performance"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 675,
-                                                            columnNumber: 13
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 674,
-                                                        columnNumber: 11
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        className: "nav-item",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: `nav-link rounded-pill ${activeTab === "features" ? "active" : ""}`,
-                                                            onClick: ()=>setActiveTab("features"),
-                                                            children: "Features"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 684,
-                                                            columnNumber: 13
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 683,
-                                                        columnNumber: 11
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        className: "nav-item",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: `nav-link rounded-pill ${activeTab === "safety" ? "active" : ""}`,
-                                                            onClick: ()=>setActiveTab("safety"),
-                                                            children: "Safety"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 692,
-                                                            columnNumber: 13
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 691,
-                                                        columnNumber: 11
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 673,
-                                                columnNumber: 9
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                children: [
-                                                    activeTab === "features" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "spec-item",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        className: "spec-toggle",
-                                                                        onClick: ()=>toggleItem("display"),
-                                                                        "aria-expanded": openItem === "display",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                children: "Display"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 713,
-                                                                                columnNumber: 19
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "toggle-icon",
-                                                                                children: openItem === "display" ? "−" : "+"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 714,
-                                                                                columnNumber: 19
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 708,
-                                                                        columnNumber: 17
-                                                                    }, this),
-                                                                    openItem === "display" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "spec-content",
-                                                                        children: "Multifunctional LED display, clearly visible under sunlight."
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 719,
-                                                                        columnNumber: 19
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 707,
-                                                                columnNumber: 15
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "spec-item",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        className: "spec-toggle",
-                                                                        onClick: ()=>toggleItem("lighting"),
-                                                                        "aria-expanded": openItem === "lighting",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                children: "Lighting"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 732,
-                                                                                columnNumber: 19
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "toggle-icon",
-                                                                                children: openItem === "lighting" ? "−" : "+"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 733,
-                                                                                columnNumber: 19
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 727,
-                                                                        columnNumber: 17
-                                                                    }, this),
-                                                                    openItem === "lighting" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "spec-content",
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    children: "Front high-brightness headlight with wide aperture"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 740,
-                                                                                    columnNumber: 23
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    children: "Rear light with laser projection for night safety"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 741,
-                                                                                    columnNumber: 23
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                            lineNumber: 739,
-                                                                            columnNumber: 21
-                                                                        }, this)
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 738,
-                                                                        columnNumber: 19
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 726,
-                                                                columnNumber: 15
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "spec-item",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        className: "spec-toggle",
-                                                                        onClick: ()=>toggleItem("holder"),
-                                                                        "aria-expanded": openItem === "holder",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                children: "Phone Holder"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 754,
-                                                                                columnNumber: 19
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "toggle-icon",
-                                                                                children: openItem === "holder" ? "−" : "+"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 755,
-                                                                                columnNumber: 19
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 749,
-                                                                        columnNumber: 17
-                                                                    }, this),
-                                                                    openItem === "holder" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "spec-content",
-                                                                        children: "USB port (2.1A output)"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 760,
-                                                                        columnNumber: 19
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 748,
-                                                                columnNumber: 15
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true),
-                                                    activeTab === "safety" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "spec-item",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        className: "spec-toggle",
-                                                                        onClick: ()=>toggleItem("safety"),
-                                                                        "aria-expanded": openItem === "safety",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                children: "Safety System"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 776,
-                                                                                columnNumber: 19
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "toggle-icon",
-                                                                                children: openItem === "safety" ? "−" : "+"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 777,
-                                                                                columnNumber: 19
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 771,
-                                                                        columnNumber: 17
-                                                                    }, this),
-                                                                    openItem === "safety" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "spec-content",
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    children: "Smart anti-theft remote (alarm + keyless start)"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 784,
-                                                                                    columnNumber: 23
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    children: "NFC smart unlock"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 785,
-                                                                                    columnNumber: 23
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                            lineNumber: 783,
-                                                                            columnNumber: 21
-                                                                        }, this)
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 782,
-                                                                        columnNumber: 19
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 770,
-                                                                columnNumber: 15
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "spec-item",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        className: "spec-toggle",
-                                                                        onClick: ()=>toggleItem("brake"),
-                                                                        "aria-expanded": openItem === "brake",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                children: "Braking System"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 798,
-                                                                                columnNumber: 19
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "toggle-icon",
-                                                                                children: openItem === "brake" ? "−" : "+"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 799,
-                                                                                columnNumber: 19
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 793,
-                                                                        columnNumber: 17
-                                                                    }, this),
-                                                                    openItem === "brake" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "spec-content",
-                                                                        children: "Hydraulic disc brakes"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 804,
-                                                                        columnNumber: 19
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 792,
-                                                                columnNumber: 15
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "spec-item",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        className: "spec-toggle",
-                                                                        onClick: ()=>toggleItem("hours"),
-                                                                        "aria-expanded": openItem === "hours",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                children: "Battery Hours"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 815,
-                                                                                columnNumber: 19
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "toggle-icon",
-                                                                                children: openItem === "hours" ? "−" : "+"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 816,
-                                                                                columnNumber: 19
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 810,
-                                                                        columnNumber: 17
-                                                                    }, this),
-                                                                    openItem === "hours" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "spec-content",
-                                                                        children: "6–8 hours"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 821,
-                                                                        columnNumber: 19
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 809,
-                                                                columnNumber: 15
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true),
-                                                    activeTab === "performance" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "spec-item",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        className: "spec-toggle",
-                                                                        onClick: ()=>toggleItem("speed"),
-                                                                        "aria-expanded": openItem === "speed",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                children: "Speed Modes"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 837,
-                                                                                columnNumber: 19
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "toggle-icon",
-                                                                                children: openItem === "speed" ? "−" : "+"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 838,
-                                                                                columnNumber: 19
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 832,
-                                                                        columnNumber: 17
-                                                                    }, this),
-                                                                    openItem === "speed" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "spec-content",
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    children: "Gear 1: 25 km/h"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 845,
-                                                                                    columnNumber: 23
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    children: "Gear 2: 35 km/h"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 846,
-                                                                                    columnNumber: 23
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    children: "Gear 3: 45 km/h"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                    lineNumber: 847,
-                                                                                    columnNumber: 23
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                            lineNumber: 844,
-                                                                            columnNumber: 21
-                                                                        }, this)
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 843,
-                                                                        columnNumber: 19
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 831,
-                                                                columnNumber: 15
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "spec-item",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        className: "spec-toggle",
-                                                                        onClick: ()=>toggleItem("life"),
-                                                                        "aria-expanded": openItem === "life",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                children: "Battery Life"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 860,
-                                                                                columnNumber: 19
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "toggle-icon",
-                                                                                children: openItem === "life" ? "−" : "+"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 861,
-                                                                                columnNumber: 19
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 855,
-                                                                        columnNumber: 17
-                                                                    }, this),
-                                                                    openItem === "life" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "spec-content",
-                                                                        children: "48V 50A"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 866,
-                                                                        columnNumber: 19
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 854,
-                                                                columnNumber: 15
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 702,
-                                                columnNumber: 9
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 669,
-                                        columnNumber: 1
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "mt-3 rent-now",
-                                        style: {
-                                            background: 'rgb(26, 59, 25)'
-                                        },
-                                        onClick: handleClick,
-                                        "aria-label": "Open Rental Modal",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-light",
-                                            children: "Rent Now"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                            lineNumber: 880,
+                                            lineNumber: 434,
                                             columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 874,
-                                        columnNumber: 13
-                                    }, this),
-                                    showModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "modal fade show",
-                                        style: {
-                                            display: 'block',
-                                            opacity: 1,
-                                            transition: 'opacity 0.3s ease'
-                                        },
-                                        "aria-labelledby": "modalLabel",
-                                        "aria-hidden": "false",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "modal-backdrop fade show",
-                                                style: {
-                                                    backdropFilter: 'blur(5px)',
-                                                    position: 'fixed',
-                                                    top: 0,
-                                                    left: 0,
-                                                    right: 0,
-                                                    bottom: 0,
-                                                    zIndex: -1,
-                                                    backgroundColor: 'rgba(0,0,0,0.8)'
-                                                }
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 885,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "modal-dialog d-flex justify-content-center align-items-center",
-                                                style: {
-                                                    minHeight: '100vh'
-                                                },
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "modal-content",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "modal-header",
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                                            className: "container my-4",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "row g-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "col-6",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "spec-box",
                                                             children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                                    className: "modal-title text-orange",
-                                                                    id: "modalLabel",
-                                                                    children: "Social Media Links"
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                    className: "bi bi-battery-full"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                    lineNumber: 890,
-                                                                    columnNumber: 23
+                                                                    lineNumber: 440,
+                                                                    columnNumber: 7
                                                                 }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                    type: "button",
-                                                                    className: "btn-close",
-                                                                    onClick: handleClose,
-                                                                    "aria-label": "Close"
-                                                                }, void 0, false, {
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                            children: "6-8 hours"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 442,
+                                                                            columnNumber: 9
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            children: "Battery Hours"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 443,
+                                                                            columnNumber: 9
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
                                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                    lineNumber: 891,
-                                                                    columnNumber: 23
+                                                                    lineNumber: 441,
+                                                                    columnNumber: 7
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 889,
-                                                            columnNumber: 21
+                                                            lineNumber: 439,
+                                                            columnNumber: 5
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                        lineNumber: 438,
+                                                        columnNumber: 3
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "col-6",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "spec-box",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                    className: "bi bi-lightning-charge"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 450,
+                                                                    columnNumber: 7
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                            children: "500W"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 452,
+                                                                            columnNumber: 9
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            children: "Motor"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 453,
+                                                                            columnNumber: 9
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 451,
+                                                                    columnNumber: 7
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                            lineNumber: 449,
+                                                            columnNumber: 5
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                        lineNumber: 448,
+                                                        columnNumber: 3
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "col-6",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "spec-box",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                    className: "bi bi-clock"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 460,
+                                                                    columnNumber: 7
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                            children: "48V 70A"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 462,
+                                                                            columnNumber: 9
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            children: "Battery Life"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 463,
+                                                                            columnNumber: 9
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 461,
+                                                                    columnNumber: 7
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                            lineNumber: 459,
+                                                            columnNumber: 5
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                        lineNumber: 458,
+                                                        columnNumber: 3
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "col-6",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "spec-box",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                    className: "bi bi-wrench"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 470,
+                                                                    columnNumber: 7
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                            children: "Included"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 472,
+                                                                            columnNumber: 9
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            children: "Maintenance"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 473,
+                                                                            columnNumber: 9
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 471,
+                                                                    columnNumber: 7
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                            lineNumber: 469,
+                                                            columnNumber: 5
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                        lineNumber: 468,
+                                                        columnNumber: 3
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                lineNumber: 437,
+                                                columnNumber: 9
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                            lineNumber: 436,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                                            className: "mt-3",
+                                            itemScope: true,
+                                            itemType: "https://schema.org/Product",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                    className: "fw-bold text-orange mb-3",
+                                                    children: "Specifications"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                    lineNumber: 485,
+                                                    columnNumber: 9
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                    className: "nav nav-pills mb-3 bg-light p-1 rounded-pill d-inline-flex",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "nav-item",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                className: `nav-link rounded-pill ${activeTab === "performance" ? "active" : ""}`,
+                                                                onClick: ()=>setActiveTab("performance"),
+                                                                children: "Performance"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                lineNumber: 490,
+                                                                columnNumber: 13
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                            lineNumber: 489,
+                                                            columnNumber: 9
                                                         }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "modal-body",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "d-flex justify-content-around",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "nav-item",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                className: `nav-link rounded-pill ${activeTab === "features" ? "active" : ""}`,
+                                                                onClick: ()=>setActiveTab("features"),
+                                                                children: "Features"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                lineNumber: 498,
+                                                                columnNumber: 13
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                            lineNumber: 497,
+                                                            columnNumber: 11
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                            className: "nav-item",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                className: `nav-link rounded-pill ${activeTab === "safety" ? "active" : ""}`,
+                                                                onClick: ()=>setActiveTab("safety"),
+                                                                children: "Safety"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                lineNumber: 506,
+                                                                columnNumber: 13
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                            lineNumber: 505,
+                                                            columnNumber: 11
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                    lineNumber: 488,
+                                                    columnNumber: 9
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    children: [
+                                                        activeTab === "features" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "spec-item",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            className: "spec-toggle",
+                                                                            onClick: ()=>toggleItem("display"),
+                                                                            "aria-expanded": openItem === "display",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    children: "Display"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 528,
+                                                                                    columnNumber: 19
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "toggle-icon",
+                                                                                    children: openItem === "display" ? "−" : "+"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 529,
+                                                                                    columnNumber: 19
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 523,
+                                                                            columnNumber: 17
+                                                                        }, this),
+                                                                        openItem === "display" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "spec-content",
+                                                                            children: "Multifunctional LED display, clearly visible under sunlight."
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 534,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 522,
+                                                                    columnNumber: 15
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "spec-item",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            className: "spec-toggle",
+                                                                            onClick: ()=>toggleItem("lighting"),
+                                                                            "aria-expanded": openItem === "lighting",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    children: "Lighting"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 547,
+                                                                                    columnNumber: 19
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "toggle-icon",
+                                                                                    children: openItem === "lighting" ? "−" : "+"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 548,
+                                                                                    columnNumber: 19
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 542,
+                                                                            columnNumber: 17
+                                                                        }, this),
+                                                                        openItem === "lighting" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "spec-content",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                        children: "Front high-brightness headlight with wide aperture"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                        lineNumber: 555,
+                                                                                        columnNumber: 23
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                        children: "Rear light with laser projection for night safety"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                        lineNumber: 556,
+                                                                                        columnNumber: 23
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                lineNumber: 554,
+                                                                                columnNumber: 21
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 553,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 541,
+                                                                    columnNumber: 15
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "spec-item",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            className: "spec-toggle",
+                                                                            onClick: ()=>toggleItem("holder"),
+                                                                            "aria-expanded": openItem === "holder",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    children: "Phone Holder"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 569,
+                                                                                    columnNumber: 19
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "toggle-icon",
+                                                                                    children: openItem === "holder" ? "−" : "+"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 570,
+                                                                                    columnNumber: 19
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 564,
+                                                                            columnNumber: 17
+                                                                        }, this),
+                                                                        openItem === "holder" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "spec-content",
+                                                                            children: "USB port (2.1A output)"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 575,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 563,
+                                                                    columnNumber: 15
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true),
+                                                        activeTab === "safety" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "spec-item",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            className: "spec-toggle",
+                                                                            onClick: ()=>toggleItem("safety"),
+                                                                            "aria-expanded": openItem === "safety",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    children: "Safety System"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 591,
+                                                                                    columnNumber: 19
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "toggle-icon",
+                                                                                    children: openItem === "safety" ? "−" : "+"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 592,
+                                                                                    columnNumber: 19
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 586,
+                                                                            columnNumber: 17
+                                                                        }, this),
+                                                                        openItem === "safety" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "spec-content",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                        children: "Smart anti-theft remote (alarm + keyless start)"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                        lineNumber: 599,
+                                                                                        columnNumber: 23
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                        children: "NFC smart unlock"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                        lineNumber: 600,
+                                                                                        columnNumber: 23
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                lineNumber: 598,
+                                                                                columnNumber: 21
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 597,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 585,
+                                                                    columnNumber: 15
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "spec-item",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            className: "spec-toggle",
+                                                                            onClick: ()=>toggleItem("brake"),
+                                                                            "aria-expanded": openItem === "brake",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    children: "Braking System"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 613,
+                                                                                    columnNumber: 19
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "toggle-icon",
+                                                                                    children: openItem === "brake" ? "−" : "+"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 614,
+                                                                                    columnNumber: 19
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 608,
+                                                                            columnNumber: 17
+                                                                        }, this),
+                                                                        openItem === "brake" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "spec-content",
+                                                                            children: "Hydraulic disc brakes"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 619,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 607,
+                                                                    columnNumber: 15
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "spec-item",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            className: "spec-toggle",
+                                                                            onClick: ()=>toggleItem("hours"),
+                                                                            "aria-expanded": openItem === "hours",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    children: "Battery Hours"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 630,
+                                                                                    columnNumber: 19
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "toggle-icon",
+                                                                                    children: openItem === "hours" ? "−" : "+"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 631,
+                                                                                    columnNumber: 19
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 625,
+                                                                            columnNumber: 17
+                                                                        }, this),
+                                                                        openItem === "hours" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "spec-content",
+                                                                            children: "8-10 hours"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 636,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 624,
+                                                                    columnNumber: 15
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true),
+                                                        activeTab === "performance" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "spec-item",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            className: "spec-toggle",
+                                                                            onClick: ()=>toggleItem("speed"),
+                                                                            "aria-expanded": openItem === "speed",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    children: "Speed Modes"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 652,
+                                                                                    columnNumber: 19
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "toggle-icon",
+                                                                                    children: openItem === "speed" ? "−" : "+"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 653,
+                                                                                    columnNumber: 19
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 647,
+                                                                            columnNumber: 17
+                                                                        }, this),
+                                                                        openItem === "speed" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "spec-content",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                        children: "Gear 1: 25 km/h"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                        lineNumber: 660,
+                                                                                        columnNumber: 23
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                        children: "Gear 2: 35 km/h"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                        lineNumber: 661,
+                                                                                        columnNumber: 23
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                        children: "Gear 3: 45 km/h"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                        lineNumber: 662,
+                                                                                        columnNumber: 23
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                lineNumber: 659,
+                                                                                columnNumber: 21
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 658,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 646,
+                                                                    columnNumber: 15
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "spec-item",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            className: "spec-toggle",
+                                                                            onClick: ()=>toggleItem("life"),
+                                                                            "aria-expanded": openItem === "life",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    children: "Battery Life"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 675,
+                                                                                    columnNumber: 19
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "toggle-icon",
+                                                                                    children: openItem === "life" ? "−" : "+"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 676,
+                                                                                    columnNumber: 19
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 670,
+                                                                            columnNumber: 17
+                                                                        }, this),
+                                                                        openItem === "life" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "spec-content",
+                                                                            children: "48V 70A"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 681,
+                                                                            columnNumber: 19
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 669,
+                                                                    columnNumber: 15
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                    lineNumber: 517,
+                                                    columnNumber: 9
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                            lineNumber: 484,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "mt-3 rent-now",
+                                            style: {
+                                                background: 'rgb(26, 59, 25)'
+                                            },
+                                            onClick: handleClick,
+                                            "aria-label": "Open Rental Modal",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-light",
+                                                children: "Rent Now"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                lineNumber: 696,
+                                                columnNumber: 15
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                            lineNumber: 690,
+                                            columnNumber: 15
+                                        }, this),
+                                        showModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "modal fade show",
+                                            style: {
+                                                display: 'block',
+                                                opacity: 1
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "modal-backdrop fade show",
+                                                    style: {
+                                                        backdropFilter: 'blur(5px)',
+                                                        position: 'fixed',
+                                                        top: 0,
+                                                        left: 0,
+                                                        right: 0,
+                                                        bottom: 0,
+                                                        zIndex: -1,
+                                                        backgroundColor: 'rgba(0,0,0,0.8)'
+                                                    }
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                    lineNumber: 703,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "modal-dialog",
+                                                    style: {
+                                                        display: 'flex',
+                                                        justifyContent: 'center',
+                                                        alignItems: 'center',
+                                                        minHeight: '100vh'
+                                                    },
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "modal-content",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "modal-header",
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                        target: "_blank",
-                                                                        rel: "noopener noreferrer",
-                                                                        href: "https://www.instagram.com/beyondbikes_vic/",
-                                                                        className: "text-decoration-none text-center",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                                src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$instagram$2d$latest$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$instagram$2d$latest$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                                                                height: 30,
-                                                                                width: 30,
-                                                                                alt: "Instagram Logo"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 896,
-                                                                                columnNumber: 27
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 897,
-                                                                                columnNumber: 27
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "text-orange fs-6",
-                                                                                children: "Instagram"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 897,
-                                                                                columnNumber: 33
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                                                                        className: "modal-title",
+                                                                        style: {
+                                                                            color: '#1A3B19'
+                                                                        },
+                                                                        children: "Social Media Links"
+                                                                    }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 895,
+                                                                        lineNumber: 707,
                                                                         columnNumber: 25
                                                                     }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                        target: "_blank",
-                                                                        rel: "noopener noreferrer",
-                                                                        href: "https://g.co/kgs/66Atysa",
-                                                                        className: "text-decoration-none text-center",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                                src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$google$2d$latest$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$google$2d$latest$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                                                                height: 30,
-                                                                                width: 30,
-                                                                                alt: "Google Logo"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 900,
-                                                                                columnNumber: 27
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 901,
-                                                                                columnNumber: 27
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "text-orange fs-6",
-                                                                                children: "Google"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 901,
-                                                                                columnNumber: 33
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                        type: "button",
+                                                                        className: "btn-close",
+                                                                        onClick: handleClose
+                                                                    }, void 0, false, {
                                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 899,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                        target: "_blank",
-                                                                        rel: "noopener noreferrer",
-                                                                        href: "tel:+61422032961",
-                                                                        className: "text-decoration-none text-center",
-                                                                        title: "Call Us",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                                src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$phone$2d$latest$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$phone$2d$latest$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                                                                height: 30,
-                                                                                width: 30,
-                                                                                alt: "Phone Logo"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 904,
-                                                                                columnNumber: 27
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 905,
-                                                                                columnNumber: 27
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "text-orange fs-6",
-                                                                                children: "Call"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                                lineNumber: 905,
-                                                                                columnNumber: 33
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                        lineNumber: 903,
+                                                                        lineNumber: 708,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 894,
+                                                                lineNumber: 706,
                                                                 columnNumber: 23
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 893,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "modal-footer",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                type: "button",
-                                                                className: "btn",
-                                                                style: {
-                                                                    background: '#1A3B19',
-                                                                    color: 'white'
-                                                                },
-                                                                onClick: handleClose,
-                                                                children: "Close"
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "modal-body",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "d-flex justify-content-around",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                            target: "_blank",
+                                                                            href: "https://www.instagram.com/beyondbikes_vic/",
+                                                                            className: "text-decoration-none text-center",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$instagram$2d$latest$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$instagram$2d$latest$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                                                                    height: 30,
+                                                                                    width: 30
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 713,
+                                                                                    columnNumber: 29
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 713,
+                                                                                    columnNumber: 76
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    style: {
+                                                                                        color: '#1A3B19',
+                                                                                        fontSize: '17px'
+                                                                                    },
+                                                                                    children: "Instagram"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 713,
+                                                                                    columnNumber: 81
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 712,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                            target: "_blank",
+                                                                            href: "https://g.co/kgs/66Atysa",
+                                                                            className: "text-decoration-none text-center",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$google$2d$latest$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$google$2d$latest$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                                                                    height: 30,
+                                                                                    width: 30
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 716,
+                                                                                    columnNumber: 29
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 716,
+                                                                                    columnNumber: 73
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    style: {
+                                                                                        color: '#1A3B19',
+                                                                                        fontSize: '17px'
+                                                                                    },
+                                                                                    children: "Google"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 716,
+                                                                                    columnNumber: 78
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 715,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                            target: "_blank",
+                                                                            href: "tel:+61422032961",
+                                                                            className: "text-decoration-none text-center",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$phone$2d$latest$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$phone$2d$latest$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                                                                    height: 30,
+                                                                                    width: 30
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 719,
+                                                                                    columnNumber: 29
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 719,
+                                                                                    columnNumber: 71
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    style: {
+                                                                                        color: '#1A3B19',
+                                                                                        fontSize: '17px'
+                                                                                    },
+                                                                                    children: "Call"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                                    lineNumber: 719,
+                                                                                    columnNumber: 76
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                            lineNumber: 718,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 711,
+                                                                    columnNumber: 25
+                                                                }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 910,
+                                                                lineNumber: 710,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "modal-footer",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                    type: "button",
+                                                                    className: "btn",
+                                                                    style: {
+                                                                        background: '#1A3B19',
+                                                                        color: 'white'
+                                                                    },
+                                                                    onClick: handleClose,
+                                                                    children: "Close"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                    lineNumber: 724,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                                lineNumber: 723,
                                                                 columnNumber: 23
                                                             }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                            lineNumber: 909,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                                        lineNumber: 705,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
                                                     fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                    lineNumber: 888,
+                                                    lineNumber: 704,
                                                     columnNumber: 19
                                                 }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 887,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 884,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                lineNumber: 487,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                            lineNumber: 702,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                                    lineNumber: 429,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/E-bike-6-8h/page.js",
+                            lineNumber: 409,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 461,
+                        lineNumber: 408,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -3041,7 +3001,7 @@ function CartoonDetailsPage() {
                                 children: "Description"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                lineNumber: 921,
+                                lineNumber: 736,
                                 columnNumber: 19
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -3051,34 +3011,34 @@ function CartoonDetailsPage() {
                                         children: "Insurance Offered"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 924,
+                                        lineNumber: 739,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "✔ Insurance only covers theft of battery."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 925,
+                                        lineNumber: 740,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "✘ No accident compensation."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 926,
+                                        lineNumber: 741,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "✘ No third-party costs insured."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 927,
+                                        lineNumber: 742,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                lineNumber: 923,
+                                lineNumber: 738,
                                 columnNumber: 19
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -3091,7 +3051,7 @@ function CartoonDetailsPage() {
                                         children: "Rental Information"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 959,
+                                        lineNumber: 746,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3105,7 +3065,7 @@ function CartoonDetailsPage() {
                                                         children: "Documents for Rent"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 963,
+                                                        lineNumber: 750,
                                                         columnNumber: 7
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3115,54 +3075,54 @@ function CartoonDetailsPage() {
                                                                 children: "Name"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 965,
+                                                                lineNumber: 752,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Phone Number"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 966,
+                                                                lineNumber: 753,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Address & Unit Number"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 967,
+                                                                lineNumber: 754,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Email"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 968,
+                                                                lineNumber: 755,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Valid Visa Grant"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 969,
+                                                                lineNumber: 756,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Passport"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 970,
+                                                                lineNumber: 757,
                                                                 columnNumber: 9
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 964,
+                                                        lineNumber: 751,
                                                         columnNumber: 7
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 962,
+                                                lineNumber: 749,
                                                 columnNumber: 5
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3173,7 +3133,7 @@ function CartoonDetailsPage() {
                                                         children: "Our Rental Fee Includes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 976,
+                                                        lineNumber: 763,
                                                         columnNumber: 7
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3183,76 +3143,76 @@ function CartoonDetailsPage() {
                                                                 children: "Delivery bag"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 978,
+                                                                lineNumber: 765,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Locks (2)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 979,
+                                                                lineNumber: 766,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Helmet"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 980,
+                                                                lineNumber: 767,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Charger"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 981,
+                                                                lineNumber: 768,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                 children: "Basic maintenance"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                                lineNumber: 982,
+                                                                lineNumber: 769,
                                                                 columnNumber: 9
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                        lineNumber: 977,
+                                                        lineNumber: 764,
                                                         columnNumber: 7
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                                lineNumber: 975,
+                                                lineNumber: 762,
                                                 columnNumber: 5
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                        lineNumber: 960,
+                                        lineNumber: 747,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                                lineNumber: 958,
+                                lineNumber: 745,
                                 columnNumber: 19
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                        lineNumber: 920,
+                        lineNumber: 735,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                lineNumber: 460,
+                lineNumber: 407,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/E-bike-6-8h/page.js",
-                lineNumber: 1015,
+                lineNumber: 782,
                 columnNumber: 7
             }, this)
         ]

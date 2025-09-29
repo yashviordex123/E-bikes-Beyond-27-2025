@@ -114,11 +114,11 @@ export default function RedEbike() {
 
             {/* Right Info */}
             <div className="col-xl-5">
-              <h1 className="text-orange text-center fw-bold">E-Bike 8-10h</h1>
+              <h1 className="text-orange text-center fw-bold">Red-E-bike</h1>
               <p className="mt-3 text-center">
                 Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The Cali Cruiser delivers unmatched performance and reliability.
               </p>
-              <div className="fs-4 text-center fw-bold">PRICE : $65 AUD <del className="text-muted fs-4 ms-2">$70 AUD</del></div>
+              <div className="fs-4 text-center fw-bold">PRICE : $70 AUD <del className="text-muted fs-4 ms-2">$80 AUD</del></div>
 
               <section className="container my-4">
         <div className="row g-3">
@@ -126,7 +126,7 @@ export default function RedEbike() {
     <div className="spec-box">
       <i className="bi bi-battery-full"></i>
       <div>
-        <strong>8-10 hours</strong>
+        <strong>10-12 hours</strong>
         <p>Battery Hours</p>
       </div>
     </div>
