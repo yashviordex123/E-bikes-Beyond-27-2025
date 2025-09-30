@@ -1,13 +1,12 @@
 {
-  "/Black-E-bike/page": "app/Black-E-bike/page.js",
-  "/E-bike-10-12h/page": "app/E-bike-10-12h/page.js",
-  "/E-bike-4-6h/page": "app/E-bike-4-6h/page.js",
-  "/E-bike-6-8h/page": "app/E-bike-6-8h/page.js",
-  "/Red-E-bike/page": "app/Red-E-bike/page.js",
-  "/White-E-bike/page": "app/White-E-bike/page.js",
+  "/E-bike-12-15h/page": "app/E-bike-12-15h/page.js",
+  "/E-bike-blue-6-8h/page": "app/E-bike-blue-6-8h/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/products/page": "app/products/page.js",
-  "/rental/page": "app/rental/page.js"
+  "/api/create-payment-intent/route": "app/api/create-payment-intent/route.js",
+  "/api/get-payment-intent/route": "app/api/get-payment-intent/route.js",
+  "/api/webhooks/route": "app/api/webhooks/route.js",
+  "/bookrent/page": "app/bookrent/page.js",
+  "/checkout-success/page": "app/checkout-success/page.js",
+  "/checkout/page": "app/checkout/page.js",
+  "/page": "app/page.js"
 }
