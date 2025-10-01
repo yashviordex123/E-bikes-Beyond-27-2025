@@ -1514,9 +1514,9 @@ var { g: global, __dirname } = __turbopack_context__;
 //   return (
 //     <>
 //       <Head>
-//         <title>Cali Cruiser | Electric Bike</title>
-//         <meta name="description" content="Buy Cali Cruiser – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
-//         <meta name="keywords" content="electric bike, e-bike, Cali Cruiser, green transport" />
+//         <title>Rental-E-bike | Electric Bike</title>
+//         <meta name="description" content="Buy Rental-E-bike – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
+//         <meta name="keywords" content="electric bike, e-bike, Rental-E-bike, green transport" />
 //         <meta name="robots" content="index, follow" />
 //         <link rel="canonical" href="https://yourdomain.com/product" />
 //       </Head>
@@ -1525,7 +1525,7 @@ var { g: global, __dirname } = __turbopack_context__;
 //         <div className="row align-items-start">
 //           {/* Left Image */}
 //           <div className="col-xl-7 mb-4 only-mobile-center">
-//             <Image src={images[selectedColor]} alt="Cali Cruiser" width={600} height={600} className='set-image-bikes'/>
+//             <Image src={images[selectedColor]} alt="Rental-E-bike" width={600} height={600} className='set-image-bikes'/>
 //             <div className="d-sm-flex thumbnail-gallery mt-3 gap-3">
 //               {Object.keys(images).map(color => (
 //                 <Image
@@ -1830,7 +1830,7 @@ function ProductPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:title",
-                        content: "Cali Cruiser E-Bike | Beyond Bikes Electric Bicycle"
+                        content: "Rental-E-bike E-Bike | Beyond Bikes Electric Bicycle"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
                         lineNumber: 367,
@@ -1838,7 +1838,7 @@ function ProductPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:description",
-                        content: "Explore Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power."
+                        content: "Explore Rental-E-bike E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power."
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
                         lineNumber: 368,
@@ -1870,7 +1870,7 @@ function ProductPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:title",
-                        content: "Cali Cruiser E-Bike | Beyond Bikes Electric Bicycle"
+                        content: "Rental-E-bike E-Bike | Beyond Bikes Electric Bicycle"
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
                         lineNumber: 374,
@@ -1878,7 +1878,7 @@ function ProductPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         name: "twitter:description",
-                        content: "Explore Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power."
+                        content: "Explore Rental-E-bike E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power."
                     }, void 0, false, {
                         fileName: "[project]/src/app/E-bike-6-8h/page.js",
                         lineNumber: 375,
@@ -1898,14 +1898,14 @@ function ProductPage() {
                             __html: JSON.stringify({
                                 "@context": "https://schema.org/",
                                 "@type": "Product",
-                                "name": "Cali Cruiser E-Bike",
+                                "name": "Rental-E-bike E-Bike",
                                 "image": [
                                     "https://yourdomain.com/images/BlueCycleProductDetailsFront.jpg",
                                     "https://yourdomain.com/images/BlueCycleProductDetailsAngleBlur.jpg",
                                     "https://yourdomain.com/images/BlueCycleProductDetailsFrontLatest.jpg",
                                     "https://yourdomain.com/images/BlueCycleProductDetailsBackBlur.jpg"
                                 ],
-                                "description": "Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power.",
+                                "description": "Rental-E-bike E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power.",
                                 "sku": "CC-EBIKE-001",
                                 "brand": {
                                     "@type": "Brand",
@@ -1961,7 +1961,7 @@ function ProductPage() {
                                             className: "d-sm-flex thumbnail-gallery mt-3 gap-3",
                                             children: Object.keys(images).map((color)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     src: images[color],
-                                                    alt: `Cali Cruiser - ${color} view`,
+                                                    alt: `Rental-E-bike - ${color} view`,
                                                     width: 138,
                                                     height: 120,
                                                     className: `thumb ${selectedColor === color ? 'active' : ''}`,
@@ -1995,7 +1995,7 @@ function ProductPage() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "mt-3 text-center",
-                                            children: "Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The Cali Cruiser delivers unmatched performance and reliability."
+                                            children: "Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The Rental-E-bike delivers unmatched performance and reliability."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
                                             lineNumber: 431,
@@ -2004,7 +2004,7 @@ function ProductPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "fs-4 text-center fw-bold",
                                             children: [
-                                                "PRICE : $70 AUD ",
+                                                "PRICE : $65 AUD ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("del", {
                                                     className: "text-muted fs-4 ms-2",
                                                     children: "$80 AUD"
@@ -2129,7 +2129,7 @@ function ProductPage() {
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                            children: "48V 70A"
+                                                                            children: "48V 60A"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/E-bike-6-8h/page.js",
                                                                             lineNumber: 462,

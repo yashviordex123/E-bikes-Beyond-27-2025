@@ -68,8 +68,8 @@
 //     <>
 //       <Head>
 //         <title>Cartoon Bikes | Electric Bike</title>
-//         <meta name="description" content="Buy Cali Cruiser – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
-//         <meta name="keywords" content="electric bike, e-bike, Cali Cruiser, green transport" />
+//         <meta name="description" content="Buy Rental-E-bike – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
+//         <meta name="keywords" content="electric bike, e-bike, Rental-E-bike, green transport" />
 //         <meta name="robots" content="index, follow" />
 //         <link rel="canonical" href="https://yourdomain.com/product" />
 //       </Head>
@@ -79,7 +79,7 @@
 //         <div className="row align-items-start">
 //           {/* Left Image */}
 //           <div className="col-xl-7 mb-4 only-mobile-center">
-//             <Image src={images[selectedColor]} alt="Cali Cruiser" width={600} height={600} className='set-image-bikes'/>
+//             <Image src={images[selectedColor]} alt="Rental-E-bike" width={600} height={600} className='set-image-bikes'/>
 
 //             {/* <div className="d-sm-flex mt-3 gap-3">
 //               {Object.keys(images).map(color => (
@@ -485,7 +485,7 @@ export default function CartoonDetailsPage() {
 
           {/* Right Info Section */}
           <div className="col-xl-5">
-            <h1 className="text-center fw-bold" itemProp="name">E-bike 4-6h</h1>
+            <h1 className="text-center fw-bold" itemProp="name">E-bike blue 6-8h</h1>
             <p className="fs-4 text-center fw-bold" itemProp="offers" itemScope itemType="https://schema.org/Offer">
               PRICE : $65 AUD <del className="text-muted fs-4 ms-2">$70 AUD</del>
               <meta itemProp="price" content="60" />
@@ -499,7 +499,7 @@ export default function CartoonDetailsPage() {
     <div className="spec-box">
       <i className="bi bi-battery-full"></i>
       <div>
-        <strong>4-6 hours</strong>
+        <strong>6-8 hours</strong>
         <p>Battery Hours</p>
       </div>
     </div>
@@ -519,7 +519,7 @@ export default function CartoonDetailsPage() {
     <div className="spec-box">
       <i className="bi bi-clock"></i>
       <div>
-        <strong>48V 50A</strong>
+        <strong>48V 60A</strong>
         <p>Battery Life</p>
       </div>
     </div>

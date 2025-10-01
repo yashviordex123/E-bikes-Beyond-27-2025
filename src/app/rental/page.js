@@ -538,36 +538,36 @@ DM us now to book & start riding smarter!</p>
     <div className="row mt-4 mb-4 g-4">
       {[
         {
-          name: "E-bike 6-8h",
+          name: "E-bike-blue 6-8h",
           img: "/images/Cartoon-Cycle-remove-text-latest.png",
-          alt: "E-bike 6-8h",
+          alt: "E-bike-blue 6-8h",
           specs: {
             batteryhours: "6-8 hours",
             motor: 500,
-            batterylife: "48V 50A",
+            batterylife: "48V 60A",
             topspeed: "45 MPH",
             
           },
           price: "65.00 AUD",
         },
         {
-          name: "E-bike 8-10h",
+          name: "E-bike 6-8h",
           img: "/images/Product-images-beyond-bikes-product-one-crop (3).png",
           alt: "E-bike 8-10h",
           specs: {
-            batteryhours: "8-10 hours",
+            batteryhours: "6-8 hours",
             motor: 500,
-            batterylife: "48V 70A",
+            batterylife: "48V 60A",
             topspeed: "45 MPH",
           },
-          price: "70.00 AUD",
+          price: "65.00 AUD",
         },
         {
-          name: "E-bike 10-12h",
+          name: "E-bike 12-15h",
           img: "/images/Latest-Change-Angle-Red-Cycle-latest.png",
           alt: "E-bike 10-12h",
           specs: {
-            batteryhours: "10-12 hours",
+            batteryhours: "12-15 hours",
             motor: 500,
             batterylife: "48V 80A",
             topspeed: "45 MPH",

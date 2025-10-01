@@ -118,6 +118,7 @@ export default function Hero() {
           alt="Electric bike rentals in Melbourne - Beyond Bikes"
           width={1920}
           height={1080}
+        
           priority
           style={{ display: "none" }}
         />
@@ -147,8 +148,8 @@ export default function Hero() {
           </div>
         )}
 
-        <div className="container position-relative z-2 mt-sm-5 mt-2 pt-5">
-          <div className="row mt-sm-0 mt-4">
+        <div className="container position-relative z-2 mt-sm-5 mt-4 pt-5">
+          <div className="row mt-sm-0 mt-5">
             <div className="col-12 col-md-6">
               <h2
                 className="display-5 mb-4"

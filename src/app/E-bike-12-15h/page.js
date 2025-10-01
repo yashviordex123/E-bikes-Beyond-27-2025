@@ -69,8 +69,8 @@
 //     <>
 //       <Head>
 //         <title>Cartoon Bikes | Electric Bike</title>
-//         <meta name="description" content="Buy Cali Cruiser – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
-//         <meta name="keywords" content="electric bike, e-bike, Cali Cruiser, green transport" />
+//         <meta name="description" content="Buy Rental-E-bike – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
+//         <meta name="keywords" content="electric bike, e-bike, Rental-E-bike, green transport" />
 //         <meta name="robots" content="index, follow" />
 //         <link rel="canonical" href="https://yourdomain.com/product" />
 //       </Head>
@@ -80,7 +80,7 @@
 //         <div className="row align-items-start">
 //           {/* Left Image */}
 //           <div className="col-xl-7 mb-4 only-mobile-center">
-//             <Image src={images[selectedColor]} alt="Cali Cruiser" width={600} height={600} className='set-image-bikes'/>
+//             <Image src={images[selectedColor]} alt="Rental-E-bike" width={600} height={600} className='set-image-bikes'/>
 
 //             <div className="d-sm-flex thumbnail-gallery mt-3 gap-3">
 //               {Object.keys(images).map(color => (
@@ -494,8 +494,8 @@ export default function CartoonDetailsPage() {
 
             {/* Right Info */}
             <div className="col-xl-5">
-              <h1 id="product-title" className="text-center fw-bold">E-bike 10-12h</h1>
-              <p className="fs-4 text-center fw-bold">PRICE: $70 AUD <del className="text-muted fs-4 ms-2">$80 AUD</del></p>
+              <h1 id="product-title" className="text-center fw-bold">E-bike 12-15h</h1>
+              <p className="fs-4 text-center fw-bold">PRICE: $80 AUD <del className="text-muted fs-4 ms-2">$90 AUD</del></p>
 
               <section className="container my-4">
         <div className="row g-3">
@@ -503,7 +503,7 @@ export default function CartoonDetailsPage() {
     <div className="spec-box">
       <i className="bi bi-battery-full"></i>
       <div>
-        <strong>10-12 hours</strong>
+        <strong>12-15 hours</strong>
         <p>Battery hours</p>
       </div>
     </div>

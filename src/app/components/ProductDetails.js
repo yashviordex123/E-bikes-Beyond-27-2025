@@ -19,9 +19,9 @@ export default function ProductPage() {
   return (
     <>
       <Head>
-        <title>Cali Cruiser | Electric Bike</title>
-        <meta name="description" content="Buy Cali Cruiser – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
-        <meta name="keywords" content="electric bike, e-bike, Cali Cruiser, green transport" />
+        <title>Rental-E-bike | Electric Bike</title>
+        <meta name="description" content="Buy Rental-E-bike – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
+        <meta name="keywords" content="electric bike, e-bike, Rental-E-bike, green transport" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://yourdomain.com/product" />
       </Head>
@@ -30,7 +30,7 @@ export default function ProductPage() {
         <div className="row align-items-start">
           {/* Left Image */}
           <div className="col-md-7 mb-4">
-            <Image src={images[selectedColor]} alt="Cali Cruiser" width={600} height={600} className="img-fluid" />
+            <Image src={images[selectedColor]} alt="Rental-E-bike" width={600} height={600} className="img-fluid" />
 
             <div className="d-flex mt-3 gap-3">
               {Object.keys(images).map(color => (
@@ -49,7 +49,7 @@ export default function ProductPage() {
 
           {/* Right Info */}
           <div className="col-md-5">
-            <h1 className="text-orange fw-bold">Cali Cruiser</h1>
+            <h1 className="text-orange fw-bold">Rental-E-bike</h1>
             <small className="text-muted">★ ★ ★ ☆ ☆ (1 Review)</small>
             <p className="mt-3">
               Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The City Surfer delivers unmatched performance you won’t find anywhere else.

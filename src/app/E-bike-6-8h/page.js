@@ -67,9 +67,9 @@
 //   return (
 //     <>
 //       <Head>
-//         <title>Cali Cruiser | Electric Bike</title>
-//         <meta name="description" content="Buy Cali Cruiser – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
-//         <meta name="keywords" content="electric bike, e-bike, Cali Cruiser, green transport" />
+//         <title>Rental-E-bike | Electric Bike</title>
+//         <meta name="description" content="Buy Rental-E-bike – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!" />
+//         <meta name="keywords" content="electric bike, e-bike, Rental-E-bike, green transport" />
 //         <meta name="robots" content="index, follow" />
 //         <link rel="canonical" href="https://yourdomain.com/product" />
 //       </Head>
@@ -79,7 +79,7 @@
 //         <div className="row align-items-start">
 //           {/* Left Image */}
 //           <div className="col-xl-7 mb-4 only-mobile-center">
-//             <Image src={images[selectedColor]} alt="Cali Cruiser" width={600} height={600} className='set-image-bikes'/>
+//             <Image src={images[selectedColor]} alt="Rental-E-bike" width={600} height={600} className='set-image-bikes'/>
 
 //             <div className="d-sm-flex thumbnail-gallery mt-3 gap-3">
 //               {Object.keys(images).map(color => (
@@ -364,29 +364,29 @@ export default function ProductPage() {
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="product" />
-        <meta property="og:title" content="Cali Cruiser E-Bike | Beyond Bikes Electric Bicycle" />
-        <meta property="og:description" content="Explore Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power." />
+        <meta property="og:title" content="Rental-E-bike E-Bike | Beyond Bikes Electric Bicycle" />
+        <meta property="og:description" content="Explore Rental-E-bike E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power." />
         <meta property="og:image" content="https://yourdomain.com/images/BlueCycleProductDetailsFront.jpg" />
         <meta property="og:url" content="https://yourdomain.com/product/cali-cruiser" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cali Cruiser E-Bike | Beyond Bikes Electric Bicycle" />
-        <meta name="twitter:description" content="Explore Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power." />
+        <meta name="twitter:title" content="Rental-E-bike E-Bike | Beyond Bikes Electric Bicycle" />
+        <meta name="twitter:description" content="Explore Rental-E-bike E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power." />
         <meta name="twitter:image" content="https://yourdomain.com/images/BlueCycleProductDetailsFront.jpg" />
 
         {/* Structured Data for Google Rich Results */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org/",
           "@type": "Product",
-          "name": "Cali Cruiser E-Bike",
+          "name": "Rental-E-bike E-Bike",
           "image": [
             "https://yourdomain.com/images/BlueCycleProductDetailsFront.jpg",
             "https://yourdomain.com/images/BlueCycleProductDetailsAngleBlur.jpg",
             "https://yourdomain.com/images/BlueCycleProductDetailsFrontLatest.jpg",
             "https://yourdomain.com/images/BlueCycleProductDetailsBackBlur.jpg"
           ],
-          "description": "Cali Cruiser E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power.",
+          "description": "Rental-E-bike E-Bike by Beyond Bikes. Rent or buy this all-terrain electric bike with 8-10 hours battery, safety features, and mid-drive power.",
           "sku": "CC-EBIKE-001",
           "brand": {
             "@type": "Brand",
@@ -415,7 +415,7 @@ export default function ProductPage() {
                   <Image
                     key={color}
                     src={images[color]}
-                    alt={`Cali Cruiser - ${color} view`}
+                    alt={`Rental-E-bike - ${color} view`}
                     width={138}
                     height={120}
                     className={`thumb ${selectedColor === color ? 'active' : ''}`}
@@ -429,9 +429,9 @@ export default function ProductPage() {
             <div className="col-xl-5">
               <h1 className="text-orange text-center fw-bold">E-Bike 6-8h</h1>
               <p className="mt-3 text-center">
-                Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The Cali Cruiser delivers unmatched performance and reliability.
+                Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The Rental-E-bike delivers unmatched performance and reliability.
               </p>
-              <div className="fs-4 text-center fw-bold">PRICE : $70 AUD <del className="text-muted fs-4 ms-2">$80 AUD</del></div>
+              <div className="fs-4 text-center fw-bold">PRICE : $65 AUD <del className="text-muted fs-4 ms-2">$80 AUD</del></div>
 
               <section className="container my-4">
         <div className="row g-3">
@@ -459,7 +459,7 @@ export default function ProductPage() {
     <div className="spec-box">
       <i className="bi bi-clock"></i>
       <div>
-        <strong>48V 70A</strong>
+        <strong>48V 60A</strong>
         <p>Battery Life</p>
       </div>
     </div>
