@@ -418,8 +418,8 @@ export default function WhiteEbike() {
           </div>
         </div>
 
-        {/* Description Section */}
-        <section className="container py-4" aria-labelledby="description-title">
+        
+        {/* <section className="container py-4" aria-labelledby="description-title">
                   <h2 id="description-title" className="fw-bold mb-4" style={{ color: 'rgb(26, 59, 25)' }}>Description</h2>
         
                   <article className='insurance-box fs-5'>
@@ -432,7 +432,7 @@ export default function WhiteEbike() {
                   <article>
                     <h3 style={{ color: 'rgb(26, 59, 25)' }} className='mt-3 mb-5'>Rental Information</h3>
                     <div className="info-cards">
-    {/* Left Card */}
+    
     <div className="info-card">
       <h4 className="info-header">Documents for Rent</h4>
       <ul className="info-list">
@@ -445,7 +445,7 @@ export default function WhiteEbike() {
       </ul>
     </div>
 
-    {/* Right Card */}
+    
     <div className="info-card">
       <h4 className="info-header">Our Rental Fee Includes</h4>
       <ul className="info-list">
@@ -463,7 +463,7 @@ export default function WhiteEbike() {
 
         
                   
-                </section>
+                </section> */}
       </main>
 
       <Footer />

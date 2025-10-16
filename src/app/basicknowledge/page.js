@@ -402,7 +402,7 @@ export default function PrivacyPolicyPage() {
               Within the organization and associated companies.
             </li>
             <li>
-              External Partners: Including customer service and engagement platforms, telematics service providers, payment processors, insurance companies, maintenance and repair partners, recruitment agencies, technology vendors, legal and financial advisors, delivery services, regulatory bodies, and potential partners in mergers or acquisitions.
+              External Partners: Including customer service and engagement platforms, telematics service providers, payment processors, maintenance and repair partners, recruitment agencies, technology vendors, legal and financial advisors, delivery services, regulatory bodies, and potential partners in mergers or acquisitions.
             </li>
           </ul>
         </section>

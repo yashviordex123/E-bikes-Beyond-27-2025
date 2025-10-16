@@ -793,7 +793,7 @@ export default function CartoonDetailsPage() {
           </div>
         </section>
 
-        <section className="container py-4" aria-labelledby="description-title">
+        {/* <section className="container py-4" aria-labelledby="description-title">
           <h2 id="description-title" className="fw-bold mb-4" style={{ color: 'rgb(26, 59, 25)' }}>Description</h2>
 
           <article className='insurance-box fs-5'>
@@ -806,7 +806,7 @@ export default function CartoonDetailsPage() {
           <article>
                     <h3 style={{ color: 'rgb(26, 59, 25)' }} className='mt-3 mb-5'>Rental Information</h3>
                     <div className="info-cards">
-    {/* Left Card */}
+   
     <div className="info-card">
       <h4 className="info-header">Documents for Rent</h4>
       <ul className="info-list">
@@ -819,7 +819,7 @@ export default function CartoonDetailsPage() {
       </ul>
     </div>
 
-    {/* Right Card */}
+  
     <div className="info-card">
       <h4 className="info-header">Our Rental Fee Includes</h4>
       <ul className="info-list">
@@ -834,30 +834,7 @@ export default function CartoonDetailsPage() {
 
                   </article>
 
-          {/* <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
-            <div className="col-md-4">
-              <div className="border rounded py-4 px-2 h-100">
-                <Image src="/images/speed.svg" alt="Top Speed Icon" width={40} height={40} />
-                <p className="text-muted mb-1 mt-3 small">Top Speed</p>
-                <h5 className="text-orange fw-bold">45 MPH</h5>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="border rounded py-4 px-2 h-100">
-                <Image src="/images/running.svg" alt="Battery Hours Icon" width={40} height={40} />
-                <p className="text-muted mb-1 mt-3 small">Battery Hours</p>
-                <h5 className="text-orange fw-bold">10-12 hours</h5>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="border rounded py-4 px-2 h-100">
-                <Image src="/images/battery.svg" alt="Battery Life Icon" width={40} height={40} />
-                <p className="text-muted mb-1 mt-3 small">Battery Life</p>
-                <h5 className="text-orange fw-bold">48V 80A</h5>
-              </div>
-            </div>
-          </div> */}
-        </section>
+          </section> */}
       </main>
 
       <Footer />
