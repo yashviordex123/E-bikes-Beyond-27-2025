@@ -18,7 +18,7 @@ const images = {
   battery:'/images/24-09-Black-Cycle-Reverse.png'
 };
 
-export default function BlackEBike() {
+export default function BlackEbike() {
   const [selectedColor, setSelectedColor] = useState('middle');
   const [quantity, setQuantity] = useState(1);
   const [showModal, setShowModal] = useState(false);
