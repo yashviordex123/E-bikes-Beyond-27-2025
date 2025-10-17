@@ -587,7 +587,7 @@ DM us now to book & start riding smarter!</p>
           price: "70.00 AUD",
         },
         {
-          name: "Black E-bike",
+          name: "Black e-bike",
           img: "/images/Latest-Black-Cycle-Product-26-09.png",
           alt: "E-bike 8-10h",
           specs: {
@@ -632,7 +632,7 @@ DM us now to book & start riding smarter!</p>
             <div className="card-body text-center">
               {/* Bike Name */}
               <h3
-                className="fw-bold mb-2"
+                className="fw-bold text-capitalize mb-2"
                 style={{ color: "#1A3B19" }}
                 itemProp="name"
               >
