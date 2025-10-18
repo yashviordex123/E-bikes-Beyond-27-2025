@@ -532,12 +532,12 @@ export default function ProductTabs() {
      
 
         {/* Sale Ribbon */}
-        <span 
+        {/* <span 
           className="sale-badge"
           aria-hidden="true"
         >
           Sale
-        </span>
+        </span> */}
 
         {/* Product Image */}
         <img

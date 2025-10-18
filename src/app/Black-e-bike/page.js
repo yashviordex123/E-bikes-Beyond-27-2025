@@ -118,7 +118,7 @@ export default function BlackEbike() {
               <p className="mt-3 text-center">
                 Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The Rental-E-bike delivers unmatched performance and reliability.
               </p>
-              <div className="fs-4 text-center fw-bold">PRICE : $80 AUD <del className="text-muted fs-4 ms-2">$90 AUD</del></div>
+              <div className="fs-4 text-center fw-bold">PRICE : $90 AUD <del className="text-muted fs-4 ms-2">$100 AUD</del></div>
 
               <section className="container my-4">
         <div className="row g-3">
