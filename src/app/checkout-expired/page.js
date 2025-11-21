@@ -43,7 +43,6 @@ export default function CheckoutExpiredPage() {
 
         {/* Subtext */}
         <p className="text-muted mb-1">Please Try Again</p>
-        <p className="text-secondary small mb-4">You are John Smith</p>
 
         {/* Buttons */}
         <div className="d-grid">

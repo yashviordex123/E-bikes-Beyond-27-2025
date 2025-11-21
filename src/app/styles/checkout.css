@@ -293,14 +293,6 @@
   background: #fafafa;
 }
 
-/* NEW: equal height columns */
-.row>.col-md-6 {
-  display: flex;
-}
-
-.row>.col-md-6>.card {
-  flex: 1;
-}
 
 /* Timer full-width box */
 .checkout-timer-box {
