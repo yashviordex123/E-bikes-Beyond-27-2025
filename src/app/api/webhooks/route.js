@@ -1,3 +1,4 @@
+// src/app/api/webhooks/routes.js
 import Stripe from "stripe";
 import { NextResponse } from "next/server";
 import sendEmail from "@/lib/sendEmail";

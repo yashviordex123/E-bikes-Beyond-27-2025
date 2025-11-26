@@ -121,6 +121,7 @@ export default function CheckoutPageClient() {
   const amount = Math.round(price * 100);
   const [taxAmount, setTaxAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(price);
+  const [platformFee, setPlatformFee] = useState(0);
 
   useEffect(() => {
     async function createPaymentIntent() {
@@ -144,7 +145,7 @@ export default function CheckoutPageClient() {
           setPaymentIntentId(data.id);
 
           // ✅ Set tax & total
-          setTaxAmount(data.taxAmount / 100); // Convert cents to dollars
+          setPlatformFee(data.platformFee / 100); // Convert cents to dollars
           setTotalAmount(data.totalAmount / 100);
 
           localStorage.setItem("checkoutActive", "true"); // prevent back nav reuse
@@ -262,9 +263,9 @@ export default function CheckoutPageClient() {
               </div>
             </div>
 
-            <p><span>Subtotal</span><span> {currency.toUpperCase()} {(price).toFixed(2)}</span></p>
-            <p><span>Tax</span><span> {currency.toUpperCase()} {(taxAmount).toFixed(2)}</span></p>
-            <p className="checkout-total total-border"><span>Total</span><span> {currency.toUpperCase()} ${(totalAmount).toFixed(2)}</span></p>
+            <p><span>Subtotal</span><span> {currency.toUpperCase()} {price.toFixed(2)}</span></p>
+            <p><span>Fess</span><span> {currency.toUpperCase()} {platformFee.toFixed(2)}</span></p>
+            <p className="checkout-total total-border"><span>Total</span><span> {currency.toUpperCase()} {totalAmount.toFixed(2)}</span></p>
             {/* Receipt */}
             <div className="alert alert-light d-flex align-items-center mt-3" role="alert">
               <i className="bi bi-envelope me-2"></i>

@@ -69,8 +69,12 @@ export async function POST(req) {
     }
 
     // ✅ Manual Tax Calculation (10%)
-    const taxAmount = Math.round(amount * 0.0);
-    const totalAmount = amount + taxAmount;
+    const stripePercentage = 0.0175;
+    const stripeFixed = 30;
+
+    const platformFee = Math.round(amount * stripePercentage + stripeFixed);
+
+    const totalAmount = amount + platformFee
 
     const paymentIntent = await stripe.paymentIntents.create({
       amount: totalAmount,
@@ -80,7 +84,7 @@ export async function POST(req) {
         customer_name: customerName || "Guest",
         rental_start: rentalStart || "", // ✅ fixed (no more ReferenceError)
         rental_end: rentalEnd || "",
-        tax_amount: taxAmount, // store for reference
+        tax_amount: platformFee, // store for reference
         subtotal: amount,
       },
       automatic_payment_methods: { enabled: true },
@@ -90,7 +94,7 @@ export async function POST(req) {
       JSON.stringify({
         clientSecret: paymentIntent.client_secret,
         id: paymentIntent.id,
-        taxAmount,
+        platformFee,   // use to like a display this as a Like a Stripe Payment Fees.
         totalAmount,
       }),
       { status: 200, headers: { "Content-Type": "application/json" } }
