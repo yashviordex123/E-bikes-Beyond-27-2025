@@ -339,7 +339,7 @@ export default function ProductPage({ params }) {
                     Enquire Now
                   </button>
                 </div>
-{/* bhdhsjdkjsk */}
+
               </div>
             </div>
 
