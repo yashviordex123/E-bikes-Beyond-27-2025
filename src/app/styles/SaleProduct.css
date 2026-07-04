@@ -1,0 +1,236 @@
+.sale-product-section {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(18, 33, 20, 0.97),
+      rgba(10, 15, 12, 0.98)
+    ),
+    url("/images/multiple-e-bikes.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+
+
+.sale-product-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left,
+      rgba(194, 248, 41, 0.25),
+      transparent 30%);
+  pointer-events: none;
+}
+
+.sale-product-heading {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.sale-product-heading h1,
+.sale-product-heading h2 {
+  margin-bottom: 15px;
+  font-size: 52px;
+  font-weight: 800;
+  color: #c2f829;
+}
+
+.sale-product-heading p {
+  font-size: 18px;
+  color: rgba(255,255,255,.85);
+}
+
+.sale-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 30px;
+}
+
+.sale-product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,.12);
+  transition: all .4s ease;
+  box-shadow: 0 15px 40px rgba(0,0,0,.25);
+}
+.sale-product-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(194,248,41,.12),
+      transparent 50%
+    );
+  opacity: 0;
+  transition: .4s;
+}
+
+.sale-product-card:hover::before {
+  opacity: 1;
+}
+
+.sale-product-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0,0,0,.4);
+}
+
+.sale-product-tag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 10;
+  background: linear-gradient(
+    135deg,
+    #c2f829,
+    #9de000
+  );
+  color: #122114;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  box-shadow: 0 10px 25px rgba(194,248,41,.35);
+}
+
+.sale-product-image {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 25px 20px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.08),
+      rgba(255,255,255,.03)
+    );
+}
+
+.sale-product-image img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 25px 25px rgba(0,0,0,.4));
+  transition: transform .5s ease;
+}
+
+.sale-product-card:hover .sale-product-image img {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.sale-product-content {
+  padding: 28px;
+}
+
+.sale-product-content h3 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.sale-product-content p {
+  color: rgba(255,255,255,.75);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.sale-product-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.sale-product-price span {
+  color: #c2f829;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.sale-product-price del {
+  color: rgba(255,255,255,.45);
+  font-size: 18px;
+}
+
+.sale-product-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #c2f829,
+    #9de000
+  );
+  color: #122114;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.sale-product-btn:hover {
+  transform: translateY(-2px);
+}
+
+.sale-corner-ribbon span {
+  position: absolute;
+  width: 90px;
+  height: 28px;
+  line-height: 28px;
+  background: linear-gradient(
+    135deg,
+    #d4ff3f,
+    #b7f300
+  );
+  color: #1a3b19;
+  font-weight: 800;
+  font-size: 12px;
+  text-align: center;
+  transform: rotate(45deg);
+  top: 10px;
+  right: -22px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+@media (max-width:991px) {
+  .sale-product-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .sale-product-heading h1,
+  .sale-product-heading h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width:767px) {
+  .sale-product-section {
+    padding: 60px 0;
+  }
+
+  .sale-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sale-product-heading h1,
+  .sale-product-heading h2 {
+    font-size: 34px;
+  }
+
+  .sale-product-image {
+    height: 250px;
+  }
+}

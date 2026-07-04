@@ -107,7 +107,7 @@ export default function Hero() {
       {/* ✅ Hero Section */}
       <section
         className="d-flex position-relative responsive-bg text-white text-center text-md-start"
-        style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+        style={{ backgroundImage: `url(${images[currentImageIndex]});height:110vh` }}
         role="banner"
         aria-label="Electric bike rentals in Melbourne—quiet, powerful, and flexible hire"
       >

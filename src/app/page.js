@@ -23,6 +23,7 @@ import RentalEbikes from './rental/page';
 import Review from './review/page';
 import AmazingOffers from './amazingoffers/page';
 import TermAndCondition from './termsandcondition/page';
+import SaleProduct from './sale-product/page';
 
 
 export default function Home() {
@@ -45,7 +46,9 @@ export default function Home() {
       <Header />
       <Hero />
       {/* <Accessories /> */}
+      
       <Product />
+      <SaleProduct />
       <Promotion />
       <Review />
       {/* <About /> */}
